@@ -1,0 +1,32 @@
+query MixSiblings($date: DateTime!) {
+  siblingRight: mixes(sort: "date:desc", filters: { date: { lt: $date } }) {
+    data {
+      id
+      attributes {
+        ... on Mix {
+          slug
+        }
+      }
+    }
+    meta {
+      pagination {
+        total
+      }
+    }
+  }
+  siblingLeft: mixes(sort: "date:asc", filters: { date: { gt: $date } }) {
+    data {
+      id
+      attributes {
+        ... on Mix {
+          slug
+        }
+      }
+    }
+    meta {
+      pagination {
+        total
+      }
+    }
+  }
+}

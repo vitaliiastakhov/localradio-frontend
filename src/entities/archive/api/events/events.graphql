@@ -1,0 +1,71 @@
+query Events(
+  $filters: EventFiltersInput
+  $limit: Int! = 12
+  $start: Int! = 0
+  $sort: [String] = ["createdAt:desc"]
+) {
+  events(
+    sort: $sort
+    pagination: { limit: $limit, start: $start }
+    filters: $filters
+  ) {
+    data {
+      id
+      attributes {
+        name
+        slug
+        eventInfo {
+          date {
+            id
+            eventDate
+            eventTimeStart
+            eventTimeEnd
+          }
+          location {
+            id
+            locationName
+            locationLink
+          }
+          schedule {
+            id
+            name
+            info
+          }
+          info
+        }
+        mixes {
+          data {
+            id
+            attributes {
+              name
+              slug
+              date
+              locationName
+              locationLink
+              genres {
+                data {
+                  ...Genres
+                }
+              }
+              image {
+                data {
+                  ...Image
+                }
+              }
+            }
+          }
+        }
+        image {
+          data {
+            ...Image
+          }
+        }
+      }
+    }
+    meta {
+      pagination {
+        total
+      }
+    }
+  }
+}

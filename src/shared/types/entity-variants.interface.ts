@@ -1,0 +1,16 @@
+export type EntityVariant =
+  | 'mixes'
+  | 'mix'
+  | 'page'
+  | 'release'
+  | 'releases'
+  | 'guests'
+  | 'guest'
+  | 'shop'
+  | 'events'
+  | 'event'
+  | 'news'
+  | 'show'
+  | 'checkout'
+  | 'search'
+  | 'shows';

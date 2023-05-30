@@ -1,0 +1,147 @@
+.navList {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 1;
+  width: 100%;
+}
+
+.navList > li {
+  display: flex;
+  flex: 1;
+  padding: 0 0.42rem;
+  justify-content: center;
+  align-items: center;
+  background: var(--green-dark);
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+  height: var(--nav-height);
+  border-left: 0;
+  color: var(--olive);
+}
+
+.navList > li:nth-child(5) {
+  border-right: none;
+}
+
+.moodList,
+.genresList {
+  opacity: 1;
+  position: absolute;
+  text-transform: uppercase;
+  justify-content: space-between;
+  visibility: hidden;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.2rem;
+  row-gap: 0.1rem;
+  line-height: normal;
+  border-bottom: 2px solid black;
+  padding: 0.5rem;
+  background: var(--green-dark);
+  min-height: var(--nav-height);
+  z-index: -1;
+  transition: all 0.1s;
+  color: var(--olive);
+}
+
+.genresList:last-child {
+  justify-self: right;
+}
+
+.active {
+  visibility: visible;
+}
+
+.genresList > li {
+  display: flex;
+  align-items: center;
+}
+
+.genresList {
+  justify-content: space-between;
+}
+
+.moodItem,
+.genresItem,
+.showsItem {
+  position: relative;
+}
+
+.moodItem {
+  order: 4;
+}
+
+.genresItem {
+  order: 5;
+}
+
+@media screen and (min-width: 290px) {
+  .moodList,
+  .genresList {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .moodList,
+  .genresList {
+    padding: 0.5rem 1.2rem;
+    grid-template-columns: repeat(4, min-content);
+  }
+
+  .navList > li:nth-child(5) {
+    border-right: 2px solid black;
+  }
+
+  .navList li:last-child {
+    border-right: none;
+  }
+
+  .moodItem {
+    order: 3;
+  }
+
+  .genresItem {
+    order: 4;
+  }
+
+  .navList > li:hover {
+    color: var(--green-dark);
+    width: fit-content;
+    background: var(--olive);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 75ms;
+  }
+
+  .moodItem:hover + .moodList,
+  .genresItem:hover + .genresList {
+    visibility: visible;
+  }
+
+  .navList > li {
+    flex: 1;
+  }
+
+  .moodList > ul > li > a:hover,
+  .genresList > ul > li > a:hover {
+    background-color: var(--olive);
+    color: var(--green-dark);
+  }
+
+  .genresList > li {
+    flex: 1 0 21%;
+
+    max-width: 23.1%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .moodList,
+  .genresList {
+    padding: 0.5rem 1.8rem;
+  }
+}

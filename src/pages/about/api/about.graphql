@@ -1,0 +1,11 @@
+query About {
+  about {
+    data {
+      id
+      attributes {
+        textRu
+        textEn
+      }
+    }
+  }
+}

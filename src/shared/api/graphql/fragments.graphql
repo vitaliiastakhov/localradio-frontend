@@ -1,0 +1,112 @@
+fragment Genres on GenreEntity {
+  id
+  attributes {
+    name
+    slug
+  }
+}
+
+fragment Image on UploadFileEntity {
+  id
+  attributes {
+    url
+    width
+    height
+    formats
+  }
+}
+
+fragment Attributes on Mix {
+  name
+  slug
+  date
+  updatedAt
+  createdAt
+  tracklist
+  linksToMixes {
+    id
+    soundcloudLink
+    youtubeLink
+  }
+  locationName
+  descriptionEn
+  descriptionRu
+  locationLink
+  image {
+    data {
+      ...Image
+    }
+  }
+  genres {
+    data {
+      ...Genres
+    }
+  }
+  moods {
+    data {
+      id
+      attributes {
+        name
+      }
+    }
+  }
+  guests {
+    data {
+      id
+      attributes {
+        name
+        slug
+        descriptionRu
+        descriptionEn
+        socials {
+          id
+          SCLink
+          VKLink
+          TGLink
+          IGLink
+          BCLink
+        }
+        mixes {
+          data {
+            id
+            attributes {
+              name
+            }
+          }
+        }
+        image {
+          data {
+            ...Image
+          }
+        }
+      }
+    }
+  }
+  show {
+    data {
+      id
+      attributes {
+        name
+        slug
+        socials {
+          id
+          SCLink
+          VKLink
+          TGLink
+          IGLink
+          BCLink
+        }
+        descriptionEn
+        descriptionRu
+        mixes {
+          data {
+            id
+            attributes {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+query ShopItems(
+  $filters: ShopItemFiltersInput
+  $limit: Int! = 12
+  $start: Int! = 0
+  $sort: [String] = ["createdAt:desc"]
+) {
+  shopItems(
+    sort: $sort
+    pagination: { limit: $limit, start: $start }
+    filters: $filters
+  ) {
+    data {
+      id
+      attributes {
+        title
+        slug
+        soldout
+        quantity
+        price
+        images {
+          data {
+            id
+            attributes {
+              url
+            }
+          }
+        }
+        description
+        createdAt
+        updatedAt
+        shop_category {
+          data {
+            id
+            attributes {
+              name
+              slug
+            }
+          }
+        }
+        attributes
+      }
+    }
+    meta {
+      pagination {
+        total
+      }
+    }
+  }
+}
+
+query ShopCategories($filters: ShopCategoryFiltersInput) {
+  shopCategories(filters: $filters) {
+    data {
+      id
+      attributes {
+        name
+        slug
+        parent {
+          data {
+            id
+            attributes {
+              name
+              slug
+            }
+          }
+        }
+      }
+    }
+  }
+}

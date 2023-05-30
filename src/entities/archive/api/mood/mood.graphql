@@ -1,0 +1,23 @@
+query Mood($slug: String!) {
+  mood(slug: $slug) {
+    data {
+      id
+      attributes {
+        name
+        slug
+      }
+    }
+  }
+}
+
+query Moods {
+  moods {
+    data {
+      id
+      attributes {
+        name
+        slug
+      }
+    }
+  }
+}

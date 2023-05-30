@@ -1,0 +1,43 @@
+query RandomMixes($id: Int!) {
+  randomMixes(id: $id) {
+    data {
+      id
+      attributes {
+        name
+        slug
+        image {
+          data {
+            ...Image
+          }
+        }
+        linksToMixes {
+          id
+          soundcloudLink
+        }
+        date
+      }
+    }
+  }
+}
+
+query RandomMix {
+  randomMix {
+    data {
+      id
+      attributes {
+        name
+        slug
+        image {
+          data {
+            ...Image
+          }
+        }
+        linksToMixes {
+          id
+          soundcloudLink
+        }
+        date
+      }
+    }
+  }
+}

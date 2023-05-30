@@ -1,0 +1,62 @@
+import { sample } from 'effector';
+import type {
+  GenreEntityResponseCollection,
+  Maybe,
+  MixEntityResponseCollection,
+} from '@/shared/api/graphql/__generated__/schema.graphql';
+import { root } from '@/shared/lib/root-domain';
+
+export const search = root.domain('search');
+
+export interface SearchedData {
+  mixes: Maybe<MixEntityResponseCollection>;
+  genres: Maybe<GenreEntityResponseCollection>;
+}
+
+export const $searchedData = search.createStore<SearchedData>({
+  mixes: null,
+  genres: null,
+});
+export const $searchedDataLoading = search.createStore<boolean>(false);
+
+export const searchMixFx = search.createEffect<string, SearchedData>(
+  async (searchValue) => {
+    if (!searchValue) return { mixes: null, genres: null };
+    const { data } = await fetch('/api/search', {
+      method: 'POST',
+      body: searchValue,
+    }).then((res) => res.json());
+    return data as SearchedData;
+  }
+);
+
+export const searchChanged = search.createEvent<string>();
+export const $search = search
+  .createStore<string>('')
+  .on(searchChanged, (_, next) => next);
+export const $startedSearch = search
+  .createStore<boolean>(false)
+  .on(searchChanged, () => true);
+export const $searchValue = search
+  .createStore<string>('')
+  .on(searchChanged, (_, next) => next);
+export const submittedSearchEv = search.createEvent();
+export const openSearchModalEv = search.createEvent<boolean>();
+export const $isOpenedSearchModal = search
+  .createStore<boolean>(false)
+  .on(openSearchModalEv, (_, bool) => bool);
+
+sample({
+  source: searchChanged,
+  target: searchMixFx,
+});
+
+sample({
+  source: searchMixFx.doneData,
+  target: $searchedData,
+});
+
+sample({
+  clock: searchMixFx.pending,
+  target: $searchedDataLoading,
+});

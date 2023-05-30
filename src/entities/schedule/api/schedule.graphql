@@ -1,0 +1,39 @@
+query Schedule {
+  eventSchedulesFixed {
+    id
+    date
+    fixedDate {
+      day
+      week
+    }
+    location {
+      locationName
+      locationLink
+    }
+    cover {
+      url
+    }
+    schedule {
+      artist {
+        link
+        title
+        description
+        guest {
+          id
+          attributes {
+            name
+            slug
+          }
+        }
+        show {
+          id
+          attributes {
+            name
+            slug
+          }
+        }
+      }
+      time
+    }
+  }
+}

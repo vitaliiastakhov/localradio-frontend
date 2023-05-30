@@ -1,0 +1,44 @@
+query Guests($filters: GuestFiltersInput, $limit: Int! = 12, $start: Int! = 0) {
+  guests(
+    filters: $filters
+    sort: "name:asc"
+    pagination: { limit: $limit, start: $start }
+  ) {
+    data {
+      id
+      attributes {
+        name
+        slug
+        mixes(sort: "date:desc", pagination: { limit: 1 }) {
+          data {
+            id
+            attributes {
+              date
+              slug
+            }
+          }
+        }
+        socials {
+          id
+          SCLink
+          VKLink
+          TGLink
+          IGLink
+          BCLink
+        }
+        descriptionRu
+        descriptionEn
+        image {
+          data {
+            ...Image
+          }
+        }
+      }
+    }
+    meta {
+      pagination {
+        total
+      }
+    }
+  }
+}

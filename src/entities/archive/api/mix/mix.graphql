@@ -1,0 +1,30 @@
+query Mixes(
+  $filters: MixFiltersInput
+  $limit: Int! = 12
+  $start: Int! = 0
+  $sort: [String] = ["date:desc"]
+  $sibling: Boolean! = false
+) {
+  mixes(
+    sort: $sort
+    pagination: { limit: $limit, start: $start }
+    filters: $filters
+  ) {
+    data {
+      id
+      attributes @skip(if: $sibling) {
+        ...Attributes
+      }
+      attributes @include(if: $sibling) {
+        ... on Mix {
+          slug
+        }
+      }
+    }
+    meta {
+      pagination {
+        total
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+query ArchiveNavigation {
+  moodsArray {
+    name
+    slug
+  }
+  genresArray {
+    name
+    slug
+  }
+}

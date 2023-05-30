@@ -1,0 +1,31 @@
+.navList {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  height: var(--nav-height);
+  border-bottom: 2px solid black;
+}
+.navList > li {
+  display: flex;
+  flex: 1;
+  padding: 0 0.5rem;
+  justify-content: center;
+  align-items: center;
+  background: var(--green-dark);
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+  height: var(--nav-height);
+  border-left: 0;
+}
+
+.navList li:last-of-type {
+  border-right: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navList > li {
+    flex: 1;
+  }
+}

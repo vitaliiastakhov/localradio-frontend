@@ -1,0 +1,140 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --olive: #dee5c6;
+  --green-dark: #236e42;
+  --green-light: #3e835a;
+  --gray-color: #666a86;
+  --red-color: #ef4343;
+  --header-height: 40px;
+  --player-height: 40px;
+  --nav-height: 30px;
+
+  --visible-cols: 1;
+  --schedule-visible-cols: 4;
+  --col-gap: clamp(20px, 10vw, 60px);
+  --col-hint: 0px;
+  --scroller-padding: 50px;
+  --col-size: calc(
+    (100% / var(--visible-cols)) - var(--col-gap) - var(--col-hint)
+  );
+}
+
+@layer base {
+  @supports (font-variation-settings: normal) {
+    @font-face {
+      font-family: PP Right Grotesk Wide Variable;
+      src: url('/fonts/PPRightGroteskWideVariable.ttf') format('truetype');
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      font-display: optional;
+      font-named-instance: 'Regular';
+    }
+  }
+
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    /* font-size: calc(17.5px); */
+    font-size: calc(17px + 0.06vw);
+    background-color: var(--olive);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .react-player__preview {
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
+    filter: grayscale(1) contrast(0.8);
+  }
+
+  .player-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+  }
+
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .marquee-container {
+    display: none;
+    width: 0;
+  }
+}
+
+@layer utilities {
+  .animated-underline {
+    background-image: linear-gradient(#33333300, #33333300),
+      linear-gradient(to right, var(--green-light), var(--olive));
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .animated-underline {
+      transition: 0.3s ease;
+      transition-property: background-size, color, background-color,
+        border-color;
+    }
+  }
+
+  .animated-underline:hover,
+  .animated-underline:focus-visible {
+    background-size: 0 2px, 100% 2px;
+  }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer components {
+  .play {
+    @apply h-0
+		w-0
+    border-b-[10px]
+    border-l-[16px]
+    border-t-[10px]
+    border-b-transparent
+    border-l-black
+    border-t-transparent;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --player-height: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .moodList,
+  .genresList,
+  .showsList {
+    padding: 0.5rem 1.8rem;
+  }
+
+  :root {
+    --header-height: 4rem;
+    --player-height: 100px;
+    --nav-height: calc(var(--header-height) / 2);
+  }
+}
+@media (min-width: 1400px) {
+  :root {
+    --header-height: 5rem;
+  }
+}

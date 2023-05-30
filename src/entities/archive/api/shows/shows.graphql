@@ -1,0 +1,59 @@
+query Shows($filters: ShowFiltersInput, $limit: Int! = 12, $start: Int! = 0) {
+  shows(filters: $filters) {
+    data {
+      id
+      attributes {
+        name
+        slug
+        descriptionEn
+        descriptionRu
+        socials {
+          id
+          SCLink
+          VKLink
+          TGLink
+          IGLink
+          BCLink
+        }
+        mixes(pagination: { limit: $limit, start: $start }, sort: "date:desc") {
+          data {
+            id
+            attributes {
+              ... on Mix {
+                name
+                slug
+                locationLink
+                locationName
+                date
+                genres {
+                  data {
+                    ...Genres
+                  }
+                }
+                image {
+                  data {
+                    ...Image
+                  }
+                }
+                linksToMixes {
+                  id
+                  soundcloudLink
+                }
+              }
+            }
+          }
+        }
+        image {
+          data {
+            ...Image
+          }
+        }
+      }
+    }
+    meta {
+      pagination {
+        total
+      }
+    }
+  }
+}

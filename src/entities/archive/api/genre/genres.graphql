@@ -1,0 +1,15 @@
+query Genre($slug: String!) {
+  genreOne(slug: $slug) {
+    data {
+      ...Genres
+    }
+  }
+}
+
+query Genres($filters: GenreFiltersInput) {
+  genres(pagination: { limit: 36 }, filters: $filters) {
+    data {
+      ...Genres
+    }
+  }
+}
