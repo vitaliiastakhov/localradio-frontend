@@ -7,11 +7,12 @@ import { clsxm } from '@/shared/lib/clsxm';
 import { useScroll } from '@/shared/lib/hooks/use-scroll';
 import { Icon } from '@/shared/ui/icons';
 import {
-  $isOpenedCartModal,
-  openCartModalEv,
-} from '../../cart/model/cart.model';
-import { CartItem } from '../../cart/ui/cart-item';
-import { $products, $totalPrice, $totalQuantity } from '../model/shop.model';
+  $products,
+  $totalPrice,
+  $totalQuantity,
+} from '../../items/model/shop.model';
+import { $isOpenedCartModal, openCartModalEv } from '../model/cart.model';
+import { CartItem } from './cart-item';
 
 export const CartModal = () => {
   const {
@@ -92,11 +93,13 @@ export const CartModal = () => {
             : null}
         </div>
         <div className=' flex flex-col justify-end '>
-          {totalPrice && totalPrice > 0 && (
-            <div className='my-4 flex  items-center  justify-between px-1.5 text-[0.95rem] md:px-3 lg:px-3.5 xl:text-[1.15rem] '>
-              <div>Total: {totalPrice} ₽</div>
-            </div>
-          )}
+          {totalPrice !== undefined &&
+            totalPrice !== null &&
+            totalPrice > 0 && (
+              <div className='my-4 flex  items-center  justify-between px-1.5 text-[0.95rem] md:px-3 lg:px-3.5 xl:text-[1.15rem] '>
+                <div>Total: {totalPrice} ₽</div>
+              </div>
+            )}
 
           <div className='flex w-full flex-col gap-4 text-[0.95rem] uppercase  xl:text-[1.15rem]'>
             <div
@@ -110,7 +113,7 @@ export const CartModal = () => {
               className='border-t-2 border-black bg-black py-3 text-center font-medium text-primary hover:bg-secondary-dark  hover:text-black'
               href={
                 path !== '/shop/checkout' && products.length > 0
-                  ? 'shop/checkout'
+                  ? '/shop/checkout'
                   : '/shop'
               }
             >

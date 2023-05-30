@@ -8,7 +8,7 @@ export const ContactDetailsForm = () => {
   });
   return (
     <div className='flex flex-col gap-2'>
-      <div className='flex '>
+      <div className='flex'>
         <h5 className='text-[1.2rem] font-medium uppercase leading-none  md:text-[1.5rem] 2xl:text-[1.9rem]'>
           Contact details
         </h5>
@@ -16,6 +16,8 @@ export const ContactDetailsForm = () => {
 
       <div className='grid gap-2 lg:gap-3.5 2xl:gap-3.5  '>
         <Field.TextInput
+          autoComplete='given-name'
+          aria-label='First name'
           placeholder='First name'
           use={controller({
             name: checkoutForm.getName('firstName'),
@@ -23,6 +25,8 @@ export const ContactDetailsForm = () => {
           required
         />
         <Field.TextInput
+          autoComplete='family-name'
+          aria-label='Last name'
           placeholder='Last name'
           use={controller({
             name: checkoutForm.getName('lastName'),
@@ -30,6 +34,9 @@ export const ContactDetailsForm = () => {
           required
         />
         <Field.TextInput
+          autoComplete='username'
+          aria-label='Email'
+          type='email'
           placeholder='Email'
           use={controller({
             name: checkoutForm.getName('email'),
@@ -37,6 +44,9 @@ export const ContactDetailsForm = () => {
           required
         />
         <Field.PhoneInput
+          type='tel'
+          autoComplete='tel'
+          aria-label='Phone'
           placeholder='Phone'
           use={controller({
             name: checkoutForm.getName('phone'),

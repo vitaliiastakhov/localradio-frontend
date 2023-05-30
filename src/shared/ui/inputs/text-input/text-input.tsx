@@ -51,11 +51,10 @@ const TextInput = createView<InputProps>()
     return {
       inputRef,
       value,
-      focused,
       handleChange,
       handleFocus,
       handleBlur,
-      rest,
+      ...rest,
     };
   })
   .memo()
@@ -67,7 +66,7 @@ const TextInput = createView<InputProps>()
       handleChange,
       handleFocus,
       handleBlur,
-      rest,
+      ...rest
     }) => (
       <InputErrorWrapper
         {...rest}

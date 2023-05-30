@@ -1,7 +1,7 @@
 import { useUnit } from 'effector-react';
 import { useEffect } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
-import { CartModal } from '@/entities/store/items/ui/cart-modal';
+import { CartModal } from '@/entities/store/cart/ui/cart-modal';
 import { SearchModal } from '@/features/search/ui/search-modal';
 import { REFETCH_STREAM_IN_MS } from '@/shared/lib/constants/common';
 import { ErrorFallback } from '@/widgets/error-fallback/error-fallback';

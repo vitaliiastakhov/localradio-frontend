@@ -17,22 +17,27 @@ export const RegionForm = () => {
 
       <div className='grid gap-2 lg:gap-3.5 2xl:gap-3.5  '>
         <Field.TextInput
+          autoComplete='home city'
           required
           placeholder='City'
+          aria-label='City'
           use={controller({
             name: checkoutForm.getName('city'),
           })}
           className='w-full'
         />
         <Field.TextInput
+          autoComplete='street-address'
           required
           placeholder='Full Address'
+          aria-label='Full Address'
           use={controller({
             name: checkoutForm.getName('address'),
           })}
           className='w-full'
         />
         <Field.TextInput
+          autoComplete='postal-code'
           required
           placeholder='Postcode'
           use={controller({

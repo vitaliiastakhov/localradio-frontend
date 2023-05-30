@@ -1,9 +1,8 @@
-import { useUnit } from 'effector-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import type { Maybe } from 'yup';
-import { Product, removeProductEv } from '../../items/model/shop.model';
-import { CartItemCalculation } from './cart-item-calculation';
+import { Product } from '../../items/model/shop.model';
+import { CartCalculation } from './cart-calculation';
+import { CartItemRemoveButton } from './cart-item-remove-button';
 
 export const CartItem = ({ product }: { product: Product }) => {
   const { attributes, selectedSize, quantity } = product;
@@ -23,8 +22,8 @@ export const CartItem = ({ product }: { product: Product }) => {
             </Link>
           </div>
 
-          <div className=' w-full    px-1.5    leading-none lg:px-3 '>
-            <div className='flex h-full flex-col   gap-1.5 '>
+          <div className='w-full px-1.5 leading-none lg:px-3'>
+            <div className='flex h-full flex-col gap-1.5'>
               <div className='flex h-full  flex-col justify-between gap-1.5 md:gap-3'>
                 <div className='flex flex-col gap-0.5 text-[0.95rem]  lg:gap-1.5 2xl:gap-2 '>
                   <div className='flex justify-between'>
@@ -46,7 +45,7 @@ export const CartItem = ({ product }: { product: Product }) => {
 
                 <div className='flex flex-col gap-1.5 text-[0.95rem] md:gap-3 '>
                   <div className='flex w-full flex-wrap items-end '>
-                    <CartItemCalculation
+                    <CartCalculation
                       productId={product.id}
                       selectedSize={selectedSize}
                       productQuantity={quantity}
@@ -65,37 +64,5 @@ export const CartItem = ({ product }: { product: Product }) => {
         </div>
       </div>
     </div>
-  );
-};
-
-interface CartItemRemoveButtonProps {
-  attributes?: any;
-  productId?: Maybe<string>;
-  selectedSize?: Maybe<string>;
-}
-
-export const CartItemRemoveButton = ({
-  attributes,
-  selectedSize,
-  productId,
-}: CartItemRemoveButtonProps) => {
-  const { removeProduct } = useUnit({
-    removeProduct: removeProductEv,
-  });
-  return (
-    <button
-      type='button'
-      onClick={() =>
-        attributes?.attributes?.size && selectedSize
-          ? removeProduct({
-              id: productId,
-              selectedSize,
-            })
-          : removeProduct({ id: productId })
-      }
-      className='text-[0.8rem] '
-    >
-      Remove
-    </button>
   );
 };

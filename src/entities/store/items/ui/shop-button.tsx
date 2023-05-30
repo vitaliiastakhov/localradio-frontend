@@ -1,4 +1,4 @@
-import { Maybe } from 'yup';
+import type { Maybe } from 'yup';
 import { clsxm } from '@/shared/lib/clsxm';
 import type { SizeVariant } from '@/shared/types/size-variant.interface';
 import { Icon } from '@/shared/ui/icons';
@@ -28,25 +28,12 @@ export const ShopButton = ({
           'pointer-events-none bg-gray-300 stroke-gray-color text-gray-color':
             disabled,
         },
-        { 'hover:bg-white hover:stroke-black': !disabled },
-        {
-          'bg-red-color hover:bg-red-color':
-            quantity === 1 && operation === 'minus',
-        }
+        { 'hover:bg-white hover:stroke-black': !disabled }
       )}
     >
-      {quantity && quantity > 1 && operation === 'minus' ? (
+      {operation === 'minus' ? (
         <Icon.MinusIcon
           className={clsxm(
-            { 'w-3.5 lg:w-4': sizeVariant === 'small' },
-            { 'w-4 lg:w-5 2xl:w-6': sizeVariant === 'large' }
-          )}
-        />
-      ) : quantity === 1 ? (
-        <Icon.CloseIcon
-          weight='light'
-          className={clsxm(
-            'stroke-2 ',
             { 'w-3.5 lg:w-4': sizeVariant === 'small' },
             { 'w-4 lg:w-5 2xl:w-6': sizeVariant === 'large' }
           )}
