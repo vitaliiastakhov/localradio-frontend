@@ -17,7 +17,7 @@ export const MixSlideButton = ({ slug, direction }: MixSlideButtonProps) => {
       href={slug ?? ''}
       disabled={!slug}
       colorVariant='primary'
-      className='stroke-black hover:stroke-primary'
+      className='stroke-primary max-lg:bg-black max-lg:text-primary lg:stroke-black lg:hover:stroke-primary'
     >
       {direction === 'left' && (
         <div className='w-4  rotate-90 md:w-5'>

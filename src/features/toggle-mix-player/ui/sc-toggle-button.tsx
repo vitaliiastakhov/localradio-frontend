@@ -1,5 +1,6 @@
+import clsx from 'clsx';
 import { useUnit } from 'effector-react';
-import { FC, useCallback } from 'react';
+import { FC, HTMLAttributes, useCallback } from 'react';
 import { Maybe } from 'yup';
 import { setCurrentGlobalPlayerEv } from '@/features/choose-global-player/model/current-global-player.model';
 import { MixEntity } from '@/shared/api/graphql/__generated__/schema.graphql';
@@ -18,7 +19,9 @@ import {
 } from '@/widgets/players/soundcloud/model/soundcloud.model';
 import { SCToggleElementProps } from './sc-toggle-element';
 
-interface SCToggleButtonProps extends Pick<SCToggleElementProps, 'SCLink'> {
+interface SCToggleButtonProps
+  extends Pick<SCToggleElementProps, 'SCLink'>,
+    HTMLAttributes<HTMLButtonElement> {
   attributes: Maybe<MixEntity['attributes']>;
   mixId: Maybe<string>;
 }
@@ -27,6 +30,7 @@ export const SCToggleButton: FC<SCToggleButtonProps> = ({
   attributes,
   mixId,
   SCLink,
+  className,
 }) => {
   const {
     linkToMix,
@@ -88,7 +92,10 @@ export const SCToggleButton: FC<SCToggleButtonProps> = ({
       type='button'
       aria-label='Play and pause soundcloud player'
       onClick={handlePlaySCButton}
-      className='group absolute flex h-[clamp(1.75rem,8vw,2.5rem)] w-[clamp(1.75rem,8vw,2.5rem)] items-center justify-center overflow-hidden md:h-12 md:w-12  2xl:h-16 2xl:w-16'
+      className={clsx(
+        'group absolute flex aspect-square h-[clamp(1.75rem,8vw,2.5rem)] w-[clamp(1.75rem,8vw,2.5rem)] items-center justify-center overflow-hidden md:h-12 md:w-12  2xl:h-16 2xl:w-16',
+        className
+      )}
     >
       <div
         className={clsxm(

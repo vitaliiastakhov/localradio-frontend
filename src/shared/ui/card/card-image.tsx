@@ -20,7 +20,7 @@ export const CardImage = memo(
         {src ? (
           <NextImage
             className={clsxm(
-              { 'relative  aspect-square w-full': type !== 'shop' },
+              { 'relative aspect-square w-full': type !== 'shop' },
               className
             )}
             sizes='(max-width: 768px) 100vw,
@@ -33,7 +33,7 @@ export const CardImage = memo(
             style={{ objectFit: 'cover' }}
           />
         ) : (
-          <div className=' relative  flex aspect-square w-full items-center justify-center bg-black uppercase text-white'>
+          <div className='relative flex aspect-square w-full items-center justify-center bg-black uppercase text-white'>
             <Icon.LogoShortIcon className='w-[40%] fill-primary' />
           </div>
         )}

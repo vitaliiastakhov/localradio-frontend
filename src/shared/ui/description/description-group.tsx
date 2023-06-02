@@ -25,7 +25,7 @@ export const DescriptionGroup = ({
   return (
     <div
       className={clsxm(
-        'w-full md:pr-1.5  lg:pr-2.5   xl:pr-3.5',
+        'w-full md:pr-1.5 lg:pr-2.5 xl:pr-3.5',
         {
           'md:pl-1.5 lg:pl-2 xl:pl-3.5': sizeVariant === 'large',
         },
@@ -35,7 +35,7 @@ export const DescriptionGroup = ({
       {sizeVariant === 'large' && top}
       <div
         className={clsxm(
-          'gap-1.5  border-black py-1.5   md:gap-2.5  lg:border-t-0  xl:gap-3 ',
+          'gap-1.5 border-black py-1.5 md:gap-2.5 lg:border-t-0 xl:gap-3 ',
           { 'flex flex-col xl:py-2': sizeVariant === 'large' },
           {
             'flex flex-col justify-between border-t-2 lg:flex-row lg:py-2.5 2xl:py-3':
@@ -73,7 +73,7 @@ export const DescriptionGroup = ({
           </div>
         ) : null}
 
-        <div className='flex  w-full flex-col xl:gap-2'>
+        <div className='flex w-full flex-col lg:gap-2'>
           {sizeVariant === 'small' && top}
           {descriptionLang === 'ru' && (
             <DescriptionItem
