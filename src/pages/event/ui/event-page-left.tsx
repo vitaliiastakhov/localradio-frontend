@@ -29,10 +29,7 @@ export const EventPageLeft = ({
           bottom={
             <div className='border-t-2 border-black'>
               {eventSchedule?.map(({ name, info }) => (
-                <div
-                  key={name}
-                  className='flex flex-col uppercase [&>*]:w-full '
-                >
+                <div key={name} className='grid uppercase [&>*]:w-full '>
                   <div className='py-1.5 pb-2 normal-case 2xl:py-3'>
                     <DescriptionItem sizeVariant='small' html={info} />
                   </div>

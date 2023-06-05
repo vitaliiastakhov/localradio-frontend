@@ -18,7 +18,7 @@ export const ReleasePageCenter = ({
 
   return (
     <div className='order-1 h-full border-black px-1.5 sm:px-3 lg:border-x-2 '>
-      <div className='flex flex-col sm:pt-3 '>
+      <div className='grid sm:pt-3 '>
         <div className='flex aspect-square  max-h-[80vh] border-l-2 border-black  2xl:max-h-full'>
           <div className='relative w-full min-w-max  border-y-2 border-r-2  border-black transition-all duration-300 hover:w-[1200%]'>
             {attributes?.cover.data?.attributes?.url && (
@@ -33,7 +33,7 @@ export const ReleasePageCenter = ({
         </div>
       </div>
 
-      <div className='flex flex-col gap-1 py-2 text-[0.8rem] font-medium uppercase md:text-[0.85rem]  '>
+      <div className='grid gap-1 py-2 text-[0.8rem] font-medium uppercase md:text-[0.85rem]  '>
         <CardDate
           formattedDate={formattedDate}
           text={attributes?.type}

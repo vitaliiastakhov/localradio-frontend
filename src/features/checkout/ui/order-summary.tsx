@@ -18,7 +18,7 @@ export const CheckoutOrderSummary = ({
   const [openedList, openList] = useState(false);
 
   return (
-    <div className='flex  flex-col gap-3 border-y-2 border-black  py-3  font-medium uppercase leading-none lg:hidden'>
+    <div className='grid gap-3 border-y-2 border-black py-3 font-medium uppercase leading-none lg:hidden'>
       <button
         onClick={() => openList((prev) => !prev)}
         className='flex  flex-wrap justify-between gap-1.5'

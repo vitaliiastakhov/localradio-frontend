@@ -41,7 +41,7 @@ export const ShopPageCenter = ({ item }: ShopPageCenterProps) => {
   return (
     <div className='h-full border-black px-1.5 sm:px-3 lg:border-x-2 lg:pt-3'>
       <div className='flex aspect-square  border-l-2 border-black  2xl:max-h-full'>
-        <div className='relative w-full min-w-max  border-y-2 border-r-2  border-black'>
+        <div className='relative w-full min-w-max  border-y-2 border-r-2 border-black'>
           <NextImage
             alt=''
             src={currentImage ?? ''}
@@ -50,14 +50,14 @@ export const ShopPageCenter = ({ item }: ShopPageCenterProps) => {
           />
         </div>
       </div>
-      <div className='flex flex-wrap items-end gap-1 py-1 lg:py-1.5 xl:gap-1.5   2xl:gap-2 2xl:py-2 '>
+      <div className='flex flex-wrap items-end gap-1 py-1 lg:py-1.5 xl:gap-1.5 2xl:gap-2 2xl:py-2 '>
         {images?.map(({ attributes }, i) => (
           <button
             key={attributes?.url}
+            type='button'
             title={'Image ' + (i + 1)}
             onClick={() => setCurrentImage(attributes?.url)}
-            type='button'
-            className={`relative aspect-square w-16   `}
+            className='relative aspect-square w-16'
           >
             <NextImage
               alt=''
@@ -67,7 +67,7 @@ export const ShopPageCenter = ({ item }: ShopPageCenterProps) => {
             />
             <div
               className={clsxm(
-                'absolute  inset-0  border-2 border-black bg-transparent transition-all duration-100 ease-in-out',
+                'absolute inset-0 border-2 border-black bg-transparent transition-all duration-100 ease-in-out',
                 {
                   'border-white backdrop-blur-[2px] lg:-m-0.5':
                     attributes?.url === currentImage,
@@ -77,10 +77,8 @@ export const ShopPageCenter = ({ item }: ShopPageCenterProps) => {
           </button>
         ))}
       </div>
-      <div className='flex justify-between gap-2  pb-2'>
-        <div
-          className={`flex  flex-col gap-1  text-[0.85rem] font-medium uppercase md:text-[0.875rem] `}
-        >
+      <div className='flex justify-between gap-2 pb-2'>
+        <div className='grid gap-1  text-[0.85rem] font-medium uppercase md:text-[0.875rem]'>
           {attributes?.shop_category?.data?.attributes?.slug && (
             <Link
               className='w-fit underline underline-offset-2'
@@ -97,19 +95,18 @@ export const ShopPageCenter = ({ item }: ShopPageCenterProps) => {
           </span>
         </div>
       </div>
-      <div className='bottom-0 flex flex-col text-[0.96rem] uppercase sm:sticky sm:pb-0 md:text-[1.12rem] '>
+      <div className='bottom-0 grid text-[0.96rem] uppercase sm:sticky sm:pb-0 md:text-[1.12rem]'>
         {sizes && (
-          <div className='flex h-full items-center gap-2 border-x-2 border-t-2  border-black bg-primary px-2 py-2 pr-3 text-[0.85rem] font-semibold md:text-[0.875rem] 2xl:text-[1.2rem]'>
+          <div className='flex h-full items-center gap-2 border-x-2 border-t-2 border-black bg-primary px-2 py-2 pr-3 text-[0.85rem] font-semibold md:text-[0.875rem] 2xl:text-[1.2rem]'>
             Size
             <ul className='flex h-full items-center gap-1 xl:gap-3'>
               {sizes?.map((size: string) => (
-                <li key={size} className={`w-full transition-opacity `}>
+                <li key={size} className='w-full transition-opacity'>
                   <button
                     type='button'
                     onClick={() => {
                       selectSize(size);
                     }}
-                    className=''
                   >
                     <GenreItem
                       colorVariant='transparent'

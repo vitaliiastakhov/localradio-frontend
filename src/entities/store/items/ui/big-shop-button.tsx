@@ -86,7 +86,7 @@ export const ShopSubmitElement = ({
         className='flex h-full w-full items-center justify-center font-medium uppercase transition-colors hover:bg-white hover:text-black'
       >
         {!attributes?.soldout ? (
-          <div className=''>
+          <div>
             {!isSubmitted &&
             !selectedSize &&
             sizes?.length > 0 &&

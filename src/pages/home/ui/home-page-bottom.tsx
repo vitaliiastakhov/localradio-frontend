@@ -11,7 +11,7 @@ export const HomePageBottom = ({
   moods,
 }: Omit<HomePageProps, 'homePageRandomMix' | 'schedules' | 'streamIsLive'>) => {
   return (
-    <div className='flex flex-col gap-5 pt-5 lg:pt-10 '>
+    <div className='grid gap-5 pt-5 lg:pt-10 '>
       <div>
         <CardList
           pageVariant='home'

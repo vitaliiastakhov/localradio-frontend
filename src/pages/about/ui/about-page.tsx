@@ -11,8 +11,8 @@ export const AboutPage = ({ description }: AboutPageProps) => {
       <div className='flex flex-1 flex-col'>
         <SecondHeader as='h1' text='Local Radio' />
         <section className='mb-2 grid   flex-1 gap-5  lg:grid-cols-2'>
-          <div className='flex flex-col justify-between gap-5'>
-            <div className=' flex flex-col gap-3 2xl:gap-5 '>
+          <div className='grid justify-between gap-5'>
+            <div className='grid gap-3 2xl:gap-5 '>
               <DescriptionGroup
                 className='px-1.5 lg:px-2 xl:px-3.5'
                 sizeVariant='large'

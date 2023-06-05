@@ -11,14 +11,14 @@ interface CardWrapperProps extends Omit<React.HTMLProps<HTMLElement>, 'size'> {
 export const CardWrapper = memo(
   ({ children, sizeVariant = 'standard', type, ...rest }: CardWrapperProps) => {
     return (
-      <article className=' relative flex flex-col   gap-y-1' {...rest}>
+      <article className='relative grid gap-y-1' {...rest}>
         {(type === 'mix' ||
           type === 'event' ||
           type === 'release' ||
           type === 'show' ||
           type === 'guest') &&
         sizeVariant === 'standard' ? (
-          <div className={`flex h-full  flex-col border-2 border-black  `}>
+          <div className='flex h-full  flex-col border-2 border-black'>
             {children}
           </div>
         ) : (

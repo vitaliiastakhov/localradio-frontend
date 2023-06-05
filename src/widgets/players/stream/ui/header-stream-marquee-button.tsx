@@ -44,11 +44,11 @@ export const HeaderStreamMarqueeButton = ({
 
   return (
     <button
-      disabled={disabled}
       type='button'
+      disabled={disabled}
       onClick={handleClick}
       className={clsxm(
-        'order-2 flex h-full w-full items-center uppercase transition-colors  lg:order-1   2xl:gap-1',
+        'order-2 flex h-full w-full items-center uppercase transition-colors lg:order-1 2xl:gap-1',
         { 'cursor-default': !streamIsLoaded }
       )}
     >

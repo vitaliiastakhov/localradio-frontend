@@ -24,14 +24,14 @@ export const ScheduleGroup = ({
   const customDate = new Date(schedule?.date);
   const todayOrTomorrow = isTodayOrTomorrow(customDate);
   return (
-    <div className='flex flex-col overflow-hidden rounded-lg border-2 border-black text-[0.75rem] leading-[0.8] md:text-[0.95rem] lg:leading-[0.85] xl:text-[1rem] 2xl:text-[1.05rem]'>
+    <div className='grid overflow-hidden rounded-lg border-2 border-black text-[0.75rem] leading-[0.8] md:text-[0.95rem] lg:leading-[0.85] xl:text-[1rem] 2xl:text-[1.05rem]'>
       <div
         className={clsxm(
           'sticky top-0 flex items-center bg-primary  px-[4px] py-[4px] font-medium text-black',
           { 'bg-[red]': isStreaming && todayOrTomorrow === 'today' }
         )}
       >
-        <div className='flex w-full flex-wrap items-center justify-between gap-x-3  overflow-hidden lg:gap-x-3  '>
+        <div className='flex w-full flex-wrap items-center justify-between gap-x-3  overflow-hidden lg:gap-x-3'>
           <div className='flex gap-0.5 py-[6px] pl-1.5 lg:pl-2 2xl:gap-1 2xl:pl-3'>
             <ScheduleItemDate
               todayOrTomorrow={todayOrTomorrow}
@@ -46,7 +46,7 @@ export const ScheduleGroup = ({
         </div>
       </div>
       <div className=' bg-black px-[4px] py-1.5 2xl:py-2'>
-        <div className='flex flex-col gap-1.5'>
+        <div className='grid gap-1.5'>
           {schedule?.schedule?.map((schedule) => {
             return (
               <ScheduleItem
@@ -57,7 +57,7 @@ export const ScheduleGroup = ({
           })}
           {schedule?.cover?.url && (
             <div
-              className={clsx('relative hidden aspect-square lg:w-full ', {
+              className={clsx('relative hidden aspect-square lg:w-full', {
                 'lg:block': todayOrTomorrow || openedCover || index === 0,
               })}
             >
@@ -73,6 +73,8 @@ export const ScheduleGroup = ({
       </div>
       {!todayOrTomorrow && schedule?.cover?.url && index !== 0 && (
         <button
+          aria-label={(openedCover ? 'Close' : 'Open') + ' cover'}
+          type='button'
           onClick={() => {
             setOpenedCover((prev) => !prev);
           }}

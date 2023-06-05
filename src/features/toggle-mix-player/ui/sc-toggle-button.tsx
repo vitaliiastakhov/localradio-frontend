@@ -93,13 +93,13 @@ export const SCToggleButton: FC<SCToggleButtonProps> = ({
       aria-label='Play and pause soundcloud player'
       onClick={handlePlaySCButton}
       className={clsx(
-        'group absolute flex aspect-square h-[clamp(1.75rem,8vw,2.5rem)] w-[clamp(1.75rem,8vw,2.5rem)] items-center justify-center overflow-hidden md:h-12 md:w-12  2xl:h-16 2xl:w-16',
+        'group absolute flex aspect-square h-[clamp(2rem,8vw,2.5rem)] w-[clamp(2rem,8vw,2.5rem)] items-center justify-center overflow-hidden md:h-12 md:w-12 2xl:h-16 2xl:w-16',
         className
       )}
     >
       <div
         className={clsxm(
-          'absolute inset-0 bg-white backdrop-invert transition  duration-150 hover:bg-white md:bg-opacity-75 md:backdrop-blur-[20px] md:backdrop-saturate-200',
+          'absolute inset-0 bg-white backdrop-invert transition duration-150 hover:bg-white md:bg-opacity-75 md:backdrop-blur-[20px] md:backdrop-saturate-200',
           {
             'bg-opacity-100': linkToMix === attributes?.slug && SCIsPlaying,
           }

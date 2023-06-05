@@ -37,8 +37,8 @@ export const MainHeaderDesktop = () => {
     <div className='grid h-[var(--header-height)] grid-cols-3 items-center justify-between gap-2 bg-primary uppercase md:justify-between lg:flex  lg:h-auto lg:bg-transparent lg:pl-3.5 2xl:pl-5'>
       <div className='flex h-full items-center   self-start group-hover:border-secondary-dark lg:hidden '>
         <button
-          onClick={() => openMenu(!isOpenedMenu)}
           type='button'
+          onClick={() => openMenu(!isOpenedMenu)}
           aria-label='Toggle navigation menu'
           className='flex h-[35px] w-[35px]  flex-col items-center  justify-center px-1.5   '
         >
@@ -77,8 +77,8 @@ export const MainHeaderDesktop = () => {
         <HeaderLink text='About' href='/about' />
         <HeaderLinkWrapper type='icon'>
           <button
-            title='Search Button'
             type='button'
+            title='Search Button'
             onClick={() => openSearchModal(true)}
             className='flex h-full  flex-1  flex-col justify-center px-1.5 2xl:px-2    '
           >
@@ -93,8 +93,8 @@ export const MainHeaderDesktop = () => {
         <div className=' flex h-full items-center gap-2 px-1.5 lg:hidden lg:gap-[1rem] xl:gap-[1.2rem] 2xl:gap-[1.6rem]'>
           <HeaderLinkWrapper>
             <button
-              title='Search Button'
               type='button'
+              title='Search Button'
               onClick={() => openSearchModal(true)}
               className='justify-self-start rounded-full stroke-black lg:hidden lg:px-2  2xl:px-3 '
             >

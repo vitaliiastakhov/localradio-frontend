@@ -30,14 +30,14 @@ export const MixNavigation = ({
   return (
     <>
       <div className='py-0.5 2xl:py-2'>
-        <div className='flex h-fit flex-1 items-end gap-1 text-[0.8rem] font-medium   uppercase xl:text-[0.875rem]  2xl:text-[0.95rem]'>
+        <div className='flex h-fit flex-1 items-end gap-1 text-[0.8rem] font-medium uppercase xl:text-[0.875rem] 2xl:text-[0.95rem]'>
           <MixSlideButton slug={siblingsSlug?.prev} direction='left' />
           <PlayerToggle links={links} currentMixPlayer={currentMixPlayer} />
           <MixSlideButton slug={siblingsSlug?.next} direction='right' />
         </div>
       </div>
 
-      <div className='flex flex-col '>
+      <div className='grid'>
         {links.youtube && (
           <YoutubeToggleElement youtubeVideoLink={links.youtube} page='mix' />
         )}

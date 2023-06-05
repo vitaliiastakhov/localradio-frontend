@@ -7,7 +7,6 @@ import { InputProps } from '../types/types';
 
 const TextInput = createView<InputProps>()
   .displayName('TextInput')
-
   .map((props) => {
     const {
       inputRef,
@@ -69,6 +68,7 @@ const TextInput = createView<InputProps>()
       ...rest
     }) => (
       <InputErrorWrapper
+        className='px-2 lg:px-2.5'
         {...rest}
         ref={inputRef}
         value={value}

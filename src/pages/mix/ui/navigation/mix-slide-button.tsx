@@ -10,6 +10,7 @@ interface MixSlideButtonProps {
 export const MixSlideButton = ({ slug, direction }: MixSlideButtonProps) => {
   return (
     <Button
+      type='button'
       sizeVariant='standard'
       aria-label={`Go to ${
         direction === 'left' ? 'previous' : 'next'

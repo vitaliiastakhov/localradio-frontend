@@ -68,15 +68,15 @@ export const SearchModal = () => {
         >
           <div className='fixed  inset-0  top-0 z-30 flex w-full justify-center overflow-y-auto '>
             <Dialog.Panel className='w-full lg:px-[5%] 2xl:px-[10%]'>
-              <div className='flex flex-col '>
+              <div className='grid'>
                 <div className='sticky top-1.5 mt-[calc(var(--header-height)/3.5)] flex w-full flex-1 flex-col   px-1.5  text-[0.8rem]  md:px-3  lg:px-3.5 xl:text-[0.875rem] '>
-                  <div className='flex   items-center '>
+                  <div className='flex items-center'>
                     <SearchForm />
                   </div>
                 </div>
                 <div className='px-1.5 pt-3 md:px-3 lg:px-3.5 lg:pt-3.5  2xl:pt-5'>
                   {searchValue && startedSearch && (
-                    <div className='flex  flex-col justify-center gap-3    text-2xl font-semibold uppercase leading-none  text-black '>
+                    <div className='grid items-center gap-3 text-2xl font-semibold uppercase leading-none text-black '>
                       {(searchedData.mixes?.data.length ||
                         searchedData.genres?.data.length) &&
                       searchValue.length > 0

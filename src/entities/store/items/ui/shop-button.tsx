@@ -17,11 +17,13 @@ export const ShopButton = ({
   sizeVariant = 'large',
   disabled,
   quantity,
+  type = 'button',
   ...rest
 }: ShopButtonProps) => {
   return (
     <button
       {...rest}
+      type={type}
       className={clsxm(
         'flex aspect-square h-full items-center justify-center stroke-white px-1.5 transition-colors ',
         {

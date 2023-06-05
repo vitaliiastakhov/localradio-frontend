@@ -8,7 +8,7 @@ export const RegionForm = () => {
   });
 
   return (
-    <div className='flex flex-col gap-2'>
+    <div className='grid gap-2'>
       <div className='flex '>
         <h5 className='text-[1.2rem] font-medium uppercase leading-none  md:text-[1.5rem] 2xl:text-[1.9rem]'>
           Select region

@@ -14,19 +14,19 @@ export const CheckoutForm = () => {
   });
   return (
     <form onSubmit={handleSubmit}>
-      <div className='flex  flex-col gap-5'>
+      <div className='grid gap-5'>
         <div className='grid gap-3 lg:max-w-[900px] lg:gap-3.5 2xl:gap-5'>
           <ContactDetailsForm />
           <RegionForm />
         </div>
         <button
+          type='submit'
           className={clsxm(
-            'flex  w-fit bg-black px-4 py-3 uppercase leading-none text-primary',
+            'flex w-fit bg-black px-4 py-3 uppercase leading-none text-primary',
             {
-              'pointer-events-none  bg-white text-gray-300 ': submitIsDisabled,
+              'pointer-events-none bg-white text-gray-300': submitIsDisabled,
             }
           )}
-          type='submit'
         >
           Place order
         </button>

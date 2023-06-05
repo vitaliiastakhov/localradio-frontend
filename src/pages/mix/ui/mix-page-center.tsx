@@ -33,7 +33,7 @@ const MixPageCenter = ({ mixes, mixNext, mixPrev }: MixPageCenterProps) => {
         }}
       />
 
-      <div className='flex flex-col gap-1.5 py-2 text-[0.8rem] font-medium uppercase md:text-[0.85rem]'>
+      <div className='grid gap-1.5 py-2 text-[0.8rem] font-medium uppercase md:text-[0.85rem]'>
         <CardDate
           formattedDate={formattedDate}
           link={project?.locationLink}

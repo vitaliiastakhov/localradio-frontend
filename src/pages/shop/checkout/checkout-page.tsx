@@ -22,7 +22,7 @@ export const CheckoutPage = () => {
         <div className=' flex flex-1  lg:gap-3.5  '>
           <div className='flex flex-1 flex-col '>
             <ArchiveSecondHeader text='Checkout' variant='shop' />
-            <div className='flex  flex-col gap-3.5 px-1.5 md:px-3  lg:px-3.5'>
+            <div className='grid gap-3.5 px-1.5 md:px-3  lg:px-3.5'>
               <CheckoutOrderSummary products={products} />
               <div className=' mb-5 flex w-full flex-col gap-1.5 lg:w-[calc(100%-450px)]  lg:gap-3.5 xl:w-[calc(100%-550px)] 2xl:w-[calc(100%-650px)]  2xl:gap-5'>
                 <CheckoutForm />

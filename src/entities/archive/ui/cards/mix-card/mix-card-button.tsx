@@ -69,7 +69,7 @@ export const MixCardButton = memo(
         type='button'
         aria-label={ariaLabel}
         onClick={onClick}
-        className='flex   h-full w-full   items-center  justify-center bg-white bg-opacity-30 transition-all group-hover:bg-opacity-10 group-hover:backdrop-blur-0 md:backdrop-blur-[2px]'
+        className='flex h-full w-full items-center justify-center bg-white bg-opacity-30 transition-all group-hover:bg-opacity-10 group-hover:backdrop-blur-0 md:backdrop-blur-[2px]'
       >
         <div className=' w-[0.95rem] 2xl:w-[1.25rem]'>
           {(!isClickedPlay || !isClicked) && <Icon.PlayIcon />}

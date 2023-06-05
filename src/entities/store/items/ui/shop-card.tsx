@@ -20,7 +20,7 @@ export const ShopCard = (product: ShopItemEntity) => {
   return (
     <CardWrapper type='shop'>
       <div className='relative  flex h-full flex-col justify-items-stretch border-2 border-black text-[0.7rem] font-medium uppercase'>
-        <div className=' '>
+        <div>
           <div className='relative flex  aspect-square w-full justify-center'>
             {imagesList?.map(
               ({ attributes: imgA }, id) =>
@@ -33,7 +33,7 @@ export const ShopCard = (product: ShopItemEntity) => {
                     )}
                     type='shop'
                     href={`/shop/products/${attributes?.slug}`}
-                    alt={altText}
+                    alt={altText + ' ' + id}
                     src={imgA?.url}
                   />
                 )
@@ -154,18 +154,16 @@ export const ShopCard = (product: ShopItemEntity) => {
             )}
           >
             <div className=' flex w-full items-center  justify-between px-1.5 sm:px-3'>
-              <div className=''>
+              <div>
                 {attributes?.shop_category?.data?.attributes?.slug ===
                 'records' ? (
                   attributes.title.split('-').map((word) => (
-                    <h3 key={word} className='flex flex-col leading-none'>
+                    <h3 key={word} className='grid leading-none'>
                       {word}
                     </h3>
                   ))
                 ) : (
-                  <h3 className=' flex flex-col  leading-none'>
-                    {attributes?.title}
-                  </h3>
+                  <h3 className='grid leading-none'>{attributes?.title}</h3>
                 )}
               </div>
 
@@ -174,7 +172,7 @@ export const ShopCard = (product: ShopItemEntity) => {
                   {attributes?.price} <span>₽</span>
                 </div>
               ) : (
-                <div className=''>Soldout</div>
+                <div>Soldout</div>
               )}
             </div>
           </div>

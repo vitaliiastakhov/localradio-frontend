@@ -92,11 +92,11 @@ export const CartModal = () => {
               ))
             : null}
         </div>
-        <div className=' flex flex-col justify-end '>
+        <div className='grid items-end'>
           {totalPrice !== undefined &&
             totalPrice !== null &&
             totalPrice > 0 && (
-              <div className='my-4 flex  items-center  justify-between px-1.5 text-[0.95rem] md:px-3 lg:px-3.5 xl:text-[1.15rem] '>
+              <div className='my-4 flex  items-center  justify-between px-1.5 text-[0.95rem] md:px-3 lg:px-3.5 xl:text-[1.15rem]'>
                 <div>Total: {totalPrice} ₽</div>
               </div>
             )}

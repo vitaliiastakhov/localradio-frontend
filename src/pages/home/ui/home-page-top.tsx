@@ -37,7 +37,7 @@ export const HomePageTop = (props: HomePageTopProps) => {
   return (
     <section
       className={clsxm(
-        'flex flex-col overflow-hidden border-b-2 border-black lg:grid lg:h-[calc(100vh-var(--header-height))]',
+        'grid overflow-hidden border-b-2 border-black lg:h-[calc(100vh-var(--header-height))]',
         {
           'lg:grid-cols-[1fr,0]': schedules?.length === 0 || !schedules,
         },
@@ -48,7 +48,7 @@ export const HomePageTop = (props: HomePageTopProps) => {
       )}
     >
       <div className='h-full lg:grid  lg:grid-rows-[1fr,min-content]'>
-        <div className='flex h-full max-w-[100vw] flex-col overflow-hidden '>
+        <div className='flex h-full max-w-[100vw] flex-col overflow-hidden'>
           <HomePageToggle
             schedulesExist={schedules?.length === 0 || !schedules}
             streamData={streamData}
@@ -69,7 +69,7 @@ export const HomePageTop = (props: HomePageTopProps) => {
       </div>
 
       {schedules && schedules.length > 0 && (
-        <div className='flex h-full flex-col  overflow-hidden bg-black lg:gap-2 lg:p-1.5 2xl:p-2 '>
+        <div className='flex h-full flex-col  overflow-hidden bg-black lg:gap-2 lg:p-1.5 2xl:p-2'>
           <ScheduleList
             schedules={schedules}
             isStreaming={streamData?.streamIsLive}

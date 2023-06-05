@@ -31,12 +31,12 @@ export const CardList = memo((props: CardListProps) => {
   }, [data, setCardListItems]);
 
   return (
-    <section className=' flex w-full flex-col gap-3 pb-2 font-semibold 2xl:pb-[1rem]'>
+    <section className='flex w-full flex-col gap-3 pb-2 font-semibold 2xl:pb-[1rem]'>
       <div>
         {cardListItems && cardListItems.length > 0 ? (
           <div>
             {pageVariant === 'other' && (
-              <div className='flex flex-col text-[1.85rem] uppercase leading-none sm:text-[2.3rem] lg:text-[3rem]'>
+              <div className='grid text-[1.85rem] uppercase leading-none sm:text-[2.3rem] lg:text-[3rem]'>
                 <CardListHeader
                   sizeVariant='small'
                   secondHeader={secondHeader}
@@ -45,7 +45,7 @@ export const CardList = memo((props: CardListProps) => {
               </div>
             )}
             {pageVariant === 'home' && (
-              <div className='pb-1 lg:pb-1.5 '>
+              <div className='pb-1 lg:pb-1.5'>
                 <div className='w-fit bg-black  text-primary hover:text-secondary-dark'>
                   <Link href={`/${variant === 'mixes' ? 'archive' : variant}`}>
                     <Heading<'h2'>

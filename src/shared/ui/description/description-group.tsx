@@ -36,9 +36,9 @@ export const DescriptionGroup = ({
       <div
         className={clsxm(
           'gap-1.5 border-black py-1.5 md:gap-2.5 lg:border-t-0 xl:gap-3 ',
-          { 'flex flex-col xl:py-2': sizeVariant === 'large' },
+          { 'grid xl:py-2': sizeVariant === 'large' },
           {
-            'flex flex-col justify-between border-t-2 lg:flex-row lg:py-2.5 2xl:py-3':
+            'grid justify-between border-t-2 lg:grid-flow-col lg:py-2.5 2xl:py-3':
               sizeVariant !== 'large',
           }
         )}

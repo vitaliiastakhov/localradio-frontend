@@ -24,8 +24,8 @@ export const PageWrapper = ({
   return (
     <main className='relative  w-full xl:pb-6 '>
       {variant === 'mix' && <ArchiveNavBar />}
-      <div className='flex flex-col pt-1.5 lg:pt-1'>
-        <div className=' relative mx-1.5 flex flex-col py-1.5 sm:mx-3 sm:py-2 md:mx-3 lg:mx-5 lg:items-center lg:py-4 2xl:py-6'>
+      <div className='grid pt-1.5 lg:pt-1'>
+        <div className=' relative mx-1.5 grid py-1.5 sm:mx-3 sm:py-2 md:mx-3 lg:mx-5 lg:justify-center lg:py-4 2xl:py-6'>
           {variant === 'release' && (
             <Heading
               variant='page'
@@ -42,7 +42,7 @@ export const PageWrapper = ({
             </Heading>
           )}
         </div>
-        <section className='flex flex-col leading-none lg:grid lg:grid-cols-[1fr,1.7fr,1fr] 2xl:grid-cols-[1fr,1.5fr,1fr]'>
+        <section className='grid leading-none lg:grid-cols-[1fr,1.7fr,1fr] 2xl:grid-cols-[1fr,1.5fr,1fr]'>
           <div className='order-2 border-black  lg:order-none lg:border-b-2'>
             <div
               className={clsxm('sticky border-black lg:border-t-2', {
