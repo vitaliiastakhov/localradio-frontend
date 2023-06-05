@@ -49,12 +49,10 @@ export const HomePageTopInfo = ({
                 </div>
 
                 <Link
-                  className='lg:hover:text-secondary-dark '
+                  className='lg:hover:text-secondary-dark text-[clamp(1rem,5vw,1.25rem)] font-semibold uppercase leading-[0.8] sm:text-[1.6rem] md:leading-[0.85] lg:text-[1.85rem] 2xl:leading-[0.8]'
                   href={'archive/' + attributes?.slug}
                 >
-                  <h1 className='text-[clamp(1rem,5vw,1.25rem)] font-semibold uppercase leading-[0.8] sm:text-[1.6rem] md:leading-[0.85] lg:text-[1.85rem] 2xl:leading-[0.8]'>
                     {attributes?.name}
-                  </h1>
                 </Link>
               </div>
               <CardDate formattedDate={formattedDate} type='mix' />

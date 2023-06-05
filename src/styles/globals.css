@@ -25,7 +25,7 @@
 @layer base {
   @supports (font-variation-settings: normal) {
     @font-face {
-      font-family: PP Right Grotesk Wide Variable;
+      font-family: 'PP Right Grotesk Wide Variable';
       src: url('/fonts/PPRightGroteskWideVariable.ttf') format('truetype');
       font-style: normal;
       font-weight: 100 900;
