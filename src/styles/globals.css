@@ -17,9 +17,7 @@
   --col-gap: clamp(20px, 10vw, 60px);
   --col-hint: 0px;
   --scroller-padding: 50px;
-  --col-size: calc(
-    (100% / var(--visible-cols)) - var(--col-gap) - var(--col-hint)
-  );
+  --col-size: calc((100% / var(--visible-cols)) - var(--col-gap) - var(--col-hint));
 }
 
 @layer base {
@@ -83,6 +81,7 @@
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
   }
+
   @media (prefers-reduced-motion: no-preference) {
     .animated-underline {
       transition: 0.3s ease;
@@ -95,6 +94,7 @@
   .animated-underline:focus-visible {
     background-size: 0 2px, 100% 2px;
   }
+
   input[type='number']::-webkit-inner-spin-button,
   input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -104,14 +104,7 @@
 
 @layer components {
   .play {
-    @apply h-0
-		w-0
-    border-b-[10px]
-    border-l-[16px]
-    border-t-[10px]
-    border-b-transparent
-    border-l-black
-    border-t-transparent;
+    @apply h-0 w-0 border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-black border-t-transparent;
   }
 }
 
@@ -120,7 +113,9 @@
     --player-height: 50px;
   }
 }
+
 @media screen and (min-width: 1024px) {
+
   .moodList,
   .genresList,
   .showsList {
@@ -133,6 +128,7 @@
     --nav-height: calc(var(--header-height) / 2);
   }
 }
+
 @media (min-width: 1400px) {
   :root {
     --header-height: 5rem;
