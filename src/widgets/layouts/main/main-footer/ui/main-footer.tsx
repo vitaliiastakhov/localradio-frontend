@@ -12,7 +12,7 @@ export const MainFooter = () => {
   });
 
   return (
-    <footer >
+    <footer>
       <div
         className={clsxm(
           'flex  flex-col  justify-between   gap-1.5 bg-black pt-2.5 lg:flex-row lg:items-end lg:pt-4 2xl:pt-5',

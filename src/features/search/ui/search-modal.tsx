@@ -79,7 +79,7 @@ export const SearchModal = () => {
                     <div className='flex  flex-col justify-center gap-3    text-2xl font-semibold uppercase leading-none  text-black'>
                       {(searchedData.mixes?.data.length ||
                         searchedData.genres?.data.length) &&
-                        searchValue.length > 0
+                      searchValue.length > 0
                         ? `Search results for "${searchValue}"`
                         : 'Nothing was found'}
                     </div>

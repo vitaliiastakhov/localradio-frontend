@@ -25,7 +25,7 @@ export const CartItem = ({ product }: { product: Product }) => {
           <div className='w-full px-1.5 leading-none lg:px-3'>
             <div className='flex h-full flex-col gap-1.5'>
               <div className='flex h-full  flex-col justify-between gap-1.5 md:gap-3'>
-                <div className='flex flex-col gap-0.5 text-[0.95rem]  lg:gap-1.5 2xl:gap-2' >
+                <div className='flex flex-col gap-0.5 text-[0.95rem]  lg:gap-1.5 2xl:gap-2'>
                   <div className='flex justify-between'>
                     <Link
                       className=' hover:text-secondary-dark'
@@ -43,8 +43,8 @@ export const CartItem = ({ product }: { product: Product }) => {
                   )}
                 </div>
 
-                <div className='flex flex-col gap-1.5 text-[0.95rem] md:gap-3' >
-                  <div className='flex w-full flex-wrap items-end' >
+                <div className='flex flex-col gap-1.5 text-[0.95rem] md:gap-3'>
+                  <div className='flex w-full flex-wrap items-end'>
                     <CartCalculation
                       productId={product.id}
                       selectedSize={selectedSize}

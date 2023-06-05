@@ -80,10 +80,11 @@ export const HomePageToggle = ({
         <YoutubeToggleElement
           page='home'
           youtubeVideoLink={youtubeLink}
-          className={`absolute inset-0 ${currentMixPlayer === 'audio'
+          className={`absolute inset-0 ${
+            currentMixPlayer === 'audio'
               ? 'pointer-events-none bg-black/60 backdrop-blur-md backdrop-opacity-80'
               : ''
-            } `}
+          } `}
         />
       )}
       {homePageRandomMix && !streamData?.streamIsLive && SCLink && (

@@ -24,7 +24,7 @@ export const PageWrapper = ({
   return (
     <main className='relative  w-full xl:pb-6'>
       {variant === 'mix' && <ArchiveNavBar />}
-    < div className = 'flex flex-col pt-1.5 lg:pt-1' >
+      <div className='flex flex-col pt-1.5 lg:pt-1'>
         <div className=' relative mx-1.5 flex flex-col py-1.5 sm:mx-3 sm:py-2 md:mx-3 lg:mx-5 lg:items-center lg:py-4 2xl:py-6'>
           {variant === 'release' && (
             <Heading
@@ -67,8 +67,8 @@ export const PageWrapper = ({
             </div>
           </div>
         </section>
-  { bottom }
-      </div >
-    </main >
+        {bottom}
+      </div>
+    </main>
   );
 };

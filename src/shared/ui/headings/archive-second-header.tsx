@@ -58,7 +58,7 @@ export const ArchiveSecondHeader = ({ text, variant }: SecondHeaderProps) => {
 
       <div className='gap-x-1 overflow-hidden xl:gap-x-3 2xl:gap-x-4'>
         <span className='lg:w-fit'>{text}</span>
-      </div >
-    </SecondHeader >
+      </div>
+    </SecondHeader>
   );
 };

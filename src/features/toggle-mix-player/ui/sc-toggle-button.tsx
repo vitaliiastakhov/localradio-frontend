@@ -21,7 +21,7 @@ import { SCToggleElementProps } from './sc-toggle-element';
 
 interface SCToggleButtonProps
   extends Pick<SCToggleElementProps, 'SCLink'>,
-  HTMLAttributes<HTMLButtonElement> {
+    HTMLAttributes<HTMLButtonElement> {
   attributes: Maybe<MixEntity['attributes']>;
   mixId: Maybe<string>;
 }
@@ -108,16 +108,16 @@ export const SCToggleButton: FC<SCToggleButtonProps> = ({
       <div className='w-[0.9rem] 2xl:w-[1.2rem]'>
         {((linkToMix === attributes?.slug && !SCIsPlaying) ||
           linkToMix !== attributes?.slug) && (
-            <div className='translate-x-[1px]'>
-              <Icon.PlayIcon />
-            </div>
-          )}
+          <div className='translate-x-[1px]'>
+            <Icon.PlayIcon />
+          </div>
+        )}
         {linkToMix === attributes?.slug && SCIsPlaying && (
           <div className='translate-x-[1px]'>
             <Icon.PauseIcon />
           </div>
         )}
       </div>
-    </Button >
+    </Button>
   );
 };
