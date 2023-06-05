@@ -19,8 +19,8 @@ export const CheckoutPage = () => {
   if (products.length > 0)
     return (
       <div className='flex flex-1'>
-        <div className=' flex flex-1  lg:gap-3.5  '>
-          <div className='flex flex-1 flex-col '>
+        <div className=' flex flex-1  lg:gap-3.5'>
+          <div className='flex flex-1 flex-col'>
             <ArchiveSecondHeader text='Checkout' variant='shop' />
             <div className='flex  flex-col gap-3.5 px-1.5 md:px-3  lg:px-3.5'>
               <CheckoutOrderSummary products={products} />

@@ -53,18 +53,17 @@ export const ArchiveNavBar = () => {
   return (
     <nav
       ref={elementRef}
-      className={`sticky z-10 w-full text-[0.8rem] font-semibold uppercase transition-all duration-300 xl:text-[0.95rem]  2xl:text-[1rem]  ${
-        !visible
+      className={`sticky z-10 w-full text-[0.8rem] font-semibold uppercase transition-all duration-300 xl:text-[0.95rem]  2xl:text-[1rem]  ${!visible
           ? 'top-[calc(30px+2px)] xxs:top-[calc(60px+2px)] lg:top-0 '
           : 'top-[calc(var(--header-height)+30px+3px)] xxs:top-[calc(var(--header-height)+60px+3px)] lg:top-[var(--header-height)]'
-      }`}
+        }`}
     >
       <ul className={styles.navList}>
         <ArchiveNavItem text='All' link='/archive' />
         <ArchiveNavItem text='Residents' link='/archive/residents' />
 
         <li onClick={() => handleClick('mood')} className={styles.moodItem}>
-          <div className='relative items-center justify-center tracking-[0.01em]  md:flex md:h-full md:w-full '>
+          <div className='relative items-center justify-center tracking-[0.01em]  md:flex md:h-full md:w-full'>
             Moods
           </div>
         </li>
@@ -104,7 +103,7 @@ export const ArchiveNavBar = () => {
             </div>
           )}
         <li onClick={() => handleClick('genres')} className={styles.genresItem}>
-          <div className='relative items-center justify-center tracking-[0.01em]  md:flex md:h-full md:w-full '>
+          <div className='relative items-center justify-center tracking-[0.01em]  md:flex md:h-full md:w-full'>
             Genres
           </div>
         </li>

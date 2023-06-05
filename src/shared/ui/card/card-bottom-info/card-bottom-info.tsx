@@ -32,7 +32,6 @@ export const CardBottomInfo = ({
     <div
       className={clsxm(
         'relative flex h-full flex-col justify-between [&>*]:border-black  group-hover:[&>*]:border-black  group-hover:[&>*]:text-black',
-
         {
           '[&>*]:p-[clamp(0.15rem,1.5vw,0.375rem)]': sizeVariant === 'standard',
         },
@@ -44,7 +43,7 @@ export const CardBottomInfo = ({
     >
       <div
         className={clsxm(
-          'flex flex-1 flex-col   ',
+          'flex flex-1 flex-col',
           { 'border-b border-black': genres?.data.length },
           {
             'gap-0.5': variant === 'mix' && sizeVariant === 'standard',

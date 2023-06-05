@@ -12,7 +12,7 @@ export const AboutPage = ({ description }: AboutPageProps) => {
         <SecondHeader as='h1' text='Local Radio' />
         <section className='mb-2 grid   flex-1 gap-5  lg:grid-cols-2'>
           <div className='flex flex-col justify-between gap-5'>
-            <div className=' flex flex-col gap-3 2xl:gap-5 '>
+            <div className=' flex flex-col gap-3 2xl:gap-5'>
               <DescriptionGroup
                 className='px-1.5 lg:px-2 xl:px-3.5'
                 sizeVariant='large'
@@ -21,7 +21,7 @@ export const AboutPage = ({ description }: AboutPageProps) => {
                   descriptionEn: description.descriptionEn,
                 }}
                 top={
-                  <div className='pb-0.5 text-xl font-semibold uppercase leading-none md:text-2xl  xl:text-3xl '>
+                  <div className='pb-0.5 text-xl font-semibold uppercase leading-none md:text-2xl  xl:text-3xl'>
                     About
                   </div>
                 }
@@ -60,7 +60,7 @@ export const AboutPage = ({ description }: AboutPageProps) => {
                   </div>
                   <div className='flex flex-wrap'>
                     Location:&nbsp;
-                    <span className=' font-semibold '>
+                    <span className=' font-semibold'>
                       Pyatnitskogo, 52, Voronezh, Voronezh Oblast, 394036
                     </span>
                   </div>

@@ -31,7 +31,7 @@ export const ScheduleGroup = ({
           { 'bg-[red]': isStreaming && todayOrTomorrow === 'today' }
         )}
       >
-        <div className='flex w-full flex-wrap items-center justify-between gap-x-3  overflow-hidden lg:gap-x-3  '>
+        <div className='flex w-full flex-wrap items-center justify-between gap-x-3  overflow-hidden lg:gap-x-3'>
           <div className='flex gap-0.5 py-[6px] pl-1.5 lg:pl-2 2xl:gap-1 2xl:pl-3'>
             <ScheduleItemDate
               todayOrTomorrow={todayOrTomorrow}
@@ -57,7 +57,7 @@ export const ScheduleGroup = ({
           })}
           {schedule?.cover?.url && (
             <div
-              className={clsx('relative hidden aspect-square lg:w-full ', {
+              className={clsx('relative hidden aspect-square lg:w-full', {
                 'lg:block': todayOrTomorrow || openedCover || index === 0,
               })}
             >

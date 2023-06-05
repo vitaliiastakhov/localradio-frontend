@@ -133,7 +133,7 @@ export const BottomPlayerNav = ({ loaded, variant }: BottomPlayerNavProps) => {
                   { 'opacity-100 ': openedMoreMixes }
                 )}
               >
-                <div className='w-4 lg:w-5 '>
+                <div className='w-4 lg:w-5'>
                   <Icon.ArrowIcon />
                 </div>
               </div>

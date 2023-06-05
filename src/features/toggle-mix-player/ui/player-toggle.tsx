@@ -56,6 +56,7 @@ export const PlayerToggle = ({
       )}
     >
       <PlayerToggleButton
+        aria-label='Toggle video (youtube) player'
         disabled={!links.youtube || currentMixPlayerError === 'video'}
         playerType='video'
         onClick={() => links.youtube && toggleMixPlayer('video')}
@@ -68,6 +69,7 @@ export const PlayerToggle = ({
         }
       />
       <PlayerToggleButton
+        aria-label='Toggle audio(soundcloud) player'
         disabled={!links.soundcloud}
         playerType='audio'
         onClick={() => links.soundcloud && toggleMixPlayer('audio')}

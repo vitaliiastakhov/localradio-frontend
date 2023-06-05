@@ -12,7 +12,7 @@ export const MainFooter = () => {
   });
 
   return (
-    <footer className=''>
+    <footer >
       <div
         className={clsxm(
           'flex  flex-col  justify-between   gap-1.5 bg-black pt-2.5 lg:flex-row lg:items-end lg:pt-4 2xl:pt-5',
@@ -23,7 +23,7 @@ export const MainFooter = () => {
         )}
       >
         <div className='flex  h-full  flex-col gap-1.5 px-1.5   text-[0.95rem] font-medium uppercase leading-[1] text-white sm:gap-2  sm:px-2.5  md:text-[1rem]  lg:w-fit lg:px-2 lg:pb-1.5   xl:px-3.5 xl:text-[1.12rem] 2xl:pb-2.5'>
-          <ul className='flex flex-col gap-0.5 lg:gap-1 '>
+          <ul className='flex flex-col gap-0.5 lg:gap-1'>
             <li>Online radio from Voronezh, Russia</li>
             <li>We present our local scene</li>
             <li>We create a community of local artists and more</li>

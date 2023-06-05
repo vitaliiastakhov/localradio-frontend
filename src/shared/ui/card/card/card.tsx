@@ -7,7 +7,7 @@ import {
 import { clsxm } from '@/shared/lib/clsxm';
 import { EntityVariant } from '@/shared/types/entity-variants.interface';
 import type { SizeVariant } from '@/shared/types/size-variant.interface';
-import { CardBottomInfo } from '../card-bottom-info/cardBottomInfo';
+import { CardBottomInfo } from '../card-bottom-info/card-bottom-info';
 import { CardImage } from '../card-image';
 import { CardWrapper } from '../card-wrapper';
 

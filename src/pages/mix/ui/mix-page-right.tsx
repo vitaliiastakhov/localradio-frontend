@@ -8,7 +8,7 @@ export const MixPageRight = ({
     <div className='sticky top-[calc(0.375rem)]  border-y-0 border-black lg:border-t-0 lg:px-2 2xl:px-3.5'>
       <div>
         <div className='flex flex-col justify-between border-black    pt-1.5 text-sm  uppercase leading-none  md:text-[0.98rem]   lg:border-t-0 2xl:pt-2'>
-          <div className='flex justify-between text-[0.95rem]  font-medium    '>
+          <div className='flex justify-between text-[0.95rem]  font-medium   '>
             Tracklist
           </div>
         </div>

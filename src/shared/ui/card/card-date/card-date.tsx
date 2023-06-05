@@ -37,7 +37,7 @@ export const CardDate = memo(
         )}
 
         {(type === 'page' || type === 'release') && !link && (
-          <div className='leading-none '>{text}</div>
+          <div className='leading-none'>{text}</div>
         )}
 
         {link && (

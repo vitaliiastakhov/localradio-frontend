@@ -1,8 +1,9 @@
+import { HTMLAttributes } from 'react';
 import { clsxm } from '@/shared/lib/clsxm';
 import { Button } from '@/shared/ui/button/button';
 import type { CurrentMixPlayer } from '../model/current-mix-player.model';
 
-interface PlayerToggleButtonProps {
+interface PlayerToggleButtonProps extends HTMLAttributes<HTMLButtonElement> {
   disabled: boolean;
   onClick: () => void;
   currentMixPlayer: CurrentMixPlayer;
@@ -18,9 +19,11 @@ export const PlayerToggleButton = ({
   currentMixPlayer,
   text,
   active,
+  ...rest
 }: PlayerToggleButtonProps) => {
   return (
     <Button
+      {...rest}
       colorVariant='clear'
       variant='clear'
       type='button'

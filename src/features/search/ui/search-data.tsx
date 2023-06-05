@@ -12,7 +12,7 @@ interface SearchedDataProps {
 export const SearchData = forwardRef<HTMLDivElement, SearchedDataProps>(
   ({ searchedData, searchValue }, forwardRef) => {
     return (
-      <div ref={forwardRef} className='flex flex-col '>
+      <div ref={forwardRef} className='flex flex-col'>
         <SearchedGenres genres={searchedData.genres} />
 
         {searchedData.mixes && (

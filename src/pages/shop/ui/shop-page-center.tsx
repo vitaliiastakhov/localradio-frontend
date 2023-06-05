@@ -50,7 +50,7 @@ export const ShopPageCenter = ({ item }: ShopPageCenterProps) => {
           />
         </div>
       </div>
-      <div className='flex flex-wrap items-end gap-1 py-1 lg:py-1.5 xl:gap-1.5   2xl:gap-2 2xl:py-2 '>
+      <div className='flex flex-wrap items-end gap-1 py-1 lg:py-1.5 xl:gap-1.5   2xl:gap-2 2xl:py-2'>
         {images?.map(({ attributes }, i) => (
           <button
             key={attributes?.url}
@@ -97,7 +97,7 @@ export const ShopPageCenter = ({ item }: ShopPageCenterProps) => {
           </span>
         </div>
       </div>
-      <div className='bottom-0 flex flex-col text-[0.96rem] uppercase sm:sticky sm:pb-0 md:text-[1.12rem] '>
+      <div className='bottom-0 flex flex-col text-[0.96rem] uppercase sm:sticky sm:pb-0 md:text-[1.12rem]'>
         {sizes && (
           <div className='flex h-full items-center gap-2 border-x-2 border-t-2  border-black bg-primary px-2 py-2 pr-3 text-[0.85rem] font-semibold md:text-[0.875rem] 2xl:text-[1.2rem]'>
             Size

@@ -32,7 +32,7 @@ export const HomePageTopInfo = ({
         }
       )}
     >
-      <div className='flex flex-col  bg-black font-medium text-primary lg:rounded-lg lg:bg-primary lg:p-2 lg:pt-0  lg:text-black 2xl:pb-3 '>
+      <div className='flex flex-col  bg-black font-medium text-primary lg:rounded-lg lg:bg-primary lg:p-2 lg:pt-0  lg:text-black 2xl:pb-3'>
         <div className=' px-2 py-1 md:py-1.5 lg:px-0 2xl:py-2'>
           <PlayerToggle
             links={links}
@@ -41,7 +41,7 @@ export const HomePageTopInfo = ({
           />
         </div>
         <div className='flex justify-between  px-2 lg:px-1'>
-          <div className='flex w-full flex-col gap-0 '>
+          <div className='flex w-full flex-col gap-0'>
             <div className='flex flex-col gap-1'>
               <div className='flex flex-col 2xl:gap-1'>
                 <div className='flex w-fit items-center text-[0.6rem] font-medium uppercase  lg:text-[0.65rem]'>

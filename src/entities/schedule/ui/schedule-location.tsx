@@ -21,7 +21,7 @@ export const ScheduleLocation = ({
         <div className='bg-black px-2 py-[6px]  leading-[1.05] transition duration-100 ease-out group-hover:bg-secondary-dark lg:pl-3 lg:pr-2'>
           {locationName}
         </div>
-        <ScheduleIconWrapper className='bg-black fill-primary transition duration-100 ease-out group-hover:bg-secondary-dark group-hover:fill-black '>
+        <ScheduleIconWrapper className='bg-black fill-primary transition duration-100 ease-out group-hover:bg-secondary-dark group-hover:fill-black'>
           {locationName === 'Студия' ? (
             <Icon.HomeIcon className='h-2.5 lg:h-[15px]' />
           ) : (

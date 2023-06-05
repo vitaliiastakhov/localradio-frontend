@@ -27,7 +27,7 @@ export const CartCalculation = ({
   });
 
   return (
-    <div className='flex flex-1 items-center text-center '>
+    <div className='flex flex-1 items-center text-center'>
       <div
         className={clsxm('flex w-full items-center leading-none [&>*]:flex', {
           '[&>*]:cursor-default': soldout,

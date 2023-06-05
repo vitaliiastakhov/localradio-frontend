@@ -35,7 +35,7 @@ export const MainHeaderDesktop = () => {
 
   return (
     <div className='grid h-[var(--header-height)] grid-cols-3 items-center justify-between gap-2 bg-primary uppercase md:justify-between lg:flex  lg:h-auto lg:bg-transparent lg:pl-3.5 2xl:pl-5'>
-      <div className='flex h-full items-center   self-start group-hover:border-secondary-dark lg:hidden '>
+      <div className='flex h-full items-center   self-start group-hover:border-secondary-dark lg:hidden'>
         <button
           onClick={() => openMenu(!isOpenedMenu)}
           type='button'
@@ -70,7 +70,7 @@ export const MainHeaderDesktop = () => {
         <Icon.SmallLogo />
       </Link>
 
-      <div className=' hidden items-center gap-1 rounded-lg      bg-primary   p-0.5 lg:flex '>
+      <div className=' hidden items-center gap-1 rounded-lg      bg-primary   p-0.5 lg:flex'>
         <HeaderLink text='Archive' href='/archive' />
         <HeaderLink text='Releases' href='/releases' />
         <HeaderLink text='Events' href='/events' />
@@ -117,7 +117,7 @@ export const MainHeaderDesktop = () => {
         </div>
 
         <div className='  hidden h-full items-center gap-2 lg:flex lg:gap-[1rem]   xl:gap-[1.2rem] 2xl:gap-[1.6rem]'>
-          <div className=' hidden items-center gap-1 rounded-lg bg-primary  p-0.5 lg:flex '>
+          <div className=' hidden items-center gap-1 rounded-lg bg-primary  p-0.5 lg:flex'>
             <HeaderLinkWrapper>
               <Link
                 href='https://bit.ly/lrsite'

@@ -12,7 +12,7 @@ export const EventPageLeft = ({
   eventSchedule,
 }: EventPageLeftProps) => {
   return (
-    <div className='order-2 px-1.5 lg:px-0 '>
+    <div className='order-2 px-1.5 lg:px-0'>
       {descriptionRu ? (
         <DescriptionGroup
           html={{
@@ -21,7 +21,7 @@ export const EventPageLeft = ({
           }}
           top={
             <div className='sticky top-0 flex w-full flex-col justify-between border-black bg-primary   pb-[0.45rem]  text-sm uppercase  leading-none md:text-[0.98rem] lg:border-b-2  lg:border-t-0 2xl:pb-2'>
-              <h4 className='text-[1rem] font-semibold leading-none '>
+              <h4 className='text-[1rem] font-semibold leading-none'>
                 {title}
               </h4>
             </div>

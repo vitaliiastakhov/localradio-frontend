@@ -40,7 +40,7 @@ export const Button = memo(
               colorVariant === 'primary' && !disabled,
           },
           {
-            'h-[clamp(1.375rem,10vw,1.65rem)] w-[clamp(1.375rem,10vw,1.65rem)] px-0 lg:h-7 lg:w-7 2xl:h-8 2xl:w-8':
+            'h-[clamp(1.5rem,10vw,1.875rem)] w-[clamp(1.5rem,10vw,1.875rem)] aspect-square px-0 lg:h-7 lg:w-7 2xl:h-8 2xl:w-8':
               sizeVariant === 'small',
           },
           {
@@ -53,11 +53,7 @@ export const Button = memo(
           },
           {
             'pointer-events-none bg-gray-300 stroke-gray-color text-gray-color':
-              disabled && colorVariant === 'primary',
-          },
-          {
-            'pointer-events-none bg-gray-200 stroke-gray-color text-gray-400':
-              disabled && colorVariant === 'clear',
+              disabled,
           },
           className
         );
@@ -120,9 +116,9 @@ export const Button = memo(
         return (
           <button
             {...rest}
+            type={type}
             className={buttonClasses(className)}
             ref={ref as ForwardedRef<HTMLButtonElement>}
-            type={type}
           />
         );
       }

@@ -46,7 +46,7 @@ export const SearchForm = memo(() => {
 
   return (
     <form
-      className={` relative  flex flex-1 items-center gap-1.5 rounded-lg    `}
+      className='relative flex flex-1 items-center gap-1.5 rounded-lg'
       onSubmit={onSubmitForm}
       method='get'
     >
@@ -60,18 +60,18 @@ export const SearchForm = memo(() => {
         aria-label='Search'
         className='px-8 lg:px-10'
       />
+      <div className='absolute left-0 flex h-full w-8 items-center justify-center stroke-black lg:w-10'>
+        <Icon.SearchIconX className='h-[1.15rem] w-[1.15rem] 2xl:h-[1.35rem] 2xl:w-[1.35rem] ' />
+      </div>
       <button
-        type='button'
+        type='reset'
         onClick={() => openSearchModal(false)}
-        className='absolute right-0 flex h-full w-8 items-center justify-center rounded-lg hover:fill-secondary-dark lg:w-10  '
+        className='absolute right-0 flex h-full w-8 items-center justify-center rounded-lg hover:fill-secondary-dark lg:w-10'
       >
         <div className=' flex h-3 w-3 items-center 2xl:h-3.5 2xl:w-3.5'>
           <Icon.CloseIcon weight='bold' />
         </div>
       </button>
-      <div className='absolute left-0 flex h-full w-8 items-center justify-center stroke-black lg:w-10'>
-        <Icon.SearchIconX className='h-[1.15rem] w-[1.15rem] 2xl:h-[1.35rem] 2xl:w-[1.35rem] ' />
-      </div>
     </form>
   );
 });

@@ -14,7 +14,7 @@ export const ContactDetailsForm = () => {
         </h5>
       </div>
 
-      <div className='grid gap-2 lg:gap-3.5 2xl:gap-3.5  '>
+      <div className='grid gap-2 lg:gap-3.5 2xl:gap-3.5'>
         <Field.TextInput
           autoComplete='given-name'
           aria-label='First name'

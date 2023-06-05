@@ -37,7 +37,7 @@ export const MixNavigation = ({
         </div>
       </div>
 
-      <div className='flex flex-col '>
+      <div className='flex flex-col'>
         {links.youtube && (
           <YoutubeToggleElement youtubeVideoLink={links.youtube} page='mix' />
         )}

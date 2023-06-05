@@ -61,7 +61,7 @@ export const HomePageToggle = ({
       )}
     >
       {(isLoading || !youtubeLink) && !streamData?.streamIsLive && (
-        <div className='absolute inset-0 top-0 flex items-center justify-center px-1.5 py-9 text-white md:px-3 lg:px-3.5  '>
+        <div className='absolute inset-0 top-0 flex items-center justify-center px-1.5 py-9 text-white md:px-3 lg:px-3.5 '>
           <Icon.Loader />
         </div>
       )}
@@ -80,11 +80,10 @@ export const HomePageToggle = ({
         <YoutubeToggleElement
           page='home'
           youtubeVideoLink={youtubeLink}
-          className={`absolute inset-0 ${
-            currentMixPlayer === 'audio'
+          className={`absolute inset-0 ${currentMixPlayer === 'audio'
               ? 'pointer-events-none bg-black/60 backdrop-blur-md backdrop-opacity-80'
               : ''
-          } `}
+            } `}
         />
       )}
       {homePageRandomMix && !streamData?.streamIsLive && SCLink && (
