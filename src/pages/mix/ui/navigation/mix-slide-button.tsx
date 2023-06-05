@@ -2,7 +2,6 @@ import type { Maybe } from 'yup';
 import { Button } from '@/shared/ui/button/button';
 import { Icon } from '@/shared/ui/icons';
 import clsx from 'clsx';
-import { text } from 'stream/consumers';
 
 interface MixSlideButtonProps {
   slug?: Maybe<string>;
