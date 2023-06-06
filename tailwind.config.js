@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: [
-          'var(--font-right-grotesk)',
+          'PP Right Grotesk Wide Variable',
           ...defaultTheme.fontFamily.sans,
         ],
       },
