@@ -8,7 +8,7 @@ export const ScheduleIconWrapper = memo(
     return (
       <div
         className={clsxm(
-          'flex min-w-[30px] items-center justify-center  border-l border-inherit  py-[6px] lg:min-w-[40px]',
+          'flex min-w-[30px] max-w-[30px] items-center justify-center border-l border-inherit py-[6px] lg:max-w-[40px] lg:min-w-[40px]',
           className
         )}
       >
