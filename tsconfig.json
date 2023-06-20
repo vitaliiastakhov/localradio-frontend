@@ -35,8 +35,9 @@
     "**/*.ts",
     "**/*.tsx",
     "./pages",
-    "jest.setup.js"
-, "next-sitemap.config.js"  ],
+    "jest.setup.js",
+    "next-sitemap.config.js"
+  ],
   "exclude": ["node_modules"],
   "moduleResolution": ["node_modules", ".next", "node"]
 }

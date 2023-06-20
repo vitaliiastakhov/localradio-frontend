@@ -1,12 +1,12 @@
 import { InputHTMLAttributes, ReactNode, RefObject } from 'react';
-import type { ReactInputMask } from 'react-input-mask';
 
 export interface BaseInputProps extends InputHTMLAttributes<HTMLInputElement> {
   error?: ReactNode;
+  mask?: string;
+  onAccept?: (value: string, masked: any) => void;
 }
 
-export interface InputProps
-  extends Omit<InputHTMLAttributes<HTMLInputElement>, 'onChange'> {
+export interface InputProps extends Omit<BaseInputProps, 'onChange'> {
   inputRef?: RefObject<HTMLInputElement>;
   value?: string;
   defaultValue?: string;
@@ -14,9 +14,8 @@ export interface InputProps
   error?: ReactNode;
 }
 
-export interface PhoneInputProps
-  extends Omit<InputHTMLAttributes<HTMLInputElement>, 'onChange'> {
-  inputRef?: RefObject<ReactInputMask>;
+export interface PhoneInputProps extends Omit<BaseInputProps, 'onChange'> {
+  inputRef?: RefObject<HTMLInputElement>;
   value?: string;
   defaultValue?: string;
   error?: ReactNode;

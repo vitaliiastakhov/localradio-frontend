@@ -67,7 +67,10 @@ export const checkoutForm = createForm<CheckoutForm>({
       .min(2, minLengthMessage('Last name'))
       .required(requiredMessage('Last name'))
       .nullable(),
-    email: string().email().required('Email is required').nullable(),
+    email: string()
+      .email('Email must be a valid')
+      .required('Email is required')
+      .nullable(),
     phone: string()
       .matches(phoneRegex, {
         message: 'Введите корректный номер телефона',

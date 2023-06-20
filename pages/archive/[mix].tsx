@@ -147,7 +147,9 @@ export const getServerSideProps: GetServerSideProps = async (
     },
   });
 
-  const currentGenresss = mixes.data[0].attributes?.genres?.data.map(
+  console.log(mixDate, 'mixDate');
+
+  const currentGenres = mixes.data[0].attributes?.genres?.data.map(
     ({ attributes }) => attributes?.slug
   );
 
@@ -171,7 +173,8 @@ export const getServerSideProps: GetServerSideProps = async (
     });
     moreEpisodes = data.data;
     totalCount = data.meta.pagination.total;
-  } else if (
+  }
+  if (
     guestsMixesLength &&
     guestsMixesLength.length > 1 &&
     guestsSlug &&
@@ -189,7 +192,7 @@ export const getServerSideProps: GetServerSideProps = async (
   if (moreEpisodes.length === 0) {
     const data = await getMoreEpisodes({
       genres: {
-        slug: { in: [currentGenresss?.find((x) => x !== undefined) ?? ''] },
+        slug: { in: [currentGenres?.find((x) => x !== undefined) ?? ''] },
       },
       id: { ne: id },
     });

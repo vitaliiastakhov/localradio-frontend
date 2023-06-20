@@ -16,9 +16,10 @@ export const $isClickedStreamPlay = stream.createStore<boolean>(false);
 export const $streamTitle = stream.createStore<string | JSX.Element>(
   STREAM_DISABLED_TITLE
 );
+export const $streamError = stream.createStore<boolean>(false);
+
 export const $streamIsAvailable = stream.createStore<boolean>(false);
 export const isClickedStreamPlayEv = stream.createEvent<boolean>();
-
 sample({
   clock: isStreamLoadedEv,
   target: $isStreamLoaded,
@@ -38,11 +39,10 @@ export const fetchStreamTitleFx = stream.createEffect(async () => {
     }
 
     if (res.status === 404) {
-      const error = await res.json();
-      return error.error;
+      throw new Error();
     }
   } catch (error) {
-    if (error instanceof Error) return error.message;
+    throw new Error();
   }
 });
 const fetchStreamTitleWithScheduleFx = stream.createEffect(
@@ -63,6 +63,11 @@ sample({
   clock: fetchStreamTitleFx.doneData,
   target: fetchStreamTitleWithScheduleFx,
 });
+sample({
+  clock: fetchStreamTitleFx.failData,
+  fn: () => true,
+  target: $streamError,
+});
 
 sample({
   clock: fetchStreamTitleFx.doneData,
@@ -76,5 +81,8 @@ sample({
 
 sample({
   clock: fetchStreamTitleWithScheduleFx.doneData,
+  source: $streamError,
+  filter: (err) => !err,
+  fn: (_, clock) => clock,
   target: $streamTitle,
 });

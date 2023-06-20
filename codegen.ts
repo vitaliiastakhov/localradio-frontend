@@ -7,12 +7,10 @@ const config: CodegenConfig = {
   documents: ['./src/**/*.graphql'],
   generates: {
     './src/shared/api/graphql/__generated__/schema.graphql.ts': {
-      plugins:
-        ['typescript'],
+      plugins: ['typescript'],
     },
     './src/shared/api/graphql/': {
-      plugins:
-        ['typescript-operations', 'typed-document-node'],
+      plugins: ['typescript-operations', 'typed-document-node'],
       preset: 'near-operation-file',
       presetConfig: {
         extension: '.graphql.interface.ts',

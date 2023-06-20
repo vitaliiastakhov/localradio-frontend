@@ -40,7 +40,7 @@ export const Button = memo(
               colorVariant === 'primary' && !disabled,
           },
           {
-            'h-[clamp(1.5rem,10vw,1.875rem)] w-[clamp(1.5rem,10vw,1.875rem)] aspect-square px-0 lg:h-7 lg:w-7 2xl:h-8 2xl:w-8':
+            'h-[clamp(1.5rem,10vw,1.875rem)] w-[clamp(1.5rem,10vw,1.875rem)] px-0 lg:h-7 lg:w-7 2xl:h-8 2xl:w-8':
               sizeVariant === 'small',
           },
           {

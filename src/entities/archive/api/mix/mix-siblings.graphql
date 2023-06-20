@@ -1,5 +1,9 @@
 query MixSiblings($date: DateTime!) {
-  siblingRight: mixes(sort: "date:desc", filters: { date: { lt: $date } }) {
+  siblingRight: mixes(
+    sort: "date:desc"
+    filters: { date: { lt: $date } }
+    pagination: { limit: 1 }
+  ) {
     data {
       id
       attributes {
@@ -14,7 +18,11 @@ query MixSiblings($date: DateTime!) {
       }
     }
   }
-  siblingLeft: mixes(sort: "date:asc", filters: { date: { gt: $date } }) {
+  siblingLeft: mixes(
+    sort: "date:asc"
+    filters: { date: { gt: $date } }
+    pagination: { limit: 1 }
+  ) {
     data {
       id
       attributes {

@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react';
 import useSWR from 'swr';
 import { useScroll } from '@/shared/lib/hooks/use-scroll';
 import SWRfetcher from '@/shared/lib/swr-fetcher';
-import { Button } from '@/shared/ui/button/button';
 import { ArchiveNavigationQuery } from '../api/navigation.graphql.interface';
 import {
   $clickedArchiveNavType,
@@ -13,6 +12,7 @@ import {
   setNavHeightEv,
 } from '../model/archive-nav.model';
 import styles from './archive-nav.module.css';
+import { ArchiveNavHoverList } from './archive-nav-hover-list';
 import { ArchiveNavItem } from './archive-nav-item';
 
 export const ArchiveNavBar = () => {
@@ -29,6 +29,7 @@ export const ArchiveNavBar = () => {
       setNavHeight: setNavHeightEv,
       clickArchiveNav: clickArchiveNavType,
     });
+
   const toggleHover = (el: 'mood' | 'genres' | null) => {
     setHoveredEl(el);
     clickArchiveNav(null);
@@ -59,11 +60,11 @@ export const ArchiveNavBar = () => {
           : 'top-[calc(var(--header-height)+30px+3px)] xxs:top-[calc(var(--header-height)+60px+3px)] lg:top-[var(--header-height)]'
       }`}
     >
-      <ul className={styles.navList}>
+      <ul className={styles['nav-list']}>
         <ArchiveNavItem text='All' link='/archive' />
         <ArchiveNavItem text='Residents' link='/archive/residents' />
 
-        <li onClick={() => handleClick('mood')} className={styles.moodItem}>
+        <li onClick={() => handleClick('mood')} className={styles['mood-item']}>
           <div className='relative items-center justify-center tracking-[0.01em]  md:flex md:h-full md:w-full'>
             Moods
           </div>
@@ -75,35 +76,20 @@ export const ArchiveNavBar = () => {
               onMouseEnter={() => toggleHover('mood')}
               onMouseLeave={() => toggleHover(null)}
               style={{ top: navHeight - 2 }}
-              className={clsx(styles.moodList, {
+              className={clsx(styles['mood-list'], {
                 [styles.active]:
                   hoveredEl === 'mood' || clickedArchiveNavType === 'mood',
               })}
             >
-              {archiveNav.data.moodsArray.map((moodArray, i) => {
-                return (
-                  <ul
-                    key={
-                      moodArray && moodArray[0]?.slug && moodArray[0].slug + i
-                    }
-                    className='flex flex-col justify-center gap-1'
-                  >
-                    {moodArray?.map((mood) => (
-                      <li key={mood?.name}>
-                        <Button
-                          className='h-full whitespace-nowrap  py-0.5 font-semibold tracking-[0.01em] transition-none'
-                          href={`/archive/mood/${mood?.slug}`}
-                        >
-                          {mood?.name}
-                        </Button>
-                      </li>
-                    ))}
-                  </ul>
-                );
-              })}
+              {archiveNav.data.moodsArray.map((list, index) => (
+                <ArchiveNavHoverList list={list} index={index} variant='mood' />
+              ))}
             </div>
           )}
-        <li onClick={() => handleClick('genres')} className={styles.genresItem}>
+        <li
+          onClick={() => handleClick('genres')}
+          className={styles['genres-item']}
+        >
           <div className='relative items-center justify-center tracking-[0.01em]  md:flex md:h-full md:w-full'>
             Genres
           </div>
@@ -114,34 +100,18 @@ export const ArchiveNavBar = () => {
               style={{ top: navHeight - 2 }}
               onMouseEnter={() => toggleHover('genres')}
               onMouseLeave={() => toggleHover(null)}
-              className={clsx(styles.genresList, {
+              className={clsx(styles['genres-list'], {
                 [styles.active]:
                   hoveredEl === 'genres' || clickedArchiveNavType === 'genres',
               })}
             >
-              {archiveNav.data.genresArray.map((genreArray, i) => {
-                return (
-                  <ul
-                    key={
-                      genreArray &&
-                      genreArray[0]?.slug &&
-                      genreArray[0].slug + i
-                    }
-                    className='flex   flex-col gap-0'
-                  >
-                    {genreArray?.map((genre) => (
-                      <li key={genre?.name} className=' flex whitespace-nowrap'>
-                        <Button
-                          className='h-full py-0.5 font-semibold tracking-[0.01em] transition-none'
-                          href={`/archive/genres/${genre?.slug}`}
-                        >
-                          {genre?.name}
-                        </Button>
-                      </li>
-                    ))}
-                  </ul>
-                );
-              })}
+              {archiveNav.data.genresArray.map((list, index) => (
+                <ArchiveNavHoverList
+                  list={list}
+                  index={index}
+                  variant='genres'
+                />
+              ))}
             </div>
           )}
         <ArchiveNavItem

@@ -1,6 +1,7 @@
 import { useUncontrolled } from '@mantine/hooks';
 import type { FocusEvent } from 'react';
 import { useCallback, useState } from 'react';
+import { useIMask } from 'react-imask';
 import { createView } from '@/shared/lib/view';
 import { InputErrorWrapper } from '../input-error-wrapper';
 import { InputProps } from '../types/types';
@@ -15,6 +16,7 @@ const TextInput = createView<InputProps>()
       onBlur,
       defaultValue,
       onChange,
+      mask,
       ...rest
     } = props;
 
@@ -26,6 +28,15 @@ const TextInput = createView<InputProps>()
       finalValue: '',
       onChange,
     });
+
+    const { ref: imaskRef } = useIMask<HTMLInputElement, any>(
+      { mask },
+      {
+        onAccept: (value, masked) => {
+          mask && handleChange(masked.value);
+        },
+      }
+    );
 
     const handleFocus = useCallback(
       (e: FocusEvent<HTMLInputElement>) => {
@@ -49,6 +60,7 @@ const TextInput = createView<InputProps>()
 
     return {
       inputRef,
+      imaskRef,
       value,
       handleChange,
       handleFocus,
@@ -60,24 +72,32 @@ const TextInput = createView<InputProps>()
   .view(
     ({
       inputRef,
+      imaskRef,
       error,
       value,
+      mask,
       handleChange,
       handleFocus,
       handleBlur,
       ...rest
-    }) => (
-      <InputErrorWrapper
-        className='px-2 lg:px-2.5'
-        {...rest}
-        ref={inputRef}
-        value={value}
-        onChange={(event) => handleChange(event.currentTarget.value)}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        error={error}
-      />
-    )
+    }) => {
+      return (
+        <InputErrorWrapper
+          {...rest}
+          className='px-2 lg:px-2.5'
+          ref={mask ? imaskRef : inputRef}
+          value={value}
+          onChange={(event) =>
+            mask
+              ? event.preventDefault()
+              : handleChange(event.currentTarget.value)
+          }
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          error={error}
+        />
+      );
+    }
   ).Memo;
 
 export { TextInput };

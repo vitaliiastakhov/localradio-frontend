@@ -15,7 +15,7 @@ import {
 } from './release/releases.graphql.interface';
 import { ShowsDocument, ShowsQuery } from './shows/shows.graphql.interface';
 
-export const ArchiveApi = {
+export const ArchiveApiDocuments = {
   EventsDocument,
   MixesDocument,
   MixesSlugDocument,
@@ -27,6 +27,7 @@ export const ArchiveApi = {
   GenreDocument,
   MoodDocument,
   MoodsDocument,
-  fetchMixes,
 };
+
+export const ArchiveApi = Object.assign(ArchiveApiDocuments, { fetchMixes });
 export type { GuestsQuery, MixesQuery, ReleasesQuery, ShowsQuery };

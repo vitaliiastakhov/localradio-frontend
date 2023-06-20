@@ -5,6 +5,7 @@ import { BaseInputProps } from '../types/types';
 export const BaseInput = forwardRef<HTMLInputElement, BaseInputProps>(
   (props, ref) => {
     const { error, className, ...rest } = props;
+
     return (
       <input
         {...rest}

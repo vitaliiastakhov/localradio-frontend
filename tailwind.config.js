@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: [
-          'PP Right Grotesk Wide Variable',
+          'var(--font-right-grotesk)',
           ...defaultTheme.fontFamily.sans,
         ],
       },
@@ -44,3 +44,4 @@ module.exports = {
   },
   plugins: [require('tailwind-scrollbar-hide')],
 };
+

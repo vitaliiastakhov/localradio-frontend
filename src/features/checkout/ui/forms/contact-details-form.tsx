@@ -43,7 +43,9 @@ export const ContactDetailsForm = () => {
           })}
           required
         />
-        <Field.PhoneInput
+        <Field.TextInput
+          mask='+{7} (000) 000-00-00'
+          inputMode='numeric'
           type='tel'
           autoComplete='tel'
           aria-label='Phone'

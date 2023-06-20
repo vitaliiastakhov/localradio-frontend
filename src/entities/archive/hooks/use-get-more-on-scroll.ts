@@ -11,6 +11,13 @@ import {
 import { CardListProps } from '@/entities/archive/lib/types';
 import { client } from '@/shared/api/apollo/apollo-client';
 
+export type UseGetMoreOnScrollResponse = ReturnType<typeof useGetMoreOnScroll>;
+
+type UseGetMoreOnScrollProps = Pick<
+  CardListProps,
+  'data' | 'mixesFilter' | 'releasesFilter' | 'residentsFilter' | 'variant'
+>;
+
 const getNewData = async <T>(
   query: DocumentNode,
   start?: number,
@@ -31,13 +38,6 @@ const getNewData = async <T>(
   return dataNew;
 };
 
-export type UseGetMoreOnScrollResponse = ReturnType<typeof useGetMoreOnScroll>;
-
-type UseGetMoreOnScrollProps = Pick<
-  CardListProps,
-  'data' | 'mixesFilter' | 'releasesFilter' | 'residentsFilter' | 'variant'
->;
-
 export const useGetMoreOnScroll = ({
   data,
   mixesFilter,
@@ -47,6 +47,9 @@ export const useGetMoreOnScroll = ({
 }: UseGetMoreOnScrollProps) => {
   const [cardListItems, setCardListItems] = useState<any[] | undefined>(data);
   const { showBoundary } = useErrorBoundary();
+
+  const concatCardList = (data: any[]) =>
+    setCardListItems((prev) => prev && prev.concat(data));
 
   const getMore = async () => {
     if (mixesFilter && cardListItems) {
@@ -61,7 +64,7 @@ export const useGetMoreOnScroll = ({
 
         mixesData &&
           (variant === 'mixes' || variant === 'show') &&
-          setCardListItems((prev) => prev && [...prev, ...mixesData]);
+          concatCardList(mixesData);
       } catch (error) {
         showBoundary(error);
       }
@@ -77,9 +80,7 @@ export const useGetMoreOnScroll = ({
 
         const releasesData = dataNew.data.releases?.data;
 
-        releasesData &&
-          variant === 'releases' &&
-          setCardListItems((prev) => prev && [...prev, ...releasesData]);
+        releasesData && variant === 'releases' && concatCardList(releasesData);
       } catch (error) {
         showBoundary(error);
       }
@@ -94,9 +95,7 @@ export const useGetMoreOnScroll = ({
 
         const residentsData = dataNew.data.guests?.data;
 
-        residentsData &&
-          variant === 'guests' &&
-          setCardListItems((prev) => prev && [...prev, ...residentsData]);
+        residentsData && variant === 'guests' && concatCardList(residentsData);
       } catch (error) {
         showBoundary(error);
       }

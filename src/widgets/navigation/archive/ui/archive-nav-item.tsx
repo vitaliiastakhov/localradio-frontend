@@ -13,7 +13,7 @@ export const ArchiveNavItem = memo(
     return (
       <li
         className={clsxm(
-          'tracking-[0.01em]  text-primary duration-75',
+          'tracking-[0.01em] text-primary duration-75',
           className
         )}
       >

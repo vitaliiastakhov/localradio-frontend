@@ -1,4 +1,4 @@
-.navList {
+.nav-list {
   position: relative;
   display: flex;
   align-items: center;
@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.navList > li {
+.nav-list > li {
   display: flex;
   flex: 1;
   padding: 0 0.42rem;
@@ -22,12 +22,12 @@
   color: var(--olive);
 }
 
-.navList > li:nth-child(5) {
+.nav-list > li:nth-child(5) {
   border-right: none;
 }
 
-.moodList,
-.genresList {
+.mood-list,
+.genres-list {
   opacity: 1;
   position: absolute;
   text-transform: uppercase;
@@ -48,7 +48,7 @@
   color: var(--olive);
 }
 
-.genresList:last-child {
+.genres-list:last-child {
   justify-self: right;
 }
 
@@ -56,83 +56,83 @@
   visibility: visible;
 }
 
-.genresList > li {
+.genres-list > li {
   display: flex;
   align-items: center;
 }
 
-.genresList {
+.genres-list {
   justify-content: space-between;
 }
 
-.moodItem,
-.genresItem,
-.showsItem {
+.mood-item,
+.genres-item,
+.shows-item {
   position: relative;
 }
 
-.moodItem {
+.mood-item {
   order: 4;
 }
 
-.genresItem {
+.genres-item {
   order: 5;
 }
 
 @media screen and (min-width: 290px) {
-  .moodList,
-  .genresList {
+  .mood-list,
+  .genres-list {
     display: grid;
     grid-template-columns: repeat(2, min-content);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .moodList,
-  .genresList {
+  .mood-list,
+  .genres-list {
     padding: 0.5rem 1.2rem;
     grid-template-columns: repeat(4, min-content);
   }
 
-  .navList > li:nth-child(5) {
+  .nav-list > li:nth-child(5) {
     border-right: 2px solid black;
   }
 
-  .navList li:last-child {
+  .nav-list li:last-child {
     border-right: none;
   }
 
-  .moodItem {
+  .mood-item {
     order: 3;
   }
 
-  .genresItem {
+  .genres-item {
     order: 4;
   }
 
-  .navList > li:hover {
+  .nav-list > li:hover {
     color: var(--green-dark);
     width: fit-content;
     background: var(--olive);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 75ms;
   }
 
-  .moodItem:hover + .moodList,
-  .genresItem:hover + .genresList {
+  .mood-item:hover + .mood-list,
+  .genres-item:hover + .genres-list {
     visibility: visible;
   }
 
-  .navList > li {
+  .nav-list > li {
     flex: 1;
   }
 
-  .moodList > ul > li > a:hover,
-  .genresList > ul > li > a:hover {
+  .mood-list > ul > li > a:hover,
+  .genres-list > ul > li > a:hover {
     background-color: var(--olive);
     color: var(--green-dark);
   }
 
-  .genresList > li {
+  .genres-list > li {
     flex: 1 0 21%;
 
     max-width: 23.1%;
@@ -140,8 +140,8 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .moodList,
-  .genresList {
+  .mood-list,
+  .genres-list {
     padding: 0.5rem 1.8rem;
   }
 }

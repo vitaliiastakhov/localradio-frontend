@@ -17,7 +17,9 @@
   --col-gap: clamp(20px, 10vw, 60px);
   --col-hint: 0px;
   --scroller-padding: 50px;
-  --col-size: calc((100% / var(--visible-cols)) - var(--col-gap) - var(--col-hint));
+  --col-size: calc(
+    (100% / var(--visible-cols)) - var(--col-gap) - var(--col-hint)
+  );
 }
 
 @layer base {
@@ -115,7 +117,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-
   .moodList,
   .genresList,
   .showsList {

@@ -1,4 +1,6 @@
+import clsx from 'clsx';
 import { useUnit } from 'effector-react';
+import localFont from 'next/font/local';
 import { useEffect } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import { CartModal } from '@/entities/store/cart/ui/cart-modal';
@@ -9,10 +11,11 @@ import { BottomPlayerWrapper } from '@/widgets/players/bottom-player-wrapper';
 import { fetchStreamTitleFx } from '@/widgets/players/stream/model/stream';
 import { MainFooter } from '../../main-footer/ui/main-footer';
 import { MainHeader } from '../../main-header/ui/main-header';
-// import localFont from 'next/font/local';
-import clsx from 'clsx';
 
-// const myFont = localFont({ src: '../../../.././../../public/fonts/PPRightGroteskWideVariable.ttf', variable: '--font-right-grotesk' });
+const myFont = localFont({
+  src: '../../../.././../../public/fonts/PPRightGroteskWideVariable.ttf',
+  variable: '--font-right-grotesk',
+});
 
 export function MainLayout({ children }: { children: React.ReactNode }) {
   const { fetchStreamTitle } = useUnit({
@@ -39,7 +42,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback} onError={errorHandler}>
-      <div className={clsx('flex min-h-screen flex-col')}>
+      <div className={clsx(myFont.className, 'flex min-h-screen flex-col')}>
         <MainHeader />
         <CartModal />
         <SearchModal />

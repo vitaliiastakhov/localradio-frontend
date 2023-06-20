@@ -1,5 +1,9 @@
 import { useUnit } from 'effector-react';
-import { $currentMixPlayer } from '@/features/toggle-mix-player/model/current-mix-player.model';
+import { useEffect } from 'react';
+import {
+  $currentMixPlayer,
+  toggleMixPlayerEv,
+} from '@/features/toggle-mix-player/model/current-mix-player.model';
 import { TogglePlayerLinks } from '@/features/toggle-mix-player/model/types';
 import {
   SCToggleElement,
@@ -23,9 +27,15 @@ export const MixNavigation = ({
   links,
   mix,
 }: MixNavigationProps) => {
-  const { currentMixPlayer } = useUnit({
+  const { currentMixPlayer, toggleMixPlayer } = useUnit({
     currentMixPlayer: $currentMixPlayer,
+    toggleMixPlayer: toggleMixPlayerEv,
   });
+
+  useEffect(() => {
+    if (!links.soundcloud) toggleMixPlayer('video');
+    if (!links.youtube) toggleMixPlayer('audio');
+  }, [links]);
 
   return (
     <>

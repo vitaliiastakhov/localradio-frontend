@@ -27,6 +27,7 @@ export const RegionForm = () => {
           className='w-full'
         />
         <Field.TextInput
+          mask={undefined}
           autoComplete='street-address'
           required
           placeholder='Full Address'
@@ -37,6 +38,8 @@ export const RegionForm = () => {
           className='w-full'
         />
         <Field.TextInput
+          mask='000000'
+          inputMode='numeric'
           autoComplete='postal-code'
           required
           placeholder='Postcode'

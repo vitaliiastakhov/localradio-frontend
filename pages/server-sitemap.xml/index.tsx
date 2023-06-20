@@ -68,14 +68,15 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const eventsSitemap = getSitemap(events, 'events');
 
   const fields = [
-    ...archiveMixesSitemap,
-    ...archiveResidentsSitemap,
-    ...archiveShowsSitemap,
-    ...genresShowsSitemap,
-    ...moodsShowsSitemap,
-    ...releasesSitemap,
-    ...eventsSitemap,
-  ];
+    archiveMixesSitemap,
+    archiveResidentsSitemap,
+    archiveShowsSitemap,
+    genresShowsSitemap,
+    moodsShowsSitemap,
+    releasesSitemap,
+    eventsSitemap,
+  ].flat();
+
   const sitemap = await getServerSideSitemapLegacy(context, fields);
 
   return sitemap;
