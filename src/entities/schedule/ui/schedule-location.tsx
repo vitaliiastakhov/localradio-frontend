@@ -18,7 +18,7 @@ export const ScheduleLocation = ({
         href={locationLink}
         className='group flex overflow-hidden rounded-lg border-primary fill-primary text-primary hover:border-black hover:fill-black hover:text-black'
       >
-        <div className='bg-black px-2 py-[6px] flex items-center leading-[1.05] transition duration-100 ease-out group-hover:bg-secondary-dark lg:pl-3 lg:pr-2'>
+        <div className='flex items-center bg-black px-2 py-[6px] leading-[1.05] transition duration-100 ease-out group-hover:bg-secondary-dark lg:pl-3 lg:pr-2'>
           {locationName}
         </div>
         <ScheduleIconWrapper className='bg-black fill-primary transition duration-100 ease-out group-hover:bg-secondary-dark group-hover:fill-black'>

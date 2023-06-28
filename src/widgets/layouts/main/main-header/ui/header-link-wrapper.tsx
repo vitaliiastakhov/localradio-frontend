@@ -16,7 +16,7 @@ export const HeaderLinkWrapper = memo(
         (href && !strict && path.includes(href)) ||
         (strict && path === href)
       ) {
-        return 'var(--olive)';
+        return 'var(--olive-color)';
       }
     };
 

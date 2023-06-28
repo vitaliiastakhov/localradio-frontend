@@ -13,13 +13,13 @@
   padding: 0 0.42rem;
   justify-content: center;
   align-items: center;
-  background: var(--green-dark);
+  background: var(--green-dark-color);
   border-right: 2px solid black;
   border-bottom: 2px solid black;
   cursor: pointer;
   height: var(--nav-height);
   border-left: 0;
-  color: var(--olive);
+  color: var(--olive-color);
 }
 
 .nav-list > li:nth-child(5) {
@@ -41,11 +41,11 @@
   line-height: normal;
   border-bottom: 2px solid black;
   padding: 0.5rem;
-  background: var(--green-dark);
+  background: var(--green-dark-color);
   min-height: var(--nav-height);
   z-index: -1;
   transition: all 0.1s;
-  color: var(--olive);
+  color: var(--olive-color);
 }
 
 .genres-list:last-child {
@@ -111,9 +111,9 @@
   }
 
   .nav-list > li:hover {
-    color: var(--green-dark);
+    color: var(--green-dark-color);
     width: fit-content;
-    background: var(--olive);
+    background: var(--olive-color);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 75ms;
   }
 
@@ -128,8 +128,8 @@
 
   .mood-list > ul > li > a:hover,
   .genres-list > ul > li > a:hover {
-    background-color: var(--olive);
-    color: var(--green-dark);
+    background-color: var(--olive-color);
+    color: var(--green-dark-color);
   }
 
   .genres-list > li {

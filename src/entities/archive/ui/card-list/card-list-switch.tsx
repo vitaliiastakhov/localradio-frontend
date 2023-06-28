@@ -54,78 +54,78 @@ export const CardListSwitch = ({
     return (
       <>
         {(variant === 'mixes' || variant === 'show' || variant === 'search') &&
-          data.map((mix: MixEntity, i) => {
+          data.map((mix: MixEntity, index) => {
             return (
               <HomePageCardWrapper
                 key={mix.attributes?.slug}
                 pageVariant={pageVariant}
                 length={data.length}
-                index={i}
+                index={index}
               >
                 <MixCard sizeVariant='standard' {...mix} />
               </HomePageCardWrapper>
             );
           })}
         {variant === 'releases' &&
-          data.map((release: ReleaseEntity, i) => {
+          data.map((release: ReleaseEntity, index) => {
             return (
               <HomePageCardWrapper
                 key={release.attributes?.slug}
                 pageVariant={pageVariant}
                 length={data.length}
-                index={i}
+                index={index}
               >
                 <ReleaseCard {...release} />
               </HomePageCardWrapper>
             );
           })}
         {variant === 'events' &&
-          data.map((event: EventEntity, i) => {
+          data.map((event: EventEntity, index) => {
             return (
               <HomePageCardWrapper
                 key={event.attributes?.slug}
                 pageVariant={pageVariant}
                 length={data.length}
-                index={i}
+                index={index}
               >
                 <EventCard attributes={event.attributes} />
               </HomePageCardWrapper>
             );
           })}
         {variant === 'shop' &&
-          data.map((product: ShopItemEntity, i) => {
+          data.map((product: ShopItemEntity, index) => {
             return (
               <HomePageCardWrapper
                 key={product.attributes?.slug}
                 pageVariant={pageVariant}
                 length={data.length}
-                index={i}
+                index={index}
               >
                 <ShopCard {...product} />
               </HomePageCardWrapper>
             );
           })}
         {variant === 'guests' &&
-          data.map((resident: GuestEntity, i) => {
+          data.map((resident: GuestEntity, index) => {
             return (
               <HomePageCardWrapper
                 key={resident.attributes?.slug}
                 pageVariant={pageVariant}
                 length={data.length}
-                index={i}
+                index={index}
               >
                 <ShowResidentCard {...resident} />
               </HomePageCardWrapper>
             );
           })}
         {variant === 'shows' &&
-          data.map((show: ShowEntity, i) => {
+          data.map((show: ShowEntity, index) => {
             return (
               <HomePageCardWrapper
                 key={show.attributes?.slug}
                 pageVariant={pageVariant}
                 length={data.length}
-                index={i}
+                index={index}
               >
                 <ShowResidentCard {...show} />
               </HomePageCardWrapper>

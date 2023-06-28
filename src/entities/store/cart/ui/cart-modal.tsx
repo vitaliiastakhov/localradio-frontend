@@ -82,21 +82,22 @@ export const CartModal = () => {
         </div>
         <div className='flex h-full flex-col px-1.5 md:px-3 lg:px-0'>
           {products.length > 0
-            ? products.map((product, i) => (
+            ? products.map((product) => (
                 <CartItem
                   key={
-                    product.attributes?.title && product.attributes.title + i
+                    product.attributes &&
+                    product.attributes.slug + product.attributes.title
                   }
                   product={product}
                 />
               ))
             : null}
         </div>
-        <div className=' flex flex-col justify-end'>
+        <div className='flex flex-col justify-end'>
           {totalPrice !== undefined &&
             totalPrice !== null &&
             totalPrice > 0 && (
-              <div className='my-4 flex  items-center  justify-between px-1.5 text-[0.95rem] md:px-3 lg:px-3.5 xl:text-[1.15rem]'>
+              <div className='my-4 flex items-center justify-between px-1.5 text-[0.95rem] md:px-3 lg:px-3.5 xl:text-[1.15rem]'>
                 <div>Total: {totalPrice} ₽</div>
               </div>
             )}

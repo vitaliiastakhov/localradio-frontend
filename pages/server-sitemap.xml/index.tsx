@@ -9,6 +9,18 @@ interface CommonAttributes {
   slug: string;
 }
 
+const getSitemap = (
+  elems: { attributes: Pick<CommonAttributes, 'slug'> }[] | any,
+  s: string
+): ISitemapField[] => {
+  return elems.map(
+    ({ attributes }: { attributes: Pick<CommonAttributes, 'slug'> }) => ({
+      loc: `${SITE_URL}/${s}/` + attributes.slug,
+      lastmod: new Date().toISOString(),
+    })
+  );
+};
+
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const mixes = await ArchiveApi.fetchMixes({ limit: -1 });
   const {
@@ -46,18 +58,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     query: ArchiveApi.EventsDocument,
     variables: { limit: -1 },
   });
-
-  const getSitemap = (
-    elems: { attributes: Pick<CommonAttributes, 'slug'> }[] | any,
-    s: string
-  ): ISitemapField[] => {
-    return elems.map(
-      ({ attributes }: { attributes: Pick<CommonAttributes, 'slug'> }) => ({
-        loc: `${SITE_URL}/${s}/` + attributes.slug,
-        lastmod: new Date().toISOString(),
-      })
-    );
-  };
 
   const archiveMixesSitemap = getSitemap(mixes, 'archive');
   const archiveResidentsSitemap = getSitemap(guests, 'archive/residents');

@@ -7,10 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          'var(--font-right-grotesk)',
-          ...defaultTheme.fontFamily.sans,
-        ],
+        sans: ['var(--font-right-grotesk)', ...defaultTheme.fontFamily.sans],
       },
       fontWeight: {},
       colors: {
@@ -44,4 +41,3 @@ module.exports = {
   },
   plugins: [require('tailwind-scrollbar-hide')],
 };
-
