@@ -19,7 +19,7 @@ interface MixDescriptionTopProps {
   href: LinkProps['href'];
   title?: string;
   socials: Maybe<ComponentLinksToSocialsLinksToSocials>;
-  variant: 'show' | 'guest'
+  variant: 'show' | 'guest';
 }
 
 export const MixDescriptionTop: FC<MixDescriptionTopProps> = ({
@@ -34,7 +34,7 @@ export const MixDescriptionTop: FC<MixDescriptionTopProps> = ({
         <div className='flex h-fit flex-wrap items-end justify-between gap-1 break-normal'>
           <div>
             <div className='flex justify-between text-[0.95rem] font-medium'>
-              {variant === 'show' ? "Show" : 'guest'}
+              {variant === 'show' ? 'Show' : 'guest'}
             </div>
             <Link
               href={href}
@@ -68,28 +68,28 @@ export const MixPageLeft = ({
   return (
     <div className='px-1.5 lg:px-0'>
       {(!description.mix?.descriptionEn || !description.mix.descriptionRu) &&
-        (description.show?.descriptionRu ||
-          description.show?.descriptionEn ||
-          description.guest?.descriptionRu ||
-          description.guest?.descriptionEn) ? (
+      (description.show?.descriptionRu ||
+        description.show?.descriptionEn ||
+        description.guest?.descriptionRu ||
+        description.guest?.descriptionEn) ? (
         <div className='order-2   flex h-full flex-col overflow-hidden break-words   lg:order-none  lg:pb-3 lg:pt-0'>
           {(description.show?.descriptionRu ||
             description.show?.descriptionEn) && (
-              <DescriptionGroup
-                top={
-                  <MixDescriptionTop
-                    variant='show'
-                    socials={showSocials}
-                    title={mixesShowName}
-                    href={`/archive/shows/${mixesShowSlug}`}
-                  />
-                }
-                html={{
-                  descriptionRu: description.show.descriptionRu,
-                  descriptionEn: description.show.descriptionEn,
-                }}
-              />
-            )}
+            <DescriptionGroup
+              top={
+                <MixDescriptionTop
+                  variant='show'
+                  socials={showSocials}
+                  title={mixesShowName}
+                  href={`/archive/shows/${mixesShowSlug}`}
+                />
+              }
+              html={{
+                descriptionRu: description.show.descriptionRu,
+                descriptionEn: description.show.descriptionEn,
+              }}
+            />
+          )}
           {(description.guest?.descriptionRu ||
             description.guest?.descriptionEn) &&
             (!description.show?.descriptionEn ||

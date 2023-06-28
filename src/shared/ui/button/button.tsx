@@ -31,7 +31,8 @@ export const Button = memo(
           {
             'shadow-[0_0_8px_rgba(0,0,0,0.05)]': variant === 'shadow',
           },
-          colorVariant && !disabled &&
+          colorVariant &&
+            !disabled &&
             {
               primary:
                 'lg:bg-primary hover:text-primary text-black hover:bg-black',
