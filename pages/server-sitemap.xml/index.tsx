@@ -22,41 +22,10 @@ const getSitemap = (
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const mixes = await ArchiveApi.fetchMixes({ limit: -1 });
   const {
-    data: { guests },
+    data: { guests, mixes, shows, genres, moods, releases, events },
   } = await client.query({
-    query: ArchiveApi.GuestsDocument,
-    variables: { limit: -1 },
-  });
-  const {
-    data: { shows },
-  } = await client.query({
-    query: ArchiveApi.ShowsDocument,
-    variables: { limit: -1 },
-  });
-  const {
-    data: { releases },
-  } = await client.query({
-    query: ArchiveApi.ReleasesDocument,
-    variables: { limit: -1 },
-  });
-  const {
-    data: { genres },
-  } = await client.query({
-    query: ArchiveApi.GenresDocument,
-  });
-  const {
-    data: { moods },
-  } = await client.query({
-    query: ArchiveApi.MoodsDocument,
-  });
-
-  const {
-    data: { events },
-  } = await client.query({
-    query: ArchiveApi.EventsDocument,
-    variables: { limit: -1 },
+    query: ArchiveApi.SitemapDocument,
   });
 
   const archiveMixesSitemap = getSitemap(mixes, 'archive');

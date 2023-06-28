@@ -14,6 +14,7 @@ import {
   ReleasesQuery,
 } from './release/releases.graphql.interface';
 import { ShowsDocument, ShowsQuery } from './shows/shows.graphql.interface';
+import { SitemapDocument } from './sitemap/sitemap.graphql.interface';
 
 export const ArchiveApiDocuments = {
   EventsDocument,
@@ -22,6 +23,7 @@ export const ArchiveApiDocuments = {
   MixSiblingsDocument,
   ShowsDocument,
   ReleasesDocument,
+  SitemapDocument,
   GuestsDocument,
   GenresDocument,
   GenreDocument,
