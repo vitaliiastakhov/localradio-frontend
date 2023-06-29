@@ -147,8 +147,6 @@ export const getServerSideProps: GetServerSideProps = async (
     },
   });
 
-  console.log(mixDate, 'mixDate');
-
   const currentGenres = mixes.data[0].attributes?.genres?.data.map(
     ({ attributes }) => attributes?.slug
   );

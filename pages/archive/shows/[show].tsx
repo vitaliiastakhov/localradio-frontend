@@ -29,7 +29,7 @@ const Page: NextPage<PageProps> = ({ shows, show, mixes, description }) => {
   const name = attributes?.name;
   const descriptionSeo = getDescription(attributes);
   const totalCount = attributes?.mixes?.data.length;
-  console.log(totalCount, 'totalCount');
+
   return (
     <>
       <Seo templateTitle={name} description={descriptionSeo} />
