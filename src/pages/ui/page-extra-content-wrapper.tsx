@@ -34,7 +34,6 @@ export const PageExtraContent = ({
               sizes='(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw'
-              useSkeleton={true}
               style={{ objectFit: 'cover' }}
             />
           ) : (
@@ -47,11 +46,7 @@ export const PageExtraContent = ({
         <div className='lg:col-span-2 '>
           <div className='flex flex-wrap items-end justify-between gap-x-1 border-b-black text-[1.25rem] font-semibold uppercase  leading-none  md:px-1.5 lg:px-2 lg:text-3xl  xl:px-3.5'>
             <h2 className='leading-none'> {title}</h2>
-            {socials && (
-              <ul className='flex items-center gap-2'>
-                <SocialsList socials={{ ...socials }} />
-              </ul>
-            )}
+            {socials && <SocialsList socials={{ ...socials }} />}
           </div>
           <DescriptionGroup
             sizeVariant='large'

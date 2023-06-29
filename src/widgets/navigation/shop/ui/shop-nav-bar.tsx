@@ -3,9 +3,9 @@ import { useEffect, useRef } from 'react';
 import useSWR from 'swr';
 import { ShopCategoryEntityResponseCollection } from '@/shared/api/graphql/__generated__/schema.graphql';
 import { clsxm } from '@/shared/lib/clsxm';
-import { useScroll } from '@/shared/lib/hooks/use-scroll';
+import { useScroll } from '@/shared/lib/hooks/use-scroll.hook';
 import SWRfetcher from '@/shared/lib/swr-fetcher';
-import { ArchiveNavItem } from '@/widgets/navigation/archive/ui/archive-nav-item';
+import { ArchiveNavItemWithMemo } from '@/widgets/navigation/archive/ui/archive-nav-item';
 import { setNavHeightEv } from '../model/shop-nav.model';
 import styles from './shop-nav-bar.module.css';
 
@@ -38,7 +38,7 @@ export const ShopNavBar = () => {
           {data.shopCategories.data.map(
             ({ attributes }) =>
               attributes?.parent?.data.length === 0 && (
-                <ArchiveNavItem
+                <ArchiveNavItemWithMemo
                   key={attributes.name}
                   text={attributes.name ?? ''}
                   link={'/shop/category/' + attributes.slug}

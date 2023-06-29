@@ -5,10 +5,10 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import LocalLogo from '~/icons/LocalLogo.svg';
 import { clsxm } from '@/shared/lib/clsxm';
-import { useScroll } from '@/shared/lib/hooks/use-scroll';
+import { useScroll } from '@/shared/lib/hooks/use-scroll.hook';
 import { Button } from '@/shared/ui/button/button';
 import { clickArchiveNavType } from '@/widgets/navigation/archive/model/archive-nav.model';
-import { HeaderStreamPlayer } from '@/widgets/players/stream/ui/header-stream-player';
+import { HeaderStreamPlayerWithMemo } from '@/widgets/players/stream/ui/header-stream-player';
 import { headerNav } from '../lib/header-nav';
 import { $isOpenedMobileMenu, openMobileMenu } from '../model/header.model';
 import { MainHeaderDesktop } from './main-header-desktop';
@@ -57,7 +57,7 @@ export const MainHeader = () => {
         <nav className='relative flex  w-full   flex-col '>
           <MainHeaderDesktop />
           <div className='h-[30px] max-xxs:hidden lg:hidden '>
-            <ul className='flex  h-full  items-center  justify-between   border-t-2 border-black px-1.5 uppercase'>
+            <ul className='flex h-full  items-center justify-between border-t-2 border-black px-1.5 uppercase'>
               {headerNav.map((navItem) => (
                 <li key={navItem.text}>
                   <Button
@@ -72,7 +72,7 @@ export const MainHeader = () => {
             </ul>
           </div>
           <div className='w-full bg-primary lg:hidden'>
-            <HeaderStreamPlayer />
+            <HeaderStreamPlayerWithMemo />
           </div>
           <MainHeaderMobile isOpenedMenu={isOpenedMenu} />
         </nav>

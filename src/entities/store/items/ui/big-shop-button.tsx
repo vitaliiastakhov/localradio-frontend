@@ -1,13 +1,10 @@
-import { useUnit } from 'effector-react';
-import { useEffect, useState } from 'react';
 import { ShopButton } from '@/entities/store/items/ui/shop-button';
 import { ShopItemEntity } from '@/shared/api/graphql/__generated__/schema.graphql';
 import { clsxm } from '@/shared/lib/clsxm';
 import { productQuantityRestriction } from '@/shared/lib/constants/common';
-import { openCartModalEv } from '../../cart/model/cart.model';
-import { addProductEv } from '../model/shop.model';
+import { useSubmit } from './use-submit.hook';
 
-interface ShopSubmitElementProps {
+export interface ShopSubmitElementProps {
   product: ShopItemEntity;
   disabled?: boolean;
   price?: number;
@@ -22,30 +19,13 @@ export const ShopSubmitElement = ({
   selectedSize,
 }: ShopSubmitElementProps) => {
   const { attributes } = product;
-  const [quantity, setQuantity] = useState<number>(1);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const { openCartModal, addProduct } = useUnit({
-    openCartModal: openCartModalEv,
-    addProduct: addProductEv,
-  });
-
   const sizes = attributes?.attributes?.size;
-  const onSubmit = () => {
-    if (!disabled) {
-      addProduct({
-        ...product,
-        quantity,
-        selectedSize,
-      });
-      openCartModal(true);
-      setIsSubmitted(true);
-    }
-  };
 
-  useEffect(() => {
-    isSubmitted && setQuantity(1);
-  }, [isSubmitted]);
+  const { quantity, isSubmitted, onSubmit, setQuantity } = useSubmit({
+    product,
+    disabled,
+    selectedSize,
+  });
 
   const ShopSubmitClasses = clsxm(
     'flex w-full items-center justify-between overflow-hidden text-[0.95rem] uppercase sm:text-[1rem]',

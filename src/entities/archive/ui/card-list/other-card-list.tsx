@@ -1,5 +1,5 @@
 import InfiniteScroll from 'react-infinite-scroll-component';
-import { UseGetMoreOnScrollResponse } from '@/entities/archive/hooks/use-get-more-on-scroll';
+import { UseGetMoreOnScrollResponse } from '@/entities/archive/hooks/use-get-more-on-scroll.hook';
 import { CardListProps } from '../../lib/types';
 import { CardListSwitch } from './card-list-switch';
 

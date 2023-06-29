@@ -1,8 +1,8 @@
-import { CardList } from '@/entities/archive/ui/card-list';
+import { CardListWithMemo } from '@/entities/archive/ui/card-list';
 import { GenreItem } from '@/shared/ui/genres/genre-button/genre-item';
 import { HomePageProps } from './home-page';
 
-export const HomePageBottom = ({
+export const HomePageContent = ({
   latest,
   releases,
   shopItems,
@@ -13,7 +13,7 @@ export const HomePageBottom = ({
   return (
     <div className='flex flex-col gap-5 pt-5 lg:pt-10'>
       <div>
-        <CardList
+        <CardListWithMemo
           pageVariant='home'
           data={latest}
           variant='mixes'
@@ -56,7 +56,7 @@ export const HomePageBottom = ({
       </div>
 
       {releases.length > 0 && (
-        <CardList
+        <CardListWithMemo
           pageVariant='home'
           data={releases}
           variant='releases'
@@ -64,7 +64,7 @@ export const HomePageBottom = ({
         />
       )}
       {shopItems.length > 0 && (
-        <CardList
+        <CardListWithMemo
           pageVariant='home'
           data={shopItems}
           variant='shop'
@@ -72,7 +72,7 @@ export const HomePageBottom = ({
         />
       )}
       {events.length > 0 && (
-        <CardList
+        <CardListWithMemo
           pageVariant='home'
           data={events}
           text='Events'

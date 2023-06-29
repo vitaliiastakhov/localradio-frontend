@@ -1,18 +1,18 @@
 import { useList, useUnit } from 'effector-react';
 import Link from 'next/link';
 import { useState } from 'react';
-import { MixCard } from '@/entities/archive/ui/cards/mix-card/mix-card';
+import { MixCardWithMemo } from '@/entities/archive/ui/cards/mix-card/mix-card';
 import { setCurrentGlobalPlayerEv } from '@/features/choose-global-player/model/current-global-player.model';
 import { clsxm } from '@/shared/lib/clsxm';
 import { Icon } from '@/shared/ui/icons';
 import { ListIcon } from '@/shared/ui/icons/icons/list-icon';
-import { $randomMixes } from './soundcloud/model/sc-random-mixes.model';
+import { $randomMixes } from '../../soundcloud/model/sc-random-mixes.model';
 import {
   $isClickedPlaySc,
   $isOpenedWidget,
   $linkToMix,
   openWidgetEv,
-} from './soundcloud/model/soundcloud.model';
+} from '../../soundcloud/model/soundcloud.model';
 
 interface BottomPlayerNavProps {
   loaded: boolean;
@@ -39,7 +39,11 @@ export const BottomPlayerNav = ({ loaded, variant }: BottomPlayerNavProps) => {
   const mixes = useList($randomMixes, {
     keys: [isClickedPlaySc, linkToMix],
     fn: (mix) => (
-      <MixCard key={mix.attributes?.name} sizeVariant='small' {...mix} />
+      <MixCardWithMemo
+        key={mix.attributes?.name}
+        sizeVariant='small'
+        {...mix}
+      />
     ),
   });
 

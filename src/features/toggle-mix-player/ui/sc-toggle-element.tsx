@@ -34,7 +34,6 @@ export const SCToggleElement = ({
       <div className='relative flex aspect-square  flex-col items-center justify-center  md:w-auto'>
         <div className='relative h-full w-full'>
           <NextImage
-            useSkeleton={true}
             src={attributes?.image.data?.attributes?.url ?? ''}
             alt={attributes?.name ?? ''}
             fill

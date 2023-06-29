@@ -18,10 +18,12 @@ module.exports = configure({
       'effector/no-watch': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
       'react/destructuring-assignment': 'off',
+      'react/jsx-key': 'error',
       'jsx-a11y/media-has-caption': 'off',
       'jsx-a11y/no-noninteractive-element-interactions': 'off',
       'jsx-a11y/no-static-element-interactions': 'off',
       '@typescript-eslint/no-unused-expressions': 'off',
+      'react/no-unknown-property': 'warn',
     },
   },
 });

@@ -8,7 +8,7 @@ export const useScroll = () => {
     let currentScrollPosition = 0;
 
     window.addEventListener('scroll', () => {
-      currentScrollPosition = window.pageYOffset;
+      currentScrollPosition = window.scrollY;
 
       if (previousScrollPosition - currentScrollPosition < 0) {
         setVisible(false);

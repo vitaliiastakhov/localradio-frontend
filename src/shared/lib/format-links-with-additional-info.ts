@@ -12,7 +12,7 @@ type AdditionalData =
   | keyof typeof socialsAdditionalData
   | keyof typeof releaseLinksAdditionalData;
 
-interface LinksWithColors {
+export interface LinksWithColors {
   color?: string | undefined;
   icon?: JSX.Element | undefined;
   title?: string | undefined;

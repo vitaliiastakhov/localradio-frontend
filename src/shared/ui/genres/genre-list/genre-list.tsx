@@ -1,9 +1,9 @@
-import { memo } from 'react';
+import { FC, memo } from 'react';
 import { clsxm } from '@/shared/lib/clsxm';
 import { GenreItem } from '../genre-button/genre-item';
 import { GenreListProps } from '../types/genre.interface';
 
-export const GenreList = memo<GenreListProps>((props) => {
+export const GenreList: FC<GenreListProps> = (props) => {
   const { genres, sizeVariant, variant, colorVariant } = props;
   if (genres && genres.length > 0)
     return (
@@ -29,4 +29,6 @@ export const GenreList = memo<GenreListProps>((props) => {
       </ul>
     );
   return null;
-});
+};
+
+export const GenreListWithMemo = memo(GenreList);

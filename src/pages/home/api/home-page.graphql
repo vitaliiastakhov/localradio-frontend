@@ -1,0 +1,160 @@
+query Homepage {
+  mixes(sort: "date:desc", pagination: { limit: 12 }) {
+    data {
+      id
+      attributes {
+        ...Attributes
+      }
+    }
+    meta {
+      pagination {
+        total
+      }
+    }
+  }
+
+  releases(sort: "date:desc", pagination: { limit: 4 }) {
+    data {
+      id
+      attributes {
+        date
+        descriptionEn
+        descriptionRu
+        artistName
+        releaseName
+        slug
+        type
+        links {
+          id
+          spotify
+          soundcloud
+          vkMusic
+          yandexMusic
+          youtubeMusic
+          bandcamp
+          appleMusic
+        }
+        cover {
+          data {
+            ...Image
+          }
+        }
+      }
+    }
+  }
+
+  shopItems(
+    sort: "createdAt:desc"
+    pagination: { limit: 4 }
+    filters: { soldout: { ne: true } }
+  ) {
+    data {
+      id
+      attributes {
+        title
+        slug
+        soldout
+        quantity
+        price
+        images {
+          data {
+            id
+            attributes {
+              url
+            }
+          }
+        }
+        description
+        createdAt
+        shop_category {
+          data {
+            attributes {
+              name
+              slug
+            }
+          }
+        }
+        attributes
+      }
+    }
+  }
+
+  events(sort: "createdAt:desc", pagination: { limit: 4 }) {
+    data {
+      id
+      attributes {
+        name
+        slug
+        eventInfo {
+          id
+          date {
+            id
+            eventDate
+            eventTimeStart
+            eventTimeEnd
+          }
+          location {
+            id
+            locationName
+            locationLink
+          }
+          schedule {
+            id
+            name
+            info
+          }
+          info
+        }
+        mixes {
+          data {
+            id
+            attributes {
+              name
+              slug
+              date
+              locationName
+              locationLink
+              genres {
+                data {
+                  ...Genres
+                }
+              }
+              image {
+                data {
+                  ...Image
+                }
+              }
+            }
+          }
+        }
+        image {
+          data {
+            id
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+    meta {
+      pagination {
+        total
+      }
+    }
+  }
+  genres(pagination: { limit: 50 }, sort: "name:asc") {
+    data {
+      ...Genres
+    }
+  }
+  moods(pagination: { limit: 20 }, sort: "name:asc") {
+    data {
+      id
+      attributes {
+        name
+        slug
+      }
+    }
+  }
+}

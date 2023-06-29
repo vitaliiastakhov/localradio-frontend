@@ -8,22 +8,22 @@ interface ArchiveNavItemProps {
   link: string;
 }
 
-export const ArchiveNavItem = memo(
-  ({ text, link, className }: ArchiveNavItemProps) => {
-    return (
-      <li
-        className={clsxm(
-          'tracking-[0.01em] text-primary duration-75',
-          className
-        )}
+export const ArchiveNavItem = ({
+  text,
+  link,
+  className,
+}: ArchiveNavItemProps) => {
+  return (
+    <li
+      className={clsxm('tracking-[0.01em] text-primary duration-75', className)}
+    >
+      <Link
+        className='flex h-full w-full items-center justify-center'
+        href={link}
       >
-        <Link
-          className='flex h-full w-full items-center justify-center'
-          href={link}
-        >
-          {text}
-        </Link>
-      </li>
-    );
-  }
-);
+        {text}
+      </Link>
+    </li>
+  );
+};
+export const ArchiveNavItemWithMemo = memo(ArchiveNavItem);

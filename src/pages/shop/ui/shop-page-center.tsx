@@ -20,13 +20,12 @@ interface ShopPageCenterProps {
 export const ShopPageCenter = ({ item }: ShopPageCenterProps) => {
   const { attributes } = item;
 
+  const [currentImage, setCurrentImage] = useState<Maybe<string>>('');
   const { submit, selectSize, selectedSize } = useUnit({
     submit: submitShopEv,
     selectSize: selectSizeEv,
     selectedSize: $selectedSize,
   });
-
-  const [currentImage, setCurrentImage] = useState<Maybe<string>>('');
 
   const images = attributes?.images.data;
   const sizes = attributes?.attributes;
@@ -38,6 +37,7 @@ export const ShopPageCenter = ({ item }: ShopPageCenterProps) => {
   useEffect(() => {
     submit(false);
   }, [submit]);
+
   return (
     <div className='h-full border-black px-1.5 sm:px-3 lg:border-x-2 lg:pt-3'>
       <div className='flex aspect-square  border-l-2 border-black  2xl:max-h-full'>

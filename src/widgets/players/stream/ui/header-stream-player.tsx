@@ -5,14 +5,14 @@ import { Icon } from '@/shared/ui/icons';
 import { $isStreamLoaded, $streamIsAvailable } from '../model/stream';
 import { HeaderStreamMarqueeButton } from './header-stream-marquee-button';
 
-export const HeaderStreamPlayer = memo(() => {
+export const HeaderStreamPlayer = () => {
   const { streamIsLoaded, streamIsAvailable } = useUnit({
     streamIsLoaded: $isStreamLoaded,
     streamIsAvailable: $streamIsAvailable,
   });
 
   return (
-    <div className='grid grid-cols-1 border-t-2 border-black lg:mx-0 lg:rounded-lg  lg:border-t-0 lg:bg-primary lg:p-0.5'>
+    <div className='f grid grid-cols-1 border-t-2 border-black lg:mx-0  lg:rounded-lg lg:border-t-0 lg:bg-primary lg:p-0.5'>
       <div className='group flex h-[30px] w-full max-w-[100vw] flex-1 items-center overflow-hidden text-[0.875rem] leading-none lg:h-6 lg:rounded-lg lg:bg-white/70 lg:text-[0.8rem] lg:backdrop-blur xl:text-[0.875rem] 2xl:h-7 2xl:text-[0.95rem]'>
         {streamIsAvailable && !streamIsLoaded && (
           <div className='mx-2'>
@@ -53,4 +53,6 @@ export const HeaderStreamPlayer = memo(() => {
       </div>
     </div>
   );
-});
+};
+
+export const HeaderStreamPlayerWithMemo = memo(HeaderStreamPlayer);

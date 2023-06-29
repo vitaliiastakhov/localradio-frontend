@@ -17,8 +17,7 @@
     "sitemap": "next-sitemap --config next-sitemap.config.js",
     "codegen": "env-cmd graphql-codegen --config codegen.ts",
     "storybook": "storybook dev -p 6006 --no-open",
-    "build-storybook": "storybook build",
-    "knip": "knip"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@apollo/client": "^3.7.16",
@@ -45,7 +44,7 @@
     "swr": "^2.2.0",
     "tailwind-merge": "^1.13.2",
     "tailwind-scrollbar-hide": "^1.1.7",
-    "typescript": "5.1.5",
+    "typescript": "5.1.6",
     "yup": "^1.2.0"
   },
   "devDependencies": {

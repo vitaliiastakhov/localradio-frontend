@@ -10,7 +10,7 @@ import {
   $isYoutubePlaying,
 } from '@/widgets/players/youtube/model/youtube.model';
 import { MixButtonProps } from './mix-card';
-import { MixCardButton } from './mix-card-button';
+import { MixCardButtonWithMemo } from './mix-card-button';
 
 export const MixYoutubeButton = ({
   sizeVariant,
@@ -40,7 +40,7 @@ export const MixYoutubeButton = ({
   }, [handlePlay, attributes, isYoutubePlaying, currentYoutubeLink]);
 
   return (
-    <MixCardButton
+    <MixCardButtonWithMemo
       variant='youtube'
       sizeVariant={sizeVariant}
       ariaLabel='Play and pause soundcloud player'

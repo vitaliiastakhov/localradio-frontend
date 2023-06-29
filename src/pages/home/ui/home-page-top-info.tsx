@@ -3,9 +3,8 @@ import { CurrentMixPlayer } from '@/features/toggle-mix-player/model/current-mix
 import { TogglePlayerLinks } from '@/features/toggle-mix-player/model/types';
 import { PlayerToggle } from '@/features/toggle-mix-player/ui/player-toggle';
 import { clsxm } from '@/shared/lib/clsxm';
-import { formatDate } from '@/shared/lib/format-date';
 import { CardDate } from '@/shared/ui/card';
-import { GenreList } from '@/shared/ui/genres/genre-list/genre-list';
+import { GenreListWithMemo } from '@/shared/ui/genres/genre-list/genre-list';
 import { HomePageTopProps } from './home-page-top';
 
 interface HomePageTopInfoProps {
@@ -22,7 +21,7 @@ export const HomePageTopInfo = ({
   schedulesExist,
 }: HomePageTopInfoProps) => {
   const attributes = homePageRandomMix?.attributes;
-  const formattedDate = formatDate(attributes?.date);
+
   return (
     <div
       className={clsxm(
@@ -55,11 +54,11 @@ export const HomePageTopInfo = ({
                   {attributes?.name}
                 </Link>
               </div>
-              <CardDate formattedDate={formattedDate} type='mix' />
+              <CardDate date={attributes?.date} variant='mix' />
             </div>
             {attributes?.genres?.data.length ? (
               <div className='border-black text-black'>
-                <GenreList
+                <GenreListWithMemo
                   colorVariant='primary'
                   variant='solid'
                   sizeVariant='standard'

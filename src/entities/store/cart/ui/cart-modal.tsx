@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { clsxm } from '@/shared/lib/clsxm';
-import { useScroll } from '@/shared/lib/hooks/use-scroll';
+import { useScroll } from '@/shared/lib/hooks/use-scroll.hook';
 import { Icon } from '@/shared/ui/icons';
 import {
   $products,

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
-import { formatDate } from '@/shared/lib/format-date';
 import { CardDate } from '@/shared/ui/card/card-date';
-import { GenreList } from '@/shared/ui/genres/genre-list/genre-list';
+import { GenreListWithMemo } from '@/shared/ui/genres/genre-list/genre-list';
 import { MixNavigation } from './navigation/mix-navigation';
 import { MixPageProps } from './types/mix-page.interface';
 
@@ -11,8 +10,6 @@ const MixPageCenter = ({ mixes, mixNext, mixPrev }: MixPageCenterProps) => {
   const { attributes: project } = mixes.data[0];
   const [SCAudioLink, setSCAudioLink] = useState<string>('');
   const [youtubeVideoLink, setYoutubeVideoLink] = useState<string>('');
-  const formattedDate = formatDate(project?.date);
-
   useEffect(() => {
     project?.linksToMixes?.soundcloudLink &&
       setSCAudioLink(project.linksToMixes.soundcloudLink);
@@ -35,12 +32,12 @@ const MixPageCenter = ({ mixes, mixNext, mixPrev }: MixPageCenterProps) => {
 
       <div className='flex flex-col gap-1.5 py-2 text-[0.8rem] font-medium uppercase md:text-[0.85rem]'>
         <CardDate
-          formattedDate={formattedDate}
+          date={project?.date}
           link={project?.locationLink}
           text={project?.locationName}
-          type='page'
+          variant='page'
         />
-        <GenreList
+        <GenreListWithMemo
           colorVariant='primary'
           variant='solid'
           genres={project?.genres?.data}

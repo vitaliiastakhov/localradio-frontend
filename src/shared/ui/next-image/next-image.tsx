@@ -1,22 +1,13 @@
 import Image, { ImageProps } from 'next/image';
-import { useState } from 'react';
-import { clsxm } from '@/shared/lib/clsxm';
 
 type NextImageProps = {
-  useSkeleton?: boolean;
   imgClassName?: string;
   blurClassName?: string;
   alt: string;
   width?: string | number;
 } & { width?: string | number; height?: string | number } & ImageProps;
 
-/**
- *
- * @description Must set width using `w-` className
- * @param useSkeleton add background with pulse animation, don't use it if image is transparent
- */
 export function NextImage({
-  useSkeleton = false,
   src,
   width,
   height,
@@ -26,7 +17,6 @@ export function NextImage({
   blurClassName,
   ...rest
 }: NextImageProps) {
-  const [status, setStatus] = useState(useSkeleton ? 'loading' : 'complete');
   const widthIsSet = className?.includes('w-') ?? false;
 
   return (
@@ -34,19 +24,7 @@ export function NextImage({
       style={!widthIsSet ? { width: `${width}px` } : undefined}
       className={className}
     >
-      <Image
-        className={clsxm(
-          imgClassName,
-          status === 'loading' &&
-            clsxm('animate-pulse bg-primary', blurClassName)
-        )}
-        src={src}
-        width={width}
-        height={height}
-        alt={alt}
-        onLoadingComplete={() => setStatus('complete')}
-        {...rest}
-      />
+      <Image src={src} width={width} height={height} alt={alt} {...rest} />
     </figure>
   );
 }

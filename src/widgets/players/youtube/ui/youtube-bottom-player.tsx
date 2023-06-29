@@ -2,7 +2,7 @@ import { useUnit } from 'effector-react';
 import { $currentGlobalPlayer } from '@/features/choose-global-player/model/current-global-player.model';
 import { YoutubeToggleElement } from '@/features/toggle-mix-player/ui';
 import { clsxm } from '@/shared/lib/clsxm';
-import { BottomPlayerNav } from '../../bottom-player-nav';
+import { BottomPlayerNav } from '../../bottom-player-nav/ui/bottom-player-nav';
 import { $currentYoutubeLink } from '../model/youtube.model';
 
 export const YoutubeBottomPlayer = () => {

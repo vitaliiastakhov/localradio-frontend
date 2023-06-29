@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
-import { CardList } from '@/entities/archive/ui/card-list';
+import { CardListWithMemo } from '@/entities/archive/ui/card-list';
 import { clsxm } from '@/shared/lib/clsxm';
-import { GenreList } from '@/shared/ui/genres/genre-list/genre-list';
+import { GenreListWithMemo } from '@/shared/ui/genres/genre-list/genre-list';
 import { SearchedData } from '../model/search.model';
 
 interface SearchedDataProps {
@@ -14,10 +14,9 @@ export const SearchData = forwardRef<HTMLDivElement, SearchedDataProps>(
     return (
       <div ref={forwardRef} className='flex flex-col'>
         <SearchedGenres genres={searchedData.genres} />
-
         {searchedData.mixes && (
           <div className='w-full'>
-            <CardList
+            <CardListWithMemo
               pageVariant='other'
               data={searchedData.mixes.data}
               variant='search'
@@ -46,7 +45,7 @@ const SearchedGenres = ({ genres }: Pick<SearchedData, 'genres'>) => {
           /Genres/
         </h2>
 
-        <GenreList
+        <GenreListWithMemo
           colorVariant='primary'
           variant='solid'
           genres={genres.data}

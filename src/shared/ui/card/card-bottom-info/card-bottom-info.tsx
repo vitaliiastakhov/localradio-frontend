@@ -1,9 +1,8 @@
 import { clsxm } from '@/shared/lib/clsxm';
-import { formatDate } from '@/shared/lib/format-date';
-import { GenreList } from '@/shared/ui/genres/genre-list/genre-list';
-import { CardProps } from '../card/card';
+import { GenreListWithMemo } from '@/shared/ui/genres/genre-list/genre-list';
+import { CardProps } from '../card.interface';
 import { CardDate } from '../card-date';
-import { CardHeading } from '../card-heading';
+import { CardHeadingWithMemo } from '../card-heading/card-heading';
 
 type CardBottomInfoProps = Pick<
   CardProps,
@@ -27,7 +26,6 @@ export const CardBottomInfo = ({
   cardDate,
   children,
 }: CardBottomInfoProps) => {
-  const formattedDate = formatDate(date);
   return (
     <div
       className={clsxm(
@@ -51,17 +49,21 @@ export const CardBottomInfo = ({
           { 'justify-between': sizeVariant === 'standard' }
         )}
       >
-        <CardHeading sizeVariant={sizeVariant} text={headingText} href={href} />
+        <CardHeadingWithMemo
+          sizeVariant={sizeVariant}
+          text={headingText}
+          href={href}
+        />
         <CardDate
           sizeVariant={sizeVariant}
-          type={variant}
-          formattedDate={formattedDate}
+          variant={variant}
+          date={date}
           link={cardDate?.link}
           text={cardDate?.text}
         />
       </div>
       {variant === 'mix' && (
-        <GenreList
+        <GenreListWithMemo
           variant='solid'
           colorVariant='primary'
           sizeVariant='small'

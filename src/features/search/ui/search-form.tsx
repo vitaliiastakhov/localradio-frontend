@@ -7,7 +7,7 @@ import {
   useState,
 } from 'react';
 import { DEBOUNCE_TIMEOUT_IN_MS } from '@/shared/lib/constants/common';
-import { useDebounce } from '@/shared/lib/hooks/use-debouce';
+import { useDebounce } from '@/shared/lib/hooks/use-debouce.hook';
 import { Icon } from '@/shared/ui/icons';
 import { BaseInput } from '@/shared/ui/inputs/base-input';
 import {
@@ -16,7 +16,7 @@ import {
   submittedSearchEv,
 } from '../model/search.model';
 
-export const SearchForm = memo(() => {
+export const SearchForm = () => {
   const { openSearchModal, searchChange, submitted } = useUnit({
     openSearchModal: openSearchModalEv,
     searchChange: searchChanged,
@@ -74,4 +74,6 @@ export const SearchForm = memo(() => {
       </button>
     </form>
   );
-});
+};
+
+export const SearchFormWithMemo = memo(SearchForm);

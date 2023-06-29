@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { GenreRelationResponseCollection } from '@/shared/api/graphql/__generated__/schema.graphql';
-import { GenreList } from './genre-list';
+import { GenreListWithMemo } from './genre-list';
 
 const meta = {
   title: 'Ui/Genre/GenreList',
-  component: GenreList,
+  component: GenreListWithMemo,
   tags: ['autodocs'],
-} satisfies Meta<typeof GenreList>;
+} satisfies Meta<typeof GenreListWithMemo>;
 
 const genres: GenreRelationResponseCollection = {
   __typename: 'GenreRelationResponseCollection',

@@ -21,7 +21,7 @@ export const MainHeaderMobile = ({ isOpenedMenu }: MainHeaderMobileProps) => {
         }
       )}
     >
-      <div className='flex  min-h-[100vh] flex-col items-center overflow-scroll bg-primary scrollbar-hide'>
+      <div className='flex min-h-[100vh] flex-col items-center overflow-scroll bg-primary scrollbar-hide'>
         <ul className=' flex w-full flex-col'>
           {headerNav.map(({ text, href }) => (
             <li
@@ -53,7 +53,7 @@ export const MainHeaderMobile = ({ isOpenedMenu }: MainHeaderMobileProps) => {
             </Link>
           </li>
         </ul>
-        <LocalSocialsList type='header' />
+        <LocalSocialsList variant='header' />
       </div>
     </div>
   );

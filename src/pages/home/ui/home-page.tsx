@@ -8,7 +8,7 @@ import {
   ReleaseEntity,
   ShopItemEntity,
 } from '@/shared/api/graphql/__generated__/schema.graphql';
-import { HomePageBottom } from './home-page-bottom';
+import { HomePageContent } from './home-page-content';
 import { HomePageTop } from './home-page-top';
 
 export interface HomePageProps {
@@ -42,7 +42,7 @@ export const HomePage = ({
         schedules={schedules}
         homePageRandomMix={homePageRandomMix}
       />
-      <HomePageBottom
+      <HomePageContent
         shopItems={shopItems}
         events={events}
         releases={releases}

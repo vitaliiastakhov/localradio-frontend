@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { memo } from 'react';
+import { FC, memo } from 'react';
 import type { Maybe } from 'yup';
 import type { SizeVariant } from '@/shared/types/size-variant.interface';
 
@@ -9,7 +9,7 @@ interface Props {
   sizeVariant?: SizeVariant;
 }
 
-export const CardHeading = memo<Props>(({ href, text, sizeVariant }) => {
+export const CardHeading: FC<Props> = ({ href, text, sizeVariant }) => {
   if (Array.isArray(text)) {
     return (
       <Link
@@ -43,4 +43,5 @@ export const CardHeading = memo<Props>(({ href, text, sizeVariant }) => {
       <h3>{text}</h3>
     </Link>
   );
-});
+};
+export const CardHeadingWithMemo = memo(CardHeading);

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Maybe } from 'yup';
 import { Icon } from '@/shared/ui/icons';
-import { ScheduleIconWrapper } from './schedule-icon-wrapper';
+import { ScheduleIconWrapperWithMemo } from './schedule-icon-wrapper';
 
 interface ScheduleLocationProps {
   locationLink?: Maybe<string>;
@@ -21,13 +21,13 @@ export const ScheduleLocation = ({
         <div className='flex items-center bg-black px-2 py-[6px] leading-[1.05] transition duration-100 ease-out group-hover:bg-secondary-dark lg:pl-3 lg:pr-2'>
           {locationName}
         </div>
-        <ScheduleIconWrapper className='bg-black fill-primary transition duration-100 ease-out group-hover:bg-secondary-dark group-hover:fill-black'>
+        <ScheduleIconWrapperWithMemo className='bg-black fill-primary transition duration-100 ease-out group-hover:bg-secondary-dark group-hover:fill-black'>
           {locationName === 'Студия' ? (
             <Icon.HomeIcon className='h-2.5 lg:h-[15px]' />
           ) : (
             <Icon.ArrowIcon className='h-3.5 -rotate-90 stroke-primary group-hover:stroke-black lg:h-[20px]' />
           )}
-        </ScheduleIconWrapper>
+        </ScheduleIconWrapperWithMemo>
       </Link>
     );
 

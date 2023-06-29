@@ -7,7 +7,7 @@ import {
 } from '@/features/choose-global-player/model/current-global-player.model';
 import { clsxm } from '@/shared/lib/clsxm';
 import { Icon } from '@/shared/ui/icons';
-import { BottomPlayerNav } from '../../bottom-player-nav';
+import { BottomPlayerNav } from '../../bottom-player-nav/ui/bottom-player-nav';
 import { $randomMixes } from '../model/sc-random-mixes.model';
 import {
   $currentSCLink,

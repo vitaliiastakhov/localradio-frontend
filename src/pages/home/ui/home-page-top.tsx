@@ -1,6 +1,6 @@
 import { useUnit } from 'effector-react';
+import dynamic from 'next/dynamic';
 import useSWR, { useSWRConfig } from 'swr';
-import { ScheduleList } from '@/entities/schedule/ui/schedule-list';
 import { $currentMixPlayer } from '@/features/toggle-mix-player/model/current-mix-player.model';
 import { TogglePlayerLinks } from '@/features/toggle-mix-player/model/types';
 import { clsxm } from '@/shared/lib/clsxm';
@@ -14,6 +14,12 @@ export type HomePageTopProps = Pick<
   HomePageProps,
   'homePageRandomMix' | 'schedules' | 'streamIsLive'
 >;
+
+const ScheduleList = dynamic(() =>
+  import('@/entities/schedule/ui/schedule-list').then(
+    (module) => module.ScheduleList
+  )
+);
 
 export const HomePageTop = (props: HomePageTopProps) => {
   const { homePageRandomMix, schedules, streamIsLive } = props;

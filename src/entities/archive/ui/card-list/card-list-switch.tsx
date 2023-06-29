@@ -10,7 +10,7 @@ import {
 import { clsxm } from '@/shared/lib/clsxm';
 import type { EntityVariant } from '@/shared/types/entity-variants.interface';
 import { EventCard } from '../cards/event-card/event-card';
-import { MixCard } from '../cards/mix-card/mix-card';
+import { MixCardWithMemo } from '../cards/mix-card/mix-card';
 import { ReleaseCard } from '../cards/release-card/release-card';
 import { ShowResidentCard } from '../cards/show-resident-card/show-resident-card';
 
@@ -62,7 +62,7 @@ export const CardListSwitch = ({
                 length={data.length}
                 index={index}
               >
-                <MixCard sizeVariant='standard' {...mix} />
+                <MixCardWithMemo sizeVariant='standard' {...mix} />
               </HomePageCardWrapper>
             );
           })}

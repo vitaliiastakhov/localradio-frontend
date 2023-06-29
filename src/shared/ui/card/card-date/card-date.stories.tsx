@@ -1,20 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { CardDate } from './card-date';
+import { CardDateWithMemo } from './card-date';
 import { CardDateProps } from './card-date.interface';
 
 const defaultArgs: CardDateProps = {
-  formattedDate: '05.06.2022',
+  date: new Date().toISOString(),
   sizeVariant: 'large',
   text: 'latest mix',
   link: 'https://radiolocal.online',
-  type: 'show',
+  variant: 'show',
 };
 
 const meta = {
   title: 'ui/CardDate',
-  component: CardDate,
+  component: CardDateWithMemo,
   tags: ['autodocs'],
-} satisfies Meta<typeof CardDate>;
+} satisfies Meta<typeof CardDateWithMemo>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -22,7 +22,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     ...defaultArgs,
-    type: 'mix',
+    variant: 'mix',
     text: 'Студия',
   },
 };
@@ -34,9 +34,9 @@ export const Secondary: Story = {
 
 export const SmallDate: Story = {
   args: {
-    formattedDate: defaultArgs.formattedDate,
+    date: defaultArgs.date,
     sizeVariant: 'small',
-    type: 'mix',
+    variant: 'mix',
   },
   parameters: {
     description: {

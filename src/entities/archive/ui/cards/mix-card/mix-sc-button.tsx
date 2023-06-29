@@ -10,7 +10,7 @@ import {
   setLinkToMixEv,
 } from '@/widgets/players/soundcloud/model/soundcloud.model';
 import { MixButtonProps } from './mix-card';
-import { MixCardButton } from './mix-card-button';
+import { MixCardButtonWithMemo } from './mix-card-button';
 
 interface MixSCButtonProps extends MixButtonProps {
   soundcloudLink: string;
@@ -67,7 +67,7 @@ export const MixSCButton = ({
   };
 
   return (
-    <MixCardButton
+    <MixCardButtonWithMemo
       variant='soundcloud'
       sizeVariant={sizeVariant}
       ariaLabel='Play and pause soundcloud player'

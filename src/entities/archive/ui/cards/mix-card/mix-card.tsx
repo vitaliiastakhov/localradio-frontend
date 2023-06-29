@@ -2,7 +2,7 @@ import { memo } from 'react';
 import {
   HandleGlobalPlayerResponse,
   useHandleGlobalPlayer,
-} from '@/entities/archive/hooks/use-handle-global-player';
+} from '@/entities/archive/hooks/use-handle-global-player.hook';
 import {
   Maybe,
   Mix,
@@ -25,9 +25,8 @@ export interface MixButtonProps {
   handlePlay: HandleGlobalPlayerResponse['handlePlay'];
 }
 
-export const MixCard = memo((mix: MixCardProps) => {
+export const MixCard = (mix: MixCardProps) => {
   const { handlePlay } = useHandleGlobalPlayer({ id: mix.id });
-
   const { attributes, sizeVariant } = mix;
   const soundcloudLink = mix.attributes?.linksToMixes?.soundcloudLink;
   const youtubeLink = mix.attributes?.linksToMixes?.youtubeLink;
@@ -80,4 +79,6 @@ export const MixCard = memo((mix: MixCardProps) => {
       )}
     </Card>
   );
-});
+};
+
+export const MixCardWithMemo = memo(MixCard);

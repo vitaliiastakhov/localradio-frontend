@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { UseGetMoreOnScrollResponse } from '@/entities/archive/hooks/use-get-more-on-scroll';
+import { UseGetMoreOnScrollResponse } from '@/entities/archive/hooks/use-get-more-on-scroll.hook';
 import { clsxm } from '@/shared/lib/clsxm';
 import { CardListProps } from '../../lib/types';
 import { CardListSwitch } from './card-list-switch';

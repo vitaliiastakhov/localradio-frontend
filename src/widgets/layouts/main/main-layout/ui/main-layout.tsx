@@ -1,16 +1,25 @@
 import clsx from 'clsx';
-import { useUnit } from 'effector-react';
+import dynamic from 'next/dynamic';
 import localFont from 'next/font/local';
-import { useEffect } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
-import { CartModal } from '@/entities/store/cart/ui/cart-modal';
-import { SearchModal } from '@/features/search/ui/search-modal';
-import { REFETCH_STREAM_IN_MS } from '@/shared/lib/constants/common';
 import { ErrorFallback } from '@/widgets/error-fallback/error-fallback';
-import { BottomPlayerWrapper } from '@/widgets/players/bottom-player-wrapper';
-import { fetchStreamTitleFx } from '@/widgets/players/stream/model/stream';
 import { MainFooter } from '../../main-footer/ui/main-footer';
 import { MainHeader } from '../../main-header/ui/main-header';
+import { useFetchStreamTitle } from '../hooks/use-fetch-stream-title';
+
+const SearchModal = dynamic(() =>
+  import('@/features/search/ui/search-modal').then(
+    (module) => module.SearchModal
+  )
+);
+const BottomPlayer = dynamic(() =>
+  import('@/widgets/players/bottom-player/ui/bottom-player').then(
+    (module) => module.BottomPlayer
+  )
+);
+const CartModal = dynamic(() =>
+  import('@/entities/store/cart/ui/cart-modal').then((mod) => mod.CartModal)
+);
 
 const myFont = localFont({
   src: '../../../.././../../public/fonts/PPRightGroteskWideVariable.ttf',
@@ -18,19 +27,7 @@ const myFont = localFont({
 });
 
 export function MainLayout({ children }: { children: React.ReactNode }) {
-  const { fetchStreamTitle } = useUnit({
-    fetchStreamTitle: fetchStreamTitleFx,
-  });
-
-  useEffect(() => {
-    fetchStreamTitle();
-  }, [fetchStreamTitle]);
-  useEffect(() => {
-    setInterval(() => {
-      fetchStreamTitle();
-    }, REFETCH_STREAM_IN_MS);
-  }, [fetchStreamTitle]);
-
+  useFetchStreamTitle();
   const errorHandler = (
     error: Error,
     info: {
@@ -43,12 +40,18 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback} onError={errorHandler}>
       <div className={clsx(myFont.className, 'flex min-h-screen flex-col')}>
+        {/* TODO: заменить, когда пофиксят эту проблему https://github.com/vercel/next.js/issues/43674 */}
+        <style jsx global>{`
+          :root {
+            --font-right-grotesk: ${myFont.style.fontFamily};
+          }
+        `}</style>
         <MainHeader />
         <CartModal />
         <SearchModal />
         {children}
         <MainFooter />
-        <BottomPlayerWrapper />
+        <BottomPlayer />
       </div>
     </ErrorBoundary>
   );

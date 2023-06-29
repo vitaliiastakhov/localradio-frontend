@@ -1,5 +1,5 @@
 import type { SecondHeader } from '@/entities/archive/lib/types';
-import { CardList } from '@/entities/archive/ui/card-list';
+import { CardListWithMemo } from '@/entities/archive/ui/card-list';
 import {
   GenreEntity,
   GenreRelationResponseCollection,
@@ -115,7 +115,7 @@ export const MixPageBottom = ({
   if (moreEpisodes?.length)
     return (
       <div className='border-t-2  border-black lg:border-t-0'>
-        <CardList
+        <CardListWithMemo
           pageVariant='other'
           totalCount={totalCount}
           variant='mixes'

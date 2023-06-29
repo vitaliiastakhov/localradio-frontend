@@ -61,7 +61,7 @@ export const HeaderStreamMarqueeButton = ({
           />
         </div>
       )}
-      <div className='grid'>
+      <div className='grid w-full'>
         <Marquee pauseOnHover className='w-0 max-w-full' gradient={false}>
           <div className='flex w-fit overflow-hidden'>{streamTitle}</div>
         </Marquee>

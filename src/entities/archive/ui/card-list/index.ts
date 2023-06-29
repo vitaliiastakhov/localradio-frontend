@@ -1,1 +1,1 @@
-export { CardList } from './card-list';
+export { CardListWithMemo } from './card-list';

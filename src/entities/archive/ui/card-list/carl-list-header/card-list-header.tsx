@@ -1,5 +1,5 @@
+import { SecondHeader } from '@/entities/archive/lib/types';
 import type { SizeVariant } from '@/shared/types/size-variant.interface';
-import { SecondHeader } from '../../lib/types';
 import { CardListHeaderWrapper } from './card-list-header-wrapper';
 import { CardListInnerLink } from './card-list-inner-link';
 

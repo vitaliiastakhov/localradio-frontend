@@ -1,6 +1,5 @@
 import type { Maybe } from 'yup';
 import { Event } from '@/shared/api/graphql/__generated__/schema.graphql';
-import { formatDate } from '@/shared/lib/format-date';
 import { CardDate } from '@/shared/ui/card';
 import { NextImage } from '@/shared/ui/next-image/next-image';
 
@@ -9,9 +8,6 @@ interface EventPageCenterProps {
 }
 
 export const EventPageCenter = ({ attributes }: EventPageCenterProps) => {
-  const formattedDate =
-    attributes?.eventInfo.date?.eventDate &&
-    formatDate(attributes.eventInfo.date.eventDate);
   return (
     <div className=' order-1 h-full border-black px-1.5 sm:px-3 lg:border-x-2'>
       <div className='sticky top-0'>
@@ -30,10 +26,10 @@ export const EventPageCenter = ({ attributes }: EventPageCenterProps) => {
 
         <div className='flex flex-col gap-1 py-2 text-[0.8rem] font-medium uppercase md:text-[0.85rem]'>
           <CardDate
-            formattedDate={formattedDate}
+            date={attributes?.eventInfo.date?.eventDate}
             link={attributes?.eventInfo.location?.locationLink}
             text={attributes?.eventInfo.location?.locationName}
-            type='page'
+            variant='page'
           />
         </div>
       </div>

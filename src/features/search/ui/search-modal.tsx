@@ -12,7 +12,7 @@ import {
   openSearchModalEv,
 } from '../model/search.model';
 import { SearchData } from './search-data';
-import { SearchForm } from './search-form';
+import { SearchFormWithMemo } from './search-form';
 
 export const SearchModal = () => {
   const router = useRouter();
@@ -52,7 +52,7 @@ export const SearchModal = () => {
           leaveTo='opacity-0'
         >
           <div
-            className='fixed  inset-0 z-20 bg-primary bg-opacity-50 backdrop-blur-[166px] backdrop-saturate-150'
+            className='fixed inset-0 z-20 bg-primary bg-opacity-50 backdrop-blur-[166px] backdrop-saturate-150'
             aria-hidden='true'
           />
         </Transition.Child>
@@ -66,12 +66,12 @@ export const SearchModal = () => {
           leaveFrom='opacity-100 translate-y-0'
           leaveTo='opacity-0 -translate-y-full'
         >
-          <div className='fixed  inset-0  top-0 z-30 flex w-full justify-center overflow-y-auto'>
+          <div className='fixed inset-0 top-0  z-30 flex w-full justify-center overflow-y-auto font-sans'>
             <Dialog.Panel className='w-full lg:px-[5%] 2xl:px-[10%]'>
               <div className='flex flex-col'>
                 <div className='sticky top-1.5 mt-[calc(var(--header-height)/3.5)] flex w-full flex-1 flex-col   px-1.5  text-[0.8rem]  md:px-3  lg:px-3.5 xl:text-[0.875rem]'>
                   <div className='flex   items-center'>
-                    <SearchForm />
+                    <SearchFormWithMemo />
                   </div>
                 </div>
                 <div className='px-1.5 pt-3 md:px-3 lg:px-3.5 lg:pt-3.5  2xl:pt-5'>

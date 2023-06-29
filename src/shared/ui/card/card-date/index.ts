@@ -1,3 +1,3 @@
-import { CardDate } from './card-date';
+import { CardDateWithMemo } from './card-date';
 
-export { CardDate };
+export { CardDateWithMemo as CardDate };

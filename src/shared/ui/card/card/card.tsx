@@ -1,39 +1,11 @@
-import { LinkProps } from 'next/link';
-import { memo } from 'react';
-import {
-  GenreRelationResponseCollection,
-  Maybe,
-} from '@/shared/api/graphql/__generated__/schema.graphql';
+import { FC, memo } from 'react';
 import { clsxm } from '@/shared/lib/clsxm';
-import { EntityVariant } from '@/shared/types/entity-variants.interface';
-import type { SizeVariant } from '@/shared/types/size-variant.interface';
+import { CardProps } from '../card.interface';
 import { CardBottomInfo } from '../card-bottom-info/card-bottom-info';
-import { CardImage } from '../card-image';
-import { CardWrapper } from '../card-wrapper';
+import { CardImageWithMemo } from '../card-image/card-image';
+import { CardWrapperWithMemo } from '../card-wrapper/card-wrapper';
 
-interface BaseProps {
-  date: string | any;
-  text?: Maybe<string>;
-  sizeVariant: SizeVariant;
-  headingText?: string | Maybe<string | undefined>[];
-  image?: {
-    alt?: string;
-    src: string;
-  };
-  genres?: Maybe<GenreRelationResponseCollection>;
-  cardDate?: {
-    link?: Maybe<string>;
-    text?: Maybe<string>;
-  };
-  variant: EntityVariant;
-}
-
-export type CardProps = JSX.IntrinsicElements['a'] &
-  BaseProps & {
-    href?: string;
-  } & LinkProps;
-
-export const Card = memo((props: CardProps) => {
+export const Card: FC<CardProps> = (props) => {
   const { children, variant, href, image, sizeVariant = 'standard' } = props;
   const cardWrapperClasses = clsxm(
     { 'group  h-full overflow-hidden': sizeVariant === 'standard' },
@@ -54,10 +26,10 @@ export const Card = memo((props: CardProps) => {
   );
 
   return (
-    <CardWrapper
+    <CardWrapperWithMemo
       sizeVariant={sizeVariant}
       className={cardWrapperClasses}
-      type={variant}
+      variant={variant}
     >
       <div className={cardSubWrapperClasses}>
         <div
@@ -66,7 +38,11 @@ export const Card = memo((props: CardProps) => {
           })}
         >
           {image && (
-            <CardImage href={href} alt={image.alt ?? ''} src={image.src} />
+            <CardImageWithMemo
+              href={href}
+              alt={image.alt ?? ''}
+              src={image.src}
+            />
           )}
           {variant === 'mix' && sizeVariant === 'small' && children}
         </div>
@@ -86,6 +62,8 @@ export const Card = memo((props: CardProps) => {
           <CardBottomInfo {...props}>{children}</CardBottomInfo>
         </div>
       </div>
-    </CardWrapper>
+    </CardWrapperWithMemo>
   );
-});
+};
+
+export const CardWithMemo = memo(Card);

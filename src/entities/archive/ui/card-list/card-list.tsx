@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import { memo, useEffect } from 'react';
-import { useGetMoreOnScroll } from '@/entities/archive/hooks/use-get-more-on-scroll';
+import { useGetMoreOnScroll } from '@/entities/archive/hooks/use-get-more-on-scroll.hook';
 import { Heading } from '@/shared/ui/headings/heading';
 import type { CardListProps } from '../../lib/types';
-import { CardListHeader } from './card-list-header';
+import { CardListHeader } from './carl-list-header';
 import { HomeCardList } from './home-card-list';
 import { OtherCardList } from './other-card-list';
 
-export const CardList = memo((props: CardListProps) => {
+const CardList = (props: CardListProps) => {
   const {
     mixesFilter,
     text,
@@ -31,7 +31,7 @@ export const CardList = memo((props: CardListProps) => {
   }, [data, setCardListItems]);
 
   return (
-    <section className=' flex w-full flex-col gap-3 pb-2 font-semibold 2xl:pb-[1rem]'>
+    <section className='flex w-full flex-col gap-3 pb-2 font-semibold 2xl:pb-[1rem]'>
       <div>
         {cardListItems && cardListItems.length > 0 ? (
           <div>
@@ -74,4 +74,6 @@ export const CardList = memo((props: CardListProps) => {
       </div>
     </section>
   );
-});
+};
+
+export const CardListWithMemo = memo(CardList);

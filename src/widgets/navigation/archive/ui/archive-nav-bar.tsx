@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useUnit } from 'effector-react';
 import { useEffect, useRef, useState } from 'react';
 import useSWR from 'swr';
-import { useScroll } from '@/shared/lib/hooks/use-scroll';
+import { useScroll } from '@/shared/lib/hooks/use-scroll.hook';
 import SWRfetcher from '@/shared/lib/swr-fetcher';
 import { ArchiveNavigationQuery } from '../api/navigation.graphql.interface';
 import {
@@ -13,7 +13,7 @@ import {
 } from '../model/archive-nav.model';
 import styles from './archive-nav.module.css';
 import { ArchiveNavHoverList } from './archive-nav-hover-list';
-import { ArchiveNavItem } from './archive-nav-item';
+import { ArchiveNavItemWithMemo } from './archive-nav-item';
 
 export const ArchiveNavBar = () => {
   const { data: archiveNav } = useSWR<{ data: ArchiveNavigationQuery }>(
@@ -22,6 +22,7 @@ export const ArchiveNavBar = () => {
   );
 
   const [hoveredEl, setHoveredEl] = useState<'mood' | 'genres' | null>(null);
+  const elementRef = useRef<HTMLElement>(null);
   const { navHeight, clickedArchiveNavType, setNavHeight, clickArchiveNav } =
     useUnit({
       navHeight: $navHeight,
@@ -37,19 +38,17 @@ export const ArchiveNavBar = () => {
 
   const { visible } = useScroll();
 
-  const elementRef = useRef<HTMLElement>(null);
-
   useEffect(() => {
     elementRef.current && setNavHeight(elementRef.current.clientHeight);
   });
 
-  const handleClick = (el: 'mood' | 'genres' | null) => {
-    clickArchiveNav(el);
-  };
-
   useEffect(() => {
     clickArchiveNav(null);
   }, [clickArchiveNav]);
+
+  const handleClick = (el: 'mood' | 'genres' | null) => {
+    clickArchiveNav(el);
+  };
 
   return (
     <nav
@@ -61,8 +60,8 @@ export const ArchiveNavBar = () => {
       }`}
     >
       <ul className={styles['nav-list']}>
-        <ArchiveNavItem text='All' link='/archive' />
-        <ArchiveNavItem text='Residents' link='/archive/residents' />
+        <ArchiveNavItemWithMemo text='All' link='/archive' />
+        <ArchiveNavItemWithMemo text='Residents' link='/archive/residents' />
 
         <li onClick={() => handleClick('mood')} className={styles['mood-item']}>
           <div className='relative items-center justify-center tracking-[0.01em]  md:flex md:h-full md:w-full'>
@@ -82,7 +81,12 @@ export const ArchiveNavBar = () => {
               })}
             >
               {archiveNav.data.moodsArray.map((list, index) => (
-                <ArchiveNavHoverList list={list} index={index} variant='mood' />
+                <ArchiveNavHoverList
+                  key={'moodsArray ' + index}
+                  list={list}
+                  index={index}
+                  variant='mood'
+                />
               ))}
             </div>
           )}
@@ -107,6 +111,7 @@ export const ArchiveNavBar = () => {
             >
               {archiveNav.data.genresArray.map((list, index) => (
                 <ArchiveNavHoverList
+                  key={'genresArray ' + index}
                   list={list}
                   index={index}
                   variant='genres'
@@ -114,7 +119,7 @@ export const ArchiveNavBar = () => {
               ))}
             </div>
           )}
-        <ArchiveNavItem
+        <ArchiveNavItemWithMemo
           text='Shows'
           link='/archive/shows'
           className='order-3 md:order-5'

@@ -2,28 +2,16 @@ import { useUnit } from 'effector-react';
 import { useEffect, useMemo, useState } from 'react';
 import { $currentGlobalPlayer } from '@/features/choose-global-player/model/current-global-player.model';
 import {
-  $currentSCLink,
   $isOpenedWidget,
   $isSCPlaying,
-} from './soundcloud/model/soundcloud.model';
-import { SCPlayer } from './soundcloud/ui/sc-player';
-import { StreamPlayer } from './stream/ui/stream-audio';
-import { $currentYoutubeLink } from './youtube/model/youtube.model';
-import { YoutubeBottomPlayer } from './youtube/ui/youtube-bottom-player';
+} from '../../soundcloud/model/soundcloud.model';
 
-export const BottomPlayerWrapper = () => {
-  const baseClasses = 'fixed bottom-0 transition duration-200 ease-out';
+const baseClasses = 'fixed bottom-0 transition duration-200 ease-out';
+
+export const useBottomPlayerStyleHook = () => {
   const [bottomPlayerClasses, setBottomPlayerClasses] = useState(baseClasses);
 
-  const {
-    currentSCLink,
-    currentYoutubeLink,
-    isOpenedScWidget,
-    currentGlobalPlayer,
-    isSCPlaying,
-  } = useUnit({
-    currentSCLink: $currentSCLink,
-    currentYoutubeLink: $currentYoutubeLink,
+  const { isOpenedScWidget, currentGlobalPlayer, isSCPlaying } = useUnit({
     currentGlobalPlayer: $currentGlobalPlayer,
     isOpenedScWidget: $isOpenedWidget,
     isSCPlaying: $isSCPlaying,
@@ -56,13 +44,5 @@ export const BottomPlayerWrapper = () => {
     );
   }, [playerPositionStyles, playerTranslateStyles]);
 
-  return (
-    <div className={bottomPlayerClasses}>
-      <StreamPlayer />
-      {currentGlobalPlayer === 'soundcloud' && currentSCLink && <SCPlayer />}
-      {currentGlobalPlayer === 'youtubeBottom' && currentYoutubeLink && (
-        <YoutubeBottomPlayer />
-      )}
-    </div>
-  );
+  return { bottomPlayerClasses };
 };

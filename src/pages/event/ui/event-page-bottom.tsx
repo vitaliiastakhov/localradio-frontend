@@ -1,4 +1,4 @@
-import { CardList } from '@/entities/archive/ui/card-list';
+import { CardListWithMemo } from '@/entities/archive/ui/card-list';
 import { MixEntity } from '@/shared/api/graphql/__generated__/schema.graphql';
 
 interface EventPageBottomProps {
@@ -8,7 +8,7 @@ interface EventPageBottomProps {
 
 export const EventPageBottom = ({ mixes, title }: EventPageBottomProps) => {
   return (
-    <CardList
+    <CardListWithMemo
       pageVariant='other'
       variant='mixes'
       data={mixes}

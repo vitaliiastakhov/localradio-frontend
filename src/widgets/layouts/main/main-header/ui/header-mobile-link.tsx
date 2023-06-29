@@ -3,7 +3,7 @@ import { memo } from 'react';
 import { Icon } from '@/shared/ui/icons';
 import { HeaderLinkProps } from './header-link';
 
-export const HeaderMobileLink = memo(({ href, text }: HeaderLinkProps) => {
+export const HeaderMobileLink = ({ href, text }: HeaderLinkProps) => {
   return (
     <div className='w-full'>
       {href && (
@@ -19,4 +19,6 @@ export const HeaderMobileLink = memo(({ href, text }: HeaderLinkProps) => {
       )}
     </div>
   );
-});
+};
+
+export const HeaderMobileLinkWithMemo = memo(HeaderMobileLink);
