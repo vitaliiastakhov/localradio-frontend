@@ -25,7 +25,7 @@ export const ArchiveNavHoverList: FC<ArchiveNavBarProps> = ({
       {list?.map((item) => (
         <li key={item?.name}>
           <Button
-            className='h-full whitespace-nowrap  py-0.5 font-semibold tracking-[0.01em] transition-none'
+            className='h-full whitespace-nowrap px-1 py-0.5 font-semibold tracking-[0.01em] transition-none lg:px-2'
             href={`/archive/${variant}/${item?.slug}`}
           >
             {item?.name}

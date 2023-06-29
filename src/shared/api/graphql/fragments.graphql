@@ -3,6 +3,11 @@ fragment Genres on GenreEntity {
   attributes {
     name
     slug
+    mixes(pagination: { limit: -1 }) {
+      data {
+        id
+      }
+    }
   }
 }
 

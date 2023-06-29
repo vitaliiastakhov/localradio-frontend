@@ -28,14 +28,15 @@ const Page: NextPage<PageProps> = ({ shows, show, mixes, description }) => {
   const attributes = shows?.data[0].attributes;
   const name = attributes?.name;
   const descriptionSeo = getDescription(attributes);
-
+  const totalCount = attributes?.mixes?.data.length;
+  console.log(totalCount, 'totalCount');
   return (
     <>
       <Seo templateTitle={name} description={descriptionSeo} />
       <ArchivePage
         archiveItemSecondHeaderText={name}
         variant='show'
-        totalCount={mixes?.meta.pagination.total}
+        totalCount={totalCount}
         data={mixes?.data}
         dataText='Episodes'
         mixesFilter={{ show: { slug: { eq: show } } }}
@@ -66,7 +67,7 @@ export const getServerSideProps: GetServerSideProps = async (
     data: { shows },
   } = await client.query({
     query: ArchiveApi.ShowsDocument,
-    variables: { limit: 12, filters: { slug: { eq: show } } },
+    variables: { limit: -1, filters: { slug: { eq: show } } },
   });
 
   if (!shows?.data.length) {

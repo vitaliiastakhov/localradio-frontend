@@ -9,7 +9,7 @@ query Guests($filters: GuestFiltersInput, $limit: Int! = 12, $start: Int! = 0) {
       attributes {
         name
         slug
-        mixes(sort: "date:desc", pagination: { limit: 1 }) {
+        mixes(sort: "date:desc", pagination: { limit: -1 }) {
           data {
             id
             attributes {

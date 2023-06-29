@@ -3,10 +3,10 @@ import type {
   GetServerSidePropsResult,
   NextPage,
 } from 'next';
+import { ParsedUrlQuery } from 'querystring';
 import { ArchiveApi } from '@/entities/archive/api';
 import { ArchivePage } from '@/pages/archive/ui/archive-page';
 import { client } from '@/shared/api/apollo/apollo-client';
-import { SlugParams } from '@/shared/api/apollo/slug-params';
 import type {
   GenreEntity,
   MixEntityResponseCollection,
@@ -21,11 +21,13 @@ interface PageProps {
 
 const Page: NextPage<PageProps> = ({ genre, mixes, slug }) => {
   const genreName = genre?.attributes?.name;
+
+  const totalCount = genre?.attributes?.mixes?.data.length;
   return (
     <>
       <Seo templateTitle={genreName} />
       <ArchivePage
-        totalCount={mixes?.meta.pagination.total}
+        totalCount={totalCount}
         variant='mixes'
         data={mixes?.data}
         mixesFilter={{ genres: { slug: { eq: slug } } }}
@@ -37,11 +39,15 @@ const Page: NextPage<PageProps> = ({ genre, mixes, slug }) => {
 
 export default Page;
 
+interface SlugParams extends ParsedUrlQuery {
+  genre: string;
+}
+
 export const getServerSideProps: GetServerSideProps = async ({
   params,
   res,
 }): Promise<GetServerSidePropsResult<PageProps>> => {
-  const { slug } = params as SlugParams;
+  const { genre: slug } = params as SlugParams;
   res.setHeader(
     'Cache-Control',
     'public, s-maxage=10, stale-while-revalidate=59'

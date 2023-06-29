@@ -200,7 +200,10 @@ export const GuestsDocument = {
                                       {
                                         kind: 'ObjectField',
                                         name: { kind: 'Name', value: 'limit' },
-                                        value: { kind: 'IntValue', value: '1' },
+                                        value: {
+                                          kind: 'IntValue',
+                                          value: '-1',
+                                        },
                                       },
                                     ],
                                   },

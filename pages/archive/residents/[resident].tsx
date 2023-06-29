@@ -32,13 +32,14 @@ const Page: NextPage<PageProps> = ({
   guestName,
 }) => {
   const descriptionSeo = getDescription(guest?.data[0].attributes);
+  const totalCount = guest?.data[0].attributes?.mixes?.data.length;
   return (
     <>
       <Seo templateTitle={guestName} description={descriptionSeo} />
       <ArchivePage
         archiveItemSecondHeaderText={guestName}
         variant='mixes'
-        totalCount={mixes?.meta.pagination.total}
+        totalCount={totalCount}
         data={mixes?.data}
         dataText='Episodes'
         mixesFilter={{ guests: { slug: { eq: resident } } }}

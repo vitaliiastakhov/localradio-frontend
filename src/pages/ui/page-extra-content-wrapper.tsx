@@ -23,7 +23,7 @@ export const PageExtraContent = ({
 }: PageExtraContentWrapperProps) => {
   return (
     <section>
-      <div className='grid w-full grid-cols-1 gap-y-2 px-1.5 md:grid-cols-2 md:gap-y-2 lg:grid-cols-3  lg:gap-y-3  lg:px-2 xl:px-3.5'>
+      <div className='grid h-full w-full grid-cols-1 gap-y-2 px-1.5 md:grid-cols-2 md:gap-y-2 lg:grid-cols-3  lg:gap-y-3  lg:px-2 xl:px-3.5'>
         <div>
           {image ? (
             <NextImage
@@ -43,18 +43,20 @@ export const PageExtraContent = ({
           )}
         </div>
 
-        <div className='lg:col-span-2 '>
-          <div className='flex flex-wrap items-end justify-between gap-x-1 border-b-black text-[1.25rem] font-semibold uppercase  leading-none  md:px-1.5 lg:px-2 lg:text-3xl  xl:px-3.5'>
-            <h2 className='leading-none'> {title}</h2>
-            {socials && <SocialsList socials={{ ...socials }} />}
+        <div className='lg:col-span-2'>
+          <div className='lg:sticky lg:top-[42px] xl:top-[56px]'>
+            <div className='flex flex-wrap items-end justify-between gap-x-1 border-b-black text-[1.25rem] font-semibold uppercase  leading-none  md:px-1.5 lg:px-2 lg:text-3xl  xl:px-3.5'>
+              <h2 className='leading-none'> {title}</h2>
+              {socials && <SocialsList socials={{ ...socials }} />}
+            </div>
+            <DescriptionGroup
+              sizeVariant='large'
+              html={{
+                descriptionRu: description?.descriptionRu,
+                descriptionEn: description?.descriptionEn,
+              }}
+            />
           </div>
-          <DescriptionGroup
-            sizeVariant='large'
-            html={{
-              descriptionRu: description?.descriptionRu,
-              descriptionEn: description?.descriptionEn,
-            }}
-          />
         </div>
       </div>
     </section>

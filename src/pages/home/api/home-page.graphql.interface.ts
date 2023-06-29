@@ -51,6 +51,10 @@ export interface HomepageQuery {
               __typename?: 'Genre';
               name: string;
               slug: string;
+              mixes?: {
+                __typename?: 'MixRelationResponseCollection';
+                data: Array<{ __typename?: 'MixEntity'; id?: string | null }>;
+              } | null;
             } | null;
           }>;
         } | null;
@@ -278,6 +282,13 @@ export interface HomepageQuery {
                     __typename?: 'Genre';
                     name: string;
                     slug: string;
+                    mixes?: {
+                      __typename?: 'MixRelationResponseCollection';
+                      data: Array<{
+                        __typename?: 'MixEntity';
+                        id?: string | null;
+                      }>;
+                    } | null;
                   } | null;
                 }>;
               } | null;
@@ -318,7 +329,15 @@ export interface HomepageQuery {
     data: Array<{
       __typename?: 'GenreEntity';
       id?: string | null;
-      attributes?: { __typename?: 'Genre'; name: string; slug: string } | null;
+      attributes?: {
+        __typename?: 'Genre';
+        name: string;
+        slug: string;
+        mixes?: {
+          __typename?: 'MixRelationResponseCollection';
+          data: Array<{ __typename?: 'MixEntity'; id?: string | null }>;
+        } | null;
+      } | null;
     }>;
   } | null;
   moods?: {
@@ -1273,6 +1292,44 @@ export const HomepageDocument = {
               selections: [
                 { kind: 'Field', name: { kind: 'Name', value: 'name' } },
                 { kind: 'Field', name: { kind: 'Name', value: 'slug' } },
+                {
+                  kind: 'Field',
+                  name: { kind: 'Name', value: 'mixes' },
+                  arguments: [
+                    {
+                      kind: 'Argument',
+                      name: { kind: 'Name', value: 'pagination' },
+                      value: {
+                        kind: 'ObjectValue',
+                        fields: [
+                          {
+                            kind: 'ObjectField',
+                            name: { kind: 'Name', value: 'limit' },
+                            value: { kind: 'IntValue', value: '-1' },
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                  selectionSet: {
+                    kind: 'SelectionSet',
+                    selections: [
+                      {
+                        kind: 'Field',
+                        name: { kind: 'Name', value: 'data' },
+                        selectionSet: {
+                          kind: 'SelectionSet',
+                          selections: [
+                            {
+                              kind: 'Field',
+                              name: { kind: 'Name', value: 'id' },
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                },
               ],
             },
           },
