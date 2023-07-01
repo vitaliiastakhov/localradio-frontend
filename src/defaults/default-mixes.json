@@ -1,0 +1,2513 @@
+{
+  "__typename": "MixEntityResponseCollection",
+  "data": [
+    {
+      "__typename": "MixEntity",
+      "id": "392",
+      "attributes": {
+        "__typename": "Mix",
+        "name": "Локал Джем",
+        "slug": "lokal-dzhem-plato-10-06-2023",
+        "date": "2023-06-09T21:30:00.000Z",
+        "updatedAt": "2023-06-27T18:38:59.519Z",
+        "createdAt": "2023-06-27T18:38:40.357Z",
+        "tracklist": null,
+        "linksToMixes": {
+          "__typename": "ComponentLinksToMixesLink",
+          "id": "403",
+          "soundcloudLink": "https://soundcloud.com/local_radio/lokal-dzhem-plato-10062023",
+          "youtubeLink": "https://youtu.be/t4U4UTNsFO0"
+        },
+        "locationName": "PLATO",
+        "descriptionEn": null,
+        "descriptionRu": null,
+        "locationLink": "https://t.me/ktoposledniy",
+        "image": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "235",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/Ty8_GGRJPMLM_a3e6d4e4db.jpeg",
+              "width": 1080,
+              "height": 1350,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_Ty8GGRJPMLM.jpeg",
+                  "hash": "thumbnail_Ty8_GGRJPMLM_a3e6d4e4db",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 125,
+                  "height": 156,
+                  "size": 5.41,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Ty8_GGRJPMLM_a3e6d4e4db.jpeg"
+                },
+                "large": {
+                  "name": "large_Ty8GGRJPMLM.jpeg",
+                  "hash": "large_Ty8_GGRJPMLM_a3e6d4e4db",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 800,
+                  "height": 1000,
+                  "size": 102.2,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/large_Ty8_GGRJPMLM_a3e6d4e4db.jpeg"
+                },
+                "small": {
+                  "name": "small_Ty8GGRJPMLM.jpeg",
+                  "hash": "small_Ty8_GGRJPMLM_a3e6d4e4db",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 400,
+                  "height": 500,
+                  "size": 35.68,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Ty8_GGRJPMLM_a3e6d4e4db.jpeg"
+                },
+                "medium": {
+                  "name": "medium_Ty8GGRJPMLM.jpeg",
+                  "hash": "medium_Ty8_GGRJPMLM_a3e6d4e4db",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 600,
+                  "height": 750,
+                  "size": 67.02,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_Ty8_GGRJPMLM_a3e6d4e4db.jpeg"
+                }
+              }
+            }
+          }
+        },
+        "genres": {
+          "__typename": "GenreRelationResponseCollection",
+          "data": []
+        },
+        "moods": {
+          "__typename": "MoodRelationResponseCollection",
+          "data": []
+        },
+        "guests": {
+          "__typename": "GuestRelationResponseCollection",
+          "data": [
+            {
+              "__typename": "GuestEntity",
+              "id": "16",
+              "attributes": {
+                "__typename": "Guest",
+                "name": "Misha Spektr",
+                "slug": "mishaspektr",
+                "descriptionRu": "Миша один из идеологов радио и куратор передачи Trip 2 Fantasy. Всю жизнь прожил в Воронеже, испытывая любовь к городу, его ритму и людям. Занимался организацией вечеринок на протяжении многих лет, был арт-директором одних из самых свободных мест в городе, таких как Редакция, Пушка и Вышка.\n\nВ своём музыкальном творчестве и вдохновении он почти всеяден. Постоянно находясь в поисках пыльного алмаза, фильтруя поток новой музыки, охватывая и объединяя широкий спектр электронного звучания, успел накопить приличную библиотеку музыки. Под основным проектом продвигает классику и новую волну электро и брейкбита, хаус проверенный временем и джангл, далеко не ограничиваясь ими.",
+                "descriptionEn": null,
+                "socials": {
+                  "__typename": "ComponentLinksToSocialsLinksToSocials",
+                  "id": "23",
+                  "SCLink": "https://soundcloud.com/mishaspektr",
+                  "VKLink": null,
+                  "TGLink": null,
+                  "IGLink": "https://www.instagram.com/barabashovmisha/",
+                  "BCLink": null
+                },
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "89",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Misha Spektr"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "158",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Misha Spektr"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "207",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Misha Spektr"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "331",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Misha Spektr"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "178",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Trip 2 Fantasy w/ Misha Spektr"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "288",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Trip 2 Fantasy w/ Misha Spektr"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "217",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Trip 2 Fantasy w/ Spektr"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "114",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Misha Spektr "
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "320",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Misha Spektr @ PROEKT"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "341",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Trip 2 Fantasy w/ Misha Spektr"
+                      }
+                    }
+                  ]
+                },
+                "image": {
+                  "__typename": "UploadFileEntityResponse",
+                  "data": {
+                    "__typename": "UploadFileEntity",
+                    "id": "198",
+                    "attributes": {
+                      "__typename": "UploadFile",
+                      "url": "https://cdnlocalradio.storage.yandexcloud.net/IMG_5894_min_05486cf337.JPG",
+                      "width": 3024,
+                      "height": 2005,
+                      "formats": {
+                        "thumbnail": {
+                          "name": "thumbnail_IMG_5894-min.JPG",
+                          "hash": "thumbnail_IMG_5894_min_05486cf337",
+                          "ext": ".JPG",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 236,
+                          "height": 156,
+                          "size": 4.92,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_IMG_5894_min_05486cf337.JPG"
+                        },
+                        "large": {
+                          "name": "large_IMG_5894-min.JPG",
+                          "hash": "large_IMG_5894_min_05486cf337",
+                          "ext": ".JPG",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 1000,
+                          "height": 663,
+                          "size": 123.16,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/large_IMG_5894_min_05486cf337.JPG"
+                        },
+                        "small": {
+                          "name": "small_IMG_5894-min.JPG",
+                          "hash": "small_IMG_5894_min_05486cf337",
+                          "ext": ".JPG",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 500,
+                          "height": 331,
+                          "size": 21.59,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/small_IMG_5894_min_05486cf337.JPG"
+                        },
+                        "medium": {
+                          "name": "medium_IMG_5894-min.JPG",
+                          "hash": "medium_IMG_5894_min_05486cf337",
+                          "ext": ".JPG",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 750,
+                          "height": 497,
+                          "size": 56.1,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_IMG_5894_min_05486cf337.JPG"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "show": {
+          "__typename": "ShowEntityResponse",
+          "data": null
+        }
+      }
+    },
+    {
+      "__typename": "MixEntity",
+      "id": "391",
+      "attributes": {
+        "__typename": "Mix",
+        "name": "Сева Иншаков",
+        "slug": "seva-inshakov-10062023",
+        "date": "2023-06-09T21:15:00.000Z",
+        "updatedAt": "2023-06-27T19:05:14.135Z",
+        "createdAt": "2023-06-27T18:36:46.468Z",
+        "tracklist": null,
+        "linksToMixes": {
+          "__typename": "ComponentLinksToMixesLink",
+          "id": "402",
+          "soundcloudLink": "https://soundcloud.com/local_radio/seva-inshakov-plato-10062023",
+          "youtubeLink": "https://youtu.be/cnMX8hYeZhI"
+        },
+        "locationName": "PLATO",
+        "descriptionEn": null,
+        "descriptionRu": null,
+        "locationLink": "https://t.me/ktoposledniy",
+        "image": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "234",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/Xnph_Sf1g9ic_195f2ef25b.jpeg",
+              "width": 1920,
+              "height": 1920,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_XnphSf1g9ic.jpeg",
+                  "hash": "thumbnail_Xnph_Sf1g9ic_195f2ef25b",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 9.85,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Xnph_Sf1g9ic_195f2ef25b.jpeg"
+                },
+                "small": {
+                  "name": "small_XnphSf1g9ic.jpeg",
+                  "hash": "small_Xnph_Sf1g9ic_195f2ef25b",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 61.16,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Xnph_Sf1g9ic_195f2ef25b.jpeg"
+                },
+                "large": {
+                  "name": "large_XnphSf1g9ic.jpeg",
+                  "hash": "large_Xnph_Sf1g9ic_195f2ef25b",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 1000,
+                  "size": 159.84,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/large_Xnph_Sf1g9ic_195f2ef25b.jpeg"
+                },
+                "medium": {
+                  "name": "medium_XnphSf1g9ic.jpeg",
+                  "hash": "medium_Xnph_Sf1g9ic_195f2ef25b",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 108.12,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_Xnph_Sf1g9ic_195f2ef25b.jpeg"
+                }
+              }
+            }
+          }
+        },
+        "genres": {
+          "__typename": "GenreRelationResponseCollection",
+          "data": []
+        },
+        "moods": {
+          "__typename": "MoodRelationResponseCollection",
+          "data": []
+        },
+        "guests": {
+          "__typename": "GuestRelationResponseCollection",
+          "data": []
+        },
+        "show": {
+          "__typename": "ShowEntityResponse",
+          "data": null
+        }
+      }
+    },
+    {
+      "__typename": "MixEntity",
+      "id": "390",
+      "attributes": {
+        "__typename": "Mix",
+        "name": "Bazhenov",
+        "slug": "bazhenov-10062023",
+        "date": "2023-06-09T21:00:00.000Z",
+        "updatedAt": "2023-06-27T18:34:58.913Z",
+        "createdAt": "2023-06-27T18:34:55.393Z",
+        "tracklist": null,
+        "linksToMixes": {
+          "__typename": "ComponentLinksToMixesLink",
+          "id": "401",
+          "soundcloudLink": "https://soundcloud.com/local_radio/bazhenov-plato-10062023",
+          "youtubeLink": "https://youtu.be/fioWmhM9svQ"
+        },
+        "locationName": "PLATO",
+        "descriptionEn": null,
+        "descriptionRu": null,
+        "locationLink": "https://t.me/ktoposledniy",
+        "image": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "234",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/Xnph_Sf1g9ic_195f2ef25b.jpeg",
+              "width": 1920,
+              "height": 1920,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_XnphSf1g9ic.jpeg",
+                  "hash": "thumbnail_Xnph_Sf1g9ic_195f2ef25b",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 9.85,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Xnph_Sf1g9ic_195f2ef25b.jpeg"
+                },
+                "small": {
+                  "name": "small_XnphSf1g9ic.jpeg",
+                  "hash": "small_Xnph_Sf1g9ic_195f2ef25b",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 61.16,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Xnph_Sf1g9ic_195f2ef25b.jpeg"
+                },
+                "large": {
+                  "name": "large_XnphSf1g9ic.jpeg",
+                  "hash": "large_Xnph_Sf1g9ic_195f2ef25b",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 1000,
+                  "size": 159.84,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/large_Xnph_Sf1g9ic_195f2ef25b.jpeg"
+                },
+                "medium": {
+                  "name": "medium_XnphSf1g9ic.jpeg",
+                  "hash": "medium_Xnph_Sf1g9ic_195f2ef25b",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 108.12,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_Xnph_Sf1g9ic_195f2ef25b.jpeg"
+                }
+              }
+            }
+          }
+        },
+        "genres": {
+          "__typename": "GenreRelationResponseCollection",
+          "data": []
+        },
+        "moods": {
+          "__typename": "MoodRelationResponseCollection",
+          "data": []
+        },
+        "guests": {
+          "__typename": "GuestRelationResponseCollection",
+          "data": []
+        },
+        "show": {
+          "__typename": "ShowEntityResponse",
+          "data": null
+        }
+      }
+    },
+    {
+      "__typename": "MixEntity",
+      "id": "389",
+      "attributes": {
+        "__typename": "Mix",
+        "name": "ro:minim4all w/ run.dmt",
+        "slug": "ro-minim4all-w-run-dmt",
+        "date": "2023-06-08T21:02:00.000Z",
+        "updatedAt": "2023-06-20T11:41:27.518Z",
+        "createdAt": "2023-06-15T18:14:06.743Z",
+        "tracklist": null,
+        "linksToMixes": {
+          "__typename": "ComponentLinksToMixesLink",
+          "id": "400",
+          "soundcloudLink": "https://soundcloud.com/local_radio/rominim4all-w-rundmt-temple-09062023",
+          "youtubeLink": "https://youtube.com/live/19P2k52tv9c"
+        },
+        "locationName": "Temple",
+        "descriptionEn": null,
+        "descriptionRu": null,
+        "locationLink": "https://www.instagram.com/temple.cafe/",
+        "image": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "232",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/rominimar_rundmt_58dcafe1bc.png",
+              "width": 670,
+              "height": 670,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_rominimar_rundmt.png",
+                  "hash": "thumbnail_rominimar_rundmt_58dcafe1bc",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 60.29,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_rominimar_rundmt_58dcafe1bc.png"
+                },
+                "small": {
+                  "name": "small_rominimar_rundmt.png",
+                  "hash": "small_rominimar_rundmt_58dcafe1bc",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 585.89,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_rominimar_rundmt_58dcafe1bc.png"
+                }
+              }
+            }
+          }
+        },
+        "genres": {
+          "__typename": "GenreRelationResponseCollection",
+          "data": []
+        },
+        "moods": {
+          "__typename": "MoodRelationResponseCollection",
+          "data": []
+        },
+        "guests": {
+          "__typename": "GuestRelationResponseCollection",
+          "data": []
+        },
+        "show": {
+          "__typename": "ShowEntityResponse",
+          "data": {
+            "__typename": "ShowEntity",
+            "id": "8",
+            "attributes": {
+              "__typename": "Show",
+              "name": "ro:minim4all ",
+              "slug": "ro-minim4all",
+              "socials": {
+                "__typename": "ComponentLinksToSocialsLinksToSocials",
+                "id": "27",
+                "SCLink": null,
+                "VKLink": null,
+                "TGLink": null,
+                "IGLink": null,
+                "BCLink": null
+              },
+              "descriptionEn": null,
+              "descriptionRu": "Лёша в прошлом завсегдатый вечеринок с жирным минимал, микро хаусом и даб техно. Ведёт серию подкастов с релизами преимущественно из прекрасной Румынии.",
+              "mixes": {
+                "__typename": "MixRelationResponseCollection",
+                "data": [
+                  {
+                    "__typename": "MixEntity",
+                    "id": "389",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "name": "ro:minim4all w/ run.dmt"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "__typename": "MixEntity",
+      "id": "388",
+      "attributes": {
+        "__typename": "Mix",
+        "name": "Auxracer b2b Misha Spektr",
+        "slug": "auxracer-b2b-misha-spektr-09062023",
+        "date": "2023-06-08T21:01:00.000Z",
+        "updatedAt": "2023-06-15T18:15:33.560Z",
+        "createdAt": "2023-06-15T18:10:02.328Z",
+        "tracklist": null,
+        "linksToMixes": {
+          "__typename": "ComponentLinksToMixesLink",
+          "id": "399",
+          "soundcloudLink": "https://soundcloud.com/local_radio/auxracer-b2b-misha-spektr-2023",
+          "youtubeLink": "https://youtube.com/live/iJJ5q_LlSXM"
+        },
+        "locationName": "Temple",
+        "descriptionEn": null,
+        "descriptionRu": null,
+        "locationLink": "https://www.instagram.com/temple.cafe/",
+        "image": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "231",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/9_06_b2_B_mojnopotische_rundmt_5c65fa02cf.png",
+              "width": 810,
+              "height": 810,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_9.06_b2B_mojnopotische_rundmt.png",
+                  "hash": "thumbnail_9_06_b2_B_mojnopotische_rundmt_5c65fa02cf",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 33.23,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_9_06_b2_B_mojnopotische_rundmt_5c65fa02cf.png"
+                },
+                "small": {
+                  "name": "small_9.06_b2B_mojnopotische_rundmt.png",
+                  "hash": "small_9_06_b2_B_mojnopotische_rundmt_5c65fa02cf",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 304.44,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_9_06_b2_B_mojnopotische_rundmt_5c65fa02cf.png"
+                },
+                "medium": {
+                  "name": "medium_9.06_b2B_mojnopotische_rundmt.png",
+                  "hash": "medium_9_06_b2_B_mojnopotische_rundmt_5c65fa02cf",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 661.49,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_9_06_b2_B_mojnopotische_rundmt_5c65fa02cf.png"
+                }
+              }
+            }
+          }
+        },
+        "genres": {
+          "__typename": "GenreRelationResponseCollection",
+          "data": []
+        },
+        "moods": {
+          "__typename": "MoodRelationResponseCollection",
+          "data": []
+        },
+        "guests": {
+          "__typename": "GuestRelationResponseCollection",
+          "data": []
+        },
+        "show": {
+          "__typename": "ShowEntityResponse",
+          "data": null
+        }
+      }
+    },
+    {
+      "__typename": "MixEntity",
+      "id": "387",
+      "attributes": {
+        "__typename": "Mix",
+        "name": "DJ MOJNOPOTISCHE",
+        "slug": "dj-mojnopotische-09062023",
+        "date": "2023-06-08T21:00:00.000Z",
+        "updatedAt": "2023-06-15T18:15:20.857Z",
+        "createdAt": "2023-06-15T18:09:23.418Z",
+        "tracklist": null,
+        "linksToMixes": {
+          "__typename": "ComponentLinksToMixesLink",
+          "id": "398",
+          "soundcloudLink": "https://soundcloud.com/local_radio/dj-mojnopotische-temple-09062023",
+          "youtubeLink": "https://youtube.com/live/B_vm85Pq8Sc"
+        },
+        "locationName": "Temple",
+        "descriptionEn": null,
+        "descriptionRu": null,
+        "locationLink": "https://www.instagram.com/temple.cafe/",
+        "image": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "231",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/9_06_b2_B_mojnopotische_rundmt_5c65fa02cf.png",
+              "width": 810,
+              "height": 810,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_9.06_b2B_mojnopotische_rundmt.png",
+                  "hash": "thumbnail_9_06_b2_B_mojnopotische_rundmt_5c65fa02cf",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 33.23,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_9_06_b2_B_mojnopotische_rundmt_5c65fa02cf.png"
+                },
+                "small": {
+                  "name": "small_9.06_b2B_mojnopotische_rundmt.png",
+                  "hash": "small_9_06_b2_B_mojnopotische_rundmt_5c65fa02cf",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 304.44,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_9_06_b2_B_mojnopotische_rundmt_5c65fa02cf.png"
+                },
+                "medium": {
+                  "name": "medium_9.06_b2B_mojnopotische_rundmt.png",
+                  "hash": "medium_9_06_b2_B_mojnopotische_rundmt_5c65fa02cf",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 661.49,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_9_06_b2_B_mojnopotische_rundmt_5c65fa02cf.png"
+                }
+              }
+            }
+          }
+        },
+        "genres": {
+          "__typename": "GenreRelationResponseCollection",
+          "data": []
+        },
+        "moods": {
+          "__typename": "MoodRelationResponseCollection",
+          "data": []
+        },
+        "guests": {
+          "__typename": "GuestRelationResponseCollection",
+          "data": []
+        },
+        "show": {
+          "__typename": "ShowEntityResponse",
+          "data": null
+        }
+      }
+    },
+    {
+      "__typename": "MixEntity",
+      "id": "386",
+      "attributes": {
+        "__typename": "Mix",
+        "name": "meta.sister",
+        "slug": "meta.sister-03062023",
+        "date": "2023-06-02T21:01:00.000Z",
+        "updatedAt": "2023-06-07T20:04:36.783Z",
+        "createdAt": "2023-06-07T20:04:33.600Z",
+        "tracklist": null,
+        "linksToMixes": {
+          "__typename": "ComponentLinksToMixesLink",
+          "id": "397",
+          "soundcloudLink": "https://soundcloud.com/local_radio/metasister-local-radio-03062023",
+          "youtubeLink": "https://youtu.be/YXUVWHkbGeQ"
+        },
+        "locationName": "студия",
+        "descriptionEn": null,
+        "descriptionRu": null,
+        "locationLink": null,
+        "image": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "230",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/p_Aft_Hbj4_O_Yg_3e310273b5.jpeg",
+              "width": 1080,
+              "height": 1080,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_pAftHbj4OYg.jpeg",
+                  "hash": "thumbnail_p_Aft_Hbj4_O_Yg_3e310273b5",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 6.61,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_p_Aft_Hbj4_O_Yg_3e310273b5.jpeg"
+                },
+                "small": {
+                  "name": "small_pAftHbj4OYg.jpeg",
+                  "hash": "small_p_Aft_Hbj4_O_Yg_3e310273b5",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 40.47,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_p_Aft_Hbj4_O_Yg_3e310273b5.jpeg"
+                },
+                "medium": {
+                  "name": "medium_pAftHbj4OYg.jpeg",
+                  "hash": "medium_p_Aft_Hbj4_O_Yg_3e310273b5",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 73.43,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_p_Aft_Hbj4_O_Yg_3e310273b5.jpeg"
+                },
+                "large": {
+                  "name": "large_pAftHbj4OYg.jpeg",
+                  "hash": "large_p_Aft_Hbj4_O_Yg_3e310273b5",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 1000,
+                  "size": 109.72,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/large_p_Aft_Hbj4_O_Yg_3e310273b5.jpeg"
+                }
+              }
+            }
+          }
+        },
+        "genres": {
+          "__typename": "GenreRelationResponseCollection",
+          "data": []
+        },
+        "moods": {
+          "__typename": "MoodRelationResponseCollection",
+          "data": []
+        },
+        "guests": {
+          "__typename": "GuestRelationResponseCollection",
+          "data": [
+            {
+              "__typename": "GuestEntity",
+              "id": "5",
+              "attributes": {
+                "__typename": "Guest",
+                "name": "meta.sister",
+                "slug": "meta-sister",
+                "descriptionRu": "Арина родом из города Шебекино, перебралась в Воронеж сразу после школы. В подростковом возрасте слушала панк-рок и всё, что с ним связано. С течением времени с головой окунулась в музыку, начиная с олдового Чикаго и Нью-Йорк хауса, параллельно изучая эпоху зарождения электронной музыки.\n\nНа повседневных прогулках слушает хаус с ломаным ритмом и необычным звучанием. На вечеринках любит играть танцевальную электронику, вплоть до хард техно.\n\n“Концепция моего творчества и выступлений – выразить мысль о том, что на самом деле важно не то, что нам навязывает общество. Важно наше ощущение от жизни, и для меня, именно музыка дает эту свободу, где можно отпустить контроль и использовать шанс выразить себя, находясь в моменте с людьми, которые ощущают такие же чувства. Это полет мысли в мечты, где все немного лучше, чем есть на самом деле. Да, музыка это эскапизм, но я не вижу в нем ничего плохого.\n\nПомимо музыки, меня всегда увлекала визуальная составляющая мира, поэтому я хотела запечатлеть как можно больше моментов на камеру и сделать их вечными. В моем опыте была работа режиссером монтажа, а также помощь локальным ребятам в съемках промо для вечеринок и бекстейджев.”",
+                "descriptionEn": null,
+                "socials": {
+                  "__typename": "ComponentLinksToSocialsLinksToSocials",
+                  "id": "7",
+                  "SCLink": "https://on.soundcloud.com/2so5ZoFzTqxUNcmj8",
+                  "VKLink": "https://vk.com/arshark",
+                  "TGLink": "https://t.me/notgoinsleep",
+                  "IGLink": "https://instagram.com/meta.sister",
+                  "BCLink": null
+                },
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "98",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Onomatopoeia w/ meta.sister"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "122",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "meta.sister"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "215",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "meta.sister"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "272",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "meta.sister"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "180",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "meta.sister "
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "256",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "meta.sister @ Temple"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "230",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "meta.sister @ mizuwari"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "386",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "meta.sister"
+                      }
+                    }
+                  ]
+                },
+                "image": {
+                  "__typename": "UploadFileEntityResponse",
+                  "data": {
+                    "__typename": "UploadFileEntity",
+                    "id": "180",
+                    "attributes": {
+                      "__typename": "UploadFile",
+                      "url": "https://cdnlocalradio.storage.yandexcloud.net/meta_sister_c7befe3a83.jpeg",
+                      "width": 1080,
+                      "height": 1343,
+                      "formats": {
+                        "thumbnail": {
+                          "name": "thumbnail_meta.sister.jpeg",
+                          "hash": "thumbnail_meta_sister_c7befe3a83",
+                          "ext": ".jpeg",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 126,
+                          "height": 156,
+                          "size": 4.75,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_meta_sister_c7befe3a83.jpeg"
+                        },
+                        "small": {
+                          "name": "small_meta.sister.jpeg",
+                          "hash": "small_meta_sister_c7befe3a83",
+                          "ext": ".jpeg",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 402,
+                          "height": 500,
+                          "size": 40.28,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/small_meta_sister_c7befe3a83.jpeg"
+                        },
+                        "large": {
+                          "name": "large_meta.sister.jpeg",
+                          "hash": "large_meta_sister_c7befe3a83",
+                          "ext": ".jpeg",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 804,
+                          "height": 1000,
+                          "size": 230.63,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/large_meta_sister_c7befe3a83.jpeg"
+                        },
+                        "medium": {
+                          "name": "medium_meta.sister.jpeg",
+                          "hash": "medium_meta_sister_c7befe3a83",
+                          "ext": ".jpeg",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 603,
+                          "height": 750,
+                          "size": 107.43,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_meta_sister_c7befe3a83.jpeg"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "show": {
+          "__typename": "ShowEntityResponse",
+          "data": null
+        }
+      }
+    },
+    {
+      "__typename": "MixEntity",
+      "id": "385",
+      "attributes": {
+        "__typename": "Mix",
+        "name": "Русское Поле Экспериментов w/ Discotopia",
+        "slug": "russkoe-pole-eksperimentov-w-discotopia-03062023",
+        "date": "2023-06-02T21:00:00.000Z",
+        "updatedAt": "2023-06-07T20:02:30.071Z",
+        "createdAt": "2023-06-07T20:02:27.566Z",
+        "tracklist": null,
+        "linksToMixes": {
+          "__typename": "ComponentLinksToMixesLink",
+          "id": "396",
+          "soundcloudLink": "https://soundcloud.com/local_radio/russkoe-pole-eksperimentov-w-discotopia-local-radio-03062023",
+          "youtubeLink": "https://youtu.be/r4KxU1luNgk"
+        },
+        "locationName": null,
+        "descriptionEn": null,
+        "descriptionRu": null,
+        "locationLink": null,
+        "image": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "229",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/discotopia_cover_russkoe_pole_eksperimentov_2_ef6601d97d.png",
+              "width": 690,
+              "height": 690,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_discotopia_cover_русское_поле_экспериментов_2.png",
+                  "hash": "thumbnail_discotopia_cover_russkoe_pole_eksperimentov_2_ef6601d97d",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 60.74,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_discotopia_cover_russkoe_pole_eksperimentov_2_ef6601d97d.png"
+                },
+                "small": {
+                  "name": "small_discotopia_cover_русское_поле_экспериментов_2.png",
+                  "hash": "small_discotopia_cover_russkoe_pole_eksperimentov_2_ef6601d97d",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 535.2,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_discotopia_cover_russkoe_pole_eksperimentov_2_ef6601d97d.png"
+                }
+              }
+            }
+          }
+        },
+        "genres": {
+          "__typename": "GenreRelationResponseCollection",
+          "data": []
+        },
+        "moods": {
+          "__typename": "MoodRelationResponseCollection",
+          "data": []
+        },
+        "guests": {
+          "__typename": "GuestRelationResponseCollection",
+          "data": [
+            {
+              "__typename": "GuestEntity",
+              "id": "12",
+              "attributes": {
+                "__typename": "Guest",
+                "name": "Discotopia",
+                "slug": "discotopia",
+                "descriptionRu": "Миша Дискотопия начал свою музыкальную карьеру с диджеинга еще 8 лет назад, но быстро понял, что ему этого мало и начал писать музыку. Его треки можно услышать на многих отечественных и нескольких зарубежных лейблах, а также послушать на кассетах. Миша курирует два собственных лейбла Raw Union и Пауза, раньше вел передачу на OTO Radio и TESTFM, сейчас в нерегулярном формате курирует шоу «Русское Поле Экспериментов». Любит экспериментальную электронную музыку, но в его сетах чаще можно услышать техно и брейкбит. Источники вдохновения находит во время поездок и в фильмах (а вернее от саундтреков).",
+                "descriptionEn": null,
+                "socials": {
+                  "__typename": "ComponentLinksToSocialsLinksToSocials",
+                  "id": "14",
+                  "SCLink": "http://soundcloud.com/discotop",
+                  "VKLink": "http://vk.com/discotopia",
+                  "TGLink": null,
+                  "IGLink": null,
+                  "BCLink": "http://discotopia.bandcamp.com/"
+                },
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "49",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Discotopia"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "160",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Discotopia"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "197",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Discotopia"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "294",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Discotopia @ Ugol"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "164",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Onomatopoeia w/ Discotopia"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "76",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Русское Поле Экспериментов w/ Discotopia"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "108",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Русское Поле Экспериментов w/ Discotopia"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "136",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Русское Поле Экспериментов w/ Discotopia"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "219",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Русское Поле Экспериментов w/ Discotopia"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "251",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Русское Поле Экспериментов w/ Discotopia"
+                      }
+                    }
+                  ]
+                },
+                "image": {
+                  "__typename": "UploadFileEntityResponse",
+                  "data": {
+                    "__typename": "UploadFileEntity",
+                    "id": "191",
+                    "attributes": {
+                      "__typename": "UploadFile",
+                      "url": "https://cdnlocalradio.storage.yandexcloud.net/Izobrazhenie_2_efcf59fb8b.jpeg",
+                      "width": 500,
+                      "height": 500,
+                      "formats": {
+                        "thumbnail": {
+                          "name": "thumbnail_Изображение (2).jpeg",
+                          "hash": "thumbnail_Izobrazhenie_2_efcf59fb8b",
+                          "ext": ".jpeg",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 156,
+                          "height": 156,
+                          "size": 4.56,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Izobrazhenie_2_efcf59fb8b.jpeg"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "show": {
+          "__typename": "ShowEntityResponse",
+          "data": {
+            "__typename": "ShowEntity",
+            "id": "3",
+            "attributes": {
+              "__typename": "Show",
+              "name": "Русское поле экспериментов",
+              "slug": "russkoe-pole-eksperimentov",
+              "socials": {
+                "__typename": "ComponentLinksToSocialsLinksToSocials",
+                "id": "17",
+                "SCLink": "https://soundcloud.com/local_radio/sets/russkoe-pole-eksperimentov?si=19857ba49c0845a794738d1f246e3545&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                "VKLink": null,
+                "TGLink": null,
+                "IGLink": null,
+                "BCLink": null
+              },
+              "descriptionEn": "Russian Field of Experiments is Misha Linkov's (Discotopia) show dedicated to Russian experimental music. The compositions by Russian producers', which combine traditions and progressive ideas, are unique and original.\nTheir music is complex, deep, and sensual, much like our long-suffering but hopeful country.",
+              "descriptionRu": "\"Русское Поле Экспериментов\" – авторская программа Миши Discotopia про отечественную экспериментальную музыку. Композиции российских энтузиастов, сочетающих в себе традиции и прогрессивные концепции, уникальны и самобытны. Их музыка сложна, глубока и чувственна, как и наша многострадальная, но не теряющая надежды на катарсис, страна.",
+              "mixes": {
+                "__typename": "MixRelationResponseCollection",
+                "data": [
+                  {
+                    "__typename": "MixEntity",
+                    "id": "76",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "name": "Русское Поле Экспериментов w/ Discotopia"
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "108",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "name": "Русское Поле Экспериментов w/ Discotopia"
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "136",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "name": "Русское Поле Экспериментов w/ Discotopia"
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "219",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "name": "Русское Поле Экспериментов w/ Discotopia"
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "251",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "name": "Русское Поле Экспериментов w/ Discotopia"
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "109",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "name": "Русское Поле Экспериментов w/ Коюанда"
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "385",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "name": "Русское Поле Экспериментов w/ Discotopia"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "__typename": "MixEntity",
+      "id": "384",
+      "attributes": {
+        "__typename": "Mix",
+        "name": "Бок’о’Бок w/ Auxracer x Misha Spektr",
+        "slug": "bok-o-bok-w-auxracer-x-misha-spektr",
+        "date": "2023-05-19T21:02:00.000Z",
+        "updatedAt": "2023-05-25T11:16:29.398Z",
+        "createdAt": "2023-05-22T15:05:12.281Z",
+        "tracklist": null,
+        "linksToMixes": {
+          "__typename": "ComponentLinksToMixesLink",
+          "id": "395",
+          "soundcloudLink": "https://soundcloud.com/local_radio/bokobok-w-auxracer-x-misha-spektr-local-radio-20052023",
+          "youtubeLink": "https://youtube.com/live/ySu11mSuHbE"
+        },
+        "locationName": null,
+        "descriptionEn": null,
+        "descriptionRu": null,
+        "locationLink": null,
+        "image": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "228",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/Qdd_X1_Lh_Yo_6e3556da25.jpeg",
+              "width": 1920,
+              "height": 1920,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_QddX1Lh--Yo.jpeg",
+                  "hash": "thumbnail_Qdd_X1_Lh_Yo_6e3556da25",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 8.24,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Qdd_X1_Lh_Yo_6e3556da25.jpeg"
+                },
+                "large": {
+                  "name": "large_QddX1Lh--Yo.jpeg",
+                  "hash": "large_Qdd_X1_Lh_Yo_6e3556da25",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 1000,
+                  "size": 145.39,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/large_Qdd_X1_Lh_Yo_6e3556da25.jpeg"
+                },
+                "small": {
+                  "name": "small_QddX1Lh--Yo.jpeg",
+                  "hash": "small_Qdd_X1_Lh_Yo_6e3556da25",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 52.93,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Qdd_X1_Lh_Yo_6e3556da25.jpeg"
+                },
+                "medium": {
+                  "name": "medium_QddX1Lh--Yo.jpeg",
+                  "hash": "medium_Qdd_X1_Lh_Yo_6e3556da25",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 96.44,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_Qdd_X1_Lh_Yo_6e3556da25.jpeg"
+                }
+              }
+            }
+          }
+        },
+        "genres": {
+          "__typename": "GenreRelationResponseCollection",
+          "data": [
+            {
+              "__typename": "GenreEntity",
+              "id": "2",
+              "attributes": {
+                "__typename": "Genre",
+                "name": "Electro",
+                "slug": "electro",
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "365"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "361"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "358"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "355"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "384"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "376"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "377"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "__typename": "GenreEntity",
+              "id": "6",
+              "attributes": {
+                "__typename": "Genre",
+                "name": "Breakbeat",
+                "slug": "breakbeat",
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "340"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "341"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "368"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "356"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "384"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "__typename": "GenreEntity",
+              "id": "23",
+              "attributes": {
+                "__typename": "Genre",
+                "name": "Ghetto",
+                "slug": "ghetto",
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "384"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "376"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "377"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "moods": {
+          "__typename": "MoodRelationResponseCollection",
+          "data": []
+        },
+        "guests": {
+          "__typename": "GuestRelationResponseCollection",
+          "data": []
+        },
+        "show": {
+          "__typename": "ShowEntityResponse",
+          "data": null
+        }
+      }
+    },
+    {
+      "__typename": "MixEntity",
+      "id": "383",
+      "attributes": {
+        "__typename": "Mix",
+        "name": "run.dmt",
+        "slug": "run.dmt-20052023",
+        "date": "2023-05-19T21:01:00.000Z",
+        "updatedAt": "2023-05-25T11:14:44.274Z",
+        "createdAt": "2023-05-22T15:02:56.605Z",
+        "tracklist": null,
+        "linksToMixes": {
+          "__typename": "ComponentLinksToMixesLink",
+          "id": "394",
+          "soundcloudLink": "https://soundcloud.com/local_radio/rundmt-local-radio-20052023",
+          "youtubeLink": "https://youtube.com/live/w4mO0nz2-xE"
+        },
+        "locationName": null,
+        "descriptionEn": null,
+        "descriptionRu": null,
+        "locationLink": null,
+        "image": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "227",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/I4_TTN_Uxugog_333d005052.jpeg",
+              "width": 1080,
+              "height": 1080,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_I4TTNUxugog.jpeg",
+                  "hash": "thumbnail_I4_TTN_Uxugog_333d005052",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 7.64,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_I4_TTN_Uxugog_333d005052.jpeg"
+                },
+                "medium": {
+                  "name": "medium_I4TTNUxugog.jpeg",
+                  "hash": "medium_I4_TTN_Uxugog_333d005052",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 116.8,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_I4_TTN_Uxugog_333d005052.jpeg"
+                },
+                "small": {
+                  "name": "small_I4TTNUxugog.jpeg",
+                  "hash": "small_I4_TTN_Uxugog_333d005052",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 57.95,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_I4_TTN_Uxugog_333d005052.jpeg"
+                },
+                "large": {
+                  "name": "large_I4TTNUxugog.jpeg",
+                  "hash": "large_I4_TTN_Uxugog_333d005052",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 1000,
+                  "size": 186.74,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/large_I4_TTN_Uxugog_333d005052.jpeg"
+                }
+              }
+            }
+          }
+        },
+        "genres": {
+          "__typename": "GenreRelationResponseCollection",
+          "data": [
+            {
+              "__typename": "GenreEntity",
+              "id": "1",
+              "attributes": {
+                "__typename": "Genre",
+                "name": "Electronic",
+                "slug": "electronic",
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "342"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "343"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "367"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "362"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "360"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "351"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "383"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "381"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "380"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "379"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "375"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "__typename": "GenreEntity",
+              "id": "3",
+              "attributes": {
+                "__typename": "Genre",
+                "name": "House",
+                "slug": "house",
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "368"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "367"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "363"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "360"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "383"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "moods": {
+          "__typename": "MoodRelationResponseCollection",
+          "data": []
+        },
+        "guests": {
+          "__typename": "GuestRelationResponseCollection",
+          "data": [
+            {
+              "__typename": "GuestEntity",
+              "id": "11",
+              "attributes": {
+                "__typename": "Guest",
+                "name": "run.dmt",
+                "slug": "run-dmt",
+                "descriptionRu": "Большую часть жизни Ариан прожил в Москве. Волей случая уже четвёртый год влюблён в Воронеж. Собирает комнатные растения, виниловые пластинки и периодически любит выливать что-нибудь из эпоксидной смолы.\n\nИз всех жанров особенно любит играть dub techno, ro minimal, но старается ими не ограничиваться и постоянно пробовать новое. Сеты RUN DMT — про коннект с танцполом и атмосферу безудержного веселья. То и дело пытается подключить к выступлениям микрофон, чтобы довести эмоции до максимума.",
+                "descriptionEn": null,
+                "socials": {
+                  "__typename": "ComponentLinksToSocialsLinksToSocials",
+                  "id": "13",
+                  "SCLink": "https://on.soundcloud.com/acw7Cv5UnqgNjDDv7",
+                  "VKLink": "https://vk.com/arianaka",
+                  "TGLink": null,
+                  "IGLink": "https://instagram.com/mc.arian",
+                  "BCLink": null
+                },
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "312",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": " run.dmt"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "228",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "run.dmr"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "121",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "run.dmt"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "146",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "run.dmt"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "206",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "run.dmt"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "240",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "run.dmt"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "250",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "run.dmt"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "270",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "run.dmt"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "27",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Alexey Arianov"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "338",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "run.dmt "
+                      }
+                    }
+                  ]
+                },
+                "image": {
+                  "__typename": "UploadFileEntityResponse",
+                  "data": {
+                    "__typename": "UploadFileEntity",
+                    "id": "190",
+                    "attributes": {
+                      "__typename": "UploadFile",
+                      "url": "https://cdnlocalradio.storage.yandexcloud.net/Izobrazhenie_1_f98c64c208.jpeg",
+                      "width": 367,
+                      "height": 456,
+                      "formats": {
+                        "thumbnail": {
+                          "name": "thumbnail_Изображение (1).jpeg",
+                          "hash": "thumbnail_Izobrazhenie_1_f98c64c208",
+                          "ext": ".jpeg",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 126,
+                          "height": 156,
+                          "size": 4.8,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Izobrazhenie_1_f98c64c208.jpeg"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "show": {
+          "__typename": "ShowEntityResponse",
+          "data": null
+        }
+      }
+    },
+    {
+      "__typename": "MixEntity",
+      "id": "382",
+      "attributes": {
+        "__typename": "Mix",
+        "name": "Lzrg",
+        "slug": "lzrg-2",
+        "date": "2023-05-19T21:00:00.000Z",
+        "updatedAt": "2023-05-25T11:14:59.242Z",
+        "createdAt": "2023-05-22T15:01:16.870Z",
+        "tracklist": null,
+        "linksToMixes": {
+          "__typename": "ComponentLinksToMixesLink",
+          "id": "393",
+          "soundcloudLink": "https://soundcloud.com/local_radio/lzrg-local-radio-20052023",
+          "youtubeLink": "https://youtube.com/live/DpnZAjX2Myc"
+        },
+        "locationName": null,
+        "descriptionEn": null,
+        "descriptionRu": null,
+        "locationLink": null,
+        "image": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "227",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/I4_TTN_Uxugog_333d005052.jpeg",
+              "width": 1080,
+              "height": 1080,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_I4TTNUxugog.jpeg",
+                  "hash": "thumbnail_I4_TTN_Uxugog_333d005052",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 7.64,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_I4_TTN_Uxugog_333d005052.jpeg"
+                },
+                "medium": {
+                  "name": "medium_I4TTNUxugog.jpeg",
+                  "hash": "medium_I4_TTN_Uxugog_333d005052",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 116.8,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_I4_TTN_Uxugog_333d005052.jpeg"
+                },
+                "small": {
+                  "name": "small_I4TTNUxugog.jpeg",
+                  "hash": "small_I4_TTN_Uxugog_333d005052",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 57.95,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_I4_TTN_Uxugog_333d005052.jpeg"
+                },
+                "large": {
+                  "name": "large_I4TTNUxugog.jpeg",
+                  "hash": "large_I4_TTN_Uxugog_333d005052",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 1000,
+                  "size": 186.74,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/large_I4_TTN_Uxugog_333d005052.jpeg"
+                }
+              }
+            }
+          }
+        },
+        "genres": {
+          "__typename": "GenreRelationResponseCollection",
+          "data": [
+            {
+              "__typename": "GenreEntity",
+              "id": "20",
+              "attributes": {
+                "__typename": "Genre",
+                "name": "Hip-Hop",
+                "slug": "hip-hop",
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "267"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "181"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "263"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "310"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "229"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "133"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "91"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "41"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "28"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "367"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "366"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "365"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "382"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "moods": {
+          "__typename": "MoodRelationResponseCollection",
+          "data": []
+        },
+        "guests": {
+          "__typename": "GuestRelationResponseCollection",
+          "data": [
+            {
+              "__typename": "GuestEntity",
+              "id": "10",
+              "attributes": {
+                "__typename": "Guest",
+                "name": "Lzrg",
+                "slug": "lzrg",
+                "descriptionRu": "“Мое хобби – музыка, основная работа – парикмахер в The Rebelheads, стригу людей и кайфую.”\n\nОлег любит русский кинематограф, в частности Алексея Балабанова и музыку в его кино, а точнее, русский рок из этих фильмов – Наутилус Помпилиус и Аукцыон. Неравнодушен к советскому наследию в музыке. Майя Кристалинская – лучший женский вокал для него.\nСостоит в творческом объединении друзей – “ЛОСК”, которые продвигают уличную культуру в Воронеже.\n\n“Я обожаю Нью Йорк хип хоп 90х. Рос на Mobb Deep и Notorious B.I.G, для меня это лучшие эмси и всегда ими останутся. Играю в основном Memphis и очень уважаю Dj Smokey и Dj Yung Vamp. Грузные тяжелые низкие басы в перемешку со старыми кассетными записями из Мемфиса. Любовь! Стараюсь находить хорошую и редкую музыку и пытаюсь донести до людей, что есть не только радио коммерция в хип-хопе, но и бриллианты среди обычных ребят, которые хотят выразится в первую очередь, а уже потом заработать денег. Мир.”",
+                "descriptionEn": null,
+                "socials": {
+                  "__typename": "ComponentLinksToSocialsLinksToSocials",
+                  "id": "12",
+                  "SCLink": null,
+                  "VKLink": null,
+                  "TGLink": null,
+                  "IGLink": null,
+                  "BCLink": null
+                },
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "41",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Lzrg"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "91",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Lzrg"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "133",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Lzrg"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "181",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Lzrg"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "263",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Lzrg"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "267",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Lzrg"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "310",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Lzrg"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "229",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Lzrg @ mizuwari"
+                      }
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "382",
+                      "attributes": {
+                        "__typename": "Mix",
+                        "name": "Lzrg"
+                      }
+                    }
+                  ]
+                },
+                "image": {
+                  "__typename": "UploadFileEntityResponse",
+                  "data": {
+                    "__typename": "UploadFileEntity",
+                    "id": "189",
+                    "attributes": {
+                      "__typename": "UploadFile",
+                      "url": "https://cdnlocalradio.storage.yandexcloud.net/photo_2023_02_02_13_48_34_177071e341.jpg",
+                      "width": 853,
+                      "height": 1280,
+                      "formats": {
+                        "thumbnail": {
+                          "name": "thumbnail_photo_2023-02-02_13-48-34.jpg",
+                          "hash": "thumbnail_photo_2023_02_02_13_48_34_177071e341",
+                          "ext": ".jpg",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 104,
+                          "height": 156,
+                          "size": 3.17,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_photo_2023_02_02_13_48_34_177071e341.jpg"
+                        },
+                        "small": {
+                          "name": "small_photo_2023-02-02_13-48-34.jpg",
+                          "hash": "small_photo_2023_02_02_13_48_34_177071e341",
+                          "ext": ".jpg",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 333,
+                          "height": 500,
+                          "size": 22.08,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/small_photo_2023_02_02_13_48_34_177071e341.jpg"
+                        },
+                        "medium": {
+                          "name": "medium_photo_2023-02-02_13-48-34.jpg",
+                          "hash": "medium_photo_2023_02_02_13_48_34_177071e341",
+                          "ext": ".jpg",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 500,
+                          "height": 750,
+                          "size": 50.81,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_photo_2023_02_02_13_48_34_177071e341.jpg"
+                        },
+                        "large": {
+                          "name": "large_photo_2023-02-02_13-48-34.jpg",
+                          "hash": "large_photo_2023_02_02_13_48_34_177071e341",
+                          "ext": ".jpg",
+                          "mime": "image/jpeg",
+                          "path": null,
+                          "width": 666,
+                          "height": 1000,
+                          "size": 94.23,
+                          "url": "https://cdnlocalradio.storage.yandexcloud.net/large_photo_2023_02_02_13_48_34_177071e341.jpg"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "show": {
+          "__typename": "ShowEntityResponse",
+          "data": null
+        }
+      }
+    },
+    {
+      "__typename": "MixEntity",
+      "id": "381",
+      "attributes": {
+        "__typename": "Mix",
+        "name": "meta.brother",
+        "slug": "meta.brother-13052023",
+        "date": "2023-05-12T21:02:00.000Z",
+        "updatedAt": "2023-05-25T11:15:22.089Z",
+        "createdAt": "2023-05-15T09:12:50.503Z",
+        "tracklist": null,
+        "linksToMixes": {
+          "__typename": "ComponentLinksToMixesLink",
+          "id": "392",
+          "soundcloudLink": "https://soundcloud.com/local_radio/metabrother-live-dom-arkhitektora-13052023",
+          "youtubeLink": "https://youtube.com/live/Yg_x_0U5XsM"
+        },
+        "locationName": "Дом архитектора",
+        "descriptionEn": null,
+        "descriptionRu": null,
+        "locationLink": "https://vk.com/da_vrn",
+        "image": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "224",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/S9_YW_Kz_Z_Ln_Q_5e83c5b905.jpeg",
+              "width": 1080,
+              "height": 1080,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_S9YWKzZ-LnQ.jpeg",
+                  "hash": "thumbnail_S9_YW_Kz_Z_Ln_Q_5e83c5b905",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 9.33,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_S9_YW_Kz_Z_Ln_Q_5e83c5b905.jpeg"
+                },
+                "small": {
+                  "name": "small_S9YWKzZ-LnQ.jpeg",
+                  "hash": "small_S9_YW_Kz_Z_Ln_Q_5e83c5b905",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 52.13,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_S9_YW_Kz_Z_Ln_Q_5e83c5b905.jpeg"
+                },
+                "medium": {
+                  "name": "medium_S9YWKzZ-LnQ.jpeg",
+                  "hash": "medium_S9_YW_Kz_Z_Ln_Q_5e83c5b905",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 92.65,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_S9_YW_Kz_Z_Ln_Q_5e83c5b905.jpeg"
+                },
+                "large": {
+                  "name": "large_S9YWKzZ-LnQ.jpeg",
+                  "hash": "large_S9_YW_Kz_Z_Ln_Q_5e83c5b905",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 1000,
+                  "size": 139.59,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/large_S9_YW_Kz_Z_Ln_Q_5e83c5b905.jpeg"
+                }
+              }
+            }
+          }
+        },
+        "genres": {
+          "__typename": "GenreRelationResponseCollection",
+          "data": [
+            {
+              "__typename": "GenreEntity",
+              "id": "34",
+              "attributes": {
+                "__typename": "Genre",
+                "name": "Live",
+                "slug": "live",
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "187"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "28"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "343"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "324"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "177"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "225"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "170"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "145"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "113"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "79"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "96"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "77"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "3"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "4"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "162"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "50"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "202"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "282"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "235"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "117"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "381"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "375"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "__typename": "GenreEntity",
+              "id": "4",
+              "attributes": {
+                "__typename": "Genre",
+                "name": "Acid",
+                "slug": "acid",
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "365"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "359"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "358"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "353"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "352"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "381"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "375"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "__typename": "GenreEntity",
+              "id": "1",
+              "attributes": {
+                "__typename": "Genre",
+                "name": "Electronic",
+                "slug": "electronic",
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "342"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "343"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "367"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "362"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "360"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "351"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "383"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "381"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "380"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "379"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "375"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "__typename": "GenreEntity",
+              "id": "5",
+              "attributes": {
+                "__typename": "Genre",
+                "name": "Techno",
+                "slug": "techno",
+                "mixes": {
+                  "__typename": "MixRelationResponseCollection",
+                  "data": [
+                    {
+                      "__typename": "MixEntity",
+                      "id": "342"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "343"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "363"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "362"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "361"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "359"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "358"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "355"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "354"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "353"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "352"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "351"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "381"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "380"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "378"
+                    },
+                    {
+                      "__typename": "MixEntity",
+                      "id": "375"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "moods": {
+          "__typename": "MoodRelationResponseCollection",
+          "data": []
+        },
+        "guests": {
+          "__typename": "GuestRelationResponseCollection",
+          "data": []
+        },
+        "show": {
+          "__typename": "ShowEntityResponse",
+          "data": null
+        }
+      }
+    }
+  ],
+  "meta": {
+    "__typename": "ResponseCollectionMeta",
+    "pagination": {
+      "__typename": "Pagination",
+      "total": 388
+    }
+  }
+}

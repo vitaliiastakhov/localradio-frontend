@@ -16,7 +16,7 @@ export const $isClickedStreamPlay = stream.createStore<boolean>(false);
 export const $streamTitle = stream.createStore<string | JSX.Element>(
   STREAM_DISABLED_TITLE
 );
-export const $streamError = stream.createStore<boolean>(false);
+export const $streamError = stream.createStore<Error | null>(null);
 
 export const $streamIsAvailable = stream.createStore<boolean>(false);
 export const isClickedStreamPlayEv = stream.createEvent<boolean>();
@@ -32,17 +32,23 @@ sample({
 export const fetchStreamTitleFx = stream.createEffect(async () => {
   try {
     const res = await fetch('/api/icecast');
+    const eventSchedulesFixed = await fetch('/api/schedule').then((res) =>
+      res.json()
+    );
 
     if (res.ok) {
       const data = await res.json();
       return data.title;
     }
 
-    if (res.status === 404) {
-      throw new Error();
+    if (!eventSchedulesFixed.error && res.status === 404) {
+      throw new Error(STREAM_DISABLED_TITLE);
+    }
+    if (eventSchedulesFixed.error) {
+      throw new Error(eventSchedulesFixed.error);
     }
   } catch (error) {
-    throw new Error();
+    throw new Error((error as Error).message);
   }
 });
 const fetchStreamTitleWithScheduleFx = stream.createEffect(
@@ -65,7 +71,6 @@ sample({
 });
 sample({
   clock: fetchStreamTitleFx.failData,
-  fn: () => true,
   target: $streamError,
 });
 

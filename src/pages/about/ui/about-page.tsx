@@ -17,8 +17,8 @@ export const AboutPage = ({ description }: AboutPageProps) => {
                 className='px-1.5 lg:px-2 xl:px-3.5'
                 sizeVariant='large'
                 html={{
-                  descriptionRu: description.descriptionRu,
-                  descriptionEn: description.descriptionEn,
+                  descriptionRu: description?.descriptionRu,
+                  descriptionEn: description?.descriptionEn,
                 }}
                 top={
                   <div className='pb-0.5 text-xl font-semibold uppercase leading-none md:text-2xl  xl:text-3xl'>

@@ -12,15 +12,15 @@ export default async function handler(
 ) {
   const query = req.body;
   try {
-    const data = await searchMixCallback(query);
+    const data = await search(query);
     res.status(200).send({ data });
   } catch (error) {
     res.status(500).send({ error: 'failed to fetch data' });
   }
 }
 
-export const searchMixCallback = async (searchValue: string) => {
-  const mixes = await ArchiveApi.fetchMixes({
+export const search = async (searchValue: string) => {
+  const { mixes } = await ArchiveApi.fetchMixes<MixEntityResponseCollection>({
     filters: {
       name: { contains: searchValue },
     },
@@ -39,7 +39,7 @@ export const searchMixCallback = async (searchValue: string) => {
   });
 
   return {
-    mixes: mixes as MixEntityResponseCollection,
+    mixes,
     genres: genres as GenreEntityResponseCollection,
   };
 };

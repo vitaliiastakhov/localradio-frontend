@@ -1,17 +1,19 @@
 import clsx from 'clsx';
 import { useState } from 'react';
 import type { Maybe } from 'yup';
-import type { PopularityResponse } from '@/shared/api/graphql/__generated__/schema.graphql';
 import { clsxm } from '@/shared/lib/clsxm';
 import { isTodayOrTomorrow } from '@/shared/lib/is-today-or-tomorrow';
 import { NextImage } from '@/shared/ui/next-image/next-image';
+import { ScheduleQuery } from '../api/schedule.graphql.interface';
 import { ScheduleItem } from './schedule-item';
 import { ScheduleItemDate } from './schedule-item-date';
 import { ScheduleLocation } from './schedule-location';
 
+type ArrayElement<A> = A extends readonly (infer T)[] ? T : never;
+
 interface ScheduleGroupProps {
   isStreaming: Maybe<boolean>;
-  schedule?: PopularityResponse;
+  schedule?: ArrayElement<ScheduleQuery['eventSchedulesFixed']>;
   index: number;
 }
 
@@ -22,6 +24,7 @@ export const ScheduleGroup = ({
 }: ScheduleGroupProps) => {
   const [openedCover, setOpenedCover] = useState(false);
   const customDate = new Date(schedule?.date);
+
   const todayOrTomorrow = isTodayOrTomorrow(customDate);
   return (
     <div className='flex flex-col overflow-hidden rounded-lg border-2 border-black text-[0.75rem] leading-[0.8] md:text-[0.95rem] lg:leading-[0.85] xl:text-[1rem] 2xl:text-[1.05rem]'>

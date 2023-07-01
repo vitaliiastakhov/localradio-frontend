@@ -7,7 +7,7 @@ import { MixPageProps } from './types/mix-page.interface';
 type MixPageCenterProps = Pick<MixPageProps, 'mixes' | 'mixPrev' | 'mixNext'>;
 
 const MixPageCenter = ({ mixes, mixNext, mixPrev }: MixPageCenterProps) => {
-  const { attributes: project } = mixes.data[0];
+  const project = mixes?.data[0].attributes;
   const [SCAudioLink, setSCAudioLink] = useState<string>('');
   const [youtubeVideoLink, setYoutubeVideoLink] = useState<string>('');
   useEffect(() => {
@@ -22,7 +22,7 @@ const MixPageCenter = ({ mixes, mixNext, mixPrev }: MixPageCenterProps) => {
   return (
     <div className='h-full border-black px-1.5 lg:border-x-2 lg:border-t-0 lg:px-2 xl:px-3.5'>
       <MixNavigation
-        mix={mixes.data[0]}
+        mix={mixes?.data[0]}
         links={{ youtube: youtubeVideoLink, soundcloud: SCAudioLink }}
         siblingsSlug={{
           next: mixNext && mixNext[0]?.attributes?.slug,

@@ -67,11 +67,11 @@ export const MixPageLeft = ({
 }: MixPageLeftProps) => {
   return (
     <div className='px-1.5 lg:px-0'>
-      {(!description.mix?.descriptionEn || !description.mix.descriptionRu) &&
-      (description.show?.descriptionRu ||
-        description.show?.descriptionEn ||
-        description.guest?.descriptionRu ||
-        description.guest?.descriptionEn) ? (
+      {(!description?.mix?.descriptionEn || !description.mix.descriptionRu) &&
+      (description?.show?.descriptionRu ||
+        description?.show?.descriptionEn ||
+        description?.guest?.descriptionRu ||
+        description?.guest?.descriptionEn) ? (
         <div className='order-2   flex h-full flex-col overflow-hidden break-words   lg:order-none  lg:pb-3 lg:pt-0'>
           {(description.show?.descriptionRu ||
             description.show?.descriptionEn) && (
@@ -111,7 +111,7 @@ export const MixPageLeft = ({
             )}
         </div>
       ) : null}
-      {(description.mix?.descriptionEn || description.mix?.descriptionRu) && (
+      {(description?.mix?.descriptionEn || description?.mix?.descriptionRu) && (
         <DescriptionGroup
           html={{
             descriptionRu: description.mix.descriptionRu,

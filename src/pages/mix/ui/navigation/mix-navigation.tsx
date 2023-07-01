@@ -19,7 +19,7 @@ import { MixSlideButton } from './mix-slide-button';
 interface MixNavigationProps {
   siblingsSlug?: { prev?: Maybe<string>; next?: Maybe<string> };
   links: TogglePlayerLinks;
-  mix: MixEntity;
+  mix?: MixEntity;
 }
 
 export const MixNavigation = ({

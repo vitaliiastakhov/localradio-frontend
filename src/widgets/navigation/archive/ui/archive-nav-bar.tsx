@@ -16,7 +16,7 @@ import { ArchiveNavHoverList } from './archive-nav-hover-list';
 import { ArchiveNavItemWithMemo } from './archive-nav-item';
 
 export const ArchiveNavBar = () => {
-  const { data: archiveNav } = useSWR<{ data: ArchiveNavigationQuery }>(
+  const { data: archiveNav } = useSWR<{ data?: ArchiveNavigationQuery }>(
     '/api/archive-nav',
     SWRfetcher
   );
@@ -69,7 +69,7 @@ export const ArchiveNavBar = () => {
           </div>
         </li>
 
-        {archiveNav?.data.moodsArray &&
+        {archiveNav?.data?.moodsArray &&
           archiveNav.data.moodsArray.length > 0 && (
             <div
               onMouseEnter={() => toggleHover('mood')}
@@ -98,7 +98,7 @@ export const ArchiveNavBar = () => {
             Genres
           </div>
         </li>
-        {archiveNav?.data.genresArray &&
+        {archiveNav?.data?.genresArray &&
           archiveNav.data.genresArray.length > 0 && (
             <div
               style={{ top: navHeight - 2 }}

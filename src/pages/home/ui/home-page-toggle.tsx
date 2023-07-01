@@ -5,6 +5,7 @@ import {
   SCToggleElement,
   YoutubeToggleElement,
 } from '@/features/toggle-mix-player/ui';
+import { MixEntity } from '@/shared/api/graphql/__generated__/schema.graphql';
 import { clsxm } from '@/shared/lib/clsxm';
 import { YOUTUBE_LIVE_LINK } from '@/shared/lib/constants/common';
 import { Icon } from '@/shared/ui/icons';
@@ -74,7 +75,7 @@ export const HomePageToggle = ({
         {homePageRandomMix && !streamData?.streamIsLive && SCLink && (
           <SCToggleElement
             page='home'
-            mix={homePageRandomMix}
+            mix={homePageRandomMix.data as MixEntity}
             SCLink={SCLink}
           />
         )}

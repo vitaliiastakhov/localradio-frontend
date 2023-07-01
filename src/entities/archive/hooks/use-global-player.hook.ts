@@ -16,25 +16,27 @@ import {
   setIsYoutubePlayingEv,
 } from '@/widgets/players/youtube/model/youtube.model';
 
-export interface HandleGlobalPlayerResponse {
-  handlePlay: ({
+interface GlobalPlayerActionArgs {
+  type: CurrentGlobalPlayer;
+  link?: string | null;
+  currentLink?: string | null;
+  isPlaying: boolean;
+}
+
+export interface GlobalPlayerAction {
+  play: ({
     type,
     link,
     currentLink,
     isPlaying,
-  }: {
-    type: CurrentGlobalPlayer;
-    link?: string | null | undefined;
-    currentLink?: string | null | undefined;
-    isPlaying: boolean;
-  }) => void;
+  }: GlobalPlayerActionArgs) => void;
 }
 
-export const useHandleGlobalPlayer = ({
+export const useGlobalPlayer = ({
   id,
 }: {
   id?: string | number | null;
-}): HandleGlobalPlayerResponse => {
+}): GlobalPlayerAction => {
   const {
     setCurrentScLink,
     setCurrentGlobalPlayer,
@@ -55,18 +57,8 @@ export const useHandleGlobalPlayer = ({
     setIsClickedPlayYoutube: isClickedPlayYoutubeEv,
   });
 
-  const handlePlay = useCallback(
-    ({
-      type,
-      link,
-      currentLink,
-      isPlaying,
-    }: {
-      type: CurrentGlobalPlayer;
-      link?: string | null;
-      currentLink?: string | null;
-      isPlaying: boolean;
-    }) => {
+  const play = useCallback<GlobalPlayerAction['play']>(
+    ({ type, link, currentLink, isPlaying }) => {
       setCurrentGlobalPlayer(type);
       if (type === 'youtubeBottom') setCurrentYoutubeLink(link);
 
@@ -85,11 +77,9 @@ export const useHandleGlobalPlayer = ({
         }
       } else if (link === currentLink && !isPlaying) {
         if (type === 'soundcloud') setIsClickedPlaySc(true);
-
         if (type === 'youtubeBottom') setIsClickedPlayYoutube(true);
       } else {
         if (type === 'soundcloud') setIsClickedPlaySc(true);
-
         if (type === 'youtube') setIsClickedPlayYoutube(true);
       }
     },
@@ -106,5 +96,5 @@ export const useHandleGlobalPlayer = ({
     ]
   );
 
-  return { handlePlay };
+  return { play };
 };

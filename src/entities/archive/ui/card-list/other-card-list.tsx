@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { UseGetMoreOnScrollResponse } from '@/entities/archive/hooks/use-get-more-on-scroll.hook';
 import { CardListProps } from '../../lib/types';
@@ -25,7 +26,13 @@ export const OtherCardList = ({
             Loading...
           </div>
         }
-        className='relative grid grid-cols-1 gap-1.5   px-1.5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-2.5 lg:px-2 xl:grid-cols-4 xl:px-3.5 4xl:grid-cols-5'
+        className={clsx(
+          'relative grid grid-cols-1 gap-1.5  px-1.5 lg:gap-2.5 lg:px-2  xl:px-3.5',
+          {
+            'sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 4xl:grid-cols-5':
+              true,
+          }
+        )}
       >
         <CardListSwitch
           pageVariant='other'

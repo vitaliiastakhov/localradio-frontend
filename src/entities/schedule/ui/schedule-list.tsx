@@ -1,11 +1,11 @@
 import { useRef } from 'react';
 import { useDraggable } from 'react-use-draggable-scroll';
 import type { Maybe } from 'yup';
-import type { PopularityResponse } from '@/shared/api/graphql/__generated__/schema.graphql';
+import { ScheduleQuery } from '../api/schedule.graphql.interface';
 import { ScheduleGroup } from './schedule-group';
 
 interface Props {
-  schedules?: PopularityResponse[];
+  schedules?: ScheduleQuery['eventSchedulesFixed'];
   isStreaming: Maybe<boolean>;
 }
 
@@ -28,7 +28,7 @@ export const ScheduleList = ({ schedules, isStreaming }: Props) => {
         {schedules?.map((schedule, index) => {
           return (
             <ScheduleGroup
-              key={schedule.id}
+              key={schedule?.id}
               index={index}
               isStreaming={isStreaming}
               schedule={schedule}

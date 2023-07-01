@@ -1,0 +1,2402 @@
+{
+  "__typename": "ReleaseEntityResponseCollection",
+  "data": [
+    {
+      "__typename": "ReleaseEntity",
+      "id": "6",
+      "attributes": {
+        "__typename": "Release",
+        "date": "2023-02-01",
+        "updatedAt": "2023-03-30T17:16:12.707Z",
+        "createdAt": "2023-02-01T08:44:52.154Z",
+        "descriptionEn": "“The crisp winter air is piercing and the frost coats surfaces in breathtaking patterns. The sky twinkles like sparkling stars, splitting the world in two, black above and white below. The crunch of snow underfoot and the sight of red flecks when you close your eyes are all part of the experience of this cold night.”\n\nRRR is the pseudonym of our resident artist Seva Inshakov. RRR combines a love of analogue synthesizers with digital equipment to create experimental sounds. His approach to creativity is based on an appreciation of nature for its diversity, impermanence, uniqueness and detail.\n\nCover: AI Art NightCafe",
+        "descriptionRu": "“Холодный воздух зимней ночью обжигает подобно огню. Мороз рисует замысловатые узоры инеем на поверхностях. Они сверкают подобно колючим звездам в ледяных небесах. Мир разделился на две половины, черная сверху и белая снизу, и в этом холоде ночи есть только скрип снега под ногами и красные пятна, которые плывут перед тобой, когда ты закрываешь глаза.”\n\nПод псевдонимом RRR скрывается наш резидент – Сева Иншаков. Любитель аналоговых синтезаторов, цифрового оборудования и экспериментов со звуком. Он ценит природу за ее разнообразие, переменчивость и уникальные детали, которые являются основой его творчества.\n\nОбложка: AI Art NightCafe",
+        "artistName": "RRR",
+        "releaseName": "Frost",
+        "slug": "frost",
+        "type": "Single",
+        "links": {
+          "__typename": "ComponentReleaseLinksLinks",
+          "id": "6",
+          "spotify": "https://open.spotify.com/album/5cS96XEqxn0G7tRm7JkdAX?si=x_79akGtSyOItCLfSFD4CQ",
+          "soundcloud": "https://soundcloud.com/local_radio/rrr-frost?si=69c6dbc3688e44f196ff49626b18bb94&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+          "vkMusic": "https://vk.com/music/album/-2000219822_17219822_6c54f4c9b04906fc10",
+          "yandexMusic": "https://music.yandex.ru/album/24745381?utm_source=bandlink&utm_medium=RRR&utm_campaign=Frost",
+          "youtubeMusic": "https://youtu.be/tHlK1R5yGLY",
+          "bandcamp": "https://localradio.bandcamp.com/track/frost",
+          "appleMusic": "https://geo.music.apple.com/album/1668514030?app=music&mt=1&at=1000lqjf&ct=bq&Is=1&ls=1"
+        },
+        "guest": {
+          "__typename": "GuestEntityResponse",
+          "data": {
+            "__typename": "GuestEntity",
+            "id": "14",
+            "attributes": {
+              "__typename": "Guest",
+              "name": "Сева Иншаков",
+              "slug": "seva-inshakovv",
+              "mixes": {
+                "__typename": "MixRelationResponseCollection",
+                "data": [
+                  {
+                    "__typename": "MixEntity",
+                    "id": "359",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2023-03-25T14:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "213",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/oddv_Tbf_Rqbs_b0ff8433c8.jpg",
+                            "width": 1080,
+                            "height": 1080,
+                            "formats": {
+                              "medium": {
+                                "name": "medium_oddvTbfRqbs.jpg",
+                                "hash": "medium_oddv_Tbf_Rqbs_b0ff8433c8",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 127.64,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_oddv_Tbf_Rqbs_b0ff8433c8.jpg"
+                              },
+                              "small": {
+                                "name": "small_oddvTbfRqbs.jpg",
+                                "hash": "small_oddv_Tbf_Rqbs_b0ff8433c8",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 61.52,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_oddv_Tbf_Rqbs_b0ff8433c8.jpg"
+                              },
+                              "large": {
+                                "name": "large_oddvTbfRqbs.jpg",
+                                "hash": "large_oddv_Tbf_Rqbs_b0ff8433c8",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 204.28,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_oddv_Tbf_Rqbs_b0ff8433c8.jpg"
+                              },
+                              "thumbnail": {
+                                "name": "thumbnail_oddvTbfRqbs.jpg",
+                                "hash": "thumbnail_oddv_Tbf_Rqbs_b0ff8433c8",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 7.7,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_oddv_Tbf_Rqbs_b0ff8433c8.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Сева Иншаков",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "seva-inshakov-25032023",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/seva-inshakov-local-radio-25032023?si=7c85f97356094ae2a16d686eb21e6b84&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://www.youtube.com/watch?v=aXxeSA04xTg&t=965s"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": [
+                          {
+                            "__typename": "GenreEntity",
+                            "attributes": {
+                              "__typename": "Genre",
+                              "name": "Techno",
+                              "slug": "techno"
+                            }
+                          },
+                          {
+                            "__typename": "GenreEntity",
+                            "attributes": {
+                              "__typename": "Genre",
+                              "name": "Acid",
+                              "slug": "acid"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "305",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2022-11-10T21:02:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "159",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/s3h_Mfw_NGG_6_PVETK_Cz1_Mhun_Fd1t_O0t8_Gunk_T89oq_Msj_D9c_J_Htv93_Nd5_P0be_F5_L9_W0_U_OJNMO_3_F4_Fjt_QDP_4h_Iwyz_DY_c72c53899a.jpg",
+                            "width": 1080,
+                            "height": 1080,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_s3hMfwNGG6PVETKCz1MhunFd1tO0t8GunkT89oqMsjD9cJHtv93Nd5P0beF5L9W0U-OJNMO3F4FjtQDP4hIwyzDY.jpg",
+                                "hash": "thumbnail_s3h_Mfw_NGG_6_PVETK_Cz1_Mhun_Fd1t_O0t8_Gunk_T89oq_Msj_D9c_J_Htv93_Nd5_P0be_F5_L9_W0_U_OJNMO_3_F4_Fjt_QDP_4h_Iwyz_DY_c72c53899a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 7.48,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_s3h_Mfw_NGG_6_PVETK_Cz1_Mhun_Fd1t_O0t8_Gunk_T89oq_Msj_D9c_J_Htv93_Nd5_P0be_F5_L9_W0_U_OJNMO_3_F4_Fjt_QDP_4h_Iwyz_DY_c72c53899a.jpg"
+                              },
+                              "small": {
+                                "name": "small_s3hMfwNGG6PVETKCz1MhunFd1tO0t8GunkT89oqMsjD9cJHtv93Nd5P0beF5L9W0U-OJNMO3F4FjtQDP4hIwyzDY.jpg",
+                                "hash": "small_s3h_Mfw_NGG_6_PVETK_Cz1_Mhun_Fd1t_O0t8_Gunk_T89oq_Msj_D9c_J_Htv93_Nd5_P0be_F5_L9_W0_U_OJNMO_3_F4_Fjt_QDP_4h_Iwyz_DY_c72c53899a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 66.83,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_s3h_Mfw_NGG_6_PVETK_Cz1_Mhun_Fd1t_O0t8_Gunk_T89oq_Msj_D9c_J_Htv93_Nd5_P0be_F5_L9_W0_U_OJNMO_3_F4_Fjt_QDP_4h_Iwyz_DY_c72c53899a.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_s3hMfwNGG6PVETKCz1MhunFd1tO0t8GunkT89oqMsjD9cJHtv93Nd5P0beF5L9W0U-OJNMO3F4FjtQDP4hIwyzDY.jpg",
+                                "hash": "medium_s3h_Mfw_NGG_6_PVETK_Cz1_Mhun_Fd1t_O0t8_Gunk_T89oq_Msj_D9c_J_Htv93_Nd5_P0be_F5_L9_W0_U_OJNMO_3_F4_Fjt_QDP_4h_Iwyz_DY_c72c53899a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 136.51,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_s3h_Mfw_NGG_6_PVETK_Cz1_Mhun_Fd1t_O0t8_Gunk_T89oq_Msj_D9c_J_Htv93_Nd5_P0be_F5_L9_W0_U_OJNMO_3_F4_Fjt_QDP_4h_Iwyz_DY_c72c53899a.jpg"
+                              },
+                              "large": {
+                                "name": "large_s3hMfwNGG6PVETKCz1MhunFd1tO0t8GunkT89oqMsjD9cJHtv93Nd5P0beF5L9W0U-OJNMO3F4FjtQDP4hIwyzDY.jpg",
+                                "hash": "large_s3h_Mfw_NGG_6_PVETK_Cz1_Mhun_Fd1t_O0t8_Gunk_T89oq_Msj_D9c_J_Htv93_Nd5_P0be_F5_L9_W0_U_OJNMO_3_F4_Fjt_QDP_4h_Iwyz_DY_c72c53899a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 213.13,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_s3h_Mfw_NGG_6_PVETK_Cz1_Mhun_Fd1t_O0t8_Gunk_T89oq_Msj_D9c_J_Htv93_Nd5_P0be_F5_L9_W0_U_OJNMO_3_F4_Fjt_QDP_4h_Iwyz_DY_c72c53899a.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Сева Иншаков",
+                      "locationLink": null,
+                      "locationName": "Студия",
+                      "slug": "seva-inshakov-11112022",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/seva-inshakov-local-radio-11112022?si=8632f953fb504090807f4aeb3f479840&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/FRNnSO47Qxg"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "249",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2022-06-25T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "128",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/Ym_Gsyf_G9_B_Jpe7box6_GJB_3iflu_EW_Pc_I_Qmw_Ng_QXD_4_ZZ_0z_Z_Eu_Wf_M_Yyos_Ukpw_Ny_M7_Zfn1cpg_Su_N_Ut_Xi_K_Av_Y8_M_Xs_a_25dfc39299.jpg",
+                            "width": 1280,
+                            "height": 1280,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_-YmGsyfG9BJpe7box6GJB3ifluEWPcIQmwNgQXD4_ZZ0zZEuWfMYyosUkpwNyM7Zfn1cpgSuNUtXiKAvY8M_Xs-a.jpg",
+                                "hash": "thumbnail_Ym_Gsyf_G9_B_Jpe7box6_GJB_3iflu_EW_Pc_I_Qmw_Ng_QXD_4_ZZ_0z_Z_Eu_Wf_M_Yyos_Ukpw_Ny_M7_Zfn1cpg_Su_N_Ut_Xi_K_Av_Y8_M_Xs_a_25dfc39299",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 6.28,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Ym_Gsyf_G9_B_Jpe7box6_GJB_3iflu_EW_Pc_I_Qmw_Ng_QXD_4_ZZ_0z_Z_Eu_Wf_M_Yyos_Ukpw_Ny_M7_Zfn1cpg_Su_N_Ut_Xi_K_Av_Y8_M_Xs_a_25dfc39299.jpg"
+                              },
+                              "small": {
+                                "name": "small_-YmGsyfG9BJpe7box6GJB3ifluEWPcIQmwNgQXD4_ZZ0zZEuWfMYyosUkpwNyM7Zfn1cpgSuNUtXiKAvY8M_Xs-a.jpg",
+                                "hash": "small_Ym_Gsyf_G9_B_Jpe7box6_GJB_3iflu_EW_Pc_I_Qmw_Ng_QXD_4_ZZ_0z_Z_Eu_Wf_M_Yyos_Ukpw_Ny_M7_Zfn1cpg_Su_N_Ut_Xi_K_Av_Y8_M_Xs_a_25dfc39299",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 51.33,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Ym_Gsyf_G9_B_Jpe7box6_GJB_3iflu_EW_Pc_I_Qmw_Ng_QXD_4_ZZ_0z_Z_Eu_Wf_M_Yyos_Ukpw_Ny_M7_Zfn1cpg_Su_N_Ut_Xi_K_Av_Y8_M_Xs_a_25dfc39299.jpg"
+                              },
+                              "large": {
+                                "name": "large_-YmGsyfG9BJpe7box6GJB3ifluEWPcIQmwNgQXD4_ZZ0zZEuWfMYyosUkpwNyM7Zfn1cpgSuNUtXiKAvY8M_Xs-a.jpg",
+                                "hash": "large_Ym_Gsyf_G9_B_Jpe7box6_GJB_3iflu_EW_Pc_I_Qmw_Ng_QXD_4_ZZ_0z_Z_Eu_Wf_M_Yyos_Ukpw_Ny_M7_Zfn1cpg_Su_N_Ut_Xi_K_Av_Y8_M_Xs_a_25dfc39299",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 192.76,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_Ym_Gsyf_G9_B_Jpe7box6_GJB_3iflu_EW_Pc_I_Qmw_Ng_QXD_4_ZZ_0z_Z_Eu_Wf_M_Yyos_Ukpw_Ny_M7_Zfn1cpg_Su_N_Ut_Xi_K_Av_Y8_M_Xs_a_25dfc39299.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_-YmGsyfG9BJpe7box6GJB3ifluEWPcIQmwNgQXD4_ZZ0zZEuWfMYyosUkpwNyM7Zfn1cpgSuNUtXiKAvY8M_Xs-a.jpg",
+                                "hash": "medium_Ym_Gsyf_G9_B_Jpe7box6_GJB_3iflu_EW_Pc_I_Qmw_Ng_QXD_4_ZZ_0z_Z_Eu_Wf_M_Yyos_Ukpw_Ny_M7_Zfn1cpg_Su_N_Ut_Xi_K_Av_Y8_M_Xs_a_25dfc39299",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 112.5,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_Ym_Gsyf_G9_B_Jpe7box6_GJB_3iflu_EW_Pc_I_Qmw_Ng_QXD_4_ZZ_0z_Z_Eu_Wf_M_Yyos_Ukpw_Ny_M7_Zfn1cpg_Su_N_Ut_Xi_K_Av_Y8_M_Xs_a_25dfc39299.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Сева Иншаков",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "seva-inshakov-26062022",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/seva-inshakov-local-radio-26062022?si=5685a540ba3d4e7abfdc8c855c33875c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/awUgz0an04U"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "274",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2022-03-26T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "139",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/ERH_9e22_uh_C_Xrl_m_W9_Nlsf_Ps_ROY_86l_R0m_Y_Bse_V_Rpcr_Lg_K_Nyi_t3_MQ_93fc_I5_Nx8t_Gy_Qh_H_Nxf4_yr_V_JU_5mt_A7_MO_e6e6b91a48.jpg",
+                            "width": 1280,
+                            "height": 1280,
+                            "formats": {
+                              "small": {
+                                "name": "small_ERH9e22_uhCXrl_mW9NlsfPsROY86lR0mY_BseVRpcrLgKNyi_t3MQ93fc_I5Nx8tGyQhHNxf4-yrV-JU5mtA7MO.jpg",
+                                "hash": "small_ERH_9e22_uh_C_Xrl_m_W9_Nlsf_Ps_ROY_86l_R0m_Y_Bse_V_Rpcr_Lg_K_Nyi_t3_MQ_93fc_I5_Nx8t_Gy_Qh_H_Nxf4_yr_V_JU_5mt_A7_MO_e6e6b91a48",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 42.23,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_ERH_9e22_uh_C_Xrl_m_W9_Nlsf_Ps_ROY_86l_R0m_Y_Bse_V_Rpcr_Lg_K_Nyi_t3_MQ_93fc_I5_Nx8t_Gy_Qh_H_Nxf4_yr_V_JU_5mt_A7_MO_e6e6b91a48.jpg"
+                              },
+                              "thumbnail": {
+                                "name": "thumbnail_ERH9e22_uhCXrl_mW9NlsfPsROY86lR0mY_BseVRpcrLgKNyi_t3MQ93fc_I5Nx8tGyQhHNxf4-yrV-JU5mtA7MO.jpg",
+                                "hash": "thumbnail_ERH_9e22_uh_C_Xrl_m_W9_Nlsf_Ps_ROY_86l_R0m_Y_Bse_V_Rpcr_Lg_K_Nyi_t3_MQ_93fc_I5_Nx8t_Gy_Qh_H_Nxf4_yr_V_JU_5mt_A7_MO_e6e6b91a48",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 7.28,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_ERH_9e22_uh_C_Xrl_m_W9_Nlsf_Ps_ROY_86l_R0m_Y_Bse_V_Rpcr_Lg_K_Nyi_t3_MQ_93fc_I5_Nx8t_Gy_Qh_H_Nxf4_yr_V_JU_5mt_A7_MO_e6e6b91a48.jpg"
+                              },
+                              "large": {
+                                "name": "large_ERH9e22_uhCXrl_mW9NlsfPsROY86lR0mY_BseVRpcrLgKNyi_t3MQ93fc_I5Nx8tGyQhHNxf4-yrV-JU5mtA7MO.jpg",
+                                "hash": "large_ERH_9e22_uh_C_Xrl_m_W9_Nlsf_Ps_ROY_86l_R0m_Y_Bse_V_Rpcr_Lg_K_Nyi_t3_MQ_93fc_I5_Nx8t_Gy_Qh_H_Nxf4_yr_V_JU_5mt_A7_MO_e6e6b91a48",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 125.02,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_ERH_9e22_uh_C_Xrl_m_W9_Nlsf_Ps_ROY_86l_R0m_Y_Bse_V_Rpcr_Lg_K_Nyi_t3_MQ_93fc_I5_Nx8t_Gy_Qh_H_Nxf4_yr_V_JU_5mt_A7_MO_e6e6b91a48.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_ERH9e22_uhCXrl_mW9NlsfPsROY86lR0mY_BseVRpcrLgKNyi_t3MQ93fc_I5Nx8tGyQhHNxf4-yrV-JU5mtA7MO.jpg",
+                                "hash": "medium_ERH_9e22_uh_C_Xrl_m_W9_Nlsf_Ps_ROY_86l_R0m_Y_Bse_V_Rpcr_Lg_K_Nyi_t3_MQ_93fc_I5_Nx8t_Gy_Qh_H_Nxf4_yr_V_JU_5mt_A7_MO_e6e6b91a48",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 79.35,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_ERH_9e22_uh_C_Xrl_m_W9_Nlsf_Ps_ROY_86l_R0m_Y_Bse_V_Rpcr_Lg_K_Nyi_t3_MQ_93fc_I5_Nx8t_Gy_Qh_H_Nxf4_yr_V_JU_5mt_A7_MO_e6e6b91a48.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Сева Иншаков",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "seva-inshakov-27032022",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/seva-inshakov?si=c4760825c17446538f61f6ff307a00f1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/ZYG79rRFhHE"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "226",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2021-12-03T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "118",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/n9_W8r22_O_Sm_Hpb2_FU_4tf2y_1wx_M4ib1_Z8s_Rkt_Ax2_El9um_ET_7_P2_V_Jp93_9l_Uarj_gld4c_EVB_49k_Kf_O9ldlc_Ot_Bb_Ny_7cf2d98d9f.jpg",
+                            "width": 1280,
+                            "height": 1280,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_n9W8r22OSmHpb2FU4tf2y_1wxM4ib1Z8sRktAx2El9umET7P2VJp93_9l_Uarj_gld4cEVB49kKfO9ldlcOtBbNy.jpg",
+                                "hash": "thumbnail_n9_W8r22_O_Sm_Hpb2_FU_4tf2y_1wx_M4ib1_Z8s_Rkt_Ax2_El9um_ET_7_P2_V_Jp93_9l_Uarj_gld4c_EVB_49k_Kf_O9ldlc_Ot_Bb_Ny_7cf2d98d9f",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 6.28,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_n9_W8r22_O_Sm_Hpb2_FU_4tf2y_1wx_M4ib1_Z8s_Rkt_Ax2_El9um_ET_7_P2_V_Jp93_9l_Uarj_gld4c_EVB_49k_Kf_O9ldlc_Ot_Bb_Ny_7cf2d98d9f.jpg"
+                              },
+                              "small": {
+                                "name": "small_n9W8r22OSmHpb2FU4tf2y_1wxM4ib1Z8sRktAx2El9umET7P2VJp93_9l_Uarj_gld4cEVB49kKfO9ldlcOtBbNy.jpg",
+                                "hash": "small_n9_W8r22_O_Sm_Hpb2_FU_4tf2y_1wx_M4ib1_Z8s_Rkt_Ax2_El9um_ET_7_P2_V_Jp93_9l_Uarj_gld4c_EVB_49k_Kf_O9ldlc_Ot_Bb_Ny_7cf2d98d9f",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 62.87,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_n9_W8r22_O_Sm_Hpb2_FU_4tf2y_1wx_M4ib1_Z8s_Rkt_Ax2_El9um_ET_7_P2_V_Jp93_9l_Uarj_gld4c_EVB_49k_Kf_O9ldlc_Ot_Bb_Ny_7cf2d98d9f.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_n9W8r22OSmHpb2FU4tf2y_1wxM4ib1Z8sRktAx2El9umET7P2VJp93_9l_Uarj_gld4cEVB49kKfO9ldlcOtBbNy.jpg",
+                                "hash": "medium_n9_W8r22_O_Sm_Hpb2_FU_4tf2y_1wx_M4ib1_Z8s_Rkt_Ax2_El9um_ET_7_P2_V_Jp93_9l_Uarj_gld4c_EVB_49k_Kf_O9ldlc_Ot_Bb_Ny_7cf2d98d9f",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 131.62,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_n9_W8r22_O_Sm_Hpb2_FU_4tf2y_1wx_M4ib1_Z8s_Rkt_Ax2_El9um_ET_7_P2_V_Jp93_9l_Uarj_gld4c_EVB_49k_Kf_O9ldlc_Ot_Bb_Ny_7cf2d98d9f.jpg"
+                              },
+                              "large": {
+                                "name": "large_n9W8r22OSmHpb2FU4tf2y_1wxM4ib1Z8sRktAx2El9umET7P2VJp93_9l_Uarj_gld4cEVB49kKfO9ldlcOtBbNy.jpg",
+                                "hash": "large_n9_W8r22_O_Sm_Hpb2_FU_4tf2y_1wx_M4ib1_Z8s_Rkt_Ax2_El9um_ET_7_P2_V_Jp93_9l_Uarj_gld4c_EVB_49k_Kf_O9ldlc_Ot_Bb_Ny_7cf2d98d9f",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 216.71,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_n9_W8r22_O_Sm_Hpb2_FU_4tf2y_1wx_M4ib1_Z8s_Rkt_Ax2_El9um_ET_7_P2_V_Jp93_9l_Uarj_gld4c_EVB_49k_Kf_O9ldlc_Ot_Bb_Ny_7cf2d98d9f.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Сева Иншаков",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "seva-inshakov-04122021",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/seva-inshakov-local-radio-04122021?si=acdebf95169b4957ba9d0de8d0ffb431&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/anwK3IRdE6Q"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  }
+                ]
+              },
+              "image": {
+                "__typename": "UploadFileEntityResponse",
+                "data": {
+                  "__typename": "UploadFileEntity",
+                  "id": "179",
+                  "attributes": {
+                    "__typename": "UploadFile",
+                    "url": "https://cdnlocalradio.storage.yandexcloud.net/Seva_Inshakov_RRR_ea0355bd1d.jpeg",
+                    "width": 2048,
+                    "height": 2046,
+                    "formats": {
+                      "thumbnail": {
+                        "name": "thumbnail_Сева Иншаков - RRR.jpeg",
+                        "hash": "thumbnail_Seva_Inshakov_RRR_ea0355bd1d",
+                        "ext": ".jpeg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 157,
+                        "height": 156,
+                        "size": 7.86,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Seva_Inshakov_RRR_ea0355bd1d.jpeg"
+                      },
+                      "medium": {
+                        "name": "medium_Сева Иншаков - RRR.jpeg",
+                        "hash": "medium_Seva_Inshakov_RRR_ea0355bd1d",
+                        "ext": ".jpeg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 750,
+                        "height": 749,
+                        "size": 90.31,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_Seva_Inshakov_RRR_ea0355bd1d.jpeg"
+                      },
+                      "large": {
+                        "name": "large_Сева Иншаков - RRR.jpeg",
+                        "hash": "large_Seva_Inshakov_RRR_ea0355bd1d",
+                        "ext": ".jpeg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 1000,
+                        "height": 999,
+                        "size": 132.93,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/large_Seva_Inshakov_RRR_ea0355bd1d.jpeg"
+                      },
+                      "small": {
+                        "name": "small_Сева Иншаков - RRR.jpeg",
+                        "hash": "small_Seva_Inshakov_RRR_ea0355bd1d",
+                        "ext": ".jpeg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 500,
+                        "height": 500,
+                        "size": 51.65,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Seva_Inshakov_RRR_ea0355bd1d.jpeg"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cover": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "184",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/Rrr_Frost_cover_1e24b7ced8.jpeg",
+              "width": 1600,
+              "height": 1600,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_Rrr - Frost (cover).jpeg",
+                  "hash": "thumbnail_Rrr_Frost_cover_1e24b7ced8",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 6.32,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Rrr_Frost_cover_1e24b7ced8.jpeg"
+                },
+                "small": {
+                  "name": "small_Rrr - Frost (cover).jpeg",
+                  "hash": "small_Rrr_Frost_cover_1e24b7ced8",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 38.66,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Rrr_Frost_cover_1e24b7ced8.jpeg"
+                },
+                "medium": {
+                  "name": "medium_Rrr - Frost (cover).jpeg",
+                  "hash": "medium_Rrr_Frost_cover_1e24b7ced8",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 68.23,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_Rrr_Frost_cover_1e24b7ced8.jpeg"
+                },
+                "large": {
+                  "name": "large_Rrr - Frost (cover).jpeg",
+                  "hash": "large_Rrr_Frost_cover_1e24b7ced8",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 1000,
+                  "size": 103.11,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/large_Rrr_Frost_cover_1e24b7ced8.jpeg"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "__typename": "ReleaseEntity",
+      "id": "5",
+      "attributes": {
+        "__typename": "Release",
+        "date": "2023-01-25",
+        "updatedAt": "2023-01-31T12:15:21.968Z",
+        "createdAt": "2023-01-26T07:33:25.158Z",
+        "descriptionEn": "\nMax Cherny, a native of Voronezh, now living in Turkey, has prepared a new track for us. Turn it on and race down the night road under the building-up pace of tight acid-electro.\n\nCover: DALL·E 2",
+        "descriptionRu": "Max Cherny уроженец Воронежа, ныне проживающий в Турции, подготовил для нас новый трек. Включаем и мчимся по ночной дороге под набирающее обороты плотное эйсид электро.\n\nОбложка: DALL·E 2",
+        "artistName": "Max Cherny",
+        "releaseName": "Imerssion",
+        "slug": "imerssion",
+        "type": "Single",
+        "links": {
+          "__typename": "ComponentReleaseLinksLinks",
+          "id": "5",
+          "spotify": "http://open.spotify.com/album/3dkMDQl3pRPfbUiTS8uf32",
+          "soundcloud": "https://soundcloud.com/max-cherny-immersion",
+          "vkMusic": "https://vk.com/music/album/-2000169655_17169655_82f6bfae02bb4f7a62",
+          "yandexMusic": "https://music.yandex.ru/album/24691149?utm_source=bandlink&utm_medium=LOCAL%20RADIO&utm_campaign=custom",
+          "youtubeMusic": "https://music.youtube.com/playlist?list=OLAK5uy_ngs2X_2hcMPRhR_nVYiXTHpkYl6YX26Xs",
+          "bandcamp": "https://localradio.bandcamp.com/track/immersion",
+          "appleMusic": "https://geo.music.apple.com/album/1666968123?app=music&at=1000lqjf&mt=1&ct=bq&Is=1&ls=1"
+        },
+        "guest": {
+          "__typename": "GuestEntityResponse",
+          "data": null
+        },
+        "cover": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "154",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/Max_Cherny_cover_d9b3abb47e.jpg",
+              "width": 1400,
+              "height": 1400,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_Max Cherny  - cover.jpg",
+                  "hash": "thumbnail_Max_Cherny_cover_d9b3abb47e",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 3.38,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Max_Cherny_cover_d9b3abb47e.jpg"
+                },
+                "small": {
+                  "name": "small_Max Cherny  - cover.jpg",
+                  "hash": "small_Max_Cherny_cover_d9b3abb47e",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 18.34,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Max_Cherny_cover_d9b3abb47e.jpg"
+                },
+                "large": {
+                  "name": "large_Max Cherny  - cover.jpg",
+                  "hash": "large_Max_Cherny_cover_d9b3abb47e",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 1000,
+                  "size": 50.22,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/large_Max_Cherny_cover_d9b3abb47e.jpg"
+                },
+                "medium": {
+                  "name": "medium_Max Cherny  - cover.jpg",
+                  "hash": "medium_Max_Cherny_cover_d9b3abb47e",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 32.76,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_Max_Cherny_cover_d9b3abb47e.jpg"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "__typename": "ReleaseEntity",
+      "id": "4",
+      "attributes": {
+        "__typename": "Release",
+        "date": "2022-12-21",
+        "updatedAt": "2023-01-31T12:14:40.548Z",
+        "createdAt": "2023-01-26T07:31:07.450Z",
+        "descriptionEn": "“I wrote this track a few weeks ago, in December, during a time when everything seemed gray and monotonous. Mornings and evenings were the same color, and the days seemed to blend together, fascinating yet perplexing. When I woke up, I was immediately in a bad mood. I sat at my instruments for a long time, chasing the same thoughts over and over again, until I finally came to my senses.”\n\nCover: Shura Kornakov",
+        "descriptionRu": "«Я написал этот трек пару недель назад в декабре. Такое время, когда вечно серо, утро того же цвета, что и вечер, а дни идут и идут и идут, похожие друг на друга, очаровывая и сбивая столку. Я проснулся, и настроение было сразу паршивое. Долго сидел за инструментами, гонял все мысли, которые думал по сотне раз, пока, наконец, не пришёл в себя.»\n\nОбложка: Шура Корнаков",
+        "artistName": "meta.brother",
+        "releaseName": "dayafterday'n'afterday'n'afterday",
+        "slug": "dayafterday-n-afterday-n-afterday",
+        "type": "Single",
+        "links": {
+          "__typename": "ComponentReleaseLinksLinks",
+          "id": "4",
+          "spotify": "https://open.spotify.com/album/17CC22YJS6SiEFxb4Sj24v",
+          "soundcloud": "https://soundcloud.com/local_radio/metabrother-dayafterdaynafterdaynafterday",
+          "vkMusic": "https://vk.com/music/album/-2000938451_16938451_ac5d4c91b45b1b67e2",
+          "yandexMusic": "https://music.yandex.ru/album/24393008",
+          "youtubeMusic": "https://music.youtube.com/watch?v=4KyIb_eJ69k&feature=share",
+          "bandcamp": "https://localradio.bandcamp.com/track/dayafterday-n-afterday-n-afterday",
+          "appleMusic": "https://geo.music.apple.com/album/1660306245?app=music&mt=1&at=1000lqjf&ct=bq&Is=1&ls=1"
+        },
+        "guest": {
+          "__typename": "GuestEntityResponse",
+          "data": null
+        },
+        "cover": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "153",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/Kopiya_meta_brother_dayafterday_n_afterday_n_afterday_cover_3e89852554.jpg",
+              "width": 650,
+              "height": 650,
+              "formats": {
+                "small": {
+                  "name": "small_Копия meta.brother – dayafterday'n'afterday'n'afterday (cover).jpg",
+                  "hash": "small_Kopiya_meta_brother_dayafterday_n_afterday_n_afterday_cover_3e89852554",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 97.42,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Kopiya_meta_brother_dayafterday_n_afterday_n_afterday_cover_3e89852554.jpg"
+                },
+                "thumbnail": {
+                  "name": "thumbnail_Копия meta.brother – dayafterday'n'afterday'n'afterday (cover).jpg",
+                  "hash": "thumbnail_Kopiya_meta_brother_dayafterday_n_afterday_n_afterday_cover_3e89852554",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 9.27,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Kopiya_meta_brother_dayafterday_n_afterday_n_afterday_cover_3e89852554.jpg"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "__typename": "ReleaseEntity",
+      "id": "3",
+      "attributes": {
+        "__typename": "Release",
+        "date": "2022-11-28",
+        "updatedAt": "2023-03-23T20:58:30.362Z",
+        "createdAt": "2023-01-26T07:24:40.748Z",
+        "descriptionEn": "Single is a jungle from a local musician, DC15\n\n\"The track was inspired by late-night YouTube deep dives and an atmosphere that is both anxious and cozy at the same time.\"\n\nArt: Maximilian Fomichev /  Xenia Lychagina",
+        "descriptionRu": "Джангл  от локального музыканта DC15\n\n“Трек родился из ночного просмотра бесконечных видео на ютубе и немножко, наверное, отражает вот эту атмосферу, когда ночь то тревожная то уютная.\"\n\nОбложка: Максимилиан Фомичев / Ксения Лычагина",
+        "artistName": "DC15",
+        "releaseName": "chord sound good",
+        "slug": "chord-sound-good",
+        "type": "Single",
+        "links": {
+          "__typename": "ComponentReleaseLinksLinks",
+          "id": "3",
+          "spotify": "https://open.spotify.com/album/4zRGqLK7VHwLNWPUGckgPB?si=FkZ_tiKyTZyx0EoeHrsztQ",
+          "soundcloud": "https://soundcloud.com/local_radio/dc15-chord-sound-good",
+          "vkMusic": "https://vk.com/music/album/-2000776987_16776987_664fe02b6852698cbd",
+          "yandexMusic": "https://music.yandex.ru/album/24135402?utm_source=bandlink&utm_medium=DC15&utm_campaign=chord%20sound%20good%20-%20Single",
+          "youtubeMusic": "https://music.youtube.com/playlist?list=OLAK5uy_nRf4de45myFDk4a_I-KgGYYjBtRNdFYQ4",
+          "bandcamp": "https://localradio.bandcamp.com/track/chord-sound-good",
+          "appleMusic": "https://geo.music.apple.com/album/1655808000?app=music&mt=1&at=1000lqjf&ct=bq&Is=1&ls=1"
+        },
+        "guest": {
+          "__typename": "GuestEntityResponse",
+          "data": {
+            "__typename": "GuestEntity",
+            "id": "3",
+            "attributes": {
+              "__typename": "Guest",
+              "name": "DC15",
+              "slug": "dc-15",
+              "mixes": {
+                "__typename": "MixRelationResponseCollection",
+                "data": [
+                  {
+                    "__typename": "MixEntity",
+                    "id": "291",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2022-01-26T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "146",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/S5ss0_QJ_73ib_JE_Kxeht_W_Ag71cbc_H2ny4_Jwr_Z_5g9_qtxr8_HW_Eziuj_M2x_Qcf_Tv_Vlfcz5_Evr_O_Lg_Hri_Hw_D_W46jb_78454b8653.jpg",
+                            "width": 1280,
+                            "height": 1280,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_--S5ss0QJ_73ibJE-KxehtWAg71cbcH2ny4JwrZ-5g9-qtxr8HWEziujM2xQcfTvVlfcz5EvrOLgHriHwD_W46jb.jpg",
+                                "hash": "thumbnail_S5ss0_QJ_73ib_JE_Kxeht_W_Ag71cbc_H2ny4_Jwr_Z_5g9_qtxr8_HW_Eziuj_M2x_Qcf_Tv_Vlfcz5_Evr_O_Lg_Hri_Hw_D_W46jb_78454b8653",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 5.27,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_S5ss0_QJ_73ib_JE_Kxeht_W_Ag71cbc_H2ny4_Jwr_Z_5g9_qtxr8_HW_Eziuj_M2x_Qcf_Tv_Vlfcz5_Evr_O_Lg_Hri_Hw_D_W46jb_78454b8653.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_--S5ss0QJ_73ibJE-KxehtWAg71cbcH2ny4JwrZ-5g9-qtxr8HWEziujM2xQcfTvVlfcz5EvrOLgHriHwD_W46jb.jpg",
+                                "hash": "medium_S5ss0_QJ_73ib_JE_Kxeht_W_Ag71cbc_H2ny4_Jwr_Z_5g9_qtxr8_HW_Eziuj_M2x_Qcf_Tv_Vlfcz5_Evr_O_Lg_Hri_Hw_D_W46jb_78454b8653",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 74.83,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_S5ss0_QJ_73ib_JE_Kxeht_W_Ag71cbc_H2ny4_Jwr_Z_5g9_qtxr8_HW_Eziuj_M2x_Qcf_Tv_Vlfcz5_Evr_O_Lg_Hri_Hw_D_W46jb_78454b8653.jpg"
+                              },
+                              "large": {
+                                "name": "large_--S5ss0QJ_73ibJE-KxehtWAg71cbcH2ny4JwrZ-5g9-qtxr8HWEziujM2xQcfTvVlfcz5EvrOLgHriHwD_W46jb.jpg",
+                                "hash": "large_S5ss0_QJ_73ib_JE_Kxeht_W_Ag71cbc_H2ny4_Jwr_Z_5g9_qtxr8_HW_Eziuj_M2x_Qcf_Tv_Vlfcz5_Evr_O_Lg_Hri_Hw_D_W46jb_78454b8653",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 120.92,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_S5ss0_QJ_73ib_JE_Kxeht_W_Ag71cbc_H2ny4_Jwr_Z_5g9_qtxr8_HW_Eziuj_M2x_Qcf_Tv_Vlfcz5_Evr_O_Lg_Hri_Hw_D_W46jb_78454b8653.jpg"
+                              },
+                              "small": {
+                                "name": "small_--S5ss0QJ_73ibJE-KxehtWAg71cbcH2ny4JwrZ-5g9-qtxr8HWEziujM2xQcfTvVlfcz5EvrOLgHriHwD_W46jb.jpg",
+                                "hash": "small_S5ss0_QJ_73ib_JE_Kxeht_W_Ag71cbc_H2ny4_Jwr_Z_5g9_qtxr8_HW_Eziuj_M2x_Qcf_Tv_Vlfcz5_Evr_O_Lg_Hri_Hw_D_W46jb_78454b8653",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 37.74,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_S5ss0_QJ_73ib_JE_Kxeht_W_Ag71cbc_H2ny4_Jwr_Z_5g9_qtxr8_HW_Eziuj_M2x_Qcf_Tv_Vlfcz5_Evr_O_Lg_Hri_Hw_D_W46jb_78454b8653.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "DC15 @ Ugol",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "dc15-ugol-27012022",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/dc15-ugol-27012022?si=95605af44c3347b9b7a54125b0c7180e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/zXJMLRIZiV4"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "163",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2021-07-28T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "88",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/v_ADI_Rr_A_Mft4_H_Cq6u_Xre_G_Vvy_GVI_Gd1z_Glm_tmz_N1k0v5x4d_Nh_T_Gf_HN_6l_Nt_LXC_Wk_U_Xfefv_Q3_GX_Elk_VWEO_Xmv_Yy9c_Yr_f772387a4b.jpg",
+                            "width": 1280,
+                            "height": 1280,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_vADIRrAMft4HCq6uXreGVvyGVIGd1zGlm-tmzN1k0v5x4dNhTGfHN6lNtLXCWkUXfefvQ3GXElkVWEOXmvYy9cYr.jpg",
+                                "hash": "thumbnail_v_ADI_Rr_A_Mft4_H_Cq6u_Xre_G_Vvy_GVI_Gd1z_Glm_tmz_N1k0v5x4d_Nh_T_Gf_HN_6l_Nt_LXC_Wk_U_Xfefv_Q3_GX_Elk_VWEO_Xmv_Yy9c_Yr_f772387a4b",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 8.05,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_v_ADI_Rr_A_Mft4_H_Cq6u_Xre_G_Vvy_GVI_Gd1z_Glm_tmz_N1k0v5x4d_Nh_T_Gf_HN_6l_Nt_LXC_Wk_U_Xfefv_Q3_GX_Elk_VWEO_Xmv_Yy9c_Yr_f772387a4b.jpg"
+                              },
+                              "small": {
+                                "name": "small_vADIRrAMft4HCq6uXreGVvyGVIGd1zGlm-tmzN1k0v5x4dNhTGfHN6lNtLXCWkUXfefvQ3GXElkVWEOXmvYy9cYr.jpg",
+                                "hash": "small_v_ADI_Rr_A_Mft4_H_Cq6u_Xre_G_Vvy_GVI_Gd1z_Glm_tmz_N1k0v5x4d_Nh_T_Gf_HN_6l_Nt_LXC_Wk_U_Xfefv_Q3_GX_Elk_VWEO_Xmv_Yy9c_Yr_f772387a4b",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 77.82,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_v_ADI_Rr_A_Mft4_H_Cq6u_Xre_G_Vvy_GVI_Gd1z_Glm_tmz_N1k0v5x4d_Nh_T_Gf_HN_6l_Nt_LXC_Wk_U_Xfefv_Q3_GX_Elk_VWEO_Xmv_Yy9c_Yr_f772387a4b.jpg"
+                              },
+                              "large": {
+                                "name": "large_vADIRrAMft4HCq6uXreGVvyGVIGd1zGlm-tmzN1k0v5x4dNhTGfHN6lNtLXCWkUXfefvQ3GXElkVWEOXmvYy9cYr.jpg",
+                                "hash": "large_v_ADI_Rr_A_Mft4_H_Cq6u_Xre_G_Vvy_GVI_Gd1z_Glm_tmz_N1k0v5x4d_Nh_T_Gf_HN_6l_Nt_LXC_Wk_U_Xfefv_Q3_GX_Elk_VWEO_Xmv_Yy9c_Yr_f772387a4b",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 263.35,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_v_ADI_Rr_A_Mft4_H_Cq6u_Xre_G_Vvy_GVI_Gd1z_Glm_tmz_N1k0v5x4d_Nh_T_Gf_HN_6l_Nt_LXC_Wk_U_Xfefv_Q3_GX_Elk_VWEO_Xmv_Yy9c_Yr_f772387a4b.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_vADIRrAMft4HCq6uXreGVvyGVIGd1zGlm-tmzN1k0v5x4dNhTGfHN6lNtLXCWkUXfefvQ3GXElkVWEOXmvYy9cYr.jpg",
+                                "hash": "medium_v_ADI_Rr_A_Mft4_H_Cq6u_Xre_G_Vvy_GVI_Gd1z_Glm_tmz_N1k0v5x4d_Nh_T_Gf_HN_6l_Nt_LXC_Wk_U_Xfefv_Q3_GX_Elk_VWEO_Xmv_Yy9c_Yr_f772387a4b",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 162.07,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_v_ADI_Rr_A_Mft4_H_Cq6u_Xre_G_Vvy_GVI_Gd1z_Glm_tmz_N1k0v5x4d_Nh_T_Gf_HN_6l_Nt_LXC_Wk_U_Xfefv_Q3_GX_Elk_VWEO_Xmv_Yy9c_Yr_f772387a4b.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Onomatopoeia w/ DC15",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "onomatopoeia-w-dc15-29072021",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/onomatopoeia-w-dc15-local-radio-29072021?si=34e7f5efe5c04e6094ca7a9db8483d90&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/edzsDoH-nbc"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "138",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2021-05-14T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "77",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/W0_Y_3jrs26g_W_Dt_Zj1_I_Soh_C_Zdh_Hqk_Yx_Ua2_Xo_LA_Ov0_P4_Tz_Rto_Xsiaek_OF_Cw_Gl_VR_8_RP_2o_Oj6rf_P_Vr8_O_Bvvhl4hp_Yu_Q_7e621fa373.jpg",
+                            "width": 1080,
+                            "height": 1080,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_W0Y_3jrs26gWDtZj1ISohCZdhHqkYxUa2XoLAOv0P4Tz_RtoXsiaekOFCwGlVR8RP2oOj6rfPVr8OBvvhl4hpYuQ.jpg",
+                                "hash": "thumbnail_W0_Y_3jrs26g_W_Dt_Zj1_I_Soh_C_Zdh_Hqk_Yx_Ua2_Xo_LA_Ov0_P4_Tz_Rto_Xsiaek_OF_Cw_Gl_VR_8_RP_2o_Oj6rf_P_Vr8_O_Bvvhl4hp_Yu_Q_7e621fa373",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 4.95,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_W0_Y_3jrs26g_W_Dt_Zj1_I_Soh_C_Zdh_Hqk_Yx_Ua2_Xo_LA_Ov0_P4_Tz_Rto_Xsiaek_OF_Cw_Gl_VR_8_RP_2o_Oj6rf_P_Vr8_O_Bvvhl4hp_Yu_Q_7e621fa373.jpg"
+                              },
+                              "small": {
+                                "name": "small_W0Y_3jrs26gWDtZj1ISohCZdhHqkYxUa2XoLAOv0P4Tz_RtoXsiaekOFCwGlVR8RP2oOj6rfPVr8OBvvhl4hpYuQ.jpg",
+                                "hash": "small_W0_Y_3jrs26g_W_Dt_Zj1_I_Soh_C_Zdh_Hqk_Yx_Ua2_Xo_LA_Ov0_P4_Tz_Rto_Xsiaek_OF_Cw_Gl_VR_8_RP_2o_Oj6rf_P_Vr8_O_Bvvhl4hp_Yu_Q_7e621fa373",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 51.26,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_W0_Y_3jrs26g_W_Dt_Zj1_I_Soh_C_Zdh_Hqk_Yx_Ua2_Xo_LA_Ov0_P4_Tz_Rto_Xsiaek_OF_Cw_Gl_VR_8_RP_2o_Oj6rf_P_Vr8_O_Bvvhl4hp_Yu_Q_7e621fa373.jpg"
+                              },
+                              "large": {
+                                "name": "large_W0Y_3jrs26gWDtZj1ISohCZdhHqkYxUa2XoLAOv0P4Tz_RtoXsiaekOFCwGlVR8RP2oOj6rfPVr8OBvvhl4hpYuQ.jpg",
+                                "hash": "large_W0_Y_3jrs26g_W_Dt_Zj1_I_Soh_C_Zdh_Hqk_Yx_Ua2_Xo_LA_Ov0_P4_Tz_Rto_Xsiaek_OF_Cw_Gl_VR_8_RP_2o_Oj6rf_P_Vr8_O_Bvvhl4hp_Yu_Q_7e621fa373",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 257.25,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_W0_Y_3jrs26g_W_Dt_Zj1_I_Soh_C_Zdh_Hqk_Yx_Ua2_Xo_LA_Ov0_P4_Tz_Rto_Xsiaek_OF_Cw_Gl_VR_8_RP_2o_Oj6rf_P_Vr8_O_Bvvhl4hp_Yu_Q_7e621fa373.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_W0Y_3jrs26gWDtZj1ISohCZdhHqkYxUa2XoLAOv0P4Tz_RtoXsiaekOFCwGlVR8RP2oOj6rfPVr8OBvvhl4hpYuQ.jpg",
+                                "hash": "medium_W0_Y_3jrs26g_W_Dt_Zj1_I_Soh_C_Zdh_Hqk_Yx_Ua2_Xo_LA_Ov0_P4_Tz_Rto_Xsiaek_OF_Cw_Gl_VR_8_RP_2o_Oj6rf_P_Vr8_O_Bvvhl4hp_Yu_Q_7e621fa373",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 133.97,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_W0_Y_3jrs26g_W_Dt_Zj1_I_Soh_C_Zdh_Hqk_Yx_Ua2_Xo_LA_Ov0_P4_Tz_Rto_Xsiaek_OF_Cw_Gl_VR_8_RP_2o_Oj6rf_P_Vr8_O_Bvvhl4hp_Yu_Q_7e621fa373.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Onomatopoeia w/ DC15",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "onomatopoeia-w-dc15-15052021",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/onomatopoeia-w-dc15-lokal-radio-15052021?si=939cee76842547fd88d5432de00eb65a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/IUkU1yXhg40"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "99",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2021-01-15T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "55",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/Fm_W3_Y_f_qd_KM_lcp1_Omi_Vg_Wlpnwh_J_Ssf_T193_Aq_N9_E_Nv_BTU_Lh_OEXX_Mp_ILE_htf_S_Lw_D_l_E_Fnaca_ZV_Sakwjh_Jv7_MZ_b69863bc2f.jpg",
+                            "width": 1080,
+                            "height": 1080,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_FmW3Y_f_qdKM_lcp1OmiVgWlpnwhJSsfT193AqN9ENvBTULhOEXX_Mp-ILE_htfSLwD-lEFnacaZVSakwjhJv7MZ.jpg",
+                                "hash": "thumbnail_Fm_W3_Y_f_qd_KM_lcp1_Omi_Vg_Wlpnwh_J_Ssf_T193_Aq_N9_E_Nv_BTU_Lh_OEXX_Mp_ILE_htf_S_Lw_D_l_E_Fnaca_ZV_Sakwjh_Jv7_MZ_b69863bc2f",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 3.28,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Fm_W3_Y_f_qd_KM_lcp1_Omi_Vg_Wlpnwh_J_Ssf_T193_Aq_N9_E_Nv_BTU_Lh_OEXX_Mp_ILE_htf_S_Lw_D_l_E_Fnaca_ZV_Sakwjh_Jv7_MZ_b69863bc2f.jpg"
+                              },
+                              "small": {
+                                "name": "small_FmW3Y_f_qdKM_lcp1OmiVgWlpnwhJSsfT193AqN9ENvBTULhOEXX_Mp-ILE_htfSLwD-lEFnacaZVSakwjhJv7MZ.jpg",
+                                "hash": "small_Fm_W3_Y_f_qd_KM_lcp1_Omi_Vg_Wlpnwh_J_Ssf_T193_Aq_N9_E_Nv_BTU_Lh_OEXX_Mp_ILE_htf_S_Lw_D_l_E_Fnaca_ZV_Sakwjh_Jv7_MZ_b69863bc2f",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 20.69,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Fm_W3_Y_f_qd_KM_lcp1_Omi_Vg_Wlpnwh_J_Ssf_T193_Aq_N9_E_Nv_BTU_Lh_OEXX_Mp_ILE_htf_S_Lw_D_l_E_Fnaca_ZV_Sakwjh_Jv7_MZ_b69863bc2f.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_FmW3Y_f_qdKM_lcp1OmiVgWlpnwhJSsfT193AqN9ENvBTULhOEXX_Mp-ILE_htfSLwD-lEFnacaZVSakwjhJv7MZ.jpg",
+                                "hash": "medium_Fm_W3_Y_f_qd_KM_lcp1_Omi_Vg_Wlpnwh_J_Ssf_T193_Aq_N9_E_Nv_BTU_Lh_OEXX_Mp_ILE_htf_S_Lw_D_l_E_Fnaca_ZV_Sakwjh_Jv7_MZ_b69863bc2f",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 40.37,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_Fm_W3_Y_f_qd_KM_lcp1_Omi_Vg_Wlpnwh_J_Ssf_T193_Aq_N9_E_Nv_BTU_Lh_OEXX_Mp_ILE_htf_S_Lw_D_l_E_Fnaca_ZV_Sakwjh_Jv7_MZ_b69863bc2f.jpg"
+                              },
+                              "large": {
+                                "name": "large_FmW3Y_f_qdKM_lcp1OmiVgWlpnwhJSsfT193AqN9ENvBTULhOEXX_Mp-ILE_htfSLwD-lEFnacaZVSakwjhJv7MZ.jpg",
+                                "hash": "large_Fm_W3_Y_f_qd_KM_lcp1_Omi_Vg_Wlpnwh_J_Ssf_T193_Aq_N9_E_Nv_BTU_Lh_OEXX_Mp_ILE_htf_S_Lw_D_l_E_Fnaca_ZV_Sakwjh_Jv7_MZ_b69863bc2f",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 63.45,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_Fm_W3_Y_f_qd_KM_lcp1_Omi_Vg_Wlpnwh_J_Ssf_T193_Aq_N9_E_Nv_BTU_Lh_OEXX_Mp_ILE_htf_S_Lw_D_l_E_Fnaca_ZV_Sakwjh_Jv7_MZ_b69863bc2f.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Onomatopoeia w/ DC15",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "onomatopoeia-w-dc15-16112022",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/onomatopoeia-w-dc15-16-01-2021?si=a3a35cc84e0b475ba5b726297a47ae3b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/DKAj0EjbLlA"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "56",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2020-10-23T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "36",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/Ho_YR_77f2_PB_Ys_chp_WSCQ_Lc0y_Mx7xl_O51ye_c_ROGU_97gh_Am_Ql_Y0mge5_Nqc_W80_AAXOX_2by_RZ_3_FQ_Xb5_L_Mf8r_H3x_HUE_c132eb3942.jpg",
+                            "width": 604,
+                            "height": 604,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_HoYR77f2PBYs_chpWSCQLc0yMx7xlO51ye_c-ROGU97ghAmQlY0mge5NqcW80AAXOX2byRZ3FQXb5LMf8rH3xHUE.jpg",
+                                "hash": "thumbnail_Ho_YR_77f2_PB_Ys_chp_WSCQ_Lc0y_Mx7xl_O51ye_c_ROGU_97gh_Am_Ql_Y0mge5_Nqc_W80_AAXOX_2by_RZ_3_FQ_Xb5_L_Mf8r_H3x_HUE_c132eb3942",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 4.69,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Ho_YR_77f2_PB_Ys_chp_WSCQ_Lc0y_Mx7xl_O51ye_c_ROGU_97gh_Am_Ql_Y0mge5_Nqc_W80_AAXOX_2by_RZ_3_FQ_Xb5_L_Mf8r_H3x_HUE_c132eb3942.jpg"
+                              },
+                              "small": {
+                                "name": "small_HoYR77f2PBYs_chpWSCQLc0yMx7xlO51ye_c-ROGU97ghAmQlY0mge5NqcW80AAXOX2byRZ3FQXb5LMf8rH3xHUE.jpg",
+                                "hash": "small_Ho_YR_77f2_PB_Ys_chp_WSCQ_Lc0y_Mx7xl_O51ye_c_ROGU_97gh_Am_Ql_Y0mge5_Nqc_W80_AAXOX_2by_RZ_3_FQ_Xb5_L_Mf8r_H3x_HUE_c132eb3942",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 32.46,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Ho_YR_77f2_PB_Ys_chp_WSCQ_Lc0y_Mx7xl_O51ye_c_ROGU_97gh_Am_Ql_Y0mge5_Nqc_W80_AAXOX_2by_RZ_3_FQ_Xb5_L_Mf8r_H3x_HUE_c132eb3942.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "DC15",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "dc15-24102020",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/dc15-24-10-2020?si=0ca8818ad9dd4f15869e0cdf6658e6a5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/RY-THIBeDK0"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  }
+                ]
+              },
+              "image": {
+                "__typename": "UploadFileEntityResponse",
+                "data": {
+                  "__typename": "UploadFileEntity",
+                  "id": "177",
+                  "attributes": {
+                    "__typename": "UploadFile",
+                    "url": "https://cdnlocalradio.storage.yandexcloud.net/DC_15_37f766adcb.jpeg",
+                    "width": 720,
+                    "height": 992,
+                    "formats": {
+                      "thumbnail": {
+                        "name": "thumbnail_DC15.jpeg",
+                        "hash": "thumbnail_DC_15_37f766adcb",
+                        "ext": ".jpeg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 113,
+                        "height": 156,
+                        "size": 3.85,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_DC_15_37f766adcb.jpeg"
+                      },
+                      "medium": {
+                        "name": "medium_DC15.jpeg",
+                        "hash": "medium_DC_15_37f766adcb",
+                        "ext": ".jpeg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 544,
+                        "height": 750,
+                        "size": 65.6,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_DC_15_37f766adcb.jpeg"
+                      },
+                      "small": {
+                        "name": "small_DC15.jpeg",
+                        "hash": "small_DC_15_37f766adcb",
+                        "ext": ".jpeg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 363,
+                        "height": 500,
+                        "size": 30.73,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/small_DC_15_37f766adcb.jpeg"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cover": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "152",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/DC_15_chord_sound_good_small_1499c36e8a.jpg",
+              "width": 1000,
+              "height": 1000,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_DC15 - chord sound good — small.jpg",
+                  "hash": "thumbnail_DC_15_chord_sound_good_small_1499c36e8a",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 3.87,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_DC_15_chord_sound_good_small_1499c36e8a.jpg"
+                },
+                "small": {
+                  "name": "small_DC15 - chord sound good — small.jpg",
+                  "hash": "small_DC_15_chord_sound_good_small_1499c36e8a",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 27.13,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_DC_15_chord_sound_good_small_1499c36e8a.jpg"
+                },
+                "medium": {
+                  "name": "medium_DC15 - chord sound good — small.jpg",
+                  "hash": "medium_DC_15_chord_sound_good_small_1499c36e8a",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 53.73,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_DC_15_chord_sound_good_small_1499c36e8a.jpg"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "__typename": "ReleaseEntity",
+      "id": "2",
+      "attributes": {
+        "__typename": "Release",
+        "date": "2022-10-28",
+        "updatedAt": "2023-03-23T20:58:49.396Z",
+        "createdAt": "2023-01-26T07:18:29.642Z",
+        "descriptionEn": "Single from the resident of the team - Forlate.\n\nTaking influences from new age and tribal house, this track never stands still, constantly changing, yet remaining as familiar as childhood seaside trips.\n\n- Mixing & mastering – Oleg Sotnikov\n- Cover – Olga Riefenstahl",
+        "descriptionRu": "Cингл от резидента команды – Forlate.\n\nВдохновленный в равной степени нью-эйджем и трайбалистким хаусом, этот трек никогда не стоит на месте, постоянно претерпевая метаморфозы, оставаясь при этом знакомым, как воспоминания о детских поездках на море.\n\n- Сведение/Мастеринг: Олег Сотников\n- Обложка: Olga Riefenstahl",
+        "artistName": "Forlate",
+        "releaseName": "A River of Sand",
+        "slug": "forlate-a-river-of-sand",
+        "type": "Single",
+        "links": {
+          "__typename": "ComponentReleaseLinksLinks",
+          "id": "2",
+          "spotify": "https://open.spotify.com/album/2G7ghUAPVeiLM95MRZczpQ",
+          "soundcloud": "https://soundcloud.com/local_radio/forlate-a-river-of-sand?si=43fa14b464294439bb839322d87c37c7&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+          "vkMusic": "https://vk.com/music/album/-2000604957_16604957_5f0e665eae4e30e2cb",
+          "yandexMusic": "https://music.yandex.ru/album/23878775",
+          "youtubeMusic": "https://music.youtube.com/playlist?list=OLAK5uy_nl3_hh3WqEiaIR0-3I5pH1i2TU4AH-QQc",
+          "bandcamp": "https://localradio.bandcamp.com/track/a-river-of-sand",
+          "appleMusic": "https://geo.music.apple.com/album/1651459271?app=music&at=1000lqjf&mt=1&ct=bq&Is=1&ls=1"
+        },
+        "guest": {
+          "__typename": "GuestEntityResponse",
+          "data": {
+            "__typename": "GuestEntity",
+            "id": "2",
+            "attributes": {
+              "__typename": "Guest",
+              "name": "Forlate",
+              "slug": "forlate",
+              "mixes": {
+                "__typename": "MixRelationResponseCollection",
+                "data": [
+                  {
+                    "__typename": "MixEntity",
+                    "id": "287",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2022-02-11T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "144",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/6cg37_Jb_ZE_Xm_JZ_448q_r_JCID_37_Qyiq_Dq_NA_1_Tmhdf_Rh4_Qb2_T3li_Gg38_JS_Yaf_Jde_Id3wwm_WOZOCCX_0_Ip_QH_3k_y_Zy_Pqg_b97e20dc33.jpg",
+                            "width": 1280,
+                            "height": 1280,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_6cg37JbZEXmJZ448q-rJCID37QyiqDqNA1TmhdfRh4Qb2T3liGg38JSYafJdeId3wwmWOZOCCX0IpQH3k-yZyPqg.jpg",
+                                "hash": "thumbnail_6cg37_Jb_ZE_Xm_JZ_448q_r_JCID_37_Qyiq_Dq_NA_1_Tmhdf_Rh4_Qb2_T3li_Gg38_JS_Yaf_Jde_Id3wwm_WOZOCCX_0_Ip_QH_3k_y_Zy_Pqg_b97e20dc33",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 4.97,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_6cg37_Jb_ZE_Xm_JZ_448q_r_JCID_37_Qyiq_Dq_NA_1_Tmhdf_Rh4_Qb2_T3li_Gg38_JS_Yaf_Jde_Id3wwm_WOZOCCX_0_Ip_QH_3k_y_Zy_Pqg_b97e20dc33.jpg"
+                              },
+                              "small": {
+                                "name": "small_6cg37JbZEXmJZ448q-rJCID37QyiqDqNA1TmhdfRh4Qb2T3liGg38JSYafJdeId3wwmWOZOCCX0IpQH3k-yZyPqg.jpg",
+                                "hash": "small_6cg37_Jb_ZE_Xm_JZ_448q_r_JCID_37_Qyiq_Dq_NA_1_Tmhdf_Rh4_Qb2_T3li_Gg38_JS_Yaf_Jde_Id3wwm_WOZOCCX_0_Ip_QH_3k_y_Zy_Pqg_b97e20dc33",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 58.98,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_6cg37_Jb_ZE_Xm_JZ_448q_r_JCID_37_Qyiq_Dq_NA_1_Tmhdf_Rh4_Qb2_T3li_Gg38_JS_Yaf_Jde_Id3wwm_WOZOCCX_0_Ip_QH_3k_y_Zy_Pqg_b97e20dc33.jpg"
+                              },
+                              "large": {
+                                "name": "large_6cg37JbZEXmJZ448q-rJCID37QyiqDqNA1TmhdfRh4Qb2T3liGg38JSYafJdeId3wwmWOZOCCX0IpQH3k-yZyPqg.jpg",
+                                "hash": "large_6cg37_Jb_ZE_Xm_JZ_448q_r_JCID_37_Qyiq_Dq_NA_1_Tmhdf_Rh4_Qb2_T3li_Gg38_JS_Yaf_Jde_Id3wwm_WOZOCCX_0_Ip_QH_3k_y_Zy_Pqg_b97e20dc33",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 221.89,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_6cg37_Jb_ZE_Xm_JZ_448q_r_JCID_37_Qyiq_Dq_NA_1_Tmhdf_Rh4_Qb2_T3li_Gg38_JS_Yaf_Jde_Id3wwm_WOZOCCX_0_Ip_QH_3k_y_Zy_Pqg_b97e20dc33.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_6cg37JbZEXmJZ448q-rJCID37QyiqDqNA1TmhdfRh4Qb2T3liGg38JSYafJdeId3wwmWOZOCCX0IpQH3k-yZyPqg.jpg",
+                                "hash": "medium_6cg37_Jb_ZE_Xm_JZ_448q_r_JCID_37_Qyiq_Dq_NA_1_Tmhdf_Rh4_Qb2_T3li_Gg38_JS_Yaf_Jde_Id3wwm_WOZOCCX_0_Ip_QH_3k_y_Zy_Pqg_b97e20dc33",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 129.97,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_6cg37_Jb_ZE_Xm_JZ_448q_r_JCID_37_Qyiq_Dq_NA_1_Tmhdf_Rh4_Qb2_T3li_Gg38_JS_Yaf_Jde_Id3wwm_WOZOCCX_0_Ip_QH_3k_y_Zy_Pqg_b97e20dc33.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "100BPM w/ Forlate",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "100bpm-w-forlate-12022022",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/100-bpm-w-forlate-local-radio-12022022?si=5888bbb60ec044e0bcf612d1c47a1057&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/68afiA0R7yc"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": [
+                          {
+                            "__typename": "GenreEntity",
+                            "attributes": {
+                              "__typename": "Genre",
+                              "name": "Ambient",
+                              "slug": "ambient"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "299",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2022-01-22T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "150",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/localradio_kopiya_4249e091a3.jpg",
+                            "width": 980,
+                            "height": 980,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_localradio копия.jpg",
+                                "hash": "thumbnail_localradio_kopiya_4249e091a3",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 8.25,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_localradio_kopiya_4249e091a3.jpg"
+                              },
+                              "small": {
+                                "name": "small_localradio копия.jpg",
+                                "hash": "small_localradio_kopiya_4249e091a3",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 104.24,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_localradio_kopiya_4249e091a3.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_localradio копия.jpg",
+                                "hash": "medium_localradio_kopiya_4249e091a3",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 238.42,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_localradio_kopiya_4249e091a3.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "The return of something completely different w/ Forlate",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "the-return-of-something-completely-different-w-forlate-23012022",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/the-return-of-something-completely-different-w-forlate-local-radio-23012022?si=cf8a6ef9d3be443ba102b6d947cefa4c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/uJCaPHLYk2I"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "220",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2021-11-12T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "115",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/V_Lx2d_Jf_T_Ev_Wzatw_H31_Su99_Xn_Sp_I6z0_HR_0w7_Tz9x_Ur_Oydx_Od8i_Ex_Pt_Jz_Ejj_Lxr_Chf_Y_To_N_Hk_R_Nwflt_Zm_P91mj_Ga_c_7c47932590.jpg",
+                            "width": 1280,
+                            "height": 1280,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_VLx2dJfTEvWzatwH31Su99XnSpI6z0HR0w7Tz9xUrOydxOd8iExPtJzEjjLxrChfYToNHkRNwfltZmP91mjGa-_c.jpg",
+                                "hash": "thumbnail_V_Lx2d_Jf_T_Ev_Wzatw_H31_Su99_Xn_Sp_I6z0_HR_0w7_Tz9x_Ur_Oydx_Od8i_Ex_Pt_Jz_Ejj_Lxr_Chf_Y_To_N_Hk_R_Nwflt_Zm_P91mj_Ga_c_7c47932590",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 5.37,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_V_Lx2d_Jf_T_Ev_Wzatw_H31_Su99_Xn_Sp_I6z0_HR_0w7_Tz9x_Ur_Oydx_Od8i_Ex_Pt_Jz_Ejj_Lxr_Chf_Y_To_N_Hk_R_Nwflt_Zm_P91mj_Ga_c_7c47932590.jpg"
+                              },
+                              "small": {
+                                "name": "small_VLx2dJfTEvWzatwH31Su99XnSpI6z0HR0w7Tz9xUrOydxOd8iExPtJzEjjLxrChfYToNHkRNwfltZmP91mjGa-_c.jpg",
+                                "hash": "small_V_Lx2d_Jf_T_Ev_Wzatw_H31_Su99_Xn_Sp_I6z0_HR_0w7_Tz9x_Ur_Oydx_Od8i_Ex_Pt_Jz_Ejj_Lxr_Chf_Y_To_N_Hk_R_Nwflt_Zm_P91mj_Ga_c_7c47932590",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 44.54,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_V_Lx2d_Jf_T_Ev_Wzatw_H31_Su99_Xn_Sp_I6z0_HR_0w7_Tz9x_Ur_Oydx_Od8i_Ex_Pt_Jz_Ejj_Lxr_Chf_Y_To_N_Hk_R_Nwflt_Zm_P91mj_Ga_c_7c47932590.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_VLx2dJfTEvWzatwH31Su99XnSpI6z0HR0w7Tz9xUrOydxOd8iExPtJzEjjLxrChfYToNHkRNwfltZmP91mjGa-_c.jpg",
+                                "hash": "medium_V_Lx2d_Jf_T_Ev_Wzatw_H31_Su99_Xn_Sp_I6z0_HR_0w7_Tz9x_Ur_Oydx_Od8i_Ex_Pt_Jz_Ejj_Lxr_Chf_Y_To_N_Hk_R_Nwflt_Zm_P91mj_Ga_c_7c47932590",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 95.17,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_V_Lx2d_Jf_T_Ev_Wzatw_H31_Su99_Xn_Sp_I6z0_HR_0w7_Tz9x_Ur_Oydx_Od8i_Ex_Pt_Jz_Ejj_Lxr_Chf_Y_To_N_Hk_R_Nwflt_Zm_P91mj_Ga_c_7c47932590.jpg"
+                              },
+                              "large": {
+                                "name": "large_VLx2dJfTEvWzatwH31Su99XnSpI6z0HR0w7Tz9xUrOydxOd8iExPtJzEjjLxrChfYToNHkRNwfltZmP91mjGa-_c.jpg",
+                                "hash": "large_V_Lx2d_Jf_T_Ev_Wzatw_H31_Su99_Xn_Sp_I6z0_HR_0w7_Tz9x_Ur_Oydx_Od8i_Ex_Pt_Jz_Ejj_Lxr_Chf_Y_To_N_Hk_R_Nwflt_Zm_P91mj_Ga_c_7c47932590",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 161.57,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_V_Lx2d_Jf_T_Ev_Wzatw_H31_Su99_Xn_Sp_I6z0_HR_0w7_Tz9x_Ur_Oydx_Od8i_Ex_Pt_Jz_Ejj_Lxr_Chf_Y_To_N_Hk_R_Nwflt_Zm_P91mj_Ga_c_7c47932590.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Звук Бамбука: Kankyō Ongaku Или Японский Эмбиент w/ Forlate",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "zvuk-bambuka-kankyo-ongaku-ili-yaponskij-embient-w-forlate-13112021",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/zvuk-bambuka-kankyo-ongaku-ili-yaponskii-embient-w-forlate-local-radio-13112021?si=02d5bf432d4a43fe84fd0bae82108d5f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/tyYVDHPizOE"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "213",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2021-10-22T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "112",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/41_Dywp_Y6_X_Rqp_D0_Tz0rddz9_R5hc_D6_S8hgw8_Vunxc_Ljts_EGP_7_S_Io_Rx_IVL_2_Dl_NDJ_7w_Q2tl_Zcbpe_M4bb_Mi_C_Dbl_Yy_Sn_c5a7071dfb.jpg",
+                            "width": 1280,
+                            "height": 1280,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_41DywpY6XRqpD0Tz0rddz9R5hc-D6S8hgw8VunxcLjtsEGP7SIoRxIVL2Dl_NDJ7wQ2tlZcbpeM4bbMiCDblYySn.jpg",
+                                "hash": "thumbnail_41_Dywp_Y6_X_Rqp_D0_Tz0rddz9_R5hc_D6_S8hgw8_Vunxc_Ljts_EGP_7_S_Io_Rx_IVL_2_Dl_NDJ_7w_Q2tl_Zcbpe_M4bb_Mi_C_Dbl_Yy_Sn_c5a7071dfb",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 6.12,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_41_Dywp_Y6_X_Rqp_D0_Tz0rddz9_R5hc_D6_S8hgw8_Vunxc_Ljts_EGP_7_S_Io_Rx_IVL_2_Dl_NDJ_7w_Q2tl_Zcbpe_M4bb_Mi_C_Dbl_Yy_Sn_c5a7071dfb.jpg"
+                              },
+                              "small": {
+                                "name": "small_41DywpY6XRqpD0Tz0rddz9R5hc-D6S8hgw8VunxcLjtsEGP7SIoRxIVL2Dl_NDJ7wQ2tlZcbpeM4bbMiCDblYySn.jpg",
+                                "hash": "small_41_Dywp_Y6_X_Rqp_D0_Tz0rddz9_R5hc_D6_S8hgw8_Vunxc_Ljts_EGP_7_S_Io_Rx_IVL_2_Dl_NDJ_7w_Q2tl_Zcbpe_M4bb_Mi_C_Dbl_Yy_Sn_c5a7071dfb",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 55.59,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_41_Dywp_Y6_X_Rqp_D0_Tz0rddz9_R5hc_D6_S8hgw8_Vunxc_Ljts_EGP_7_S_Io_Rx_IVL_2_Dl_NDJ_7w_Q2tl_Zcbpe_M4bb_Mi_C_Dbl_Yy_Sn_c5a7071dfb.jpg"
+                              },
+                              "large": {
+                                "name": "large_41DywpY6XRqpD0Tz0rddz9R5hc-D6S8hgw8VunxcLjtsEGP7SIoRxIVL2Dl_NDJ7wQ2tlZcbpeM4bbMiCDblYySn.jpg",
+                                "hash": "large_41_Dywp_Y6_X_Rqp_D0_Tz0rddz9_R5hc_D6_S8hgw8_Vunxc_Ljts_EGP_7_S_Io_Rx_IVL_2_Dl_NDJ_7w_Q2tl_Zcbpe_M4bb_Mi_C_Dbl_Yy_Sn_c5a7071dfb",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 184.14,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_41_Dywp_Y6_X_Rqp_D0_Tz0rddz9_R5hc_D6_S8hgw8_Vunxc_Ljts_EGP_7_S_Io_Rx_IVL_2_Dl_NDJ_7w_Q2tl_Zcbpe_M4bb_Mi_C_Dbl_Yy_Sn_c5a7071dfb.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_41DywpY6XRqpD0Tz0rddz9R5hc-D6S8hgw8VunxcLjtsEGP7SIoRxIVL2Dl_NDJ7wQ2tlZcbpeM4bbMiCDblYySn.jpg",
+                                "hash": "medium_41_Dywp_Y6_X_Rqp_D0_Tz0rddz9_R5hc_D6_S8hgw8_Vunxc_Ljts_EGP_7_S_Io_Rx_IVL_2_Dl_NDJ_7w_Q2tl_Zcbpe_M4bb_Mi_C_Dbl_Yy_Sn_c5a7071dfb",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 114.23,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_41_Dywp_Y6_X_Rqp_D0_Tz0rddz9_R5hc_D6_S8hgw8_Vunxc_Ljts_EGP_7_S_Io_Rx_IVL_2_Dl_NDJ_7w_Q2tl_Zcbpe_M4bb_Mi_C_Dbl_Yy_Sn_c5a7071dfb.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "100BPM w/ Forlate",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "100bpm-w-forlate-23102021",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/100bpw-w-forlate-local-radio-23102021?si=bcf3d8d66e474d15b9f26df0f0746876&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/F0ZaNIu4Kc8"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": [
+                          {
+                            "__typename": "GenreEntity",
+                            "attributes": {
+                              "__typename": "Genre",
+                              "name": "Ambient",
+                              "slug": "ambient"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "182",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2021-08-19T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "96",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/1_Gol9_B_Cmw_RAQ_2tzd_C2_C2w_Q2_Jy3_EJ_0_Wvija_Z7s1_Dr_SP_Kpkd6_Xzdjoacu_Oe_Hg_Jvsjlmexvu7_YD_8f_F1z_Gki_Lz_DA_8x_F_47cb6aed4a.jpg",
+                            "width": 1280,
+                            "height": 1280,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_1Gol9BCmwRAQ2tzdC2C2wQ2Jy3EJ0WvijaZ7s1DrSPKpkd6XzdjoacuOeHg-Jvsjlmexvu7YD8fF1zGkiLzDA8xF.jpg",
+                                "hash": "thumbnail_1_Gol9_B_Cmw_RAQ_2tzd_C2_C2w_Q2_Jy3_EJ_0_Wvija_Z7s1_Dr_SP_Kpkd6_Xzdjoacu_Oe_Hg_Jvsjlmexvu7_YD_8f_F1z_Gki_Lz_DA_8x_F_47cb6aed4a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 7.2,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_1_Gol9_B_Cmw_RAQ_2tzd_C2_C2w_Q2_Jy3_EJ_0_Wvija_Z7s1_Dr_SP_Kpkd6_Xzdjoacu_Oe_Hg_Jvsjlmexvu7_YD_8f_F1z_Gki_Lz_DA_8x_F_47cb6aed4a.jpg"
+                              },
+                              "small": {
+                                "name": "small_1Gol9BCmwRAQ2tzdC2C2wQ2Jy3EJ0WvijaZ7s1DrSPKpkd6XzdjoacuOeHg-Jvsjlmexvu7YD8fF1zGkiLzDA8xF.jpg",
+                                "hash": "small_1_Gol9_B_Cmw_RAQ_2tzd_C2_C2w_Q2_Jy3_EJ_0_Wvija_Z7s1_Dr_SP_Kpkd6_Xzdjoacu_Oe_Hg_Jvsjlmexvu7_YD_8f_F1z_Gki_Lz_DA_8x_F_47cb6aed4a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 60.75,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_1_Gol9_B_Cmw_RAQ_2tzd_C2_C2w_Q2_Jy3_EJ_0_Wvija_Z7s1_Dr_SP_Kpkd6_Xzdjoacu_Oe_Hg_Jvsjlmexvu7_YD_8f_F1z_Gki_Lz_DA_8x_F_47cb6aed4a.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_1Gol9BCmwRAQ2tzdC2C2wQ2Jy3EJ0WvijaZ7s1DrSPKpkd6XzdjoacuOeHg-Jvsjlmexvu7YD8fF1zGkiLzDA8xF.jpg",
+                                "hash": "medium_1_Gol9_B_Cmw_RAQ_2tzd_C2_C2w_Q2_Jy3_EJ_0_Wvija_Z7s1_Dr_SP_Kpkd6_Xzdjoacu_Oe_Hg_Jvsjlmexvu7_YD_8f_F1z_Gki_Lz_DA_8x_F_47cb6aed4a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 124.4,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_1_Gol9_B_Cmw_RAQ_2tzd_C2_C2w_Q2_Jy3_EJ_0_Wvija_Z7s1_Dr_SP_Kpkd6_Xzdjoacu_Oe_Hg_Jvsjlmexvu7_YD_8f_F1z_Gki_Lz_DA_8x_F_47cb6aed4a.jpg"
+                              },
+                              "large": {
+                                "name": "large_1Gol9BCmwRAQ2tzdC2C2wQ2Jy3EJ0WvijaZ7s1DrSPKpkd6XzdjoacuOeHg-Jvsjlmexvu7YD8fF1zGkiLzDA8xF.jpg",
+                                "hash": "large_1_Gol9_B_Cmw_RAQ_2tzd_C2_C2w_Q2_Jy3_EJ_0_Wvija_Z7s1_Dr_SP_Kpkd6_Xzdjoacu_Oe_Hg_Jvsjlmexvu7_YD_8f_F1z_Gki_Lz_DA_8x_F_47cb6aed4a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 200.68,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_1_Gol9_B_Cmw_RAQ_2tzd_C2_C2w_Q2_Jy3_EJ_0_Wvija_Z7s1_Dr_SP_Kpkd6_Xzdjoacu_Oe_Hg_Jvsjlmexvu7_YD_8f_F1z_Gki_Lz_DA_8x_F_47cb6aed4a.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Forlate",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "forlate-20082021",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/forlate-palmer-20082021?si=cb19bef2305444538385fd4d11d18502&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/kWCEfiipFOw"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": [
+                          {
+                            "__typename": "GenreEntity",
+                            "attributes": {
+                              "__typename": "Genre",
+                              "name": "Ambient",
+                              "slug": "ambient"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "image": {
+                "__typename": "UploadFileEntityResponse",
+                "data": {
+                  "__typename": "UploadFileEntity",
+                  "id": "182",
+                  "attributes": {
+                    "__typename": "UploadFile",
+                    "url": "https://cdnlocalradio.storage.yandexcloud.net/Forlate_c3c04e8dc7.jpg",
+                    "width": 1019,
+                    "height": 1019,
+                    "formats": {
+                      "thumbnail": {
+                        "name": "thumbnail_Forlate.jpg",
+                        "hash": "thumbnail_Forlate_c3c04e8dc7",
+                        "ext": ".jpg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 156,
+                        "height": 156,
+                        "size": 9.66,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Forlate_c3c04e8dc7.jpg"
+                      },
+                      "medium": {
+                        "name": "medium_Forlate.jpg",
+                        "hash": "medium_Forlate_c3c04e8dc7",
+                        "ext": ".jpg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 750,
+                        "height": 750,
+                        "size": 147.35,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_Forlate_c3c04e8dc7.jpg"
+                      },
+                      "large": {
+                        "name": "large_Forlate.jpg",
+                        "hash": "large_Forlate_c3c04e8dc7",
+                        "ext": ".jpg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 1000,
+                        "height": 1000,
+                        "size": 227.3,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/large_Forlate_c3c04e8dc7.jpg"
+                      },
+                      "small": {
+                        "name": "small_Forlate.jpg",
+                        "hash": "small_Forlate_c3c04e8dc7",
+                        "ext": ".jpg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 500,
+                        "height": 500,
+                        "size": 77.59,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Forlate_c3c04e8dc7.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cover": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "151",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/Forlate_cover_small_a58a262107.jpeg",
+              "width": 1000,
+              "height": 1000,
+              "formats": {
+                "small": {
+                  "name": "small_Forlate - cover (small).jpeg",
+                  "hash": "small_Forlate_cover_small_a58a262107",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 63.64,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Forlate_cover_small_a58a262107.jpeg"
+                },
+                "thumbnail": {
+                  "name": "thumbnail_Forlate - cover (small).jpeg",
+                  "hash": "thumbnail_Forlate_cover_small_a58a262107",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 8.09,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Forlate_cover_small_a58a262107.jpeg"
+                },
+                "medium": {
+                  "name": "medium_Forlate - cover (small).jpeg",
+                  "hash": "medium_Forlate_cover_small_a58a262107",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 137.33,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_Forlate_cover_small_a58a262107.jpeg"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "__typename": "ReleaseEntity",
+      "id": "1",
+      "attributes": {
+        "__typename": "Release",
+        "date": "2022-08-12",
+        "updatedAt": "2023-03-23T20:58:38.918Z",
+        "createdAt": "2022-11-10T19:13:16.033Z",
+        "descriptionEn": "We are happy to share with you our first release. This is a single from Urazov Audio, aka Rodney. Slow breakbeat that inspires you to dream of space.\nCover: Dobrovolsky Michael",
+        "descriptionRu": "С радостью представляем наш первый релиз. Это сингл от Urazov Audio, он же Rodney. Жирный брейкбит, который никуда не торопится, останавливает в моменте и ненавязчиво заставляет мечтать о космосе.\nОбложка: Добровольский Михаил",
+        "artistName": "Urazov Audio",
+        "releaseName": "Astro Punchmaster",
+        "slug": "urazov-audio-astro-punchmaster",
+        "type": "Single",
+        "links": {
+          "__typename": "ComponentReleaseLinksLinks",
+          "id": "1",
+          "spotify": "https://open.spotify.com/album/3gc3MinMBuP0kOMCE56aH7?si=CAaLWXlQRMaIIslOiZGPuQ",
+          "soundcloud": "https://soundcloud.com/local_radio/urazov-audio-astro-punchmaster",
+          "vkMusic": "https://vk.com/music/album/-2000094818_16094818_ee1c7987df7b910339",
+          "yandexMusic": "https://music.yandex.ru/artist/17227814",
+          "youtubeMusic": "https://music.youtube.com/playlist?list=OLAK5uy_kHGSKoyDusamJN698qmaH59wVYUfCylh4",
+          "bandcamp": "https://localradio.bandcamp.com/track/astro-punchmaster",
+          "appleMusic": "https://music.apple.com/ru/album/1639318371?i=1639318387&mt=1&app=music&at=1000lqjf&ct=bq&Is=1&ls=1"
+        },
+        "guest": {
+          "__typename": "GuestEntityResponse",
+          "data": {
+            "__typename": "GuestEntity",
+            "id": "7",
+            "attributes": {
+              "__typename": "Guest",
+              "name": "Urazov Audio",
+              "slug": "urazov-audio",
+              "mixes": {
+                "__typename": "MixRelationResponseCollection",
+                "data": [
+                  {
+                    "__typename": "MixEntity",
+                    "id": "351",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2023-03-11T13:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "210",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/m_a_ORB_51w_L8_18d7afbd68.jpg",
+                            "width": 1080,
+                            "height": 1080,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_m_aORB51wL8.jpg",
+                                "hash": "thumbnail_m_a_ORB_51w_L8_18d7afbd68",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 7.51,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_m_a_ORB_51w_L8_18d7afbd68.jpg"
+                              },
+                              "large": {
+                                "name": "large_m_aORB51wL8.jpg",
+                                "hash": "large_m_a_ORB_51w_L8_18d7afbd68",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 121.66,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_m_a_ORB_51w_L8_18d7afbd68.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_m_aORB51wL8.jpg",
+                                "hash": "medium_m_a_ORB_51w_L8_18d7afbd68",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 80.21,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_m_a_ORB_51w_L8_18d7afbd68.jpg"
+                              },
+                              "small": {
+                                "name": "small_m_aORB51wL8.jpg",
+                                "hash": "small_m_a_ORB_51w_L8_18d7afbd68",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 43.99,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_m_a_ORB_51w_L8_18d7afbd68.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Urazov Audio",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "urazov-audio",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/urazov-audio-local-radio-11032023?si=9379ccb7c94840239f6f98106942e833&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://www.youtube.com/watch?v=f9_P8O6QPiI"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": [
+                          {
+                            "__typename": "GenreEntity",
+                            "attributes": {
+                              "__typename": "Genre",
+                              "name": "Electronic",
+                              "slug": "electronic"
+                            }
+                          },
+                          {
+                            "__typename": "GenreEntity",
+                            "attributes": {
+                              "__typename": "Genre",
+                              "name": "Techno",
+                              "slug": "techno"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "239",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2022-07-24T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "124",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/U_Wz6_U_S_Hkp3r_Zz68uon7i_Yd7d_Dbw_N_Kcpdt48_QK_j_Qucgl_Gg_LW_If_Sy_L4r_Jxm_C_Bc_N_Ds_Bi_N1k_X8_SOUSJ_Rs_V5_Rcd_i_9a5a8921c1.jpg",
+                            "width": 1280,
+                            "height": 1280,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_UWz6_U-SHkp3rZz68uon7iYd7dDbwNKcpdt48QK-jQucglGgLWIfSyL4rJxmCBc_NDsBiN1kX8SOUSJRsV5Rcd-i.jpg",
+                                "hash": "thumbnail_U_Wz6_U_S_Hkp3r_Zz68uon7i_Yd7d_Dbw_N_Kcpdt48_QK_j_Qucgl_Gg_LW_If_Sy_L4r_Jxm_C_Bc_N_Ds_Bi_N1k_X8_SOUSJ_Rs_V5_Rcd_i_9a5a8921c1",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 9.94,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_U_Wz6_U_S_Hkp3r_Zz68uon7i_Yd7d_Dbw_N_Kcpdt48_QK_j_Qucgl_Gg_LW_If_Sy_L4r_Jxm_C_Bc_N_Ds_Bi_N1k_X8_SOUSJ_Rs_V5_Rcd_i_9a5a8921c1.jpg"
+                              },
+                              "small": {
+                                "name": "small_UWz6_U-SHkp3rZz68uon7iYd7dDbwNKcpdt48QK-jQucglGgLWIfSyL4rJxmCBc_NDsBiN1kX8SOUSJRsV5Rcd-i.jpg",
+                                "hash": "small_U_Wz6_U_S_Hkp3r_Zz68uon7i_Yd7d_Dbw_N_Kcpdt48_QK_j_Qucgl_Gg_LW_If_Sy_L4r_Jxm_C_Bc_N_Ds_Bi_N1k_X8_SOUSJ_Rs_V5_Rcd_i_9a5a8921c1",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 98.43,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_U_Wz6_U_S_Hkp3r_Zz68uon7i_Yd7d_Dbw_N_Kcpdt48_QK_j_Qucgl_Gg_LW_If_Sy_L4r_Jxm_C_Bc_N_Ds_Bi_N1k_X8_SOUSJ_Rs_V5_Rcd_i_9a5a8921c1.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_UWz6_U-SHkp3rZz68uon7iYd7dDbwNKcpdt48QK-jQucglGgLWIfSyL4rJxmCBc_NDsBiN1kX8SOUSJRsV5Rcd-i.jpg",
+                                "hash": "medium_U_Wz6_U_S_Hkp3r_Zz68uon7i_Yd7d_Dbw_N_Kcpdt48_QK_j_Qucgl_Gg_LW_If_Sy_L4r_Jxm_C_Bc_N_Ds_Bi_N1k_X8_SOUSJ_Rs_V5_Rcd_i_9a5a8921c1",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 206.82,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_U_Wz6_U_S_Hkp3r_Zz68uon7i_Yd7d_Dbw_N_Kcpdt48_QK_j_Qucgl_Gg_LW_If_Sy_L4r_Jxm_C_Bc_N_Ds_Bi_N1k_X8_SOUSJ_Rs_V5_Rcd_i_9a5a8921c1.jpg"
+                              },
+                              "large": {
+                                "name": "large_UWz6_U-SHkp3rZz68uon7iYd7dDbwNKcpdt48QK-jQucglGgLWIfSyL4rJxmCBc_NDsBiN1kX8SOUSJRsV5Rcd-i.jpg",
+                                "hash": "large_U_Wz6_U_S_Hkp3r_Zz68uon7i_Yd7d_Dbw_N_Kcpdt48_QK_j_Qucgl_Gg_LW_If_Sy_L4r_Jxm_C_Bc_N_Ds_Bi_N1k_X8_SOUSJ_Rs_V5_Rcd_i_9a5a8921c1",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 336.68,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_U_Wz6_U_S_Hkp3r_Zz68uon7i_Yd7d_Dbw_N_Kcpdt48_QK_j_Qucgl_Gg_LW_If_Sy_L4r_Jxm_C_Bc_N_Ds_Bi_N1k_X8_SOUSJ_Rs_V5_Rcd_i_9a5a8921c1.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Rodney",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "rodney-25072022",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/rodney-local-radio-25072022?si=8e6a7cd02e4740bdb4054a5bb2e6d6d3&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/A2Efl0QZu8U"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "254",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2022-06-17T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "130",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/g_B4_BW_Neb_H_Wcz_Nh_K1_OQC_tq_U_Fb_Pga_PK_2_V_Yk9_Dht_Gey_Y7_dv_Dj2_IQOTJW_Xsp8m_x_L_Qid_Av_Q9_Pt_J_Ejx_R_Tg_U_Kw_W_Ure_e9d41ac07a.jpg",
+                            "width": 1280,
+                            "height": 1280,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail__gB4BWNebHWczNhK1OQC_tqUFbPgaPK2VYk9DhtGeyY7-dvDj2IQOTJWXsp8m_xLQidAvQ9PtJEjxRTgUKwWUre-.jpg",
+                                "hash": "thumbnail_g_B4_BW_Neb_H_Wcz_Nh_K1_OQC_tq_U_Fb_Pga_PK_2_V_Yk9_Dht_Gey_Y7_dv_Dj2_IQOTJW_Xsp8m_x_L_Qid_Av_Q9_Pt_J_Ejx_R_Tg_U_Kw_W_Ure_e9d41ac07a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 7.1,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_g_B4_BW_Neb_H_Wcz_Nh_K1_OQC_tq_U_Fb_Pga_PK_2_V_Yk9_Dht_Gey_Y7_dv_Dj2_IQOTJW_Xsp8m_x_L_Qid_Av_Q9_Pt_J_Ejx_R_Tg_U_Kw_W_Ure_e9d41ac07a.jpg"
+                              },
+                              "medium": {
+                                "name": "medium__gB4BWNebHWczNhK1OQC_tqUFbPgaPK2VYk9DhtGeyY7-dvDj2IQOTJWXsp8m_xLQidAvQ9PtJEjxRTgUKwWUre-.jpg",
+                                "hash": "medium_g_B4_BW_Neb_H_Wcz_Nh_K1_OQC_tq_U_Fb_Pga_PK_2_V_Yk9_Dht_Gey_Y7_dv_Dj2_IQOTJW_Xsp8m_x_L_Qid_Av_Q9_Pt_J_Ejx_R_Tg_U_Kw_W_Ure_e9d41ac07a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 101.81,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_g_B4_BW_Neb_H_Wcz_Nh_K1_OQC_tq_U_Fb_Pga_PK_2_V_Yk9_Dht_Gey_Y7_dv_Dj2_IQOTJW_Xsp8m_x_L_Qid_Av_Q9_Pt_J_Ejx_R_Tg_U_Kw_W_Ure_e9d41ac07a.jpg"
+                              },
+                              "large": {
+                                "name": "large__gB4BWNebHWczNhK1OQC_tqUFbPgaPK2VYk9DhtGeyY7-dvDj2IQOTJWXsp8m_xLQidAvQ9PtJEjxRTgUKwWUre-.jpg",
+                                "hash": "large_g_B4_BW_Neb_H_Wcz_Nh_K1_OQC_tq_U_Fb_Pga_PK_2_V_Yk9_Dht_Gey_Y7_dv_Dj2_IQOTJW_Xsp8m_x_L_Qid_Av_Q9_Pt_J_Ejx_R_Tg_U_Kw_W_Ure_e9d41ac07a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 171.03,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_g_B4_BW_Neb_H_Wcz_Nh_K1_OQC_tq_U_Fb_Pga_PK_2_V_Yk9_Dht_Gey_Y7_dv_Dj2_IQOTJW_Xsp8m_x_L_Qid_Av_Q9_Pt_J_Ejx_R_Tg_U_Kw_W_Ure_e9d41ac07a.jpg"
+                              },
+                              "small": {
+                                "name": "small__gB4BWNebHWczNhK1OQC_tqUFbPgaPK2VYk9DhtGeyY7-dvDj2IQOTJWXsp8m_xLQidAvQ9PtJEjxRTgUKwWUre-.jpg",
+                                "hash": "small_g_B4_BW_Neb_H_Wcz_Nh_K1_OQC_tq_U_Fb_Pga_PK_2_V_Yk9_Dht_Gey_Y7_dv_Dj2_IQOTJW_Xsp8m_x_L_Qid_Av_Q9_Pt_J_Ejx_R_Tg_U_Kw_W_Ure_e9d41ac07a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 49.31,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_g_B4_BW_Neb_H_Wcz_Nh_K1_OQC_tq_U_Fb_Pga_PK_2_V_Yk9_Dht_Gey_Y7_dv_Dj2_IQOTJW_Xsp8m_x_L_Qid_Av_Q9_Pt_J_Ejx_R_Tg_U_Kw_W_Ure_e9d41ac07a.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Rodney @ Deep Fat Fryer",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "rodney-deep-fat-fryer-18062022",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/rodney-deep-fat-fryer-18062022?si=cdb21cf178b8470b987f35fbfc304c96&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/ISam-Y7FUpI"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "268",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2022-04-15T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "136",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/5hegq_Sd9pmhd8x05_S_Knvx8yq5_H3u07_G4_K7_X7k_H_Pe_Lgl9_Gi_O7q_D_Vn_P_xs7_Oqv_jzlz_U0_Guwn4_Y_Jy3_WTF_Fk4kht6a_W_7fe5e857f3.jpg",
+                            "width": 1280,
+                            "height": 1280,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_5hegqSd9pmhd8x05SKnvx8yq5H3u07G4K7X7kHPeLgl9GiO7qDVnP-xs7Oqv-jzlzU0Guwn4YJy3WTFFk4kht6aW.jpg",
+                                "hash": "thumbnail_5hegq_Sd9pmhd8x05_S_Knvx8yq5_H3u07_G4_K7_X7k_H_Pe_Lgl9_Gi_O7q_D_Vn_P_xs7_Oqv_jzlz_U0_Guwn4_Y_Jy3_WTF_Fk4kht6a_W_7fe5e857f3",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 5.57,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_5hegq_Sd9pmhd8x05_S_Knvx8yq5_H3u07_G4_K7_X7k_H_Pe_Lgl9_Gi_O7q_D_Vn_P_xs7_Oqv_jzlz_U0_Guwn4_Y_Jy3_WTF_Fk4kht6a_W_7fe5e857f3.jpg"
+                              },
+                              "small": {
+                                "name": "small_5hegqSd9pmhd8x05SKnvx8yq5H3u07G4K7X7kHPeLgl9GiO7qDVnP-xs7Oqv-jzlzU0Guwn4YJy3WTFFk4kht6aW.jpg",
+                                "hash": "small_5hegq_Sd9pmhd8x05_S_Knvx8yq5_H3u07_G4_K7_X7k_H_Pe_Lgl9_Gi_O7q_D_Vn_P_xs7_Oqv_jzlz_U0_Guwn4_Y_Jy3_WTF_Fk4kht6a_W_7fe5e857f3",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 58.85,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_5hegq_Sd9pmhd8x05_S_Knvx8yq5_H3u07_G4_K7_X7k_H_Pe_Lgl9_Gi_O7q_D_Vn_P_xs7_Oqv_jzlz_U0_Guwn4_Y_Jy3_WTF_Fk4kht6a_W_7fe5e857f3.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_5hegqSd9pmhd8x05SKnvx8yq5H3u07G4K7X7kHPeLgl9GiO7qDVnP-xs7Oqv-jzlzU0Guwn4YJy3WTFFk4kht6aW.jpg",
+                                "hash": "medium_5hegq_Sd9pmhd8x05_S_Knvx8yq5_H3u07_G4_K7_X7k_H_Pe_Lgl9_Gi_O7q_D_Vn_P_xs7_Oqv_jzlz_U0_Guwn4_Y_Jy3_WTF_Fk4kht6a_W_7fe5e857f3",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 126.69,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_5hegq_Sd9pmhd8x05_S_Knvx8yq5_H3u07_G4_K7_X7k_H_Pe_Lgl9_Gi_O7q_D_Vn_P_xs7_Oqv_jzlz_U0_Guwn4_Y_Jy3_WTF_Fk4kht6a_W_7fe5e857f3.jpg"
+                              },
+                              "large": {
+                                "name": "large_5hegqSd9pmhd8x05SKnvx8yq5H3u07G4K7X7kHPeLgl9GiO7qDVnP-xs7Oqv-jzlzU0Guwn4YJy3WTFFk4kht6aW.jpg",
+                                "hash": "large_5hegq_Sd9pmhd8x05_S_Knvx8yq5_H3u07_G4_K7_X7k_H_Pe_Lgl9_Gi_O7q_D_Vn_P_xs7_Oqv_jzlz_U0_Guwn4_Y_Jy3_WTF_Fk4kht6a_W_7fe5e857f3",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 1000,
+                                "height": 1000,
+                                "size": 211.28,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/large_5hegq_Sd9pmhd8x05_S_Knvx8yq5_H3u07_G4_K7_X7k_H_Pe_Lgl9_Gi_O7q_D_Vn_P_xs7_Oqv_jzlz_U0_Guwn4_Y_Jy3_WTF_Fk4kht6a_W_7fe5e857f3.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Rodney",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "rodney-16042022",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/rodney-local-radio-16042022?si=813dcec9bf914eb9b7a59000f7de26d7&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/ZifzJKC_e6g"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  },
+                  {
+                    "__typename": "MixEntity",
+                    "id": "303",
+                    "attributes": {
+                      "__typename": "Mix",
+                      "date": "2022-01-07T21:00:00.000Z",
+                      "image": {
+                        "__typename": "UploadFileEntityResponse",
+                        "data": {
+                          "__typename": "UploadFileEntity",
+                          "id": "149",
+                          "attributes": {
+                            "__typename": "UploadFile",
+                            "url": "https://cdnlocalradio.storage.yandexcloud.net/photo_2022_11_19_01_46_56_b4663bd01a.jpg",
+                            "width": 790,
+                            "height": 790,
+                            "formats": {
+                              "thumbnail": {
+                                "name": "thumbnail_photo_2022-11-19_01-46-56.jpg",
+                                "hash": "thumbnail_photo_2022_11_19_01_46_56_b4663bd01a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 156,
+                                "height": 156,
+                                "size": 2.76,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_photo_2022_11_19_01_46_56_b4663bd01a.jpg"
+                              },
+                              "small": {
+                                "name": "small_photo_2022-11-19_01-46-56.jpg",
+                                "hash": "small_photo_2022_11_19_01_46_56_b4663bd01a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 500,
+                                "height": 500,
+                                "size": 18.98,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/small_photo_2022_11_19_01_46_56_b4663bd01a.jpg"
+                              },
+                              "medium": {
+                                "name": "medium_photo_2022-11-19_01-46-56.jpg",
+                                "hash": "medium_photo_2022_11_19_01_46_56_b4663bd01a",
+                                "ext": ".jpg",
+                                "mime": "image/jpeg",
+                                "path": null,
+                                "width": 750,
+                                "height": 750,
+                                "size": 37.85,
+                                "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_photo_2022_11_19_01_46_56_b4663bd01a.jpg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "name": "Rodney",
+                      "locationLink": null,
+                      "locationName": null,
+                      "slug": "rodney-08012022",
+                      "linksToMixes": {
+                        "__typename": "ComponentLinksToMixesLink",
+                        "soundcloudLink": "https://soundcloud.com/local_radio/rodney?si=0871363e428c4cfa884405d17f817e25&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                        "youtubeLink": "https://youtu.be/GxVFGBBTbNk"
+                      },
+                      "genres": {
+                        "__typename": "GenreRelationResponseCollection",
+                        "data": []
+                      }
+                    }
+                  }
+                ]
+              },
+              "image": {
+                "__typename": "UploadFileEntityResponse",
+                "data": {
+                  "__typename": "UploadFileEntity",
+                  "id": "181",
+                  "attributes": {
+                    "__typename": "UploadFile",
+                    "url": "https://cdnlocalradio.storage.yandexcloud.net/Urazov_Audio_fefd17ce56.jpeg",
+                    "width": 1292,
+                    "height": 1927,
+                    "formats": {
+                      "thumbnail": {
+                        "name": "thumbnail_Urazov Audio.jpeg",
+                        "hash": "thumbnail_Urazov_Audio_fefd17ce56",
+                        "ext": ".jpeg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 105,
+                        "height": 156,
+                        "size": 3.48,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_Urazov_Audio_fefd17ce56.jpeg"
+                      },
+                      "medium": {
+                        "name": "medium_Urazov Audio.jpeg",
+                        "hash": "medium_Urazov_Audio_fefd17ce56",
+                        "ext": ".jpeg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 503,
+                        "height": 750,
+                        "size": 52.87,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_Urazov_Audio_fefd17ce56.jpeg"
+                      },
+                      "small": {
+                        "name": "small_Urazov Audio.jpeg",
+                        "hash": "small_Urazov_Audio_fefd17ce56",
+                        "ext": ".jpeg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 335,
+                        "height": 500,
+                        "size": 25.38,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/small_Urazov_Audio_fefd17ce56.jpeg"
+                      },
+                      "large": {
+                        "name": "large_Urazov Audio.jpeg",
+                        "hash": "large_Urazov_Audio_fefd17ce56",
+                        "ext": ".jpeg",
+                        "mime": "image/jpeg",
+                        "path": null,
+                        "width": 670,
+                        "height": 1000,
+                        "size": 89.15,
+                        "url": "https://cdnlocalradio.storage.yandexcloud.net/large_Urazov_Audio_fefd17ce56.jpeg"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cover": {
+          "__typename": "UploadFileEntityResponse",
+          "data": {
+            "__typename": "UploadFileEntity",
+            "id": "13",
+            "attributes": {
+              "__typename": "UploadFile",
+              "url": "https://cdnlocalradio.storage.yandexcloud.net/27l_Sz_W9_H2r_S_Iabq_Vwrp4_JFE_7xy_V_Wr_K_Tq1_M0n_X_Bw_Fr_QUNZPT_94wcv0_Y_Zy9_Hi_FI_Hs_Re_He3_J_Kp_B8r_Xx_B9a_V_Zmejkad_ea27f7c569.jpg",
+              "width": 2000,
+              "height": 2000,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_27lSzW9H2rSIabqVwrp4JFE7xyV_WrKTq1M0nXBwFrQUNZPT94wcv0YZy9HiFIHsReHe3JKpB8rXxB9aVZmejkad.jpg",
+                  "hash": "thumbnail_27l_Sz_W9_H2r_S_Iabq_Vwrp4_JFE_7xy_V_Wr_K_Tq1_M0n_X_Bw_Fr_QUNZPT_94wcv0_Y_Zy9_Hi_FI_Hs_Re_He3_J_Kp_B8r_Xx_B9a_V_Zmejkad_ea27f7c569",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 156,
+                  "height": 156,
+                  "size": 4.14,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/thumbnail_27l_Sz_W9_H2r_S_Iabq_Vwrp4_JFE_7xy_V_Wr_K_Tq1_M0n_X_Bw_Fr_QUNZPT_94wcv0_Y_Zy9_Hi_FI_Hs_Re_He3_J_Kp_B8r_Xx_B9a_V_Zmejkad_ea27f7c569.jpg"
+                },
+                "large": {
+                  "name": "large_27lSzW9H2rSIabqVwrp4JFE7xyV_WrKTq1M0nXBwFrQUNZPT94wcv0YZy9HiFIHsReHe3JKpB8rXxB9aVZmejkad.jpg",
+                  "hash": "large_27l_Sz_W9_H2r_S_Iabq_Vwrp4_JFE_7xy_V_Wr_K_Tq1_M0n_X_Bw_Fr_QUNZPT_94wcv0_Y_Zy9_Hi_FI_Hs_Re_He3_J_Kp_B8r_Xx_B9a_V_Zmejkad_ea27f7c569",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 1000,
+                  "size": 75.12,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/large_27l_Sz_W9_H2r_S_Iabq_Vwrp4_JFE_7xy_V_Wr_K_Tq1_M0n_X_Bw_Fr_QUNZPT_94wcv0_Y_Zy9_Hi_FI_Hs_Re_He3_J_Kp_B8r_Xx_B9a_V_Zmejkad_ea27f7c569.jpg"
+                },
+                "small": {
+                  "name": "small_27lSzW9H2rSIabqVwrp4JFE7xyV_WrKTq1M0nXBwFrQUNZPT94wcv0YZy9HiFIHsReHe3JKpB8rXxB9aVZmejkad.jpg",
+                  "hash": "small_27l_Sz_W9_H2r_S_Iabq_Vwrp4_JFE_7xy_V_Wr_K_Tq1_M0n_X_Bw_Fr_QUNZPT_94wcv0_Y_Zy9_Hi_FI_Hs_Re_He3_J_Kp_B8r_Xx_B9a_V_Zmejkad_ea27f7c569",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 500,
+                  "size": 22.79,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/small_27l_Sz_W9_H2r_S_Iabq_Vwrp4_JFE_7xy_V_Wr_K_Tq1_M0n_X_Bw_Fr_QUNZPT_94wcv0_Y_Zy9_Hi_FI_Hs_Re_He3_J_Kp_B8r_Xx_B9a_V_Zmejkad_ea27f7c569.jpg"
+                },
+                "medium": {
+                  "name": "medium_27lSzW9H2rSIabqVwrp4JFE7xyV_WrKTq1M0nXBwFrQUNZPT94wcv0YZy9HiFIHsReHe3JKpB8rXxB9aVZmejkad.jpg",
+                  "hash": "medium_27l_Sz_W9_H2r_S_Iabq_Vwrp4_JFE_7xy_V_Wr_K_Tq1_M0n_X_Bw_Fr_QUNZPT_94wcv0_Y_Zy9_Hi_FI_Hs_Re_He3_J_Kp_B8r_Xx_B9a_V_Zmejkad_ea27f7c569",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 750,
+                  "size": 45.14,
+                  "url": "https://cdnlocalradio.storage.yandexcloud.net/medium_27l_Sz_W9_H2r_S_Iabq_Vwrp4_JFE_7xy_V_Wr_K_Tq1_M0n_X_Bw_Fr_QUNZPT_94wcv0_Y_Zy9_Hi_FI_Hs_Re_He3_J_Kp_B8r_Xx_B9a_V_Zmejkad_ea27f7c569.jpg"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "__typename": "ResponseCollectionMeta",
+    "pagination": {
+      "__typename": "Pagination",
+      "total": 6
+    }
+  }
+}

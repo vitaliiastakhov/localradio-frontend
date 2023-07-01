@@ -18,17 +18,26 @@ export const $searchedData = search.createStore<SearchedData>({
   genres: null,
 });
 export const $searchedDataLoading = search.createStore<boolean>(false);
+export const $searchError = search.createStore<Error | null>(null);
 
 export const searchMixFx = search.createEffect<string, SearchedData>(
   async (searchValue) => {
     if (!searchValue) return { mixes: null, genres: null };
-    const { data } = await fetch('/api/search', {
+    const res = await fetch('/api/search', {
       method: 'POST',
       body: searchValue,
     }).then((res) => res.json());
-    return data as SearchedData;
+    if (res.error) {
+      throw new Error(res.error);
+    }
+    return res.data as SearchedData;
   }
 );
+
+sample({
+  clock: searchMixFx.failData,
+  target: $searchError,
+});
 
 export const searchChanged = search.createEvent<string>();
 export const $search = search

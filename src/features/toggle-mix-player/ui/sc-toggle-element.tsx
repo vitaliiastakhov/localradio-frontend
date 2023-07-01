@@ -1,12 +1,16 @@
 import { useUnit } from 'effector-react';
-import { MixEntity } from '@/shared/api/graphql/__generated__/schema.graphql';
+import {
+  Maybe,
+  Mix,
+  MixEntity,
+} from '@/shared/api/graphql/__generated__/schema.graphql';
 import { clsxm } from '@/shared/lib/clsxm';
 import { NextImage } from '@/shared/ui/next-image/next-image';
 import { $currentMixPlayer } from '../model/current-mix-player.model';
 import { SCToggleButton } from './sc-toggle-button';
 
 export interface SCToggleElementProps {
-  mix?: MixEntity;
+  mix?: Maybe<MixEntity>;
   SCLink: string;
   page: 'mix' | 'home';
 }
@@ -40,7 +44,11 @@ export const SCToggleElement = ({
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <SCToggleButton attributes={attributes} SCLink={SCLink} mixId={mixId} />
+        <SCToggleButton
+          attributes={attributes as Mix}
+          SCLink={SCLink}
+          mixId={mixId}
+        />
       </div>
     </div>
   );

@@ -41,7 +41,7 @@ export const ReleaseCard = (release: ReleaseEntity) => {
                   colorVariant='primary'
                   sizeVariant='small'
                   style={{ color: link.color }}
-                  className='bg-current hover:!bg-current'
+                  className='aspect-square bg-current hover:!bg-current'
                   href={link.href ?? ''}
                 >
                   {link.icon}

@@ -20,7 +20,7 @@ export const MixSCButton = ({
   sizeVariant,
   soundcloudLink,
   attributes,
-  handlePlay,
+  play,
 }: MixSCButtonProps) => {
   const {
     linkToMix,
@@ -40,17 +40,17 @@ export const MixSCButton = ({
     setCurrentScLink: setCurrentScLinkEv,
   });
 
-  const handlePlaySCButton = useCallback(() => {
+  const playSC = useCallback(() => {
     attributes?.slug && setLinkToMix(attributes.slug);
-    handlePlay({
+    play({
       type: 'soundcloud',
       isPlaying: SCIsPlaying,
       link: attributes?.linksToMixes?.soundcloudLink,
       currentLink: currentSCLink,
     });
-  }, [handlePlay, attributes, SCIsPlaying, currentSCLink, setLinkToMix]);
+  }, [play, attributes, SCIsPlaying, currentSCLink, setLinkToMix]);
 
-  const handlePlaySCBottomButton = useCallback(() => {
+  const playSCBottom = useCallback(() => {
     setCurrentGlobalPlayer('soundcloud');
     attributes?.slug && setLinkToMix(attributes.slug);
     soundcloudLink && setCurrentScLink(soundcloudLink);
@@ -63,7 +63,7 @@ export const MixSCButton = ({
   ]);
 
   const handleClick = () => {
-    sizeVariant === 'small' ? handlePlaySCBottomButton() : handlePlaySCButton();
+    sizeVariant === 'small' ? playSCBottom() : playSC();
   };
 
   return (

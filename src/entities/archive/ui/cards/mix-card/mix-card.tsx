@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import {
-  HandleGlobalPlayerResponse,
-  useHandleGlobalPlayer,
-} from '@/entities/archive/hooks/use-handle-global-player.hook';
+  GlobalPlayerAction,
+  useGlobalPlayer,
+} from '@/entities/archive/hooks/use-global-player.hook';
 import {
   Maybe,
   Mix,
@@ -22,14 +22,15 @@ interface MixCardProps extends MixEntity {
 export interface MixButtonProps {
   sizeVariant: SizeVariant;
   attributes: Maybe<Mix> | undefined;
-  handlePlay: HandleGlobalPlayerResponse['handlePlay'];
+  play: GlobalPlayerAction['play'];
 }
 
 export const MixCard = (mix: MixCardProps) => {
-  const { handlePlay } = useHandleGlobalPlayer({ id: mix.id });
+  const { play } = useGlobalPlayer({ id: mix.id });
   const { attributes, sizeVariant } = mix;
-  const soundcloudLink = mix.attributes?.linksToMixes?.soundcloudLink;
-  const youtubeLink = mix.attributes?.linksToMixes?.youtubeLink;
+  const linksToMixes = mix.attributes?.linksToMixes;
+  const soundcloudLink = linksToMixes?.soundcloudLink;
+  const youtubeLink = linksToMixes?.youtubeLink;
   const locationName = mix.attributes?.locationName;
   const locationLink = mix.attributes?.locationLink;
   const altText = setSeoAltText({
@@ -62,14 +63,14 @@ export const MixCard = (mix: MixCardProps) => {
         >
           {sizeVariant === 'standard' && youtubeLink && (
             <MixYoutubeButton
-              handlePlay={handlePlay}
+              play={play}
               attributes={attributes}
               sizeVariant={sizeVariant}
             />
           )}
           {soundcloudLink && (
             <MixSCButton
-              handlePlay={handlePlay}
+              play={play}
               attributes={attributes}
               soundcloudLink={soundcloudLink}
               sizeVariant={sizeVariant}

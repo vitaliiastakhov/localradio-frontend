@@ -16,10 +16,10 @@ export interface MixSibling {
 }
 
 export interface MixPageProps {
-  mixes: MixEntityResponseCollection;
+  mixes?: Pick<MixEntityResponseCollection, 'data'>;
   moreEpisodes?: MixEntity[];
   totalCount?: number;
-  description: MixDescription;
+  description?: MixDescription;
   tracklist?: Description;
   mixNext?: MixSibling[];
   mixPrev?: MixSibling[];

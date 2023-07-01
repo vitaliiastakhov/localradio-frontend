@@ -6,12 +6,12 @@ import { ReleasePageCenter } from './release-page-center';
 import { ReleasePageLeft } from './release-page-left';
 
 export interface ReleasePageProps {
-  releases: ReleaseEntityResponseCollection;
-  description: Description;
+  releases?: Omit<ReleaseEntityResponseCollection, 'meta'> | null;
+  description?: Description | null;
 }
 
 export const ReleasePage = ({ releases, description }: ReleasePageProps) => {
-  const { attributes } = releases.data[0];
+  const attributes = releases?.data[0].attributes;
   const name = [attributes?.artistName, attributes?.releaseName];
 
   return (

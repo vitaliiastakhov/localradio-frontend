@@ -61,36 +61,40 @@ export const getServerSideProps: GetServerSideProps = async (
     'Cache-Control',
     'public, s-maxage=10, stale-while-revalidate=59'
   );
-
   const { show } = context.params as { show: string };
-  const {
-    data: { shows },
-  } = await client.query({
-    query: ArchiveApi.ShowsDocument,
-    variables: { limit: -1, filters: { slug: { eq: show } } },
-  });
 
-  if (!shows?.data.length) {
+  try {
+    const {
+      data: { shows },
+    } = await client.query({
+      query: ArchiveApi.ShowsDocument,
+      variables: { limit: -1, filters: { slug: { eq: show } } },
+    });
+
+    if (!shows?.data.length) {
+      return {
+        notFound: true,
+      };
+    }
+
+    const description = await getMarkdownToHtml(shows.data[0]?.attributes);
+
+    const {
+      data: { mixes },
+    } = await client.query<Query>({
+      query: ArchiveApi.MixesDocument,
+      variables: { filters: { show: { slug: { eq: show } } } },
+    });
+
     return {
-      notFound: true,
+      props: {
+        shows: shows as ShowEntityResponseCollection,
+        show,
+        mixes: mixes as MixEntityResponseCollection,
+        description: description as Description,
+      },
     };
+  } catch (error) {
+    return { redirect: { destination: '/archive', permanent: false } };
   }
-
-  const description = await getMarkdownToHtml(shows.data[0]?.attributes);
-
-  const {
-    data: { mixes },
-  } = await client.query<Query>({
-    query: ArchiveApi.MixesDocument,
-    variables: { filters: { show: { slug: { eq: show } } } },
-  });
-
-  return {
-    props: {
-      shows: shows as ShowEntityResponseCollection,
-      show,
-      mixes: mixes as MixEntityResponseCollection,
-      description: description as Description,
-    },
-  };
 };

@@ -38,14 +38,18 @@ export const getServerSideProps: GetServerSideProps = async ({
     'public, s-maxage=10, stale-while-revalidate=59'
   );
 
-  const {
-    data: { guests },
-  } = await client.query({
-    query: ArchiveApi.GuestsDocument,
-    variables: { limit: 12 },
-  });
+  try {
+    const {
+      data: { guests },
+    } = await client.query({
+      query: ArchiveApi.GuestsDocument,
+      variables: { limit: 12 },
+    });
 
-  return {
-    props: { guests: guests as GuestEntityResponseCollection },
-  };
+    return {
+      props: { guests: guests as GuestEntityResponseCollection },
+    };
+  } catch (error) {
+    return { redirect: { destination: '/archive', permanent: false } };
+  }
 };

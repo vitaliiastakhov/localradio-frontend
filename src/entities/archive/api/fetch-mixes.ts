@@ -6,11 +6,9 @@ import { MixesDocument } from './mix/mix.graphql.interface';
 export const fetchMixes = async <T = MixEntityResponseCollection>(
   variables: OperationVariables
 ) => {
-  const {
-    data: { mixes },
-  } = await client.query({
+  const { data, error } = await client.query({
     query: MixesDocument,
     variables,
   });
-  return mixes as T;
+  return { mixes: data.mixes as T, error };
 };

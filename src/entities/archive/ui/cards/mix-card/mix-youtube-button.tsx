@@ -15,7 +15,7 @@ import { MixCardButtonWithMemo } from './mix-card-button';
 export const MixYoutubeButton = ({
   sizeVariant,
   attributes,
-  handlePlay,
+  play,
 }: MixButtonProps) => {
   const {
     linkToMix,
@@ -30,14 +30,14 @@ export const MixYoutubeButton = ({
     isYoutubePlaying: $isYoutubePlaying,
   });
 
-  const handlePlayYoutubeButton = useCallback(() => {
-    handlePlay({
+  const playYoutube = useCallback(() => {
+    play({
       type: 'youtubeBottom',
       isPlaying: isYoutubePlaying,
       link: attributes?.linksToMixes?.youtubeLink,
       currentLink: currentYoutubeLink,
     });
-  }, [handlePlay, attributes, isYoutubePlaying, currentYoutubeLink]);
+  }, [play, attributes, isYoutubePlaying, currentYoutubeLink]);
 
   return (
     <MixCardButtonWithMemo
@@ -46,7 +46,7 @@ export const MixYoutubeButton = ({
       ariaLabel='Play and pause soundcloud player'
       isClickedPlay={isClickedPlayYoutube}
       isClicked={linkToMix === attributes?.slug && isYoutubePlaying}
-      onClick={handlePlayYoutubeButton}
+      onClick={playYoutube}
     />
   );
 };

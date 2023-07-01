@@ -81,7 +81,7 @@ export const getServerSideProps: GetServerSideProps = async ({
     };
   }
 
-  const mixes = await ArchiveApi.fetchMixes({
+  const { mixes } = await ArchiveApi.fetchMixes({
     filters: { guests: { slug: { eq: resident } } },
   });
 
@@ -90,7 +90,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   return {
     props: {
       description: descriptionGuest as Description,
-      mixes: mixes as MixEntityResponseCollection,
+      mixes,
       resident,
       guestName,
       guest: guests as GuestEntityResponseCollection,

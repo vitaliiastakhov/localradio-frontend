@@ -14,7 +14,7 @@ export const MixPage = ({
   tracklist,
   totalCount,
 }: MixPageProps) => {
-  const { attributes: project } = mixes.data[0];
+  const project = mixes?.data[0].attributes;
 
   const mixesGuestSlug = project?.guests?.data[0]?.attributes?.slug;
   const mixesGuestName = project?.guests?.data[0]?.attributes?.name;
@@ -57,7 +57,7 @@ export const MixPage = ({
             guestsMixes={guestsMixes}
             mixesShowSlug={mixesShowSlug}
             genres={project?.genres}
-            id={mixes.data[0].id}
+            id={mixes?.data[0].id}
             mixesShowName={mixesShowName}
           />
         )

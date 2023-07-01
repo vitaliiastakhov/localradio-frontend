@@ -1,15 +1,17 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { useUnit } from 'effector-react';
 import { useRouter } from 'next/router';
-import { Fragment, useEffect } from 'react';
+import { FC, Fragment, useEffect } from 'react';
 import { Icon } from '@/shared/ui/icons';
 import {
   $isOpenedSearchModal,
   $search,
   $searchedData,
   $searchedDataLoading,
+  $searchError,
   $startedSearch,
   openSearchModalEv,
+  SearchedData,
 } from '../model/search.model';
 import { SearchData } from './search-data';
 import { SearchFormWithMemo } from './search-form';
@@ -18,11 +20,11 @@ export const SearchModal = () => {
   const router = useRouter();
   const {
     searchValue,
-    startedSearch,
     isOpenedSearchModal,
     searchedDataLoading,
     searchedData,
     openSearchModal,
+    searchError,
   } = useUnit({
     searchValue: $search,
     isOpenedSearchModal: $isOpenedSearchModal,
@@ -30,6 +32,7 @@ export const SearchModal = () => {
     searchedData: $searchedData,
     searchedDataLoading: $searchedDataLoading,
     openSearchModal: openSearchModalEv,
+    searchError: $searchError,
   });
 
   useEffect(() => {
@@ -75,15 +78,11 @@ export const SearchModal = () => {
                   </div>
                 </div>
                 <div className='px-1.5 pt-3 md:px-3 lg:px-3.5 lg:pt-3.5  2xl:pt-5'>
-                  {searchValue && startedSearch && (
-                    <div className='flex  flex-col justify-center gap-3    text-2xl font-semibold uppercase leading-none  text-black'>
-                      {(searchedData.mixes?.data.length ||
-                        searchedData.genres?.data.length) &&
-                      searchValue.length > 0
-                        ? `Search results for "${searchValue}"`
-                        : 'Nothing was found'}
-                    </div>
-                  )}
+                  <SearchInfoText
+                    searchError={searchError}
+                    searchedData={searchedData}
+                    searchValue={searchValue}
+                  />
                 </div>
                 <Transition.Child
                   as={Fragment}
@@ -111,5 +110,28 @@ export const SearchModal = () => {
         </Transition.Child>
       </Dialog>
     </Transition>
+  );
+};
+
+interface SearchInfoText {
+  searchedData: SearchedData;
+  searchValue: string;
+  searchError: null | Error;
+}
+
+const SearchInfoText: FC<SearchInfoText> = ({
+  searchedData,
+  searchValue,
+  searchError,
+}) => {
+  return (
+    <div className='flex  flex-col justify-center gap-3    text-2xl font-semibold uppercase leading-none  text-black'>
+      {(searchedData.mixes?.data.length || searchedData.genres?.data.length) &&
+      searchValue.length > 0
+        ? `Search results for "${searchValue}"`
+        : (searchError
+        ? searchError.message
+        : 'Nothing was found')}
+    </div>
   );
 };

@@ -20,7 +20,7 @@ export const HomePageTopInfo = ({
   links,
   schedulesExist,
 }: HomePageTopInfoProps) => {
-  const attributes = homePageRandomMix?.attributes;
+  const attributes = homePageRandomMix?.data?.attributes;
 
   return (
     <div

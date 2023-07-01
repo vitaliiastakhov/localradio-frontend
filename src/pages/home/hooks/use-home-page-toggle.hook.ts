@@ -19,7 +19,7 @@ export const useHomePageToggleHook = ({
   refetchStream,
   streamData,
 }: UseHomePageToggleHookProps) => {
-  const attributes = homePageRandomMix?.attributes;
+  const attributes = homePageRandomMix?.data?.attributes;
 
   const [SCLink, setSCLink] = useState<string | null>(null);
   const [youtubeLink, setYoutubeLink] = useState('');

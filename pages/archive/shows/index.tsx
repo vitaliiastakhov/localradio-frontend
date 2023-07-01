@@ -26,16 +26,20 @@ const Page: NextPage<PageProps> = ({ shows }) => {
 export const getStaticProps: GetStaticProps = async (): Promise<
   GetStaticPropsResult<PageProps>
 > => {
-  const {
-    data: { shows },
-  } = await client.query({
-    query: ArchiveApi.ShowsDocument,
-    variables: { limit: 1 },
-  });
-  return {
-    props: { shows: shows as ShowEntityResponseCollection },
-    revalidate: 60,
-  };
+  try {
+    const {
+      data: { shows },
+    } = await client.query({
+      query: ArchiveApi.ShowsDocument,
+      variables: { limit: 1 },
+    });
+    return {
+      props: { shows: shows as ShowEntityResponseCollection },
+      revalidate: 60,
+    };
+  } catch (error) {
+    return { redirect: { destination: '/archive', permanent: false } };
+  }
 };
 
 export default Page;

@@ -21,6 +21,10 @@ const ScheduleList = dynamic(() =>
   )
 );
 
+interface StreamData extends StreamIsLiveQuery {
+  error?: string;
+}
+
 export const HomePageTop = (props: HomePageTopProps) => {
   const { homePageRandomMix, schedules, streamIsLive } = props;
 
@@ -28,12 +32,12 @@ export const HomePageTop = (props: HomePageTopProps) => {
     currentMixPlayer: $currentMixPlayer,
   });
   const { mutate: refetchStream } = useSWRConfig();
-  const { data: streamData } = useSWR<StreamIsLiveQuery>(
-    '/api/streamIsLive',
+  const { data: streamData } = useSWR<StreamData>(
+    '/api/stream-is-live',
     SWRfetcher
   );
 
-  const attributes = homePageRandomMix?.attributes;
+  const attributes = homePageRandomMix?.data?.attributes;
 
   const links: TogglePlayerLinks = {
     soundcloud: attributes?.linksToMixes?.soundcloudLink,

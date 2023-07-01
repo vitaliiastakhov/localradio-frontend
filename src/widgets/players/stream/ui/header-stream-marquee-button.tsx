@@ -7,6 +7,7 @@ import {
 import { clsxm } from '@/shared/lib/clsxm';
 import {
   $isClickedStreamPlay,
+  $streamError,
   $streamTitle,
   isClickedStreamPlayEv,
 } from '../model/stream';
@@ -27,11 +28,13 @@ export const HeaderStreamMarqueeButton = ({
     isClickedSteamPlay,
     currentGlobalPlayer,
     streamTitle,
+    streamError,
     setCurrentGlobalPlayer,
     isClickedStreamPlayEvent,
   } = useUnit({
     isClickedSteamPlay: $isClickedStreamPlay,
     streamTitle: $streamTitle,
+    streamError: $streamError,
     currentGlobalPlayer: $currentGlobalPlayer,
     setCurrentGlobalPlayer: setCurrentGlobalPlayerEv,
     isClickedStreamPlayEvent: isClickedStreamPlayEv,
@@ -63,7 +66,9 @@ export const HeaderStreamMarqueeButton = ({
       )}
       <div className='grid w-full'>
         <Marquee pauseOnHover className='w-0 max-w-full' gradient={false}>
-          <div className='flex w-fit overflow-hidden'>{streamTitle}</div>
+          <div className='flex w-fit overflow-hidden'>
+            {streamError ? streamError.message : streamTitle}
+          </div>
         </Marquee>
       </div>
     </button>

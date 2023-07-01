@@ -3,7 +3,7 @@ import { useUnit } from 'effector-react';
 import { FC, HTMLAttributes, useCallback } from 'react';
 import { Maybe } from 'yup';
 import { setCurrentGlobalPlayerEv } from '@/features/choose-global-player/model/current-global-player.model';
-import { MixEntity } from '@/shared/api/graphql/__generated__/schema.graphql';
+import { Mix } from '@/shared/api/graphql/__generated__/schema.graphql';
 import { clsxm } from '@/shared/lib/clsxm';
 import { Button } from '@/shared/ui/button/button';
 import { Icon } from '@/shared/ui/icons';
@@ -22,7 +22,7 @@ import { SCToggleElementProps } from './sc-toggle-element';
 interface SCToggleButtonProps
   extends Pick<SCToggleElementProps, 'SCLink'>,
     HTMLAttributes<HTMLButtonElement> {
-  attributes: Maybe<MixEntity['attributes']>;
+  attributes: Maybe<Mix>;
   mixId: Maybe<string>;
 }
 

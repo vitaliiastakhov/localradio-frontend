@@ -32,14 +32,20 @@ export default Page;
 export const getServerSideProps: GetServerSideProps = async (): Promise<
   GetServerSidePropsResult<PageProps>
 > => {
-  const {
-    data: { events },
-  } = await client.query({
-    query: ArchiveApi.EventsDocument,
-    variables: { limit: 12 },
-  });
+  try {
+    const {
+      data: { events },
+    } = await client.query({
+      query: ArchiveApi.EventsDocument,
+      variables: { limit: 12 },
+    });
 
-  return {
-    props: { events: events as EventEntityResponseCollection },
-  };
+    return {
+      props: { events: events as EventEntityResponseCollection },
+    };
+  } catch (error) {
+    return {
+      redirect: { destination: '/500', permanent: false },
+    };
+  }
 };

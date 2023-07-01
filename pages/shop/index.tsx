@@ -26,14 +26,20 @@ const Page: NextPage<PageProps> = ({ shopItems }) => {
 export default Page;
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const {
-    data: { shopItems },
-  } = await client.query({
-    query: ShopItemsDocument,
-    variables: { limit: 12 },
-  });
+  try {
+    const {
+      data: { shopItems },
+    } = await client.query({
+      query: ShopItemsDocument,
+      variables: { limit: 12 },
+    });
 
-  return {
-    props: { shopItems },
-  };
+    return {
+      props: { shopItems },
+    };
+  } catch (error) {
+    return {
+      redirect: { destination: '/500', permanent: false },
+    };
+  }
 };

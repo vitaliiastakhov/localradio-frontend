@@ -7,7 +7,7 @@ import { ReleasePageLinks } from './release-page-links';
 export type ReleasePageCenterProps = Pick<ReleasePageProps, 'releases'>;
 
 export const ReleasePageCenter: FC<ReleasePageCenterProps> = ({ releases }) => {
-  const { attributes } = releases.data[0];
+  const attributes = releases?.data[0].attributes;
 
   return (
     <div className='order-1 h-full border-black px-1.5 sm:px-3 lg:border-x-2'>
