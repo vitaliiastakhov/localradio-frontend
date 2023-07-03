@@ -1,25 +1,16 @@
 import { useUnit } from 'effector-react';
-import {
-  Maybe,
-  Mix,
-  MixEntity,
-} from '@/shared/api/graphql/__generated__/schema.graphql';
+import { Mix } from '@/shared/api/graphql/__generated__/schema.graphql';
 import { clsxm } from '@/shared/lib/clsxm';
 import { NextImage } from '@/shared/ui/next-image/next-image';
 import { $currentMixPlayer } from '../model/current-mix-player.model';
+import { PlayerElementProps } from '../types/sc-toggle.interface';
 import { SCToggleButton } from './sc-toggle-button';
-
-export interface SCToggleElementProps {
-  mix?: Maybe<MixEntity>;
-  SCLink?: Maybe<string>;
-  page: 'mix' | 'home';
-}
 
 export const SCToggleElement = ({
   mix,
-  SCLink,
+  mixLink: SCLink,
   page = 'mix',
-}: SCToggleElementProps) => {
+}: PlayerElementProps) => {
   const attributes = mix?.attributes;
   const mixId = mix?.id;
 
@@ -35,7 +26,7 @@ export const SCToggleElement = ({
         { 'aspect-square lg:aspect-video': page === 'mix' }
       )}
     >
-      <div className='relative flex aspect-square  flex-col items-center justify-center  md:w-auto'>
+      <div className='relative flex aspect-square flex-col items-center justify-center md:w-auto'>
         <div className='relative h-full w-full'>
           <NextImage
             src={attributes?.image.data?.attributes?.url ?? ''}
@@ -47,7 +38,7 @@ export const SCToggleElement = ({
         {SCLink && (
           <SCToggleButton
             attributes={attributes as Mix}
-            SCLink={SCLink}
+            mixLink={SCLink}
             mixId={mixId}
           />
         )}

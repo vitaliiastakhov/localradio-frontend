@@ -76,7 +76,7 @@ export const HomePageRandMix = ({
           <SCToggleElement
             page='home'
             mix={homePageRandomMix.data as MixEntity}
-            SCLink={SCLink}
+            mixLink={SCLink}
           />
         )}
       </div>

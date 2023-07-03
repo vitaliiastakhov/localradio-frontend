@@ -55,7 +55,7 @@ export const MixNavigation = ({
             page='mix'
           />
         )}
-        <SCToggleElement page='mix' mix={mix} SCLink={links.soundcloud} />
+        <SCToggleElement page='mix' mix={mix} mixLink={links.soundcloud} />
       </div>
     </>
   );

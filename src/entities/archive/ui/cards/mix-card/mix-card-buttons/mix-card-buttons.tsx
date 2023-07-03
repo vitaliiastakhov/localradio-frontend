@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import { Maybe } from 'yup';
-import { useGlobalPlayer } from '@/entities/archive/hooks/use-global-player.hook';
 import { ComponentLinksToMixesLink } from '@/shared/api/graphql/__generated__/schema.graphql';
 import { clsxm } from '@/shared/lib/clsxm';
 import { MixCardProps } from '../mix-card.interface';
@@ -20,7 +19,7 @@ export const MixCardButtons: FC<MixCardButtonsProps> = ({
 }) => {
   const soundcloudLink = linksToMixes?.soundcloudLink;
   const youtubeLink = linksToMixes?.youtubeLink;
-  const { play } = useGlobalPlayer({ id });
+
   if (youtubeLink || soundcloudLink) {
     return (
       <div
@@ -31,7 +30,6 @@ export const MixCardButtons: FC<MixCardButtonsProps> = ({
       >
         {sizeVariant === 'standard' && youtubeLink && (
           <MixYoutubeButton
-            play={play}
             slug={slug}
             mixLink={youtubeLink}
             sizeVariant={sizeVariant}
@@ -39,7 +37,7 @@ export const MixCardButtons: FC<MixCardButtonsProps> = ({
         )}
         {soundcloudLink && (
           <MixSCButton
-            play={play}
+            id={id}
             slug={slug}
             mixLink={soundcloudLink}
             sizeVariant={sizeVariant}

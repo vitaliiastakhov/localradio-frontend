@@ -32,6 +32,7 @@ export const Cards = ({
       '4xl:hidden':
         data.length >= 10 && data.length < index + 3 && pageVariant === 'home',
     });
+
   if (data)
     return (
       <>

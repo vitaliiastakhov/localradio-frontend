@@ -1,26 +1,15 @@
 import clsx from 'clsx';
-import { useUnit } from 'effector-react';
-import { FC, HTMLAttributes, useCallback } from 'react';
+import { FC, HTMLAttributes } from 'react';
 import { Maybe } from 'yup';
-import { setCurrentGlobalPlayerEv } from '@/features/choose-global-player/model/current-global-player.model';
 import { Mix } from '@/shared/api/graphql/__generated__/schema.graphql';
 import { clsxm } from '@/shared/lib/clsxm';
 import { Button } from '@/shared/ui/button/button';
 import { Icon } from '@/shared/ui/icons';
-import { fetchRandomMixesFx } from '@/widgets/players/soundcloud/model/sc-random-mixes.model';
-import {
-  $currentSCLink,
-  $isSCPlaying,
-  $linkToMix,
-  isClickedPlayScEv,
-  setCurrentScLinkEv,
-  setIsSCPlayingEv,
-  setLinkToMixEv,
-} from '@/widgets/players/soundcloud/model/soundcloud.model';
-import { SCToggleElementProps } from './sc-toggle-element';
+import { useSCPlayer } from '../hooks/use-sc-toggle.hook';
+import { PlayerElementProps } from '../types/sc-toggle.interface';
 
 interface SCToggleButtonProps
-  extends Pick<SCToggleElementProps, 'SCLink'>,
+  extends Pick<PlayerElementProps, 'mixLink'>,
     HTMLAttributes<HTMLButtonElement> {
   attributes: Maybe<Mix>;
   mixId: Maybe<string>;
@@ -29,69 +18,20 @@ interface SCToggleButtonProps
 export const SCToggleButton: FC<SCToggleButtonProps> = ({
   attributes,
   mixId,
-  SCLink,
+  mixLink,
   className,
 }) => {
-  const {
-    linkToMix,
-    SCIsPlaying,
-    setLinkToMix,
-    setCurrentGlobalPlayer,
-    setCurrentScLink,
-    setIsClickedPlaySc,
-    fetchRandomMixes,
-    currentSCLink,
-    setSCIsPlaying,
-  } = useUnit({
-    linkToMix: $linkToMix,
-    currentSCLink: $currentSCLink,
-    SCIsPlaying: $isSCPlaying,
-    setLinkToMix: setLinkToMixEv,
-    setCurrentScLink: setCurrentScLinkEv,
-    setCurrentGlobalPlayer: setCurrentGlobalPlayerEv,
-    setIsClickedPlaySc: isClickedPlayScEv,
-    fetchRandomMixes: fetchRandomMixesFx,
-    setSCIsPlaying: setIsSCPlayingEv,
-  });
-
-  const handlePlaySCButton = useCallback(() => {
-    setCurrentGlobalPlayer('soundcloud');
-    attributes?.slug && setLinkToMix(attributes.slug);
-    if (
-      attributes?.linksToMixes?.soundcloudLink === currentSCLink &&
-      SCIsPlaying
-    ) {
-      setSCIsPlaying(false);
-      setIsClickedPlaySc(false);
-    } else if (
-      attributes?.linksToMixes?.soundcloudLink === currentSCLink &&
-      !SCIsPlaying
-    ) {
-      setIsClickedPlaySc(true);
-    } else {
-      setIsClickedPlaySc(true);
-    }
-    setCurrentScLink(SCLink);
-    mixId && fetchRandomMixes(mixId);
-  }, [
-    SCLink,
+  const { isActive, linkToMix, handlePlay } = useSCPlayer({
     mixId,
-    attributes,
-    currentSCLink,
-    SCIsPlaying,
-    fetchRandomMixes,
-    setIsClickedPlaySc,
-    setCurrentGlobalPlayer,
-    setLinkToMix,
-    setCurrentScLink,
-    setSCIsPlaying,
-  ]);
+    slug: attributes?.slug,
+    mixLink,
+  });
 
   return (
     <Button
       type='button'
       aria-label='Play and pause soundcloud player'
-      onClick={handlePlaySCButton}
+      onClick={handlePlay}
       className={clsx(
         'group absolute flex aspect-square h-[clamp(2rem,8vw,2.5rem)] w-[clamp(2rem,8vw,2.5rem)] items-center justify-center overflow-hidden md:h-12 md:w-12 2xl:h-16 2xl:w-16',
         className
@@ -101,18 +41,17 @@ export const SCToggleButton: FC<SCToggleButtonProps> = ({
         className={clsxm(
           'absolute inset-0 overflow-hidden rounded-lg bg-white backdrop-invert transition duration-150 hover:bg-white md:bg-opacity-75 md:backdrop-blur-[20px] md:backdrop-saturate-200',
           {
-            'bg-opacity-100': linkToMix === attributes?.slug && SCIsPlaying,
+            'bg-opacity-100': isActive,
           }
         )}
       />
       <div className='w-[0.9rem] 2xl:w-[1.2rem]'>
-        {((linkToMix === attributes?.slug && !SCIsPlaying) ||
-          linkToMix !== attributes?.slug) && (
+        {(!isActive || linkToMix !== attributes?.slug) && (
           <div className='translate-x-[1px]'>
             <Icon.PlayIcon />
           </div>
         )}
-        {linkToMix === attributes?.slug && SCIsPlaying && (
+        {isActive && (
           <div className='translate-x-[1px]'>
             <Icon.PauseIcon />
           </div>

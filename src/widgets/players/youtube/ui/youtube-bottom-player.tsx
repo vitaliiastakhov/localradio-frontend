@@ -23,6 +23,7 @@ export const YoutubeBottomPlayer = () => {
         <div className='isolate w-full'>
           {currentYoutubeLink && (
             <YoutubeToggleElement
+              className='aspect-video'
               page='bottom'
               youtubeVideoLink={currentYoutubeLink}
             />
