@@ -44,7 +44,7 @@ export const MixSCButton = ({
       link: mixLink,
       currentLink: currentSCLink,
     });
-  }, [play, mixLink, SCIsPlaying, currentSCLink, setLinkToMix]);
+  }, [play, mixLink, slug, SCIsPlaying, currentSCLink, setLinkToMix]);
 
   const playSCBottom = useCallback(() => {
     setCurrentGlobalPlayer('soundcloud');

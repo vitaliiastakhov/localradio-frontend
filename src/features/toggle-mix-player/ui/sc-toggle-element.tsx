@@ -11,7 +11,7 @@ import { SCToggleButton } from './sc-toggle-button';
 
 export interface SCToggleElementProps {
   mix?: Maybe<MixEntity>;
-  SCLink: string;
+  SCLink?: Maybe<string>;
   page: 'mix' | 'home';
 }
 
@@ -44,11 +44,13 @@ export const SCToggleElement = ({
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <SCToggleButton
-          attributes={attributes as Mix}
-          SCLink={SCLink}
-          mixId={mixId}
-        />
+        {SCLink && (
+          <SCToggleButton
+            attributes={attributes as Mix}
+            SCLink={SCLink}
+            mixId={mixId}
+          />
+        )}
       </div>
     </div>
   );

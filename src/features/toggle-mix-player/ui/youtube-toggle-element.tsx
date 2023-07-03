@@ -30,7 +30,7 @@ export const YoutubeToggleElement = ({
 }: SCToggleElementProps) => {
   const [loaded, setLoaded] = useState(false);
   const {
-    // currentMixPlayer = 'audio',
+    currentMixPlayer,
     setCurrentGlobalPlayer,
     toggleMixPlayer,
     currentGlobalPlayer,
@@ -48,7 +48,6 @@ export const YoutubeToggleElement = ({
     setYoutubeLink: setCurrentYoutubeLinkEv,
     openWidget: openWidgetEv,
   });
-  const currentMixPlayer = 'video';
 
   return (
     <div

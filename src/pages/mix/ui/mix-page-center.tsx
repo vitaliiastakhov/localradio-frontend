@@ -1,3 +1,4 @@
+import { Maybe } from 'graphql/jsutils/Maybe';
 import { useEffect, useState } from 'react';
 import { CardDate } from '@/shared/ui/card/card-date';
 import { GenreListWithMemo } from '@/shared/ui/genres/genre-list/genre-list';
@@ -8,17 +9,17 @@ type MixPageCenterProps = Pick<MixPageProps, 'mixes' | 'mixPrev' | 'mixNext'>;
 
 const MixPageCenter = ({ mixes, mixNext, mixPrev }: MixPageCenterProps) => {
   const project = mixes?.data[0].attributes;
-  const [SCAudioLink, setSCAudioLink] = useState<string>('');
-  const [youtubeVideoLink, setYoutubeVideoLink] = useState<string>('');
+  const [SCAudioLink, setSCAudioLink] = useState<Maybe<string>>(null);
+  const [youtubeVideoLink, setYoutubeVideoLink] = useState<Maybe<string>>(null);
+
   useEffect(() => {
-    project?.linksToMixes?.soundcloudLink &&
-      setSCAudioLink(project.linksToMixes.soundcloudLink);
-    project?.linksToMixes?.youtubeLink &&
-      setYoutubeVideoLink(project.linksToMixes.youtubeLink);
+    setSCAudioLink(project?.linksToMixes?.soundcloudLink);
+    setYoutubeVideoLink(project?.linksToMixes?.youtubeLink);
   }, [
     project?.linksToMixes?.soundcloudLink,
     project?.linksToMixes?.youtubeLink,
   ]);
+
   return (
     <div className='h-full border-black px-1.5 lg:border-x-2 lg:border-t-0 lg:px-2 xl:px-3.5'>
       <MixNavigation

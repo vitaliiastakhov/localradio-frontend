@@ -33,9 +33,10 @@ export const MixNavigation = ({
   });
 
   useEffect(() => {
-    if (!links.soundcloud) toggleMixPlayer('video');
-    if (!links.youtube) toggleMixPlayer('audio');
-  }, [links]);
+    if (!links.soundcloud && links.youtube) toggleMixPlayer('video');
+    if (!links.youtube && links.soundcloud) toggleMixPlayer('audio');
+    if (!links.youtube && !links.soundcloud) toggleMixPlayer('audio');
+  }, [links, toggleMixPlayer]);
 
   return (
     <>
@@ -55,9 +56,7 @@ export const MixNavigation = ({
             page='mix'
           />
         )}
-        {links.soundcloud && (
-          <SCToggleElement page='mix' mix={mix} SCLink={links.soundcloud} />
-        )}
+        <SCToggleElement page='mix' mix={mix} SCLink={links.soundcloud} />
       </div>
     </>
   );

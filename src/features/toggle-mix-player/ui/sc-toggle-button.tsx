@@ -99,7 +99,7 @@ export const SCToggleButton: FC<SCToggleButtonProps> = ({
     >
       <div
         className={clsxm(
-          'absolute inset-0 bg-white backdrop-invert transition  duration-150 hover:bg-white md:bg-opacity-75 md:backdrop-blur-[20px] md:backdrop-saturate-200',
+          'absolute inset-0 overflow-hidden rounded-lg bg-white backdrop-invert transition duration-150 hover:bg-white md:bg-opacity-75 md:backdrop-blur-[20px] md:backdrop-saturate-200',
           {
             'bg-opacity-100': linkToMix === attributes?.slug && SCIsPlaying,
           }
