@@ -35,7 +35,6 @@ export const MixNavigation = ({
   useEffect(() => {
     if (!links.soundcloud && links.youtube) toggleMixPlayer('video');
     if (!links.youtube && links.soundcloud) toggleMixPlayer('audio');
-    if (!links.youtube && !links.soundcloud) toggleMixPlayer('audio');
   }, [links, toggleMixPlayer]);
 
   return (
