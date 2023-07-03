@@ -129,9 +129,9 @@ const SearchInfoText: FC<SearchInfoText> = ({
       {(searchedData.mixes?.data.length || searchedData.genres?.data.length) &&
       searchValue.length > 0
         ? `Search results for "${searchValue}"`
-        : (searchError
+        : searchError
         ? searchError.message
-        : 'Nothing was found')}
+        : 'Nothing was found'}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { forwardRef } from 'react';
-import { BaseInputProps } from '../types/types';
+import { BaseInputProps } from '../types/input.interface';
 
 export const BaseInput = forwardRef<HTMLInputElement, BaseInputProps>(
   (props, ref) => {

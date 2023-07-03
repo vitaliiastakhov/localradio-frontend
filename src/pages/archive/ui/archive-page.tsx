@@ -1,7 +1,7 @@
 import { useUnit } from 'effector-react';
 import Link from 'next/link';
 import { Suspense } from 'react';
-import { CardListWithMemo } from '@/entities/archive/ui/card-list';
+import { CardSectionWithMemo } from '@/entities/archive/ui/card-section';
 import {
   EventEntity,
   GuestEntity,
@@ -95,7 +95,7 @@ export const ArchivePage = ({
 
         {data ? (
           <Suspense fallback={<div>Loading...</div>}>
-            <CardListWithMemo
+            <CardSectionWithMemo
               pageVariant='other'
               totalCount={totalCount}
               data={data}

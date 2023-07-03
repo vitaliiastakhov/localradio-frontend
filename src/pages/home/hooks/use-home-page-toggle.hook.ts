@@ -4,11 +4,11 @@ import {
   REFETCH_STREAM_IN_MS,
   YOUTUBE_LIVE_LINK,
 } from '@/shared/lib/constants/common';
-import { HomePageToggleProps } from '../ui/home-page-toggle';
+import { HomePageRandMixProps } from '../ui/home-page-toggle';
 
 interface UseHomePageToggleHookProps
   extends Pick<
-    HomePageToggleProps,
+    HomePageRandMixProps,
     'homePageRandomMix' | 'refetchStream' | 'streamData'
   > {
   refetchStream: Promise<ScopedMutator<any> | undefined>;

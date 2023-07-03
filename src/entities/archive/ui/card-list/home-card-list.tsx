@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { UseGetMoreOnScrollResponse } from '@/entities/archive/hooks/use-get-more-on-scroll.hook';
 import { clsxm } from '@/shared/lib/clsxm';
-import { CardListProps } from '../../lib/types';
-import { CardListSwitch } from './card-list-switch';
+import { CardListProps } from '../../lib/card-list.interface';
+import { Cards } from './cards';
 
 interface HomeCardListProps
   extends Pick<CardListProps, 'variant'>,
@@ -13,16 +13,12 @@ export const HomeCardList = ({ variant, cardListItems }: HomeCardListProps) => {
     return (
       <div
         className={clsxm(
-          'grid auto-cols-[var(--col-size)] grid-flow-col grid-cols-1  gap-2.5  !overflow-y-hidden overflow-x-scroll',
+          'grid auto-cols-[var(--col-size)] grid-flow-col grid-cols-1 gap-2.5 !overflow-y-hidden overflow-x-scroll',
           'scroll-smooth px-1.5 leading-none scrollbar-hide sm:auto-cols-auto sm:grid-flow-row sm:grid-cols-2 lg:grid-cols-3 lg:px-2 xl:grid-cols-4 xl:px-3.5 4xl:grid-cols-5',
           { 'grid-cols-[var(--col-size)]': cardListItems.length > 1 }
         )}
       >
-        <CardListSwitch
-          pageVariant='home'
-          data={cardListItems}
-          variant={variant}
-        />
+        <Cards pageVariant='home' data={cardListItems} variant={variant} />
         {cardListItems.length > 1 && (
           <Link
             href={`/${variant === 'mixes' ? 'archive' : variant}`}

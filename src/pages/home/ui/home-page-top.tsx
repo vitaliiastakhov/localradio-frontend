@@ -1,13 +1,11 @@
-import { useUnit } from 'effector-react';
 import dynamic from 'next/dynamic';
 import useSWR, { useSWRConfig } from 'swr';
-import { $currentMixPlayer } from '@/features/toggle-mix-player/model/current-mix-player.model';
-import { TogglePlayerLinks } from '@/features/toggle-mix-player/model/types';
+import { TogglePlayerLinks } from '@/features/toggle-mix-player/types/toggle-player.interface';
 import { clsxm } from '@/shared/lib/clsxm';
 import SWRfetcher from '@/shared/lib/swr-fetcher';
 import { StreamIsLiveQuery } from '@/widgets/players/stream/api/stream-is-live.graphql.interface';
-import { HomePageProps } from './home-page';
-import { HomePageToggle } from './home-page-toggle';
+import { HomePageProps } from './home-page.interface';
+import { HomePageRandMix } from './home-page-toggle';
 import { HomePageTopInfo } from './home-page-top-info';
 
 export type HomePageTopProps = Pick<
@@ -27,10 +25,6 @@ interface StreamData extends StreamIsLiveQuery {
 
 export const HomePageTop = (props: HomePageTopProps) => {
   const { homePageRandomMix, schedules, streamIsLive } = props;
-
-  const { currentMixPlayer } = useUnit({
-    currentMixPlayer: $currentMixPlayer,
-  });
   const { mutate: refetchStream } = useSWRConfig();
   const { data: streamData } = useSWR<StreamData>(
     '/api/stream-is-live',
@@ -59,7 +53,7 @@ export const HomePageTop = (props: HomePageTopProps) => {
     >
       <div className='h-full lg:grid  lg:grid-rows-[1fr,min-content]'>
         <div className='flex h-full max-w-[100vw] flex-col overflow-hidden'>
-          <HomePageToggle
+          <HomePageRandMix
             schedulesExist={schedules?.length === 0 || !schedules}
             streamData={streamData}
             refetchStream={refetchStream('/api/streamIsLive')}
@@ -71,7 +65,6 @@ export const HomePageTop = (props: HomePageTopProps) => {
             <HomePageTopInfo
               schedulesExist={schedules ? schedules.length > 0 : false}
               links={links}
-              currentMixPlayer={currentMixPlayer}
               homePageRandomMix={homePageRandomMix}
             />
           )}

@@ -1,13 +1,17 @@
+import { FC } from 'react';
+import { CardBaseProps } from '@/entities/archive/lib/card-list.interface';
 import {
   GuestEntity,
   ShowEntity,
 } from '@/shared/api/graphql/__generated__/schema.graphql';
 import { Card } from '@/shared/ui/card';
 
+type ShowResidentProps = CardBaseProps & (ShowEntity | GuestEntity);
+
 type Variant = 'resident' | 'residents' | 'show' | 'shows';
 
-export const ShowResidentCard = (entity: ShowEntity | GuestEntity) => {
-  const { attributes, __typename } = entity;
+export const ShowResidentCard: FC<ShowResidentProps> = (props) => {
+  const { attributes, __typename, className } = props;
   const lastEpisodeDate = attributes?.mixes?.data[0]?.attributes?.date;
   const lastEpisodeSlug = attributes?.mixes?.data[0]?.attributes?.slug;
   const imageUrl = attributes?.image?.data?.attributes?.url;
@@ -38,6 +42,7 @@ export const ShowResidentCard = (entity: ShowEntity | GuestEntity) => {
       date={lastEpisodeDate}
       headingText={attributes?.name}
       href={href}
+      className={className}
       image={{
         alt: imageAltTitle,
         src:

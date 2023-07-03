@@ -1,3 +1,4 @@
+import { HTMLAttributes } from 'react';
 import type { Maybe } from 'yup';
 import type {
   GenreEntity,
@@ -26,3 +27,5 @@ export interface CardListProps {
   secondHeader?: SecondHeader;
   pageVariant: 'home' | 'other';
 }
+
+export type CardBaseProps = Omit<HTMLAttributes<HTMLDivElement>, 'id'>;

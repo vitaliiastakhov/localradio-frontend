@@ -1,39 +1,18 @@
 import Link from 'next/link';
-import { memo, useEffect } from 'react';
-import { useGetMoreOnScroll } from '@/entities/archive/hooks/use-get-more-on-scroll.hook';
+import { memo } from 'react';
 import { Heading } from '@/shared/ui/headings/heading';
-import type { CardListProps } from '../../lib/types';
-import { CardListHeader } from './carl-list-header';
-import { HomeCardList } from './home-card-list';
-import { OtherCardList } from './other-card-list';
+import { CardListProps } from '../../lib/card-list.interface';
+import { CardListHeader } from '../card-list/carl-list-header';
+import { HomeCardList } from '../card-list/home-card-list';
+import { OtherCardList } from '../card-list/other-card-list';
 
-const CardList = (props: CardListProps) => {
-  const {
-    mixesFilter,
-    text,
-    data,
-    variant,
-    releasesFilter,
-    residentsFilter,
-    secondHeader,
-    pageVariant,
-  } = props;
-  const { setCardListItems, cardListItems, getMore } = useGetMoreOnScroll({
-    data,
-    variant,
-    releasesFilter,
-    residentsFilter,
-    mixesFilter,
-  });
-
-  useEffect(() => {
-    setCardListItems(data);
-  }, [data, setCardListItems]);
+const CardSection = (props: CardListProps) => {
+  const { text, data, variant, secondHeader, pageVariant } = props;
 
   return (
     <section className='flex w-full flex-col gap-3 pb-2 font-semibold 2xl:pb-[1rem]'>
       <div>
-        {cardListItems && cardListItems.length > 0 ? (
+        {data && data.length > 0 ? (
           <div>
             {pageVariant === 'other' && (
               <div className='flex flex-col text-[1.85rem] uppercase leading-none sm:text-[2.3rem] lg:text-[3rem]'>
@@ -59,15 +38,9 @@ const CardList = (props: CardListProps) => {
                 </div>
               </div>
             )}
-            {pageVariant === 'other' && (
-              <OtherCardList
-                cardListItems={cardListItems}
-                getMore={getMore}
-                {...props}
-              />
-            )}
+            {pageVariant === 'other' && <OtherCardList {...props} />}
             {pageVariant === 'home' && (
-              <HomeCardList cardListItems={cardListItems} variant={variant} />
+              <HomeCardList cardListItems={data} variant={variant} />
             )}
           </div>
         ) : null}
@@ -76,4 +49,4 @@ const CardList = (props: CardListProps) => {
   );
 };
 
-export const CardListWithMemo = memo(CardList);
+export const CardSectionWithMemo = memo(CardSection);

@@ -4,7 +4,7 @@ import {
   $currentMixPlayer,
   toggleMixPlayerEv,
 } from '@/features/toggle-mix-player/model/current-mix-player.model';
-import { TogglePlayerLinks } from '@/features/toggle-mix-player/model/types';
+import { TogglePlayerLinks } from '@/features/toggle-mix-player/types/toggle-player.interface';
 import {
   SCToggleElement,
   YoutubeToggleElement,
@@ -49,7 +49,11 @@ export const MixNavigation = ({
 
       <div className='flex flex-col'>
         {links.youtube && (
-          <YoutubeToggleElement youtubeVideoLink={links.youtube} page='mix' />
+          <YoutubeToggleElement
+            className='aspect-video'
+            youtubeVideoLink={links.youtube}
+            page='mix'
+          />
         )}
         {links.soundcloud && (
           <SCToggleElement page='mix' mix={mix} SCLink={links.soundcloud} />

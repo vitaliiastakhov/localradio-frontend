@@ -11,10 +11,12 @@ import {
 } from '@/widgets/players/youtube/model/youtube.model';
 import {
   $currentMixPlayerError,
-  type CurrentMixPlayer,
   toggleMixPlayerEv,
 } from '../model/current-mix-player.model';
-import type { TogglePlayerLinks } from '../model/types';
+import type {
+  CurrentMixPlayer,
+  TogglePlayerLinks,
+} from '../types/toggle-player.interface';
 import { PlayerToggleButton } from './player-toggle-button';
 
 interface PlayerToggleProps {

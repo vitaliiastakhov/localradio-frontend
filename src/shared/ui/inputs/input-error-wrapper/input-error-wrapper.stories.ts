@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { BaseInput } from '../base-input';
-import { BaseInputProps } from '../types/types';
+import { BaseInputProps } from '../types/input.interface';
 import { InputErrorWrapper } from './input-error-wrapper';
 
 const defaultArgs: BaseInputProps = {

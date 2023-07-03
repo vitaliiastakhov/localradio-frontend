@@ -1,4 +1,4 @@
-import { CardListWithMemo } from '@/entities/archive/ui/card-list';
+import { CardSectionWithMemo } from '@/entities/archive/ui/card-section';
 import {
   Maybe,
   MixEntity,
@@ -16,8 +16,8 @@ const ReleasePageBottom = ({
   mixesGuestSlug,
 }: ReleasePageBottomProps) => {
   return (
-    <div className='border-t-2  border-black lg:border-t-0'>
-      <CardListWithMemo
+    <div className='border-t-2 border-black lg:border-t-0'>
+      <CardSectionWithMemo
         pageVariant='other'
         variant='mixes'
         data={moreEpisodes}

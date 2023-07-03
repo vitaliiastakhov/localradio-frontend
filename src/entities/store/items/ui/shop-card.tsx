@@ -1,3 +1,5 @@
+import { FC } from 'react';
+import { CardBaseProps } from '@/entities/archive/lib/card-list.interface';
 import { ShopItemEntity } from '@/shared/api/graphql/__generated__/schema.graphql';
 import { clsxm } from '@/shared/lib/clsxm';
 import { setSeoAltText } from '@/shared/lib/set-seo-alt-text';
@@ -5,8 +7,10 @@ import { CardImageWithMemo } from '@/shared/ui/card/card-image/card-image';
 import { CardWrapperWithMemo } from '@/shared/ui/card/card-wrapper/card-wrapper';
 import { ShopCardBottom } from './shop-card-bottom';
 
-export const ShopCard = (product: ShopItemEntity) => {
-  const { attributes } = product;
+type ShopCardProps = CardBaseProps & ShopItemEntity;
+
+export const ShopCard: FC<ShopCardProps> = (props) => {
+  const { attributes, className } = props;
   const imagesList = attributes?.images.data;
   const altText = setSeoAltText({
     title: attributes?.title,
@@ -14,7 +18,7 @@ export const ShopCard = (product: ShopItemEntity) => {
   });
 
   return (
-    <CardWrapperWithMemo type='shop'>
+    <CardWrapperWithMemo type='shop' className={className}>
       <div className='relative  flex h-full flex-col justify-items-stretch border-2 border-black text-[0.7rem] font-medium uppercase'>
         <div>
           <div className='relative flex  aspect-square w-full justify-center'>
@@ -36,7 +40,7 @@ export const ShopCard = (product: ShopItemEntity) => {
             )}
           </div>
         </div>
-        <ShopCardBottom {...product} />
+        <ShopCardBottom {...props} />
       </div>
     </CardWrapperWithMemo>
   );

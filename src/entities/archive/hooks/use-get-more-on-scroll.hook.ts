@@ -1,6 +1,6 @@
 import type { ApolloQueryResult } from '@apollo/client';
 import type { DocumentNode } from 'graphql';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useErrorBoundary } from 'react-error-boundary';
 import {
   ArchiveApi,
@@ -8,7 +8,7 @@ import {
   MixesQuery,
   ReleasesQuery,
 } from '@/entities/archive/api';
-import { CardListProps } from '@/entities/archive/lib/types';
+import { CardListProps } from '@/entities/archive/lib/card-list.interface';
 import { client } from '@/shared/api/apollo/apollo-client';
 
 export type UseGetMoreOnScrollResponse = ReturnType<typeof useGetMoreOnScroll>;
@@ -47,6 +47,9 @@ export const useGetMoreOnScroll = ({
 }: UseGetMoreOnScrollProps) => {
   const [cardListItems, setCardListItems] = useState<any[] | undefined>(data);
   const { showBoundary } = useErrorBoundary();
+  useEffect(() => {
+    setCardListItems(data);
+  }, [data, setCardListItems]);
 
   const concatCardList = (data: any[]) =>
     setCardListItems((prev) => prev && prev.concat(data));
@@ -101,9 +104,9 @@ export const useGetMoreOnScroll = ({
       }
     }
   };
+
   return {
     cardListItems,
-    setCardListItems,
     getMore,
   };
 };

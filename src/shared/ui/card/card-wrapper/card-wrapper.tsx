@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { FC, memo } from 'react';
 import { EntityVariant } from '@/shared/types/entity-variants.interface';
 import type { SizeVariant } from '@/shared/types/size-variant.interface';
@@ -12,17 +13,21 @@ export const CardWrapper: FC<CardWrapperProps> = ({
   children,
   sizeVariant = 'standard',
   variant,
+  className,
   ...rest
 }) => {
   return (
-    <article className='relative flex flex-col gap-y-1' {...rest}>
+    <article
+      className={clsx('relative flex flex-col gap-y-1', className)}
+      {...rest}
+    >
       {(variant === 'mix' ||
         variant === 'event' ||
         variant === 'release' ||
         variant === 'show' ||
         variant === 'guest') &&
       sizeVariant === 'standard' ? (
-        <div className='flex h-full  flex-col border-2 border-black'>
+        <div className='flex h-full flex-col border-2 border-black'>
           {children}
         </div>
       ) : (

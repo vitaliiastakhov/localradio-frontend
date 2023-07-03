@@ -9,19 +9,15 @@ import {
   setCurrentScLinkEv,
   setLinkToMixEv,
 } from '@/widgets/players/soundcloud/model/soundcloud.model';
-import { MixButtonProps } from './mix-card';
 import { MixCardButtonWithMemo } from './mix-card-button';
-
-interface MixSCButtonProps extends MixButtonProps {
-  soundcloudLink: string;
-}
+import { MixButtonProps } from './mix-youtube-button';
 
 export const MixSCButton = ({
   sizeVariant,
-  soundcloudLink,
-  attributes,
+  mixLink,
+  slug,
   play,
-}: MixSCButtonProps) => {
+}: MixButtonProps) => {
   const {
     linkToMix,
     isClickedPlaySc,
@@ -41,26 +37,20 @@ export const MixSCButton = ({
   });
 
   const playSC = useCallback(() => {
-    attributes?.slug && setLinkToMix(attributes.slug);
+    slug && setLinkToMix(slug);
     play({
       type: 'soundcloud',
       isPlaying: SCIsPlaying,
-      link: attributes?.linksToMixes?.soundcloudLink,
+      link: mixLink,
       currentLink: currentSCLink,
     });
-  }, [play, attributes, SCIsPlaying, currentSCLink, setLinkToMix]);
+  }, [play, mixLink, SCIsPlaying, currentSCLink, setLinkToMix]);
 
   const playSCBottom = useCallback(() => {
     setCurrentGlobalPlayer('soundcloud');
-    attributes?.slug && setLinkToMix(attributes.slug);
-    soundcloudLink && setCurrentScLink(soundcloudLink);
-  }, [
-    soundcloudLink,
-    attributes?.slug,
-    setCurrentScLink,
-    setLinkToMix,
-    setCurrentGlobalPlayer,
-  ]);
+    slug && setLinkToMix(slug);
+    mixLink && setCurrentScLink(mixLink);
+  }, [mixLink, slug, setCurrentScLink, setLinkToMix, setCurrentGlobalPlayer]);
 
   const handleClick = () => {
     sizeVariant === 'small' ? playSCBottom() : playSC();
@@ -72,7 +62,7 @@ export const MixSCButton = ({
       sizeVariant={sizeVariant}
       ariaLabel='Play and pause soundcloud player'
       isClickedPlay={isClickedPlaySc}
-      isClicked={linkToMix === attributes?.slug && SCIsPlaying}
+      isClicked={linkToMix === slug && SCIsPlaying}
       onClick={handleClick}
     />
   );

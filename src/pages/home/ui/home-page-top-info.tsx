@@ -1,6 +1,7 @@
+import { useUnit } from 'effector-react';
 import Link from 'next/link';
-import { CurrentMixPlayer } from '@/features/toggle-mix-player/model/current-mix-player.model';
-import { TogglePlayerLinks } from '@/features/toggle-mix-player/model/types';
+import { $currentMixPlayer } from '@/features/toggle-mix-player/model/current-mix-player.model';
+import { TogglePlayerLinks } from '@/features/toggle-mix-player/types/toggle-player.interface';
 import { PlayerToggle } from '@/features/toggle-mix-player/ui/player-toggle';
 import { clsxm } from '@/shared/lib/clsxm';
 import { CardDate } from '@/shared/ui/card';
@@ -9,18 +10,21 @@ import { HomePageTopProps } from './home-page-top';
 
 interface HomePageTopInfoProps {
   homePageRandomMix?: HomePageTopProps['homePageRandomMix'];
-  currentMixPlayer: CurrentMixPlayer;
+
   links: TogglePlayerLinks;
   schedulesExist: boolean;
 }
 
 export const HomePageTopInfo = ({
   homePageRandomMix,
-  currentMixPlayer,
+
   links,
   schedulesExist,
 }: HomePageTopInfoProps) => {
   const attributes = homePageRandomMix?.data?.attributes;
+  const { currentMixPlayer } = useUnit({
+    currentMixPlayer: $currentMixPlayer,
+  });
 
   return (
     <div

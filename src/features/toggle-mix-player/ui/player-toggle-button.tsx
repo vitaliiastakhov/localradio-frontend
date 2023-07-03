@@ -1,7 +1,7 @@
 import { HTMLAttributes } from 'react';
 import { clsxm } from '@/shared/lib/clsxm';
 import { Button } from '@/shared/ui/button/button';
-import type { CurrentMixPlayer } from '../model/current-mix-player.model';
+import type { CurrentMixPlayer } from '../types/toggle-player.interface';
 
 interface PlayerToggleButtonProps extends HTMLAttributes<HTMLButtonElement> {
   disabled: boolean;

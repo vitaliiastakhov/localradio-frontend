@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import { CardListWithMemo } from '@/entities/archive/ui/card-list';
+import { CardSectionWithMemo } from '@/entities/archive/ui/card-section';
 import { clsxm } from '@/shared/lib/clsxm';
 import { GenreListWithMemo } from '@/shared/ui/genres/genre-list/genre-list';
 import { SearchedData } from '../model/search.model';
@@ -16,7 +16,7 @@ export const SearchData = forwardRef<HTMLDivElement, SearchedDataProps>(
         <SearchedGenres genres={searchedData.genres} />
         {searchedData.mixes && (
           <div className='w-full'>
-            <CardListWithMemo
+            <CardSectionWithMemo
               pageVariant='other'
               data={searchedData.mixes.data}
               variant='search'

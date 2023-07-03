@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { CardListWithMemo } from '@/entities/archive/ui/card-list';
+import { CardSectionWithMemo } from '@/entities/archive/ui/card-section';
 import { GenreItem } from '@/shared/ui/genres/genre-button/genre-item';
-import { HomePageProps } from './home-page';
+import { HomePageProps } from './home-page.interface';
 
 export const HomePageContent = ({
   mixes,
@@ -14,7 +14,7 @@ export const HomePageContent = ({
   return (
     <div className='flex flex-col gap-5 pt-5 lg:pt-10'>
       <div>
-        <CardListWithMemo
+        <CardSectionWithMemo
           pageVariant='home'
           data={mixes?.data}
           variant='mixes'
@@ -24,7 +24,7 @@ export const HomePageContent = ({
       </div>
 
       {releases?.data && releases.data.length > 0 && (
-        <CardListWithMemo
+        <CardSectionWithMemo
           pageVariant='home'
           data={releases.data}
           variant='releases'
@@ -32,7 +32,7 @@ export const HomePageContent = ({
         />
       )}
       {shopItems?.data && shopItems.data.length > 0 && (
-        <CardListWithMemo
+        <CardSectionWithMemo
           pageVariant='home'
           data={shopItems.data}
           variant='shop'
@@ -40,7 +40,7 @@ export const HomePageContent = ({
         />
       )}
       {events?.data && events.data.length > 0 && (
-        <CardListWithMemo
+        <CardSectionWithMemo
           pageVariant='home'
           data={events.data}
           text='Events'

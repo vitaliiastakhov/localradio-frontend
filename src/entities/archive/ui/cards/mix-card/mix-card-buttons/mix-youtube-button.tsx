@@ -1,5 +1,8 @@
 import { useUnit } from 'effector-react';
 import { useCallback } from 'react';
+import { Maybe } from 'yup';
+import { GlobalPlayerAction } from '@/entities/archive/hooks/use-global-player.hook';
+import { SizeVariant } from '@/shared/types/size-variant.interface';
 import {
   $isClickedPlaySc,
   $linkToMix,
@@ -9,12 +12,19 @@ import {
   $isClickedPlayYoutube,
   $isYoutubePlaying,
 } from '@/widgets/players/youtube/model/youtube.model';
-import { MixButtonProps } from './mix-card';
 import { MixCardButtonWithMemo } from './mix-card-button';
+
+export interface MixButtonProps {
+  sizeVariant: SizeVariant;
+  slug: Maybe<string>;
+  mixLink?: string;
+  play: GlobalPlayerAction['play'];
+}
 
 export const MixYoutubeButton = ({
   sizeVariant,
-  attributes,
+  slug,
+  mixLink,
   play,
 }: MixButtonProps) => {
   const {
@@ -34,10 +44,10 @@ export const MixYoutubeButton = ({
     play({
       type: 'youtubeBottom',
       isPlaying: isYoutubePlaying,
-      link: attributes?.linksToMixes?.youtubeLink,
+      link: mixLink,
       currentLink: currentYoutubeLink,
     });
-  }, [play, attributes, isYoutubePlaying, currentYoutubeLink]);
+  }, [play, mixLink, isYoutubePlaying, currentYoutubeLink]);
 
   return (
     <MixCardButtonWithMemo
@@ -45,7 +55,7 @@ export const MixYoutubeButton = ({
       sizeVariant={sizeVariant}
       ariaLabel='Play and pause soundcloud player'
       isClickedPlay={isClickedPlayYoutube}
-      isClicked={linkToMix === attributes?.slug && isYoutubePlaying}
+      isClicked={linkToMix === slug && isYoutubePlaying}
       onClick={playYoutube}
     />
   );

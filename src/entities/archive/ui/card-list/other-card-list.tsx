@@ -1,19 +1,24 @@
 import clsx from 'clsx';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import { UseGetMoreOnScrollResponse } from '@/entities/archive/hooks/use-get-more-on-scroll.hook';
-import { CardListProps } from '../../lib/types';
-import { CardListSwitch } from './card-list-switch';
-
-interface OtherCardListProps
-  extends CardListProps,
-    Pick<UseGetMoreOnScrollResponse, 'getMore' | 'cardListItems'> {}
+import { useGetMoreOnScroll } from '@/entities/archive/hooks/use-get-more-on-scroll.hook';
+import { CardListProps } from '../../lib/card-list.interface';
+import { Cards } from './cards';
 
 export const OtherCardList = ({
   variant,
-  getMore,
-  cardListItems,
+  data,
+  releasesFilter,
+  residentsFilter,
+  mixesFilter,
   totalCount,
-}: OtherCardListProps) => {
+}: CardListProps) => {
+  const { cardListItems, getMore } = useGetMoreOnScroll({
+    data,
+    variant,
+    releasesFilter,
+    residentsFilter,
+    mixesFilter,
+  });
   if (cardListItems && cardListItems.length > 0)
     return (
       <InfiniteScroll
@@ -22,23 +27,15 @@ export const OtherCardList = ({
         hasChildren={true}
         dataLength={cardListItems.length > 0 ? cardListItems.length : 0}
         loader={
-          <div className='flex w-full items-center justify-center text-black'>
+          <div className='flex aspect-square w-full items-center justify-center text-black'>
             Loading...
           </div>
         }
         className={clsx(
-          'relative grid grid-cols-1 gap-1.5  px-1.5 lg:gap-2.5 lg:px-2  xl:px-3.5',
-          {
-            'sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 4xl:grid-cols-5':
-              true,
-          }
+          'relative grid grid-cols-1 gap-1.5 px-1.5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-2.5 lg:px-2 xl:grid-cols-4 xl:px-3.5 4xl:grid-cols-5'
         )}
       >
-        <CardListSwitch
-          pageVariant='other'
-          data={cardListItems}
-          variant={variant}
-        />
+        <Cards pageVariant='other' data={cardListItems} variant={variant} />
       </InfiniteScroll>
     );
 

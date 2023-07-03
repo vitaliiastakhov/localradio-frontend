@@ -4,7 +4,7 @@ import { useCallback, useState } from 'react';
 import { useIMask } from 'react-imask';
 import { createView } from '@/shared/lib/view';
 import { InputErrorWrapper } from '../input-error-wrapper';
-import { InputProps } from '../types/types';
+import { InputProps } from '../types/input.interface';
 
 const TextInput = createView<InputProps>()
   .displayName('TextInput')

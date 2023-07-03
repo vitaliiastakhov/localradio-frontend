@@ -6,13 +6,23 @@ import { CardImageWithMemo } from '../card-image/card-image';
 import { CardWrapperWithMemo } from '../card-wrapper/card-wrapper';
 
 export const Card: FC<CardProps> = (props) => {
-  const { children, variant, href, image, sizeVariant = 'standard' } = props;
+  const {
+    bottomInfo,
+    variant,
+    href,
+    image,
+    mixButtons,
+    className,
+    sizeVariant = 'standard',
+    ...rest
+  } = props;
   const cardWrapperClasses = clsxm(
     { 'group  h-full overflow-hidden': sizeVariant === 'standard' },
     {
       'border-b-2 border-black p-1.5 last-of-type:border-none  md:p-2 xl:p-2.5':
         sizeVariant === 'small',
-    }
+    },
+    className
   );
   const cardSubWrapperClasses = clsxm(
     {
@@ -34,7 +44,7 @@ export const Card: FC<CardProps> = (props) => {
       <div className={cardSubWrapperClasses}>
         <div
           className={clsxm({
-            'group relative  overflow-hidden': sizeVariant === 'small',
+            'group relative overflow-hidden': sizeVariant === 'small',
           })}
         >
           {image && (
@@ -44,22 +54,29 @@ export const Card: FC<CardProps> = (props) => {
               src={image.src}
             />
           )}
-          {variant === 'mix' && sizeVariant === 'small' && children}
+          {sizeVariant === 'small' && mixButtons}
         </div>
         <div
           className={clsxm(
             'flex w-full   flex-col',
             {
               'absolute bottom-0 left-0':
-                variant === 'mix' && sizeVariant === 'standard',
+                mixButtons && sizeVariant === 'standard',
             },
             {
               'h-full': variant !== 'mix',
             }
           )}
         >
-          {variant === 'mix' && sizeVariant === 'standard' && children}
-          <CardBottomInfo {...props}>{children}</CardBottomInfo>
+          {sizeVariant === 'standard' && mixButtons}
+          <CardBottomInfo
+            href={href}
+            sizeVariant={sizeVariant}
+            variant={variant}
+            {...rest}
+          >
+            {bottomInfo}
+          </CardBottomInfo>
         </div>
       </div>
     </CardWrapperWithMemo>

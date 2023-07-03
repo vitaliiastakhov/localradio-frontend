@@ -1,6 +1,5 @@
 import { player } from '@/widgets/players/player-domain';
-
-export type CurrentMixPlayer = 'video' | 'audio';
+import { CurrentMixPlayer } from '../types/toggle-player.interface';
 
 const currentMixPlayer = player.domain('currentMixPlayer');
 

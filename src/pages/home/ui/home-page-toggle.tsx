@@ -13,20 +13,20 @@ import type { StreamIsLiveQuery } from '@/widgets/players/stream/api/stream-is-l
 import { useHomePageToggleHook } from '../hooks/use-home-page-toggle.hook';
 import type { HomePageTopProps } from './home-page-top';
 
-export interface HomePageToggleProps
+export interface HomePageRandMixProps
   extends Omit<HomePageTopProps, 'schedules'> {
   refetchStream: Promise<ScopedMutator<any> | undefined>;
   streamData?: StreamIsLiveQuery;
   schedulesExist: boolean;
 }
 
-export const HomePageToggle = ({
+export const HomePageRandMix = ({
   homePageRandomMix,
   streamData,
   streamIsLive,
   schedulesExist,
   refetchStream,
-}: HomePageToggleProps) => {
+}: HomePageRandMixProps) => {
   const { isLoading, youtubeLink, SCLink } = useHomePageToggleHook({
     homePageRandomMix,
     refetchStream,
