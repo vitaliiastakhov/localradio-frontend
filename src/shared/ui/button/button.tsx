@@ -38,7 +38,7 @@ export const Button = memo(
                 'lg:bg-primary hover:text-primary text-black hover:bg-black',
               secondary:
                 'bg-black lg:hover:bg-primary fill-primary hover:text-black text-primary lg:hover:fill-black',
-              clear: 'bg-transparent',
+              clear: '',
             }[colorVariant],
           sizeVariant &&
             {

@@ -32,7 +32,7 @@ export const PlayerToggleButton = ({
       disabled={disabled && !active}
       className={clsxm(
         'flex h-[clamp(1rem,6vw,1.5rem)] px-1 lg:pt-0.5 2xl:h-8 2xl:pt-0',
-        { 'bg-black text-white hover:bg-white hover:text-black': !disabled },
+        { 'bg-black text-white hover:bg-white hover:text-black': !disabled && !active },
         { 'bg-white text-black': !disabled && playerType === currentMixPlayer },
         { 'bg-secondary-dark hover:bg-secondary-light': !disabled && active }
       )}

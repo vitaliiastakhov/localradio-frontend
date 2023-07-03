@@ -27,7 +27,6 @@ export const MixPageBottom = ({
   mixesGuestName,
   guestsMixes,
   mixesShowName,
-  totalCount,
   showMixes,
   moreEpisodes,
   mixesShowSlug,
