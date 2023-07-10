@@ -9,23 +9,37 @@ interface CardListHeaderProps {
   sizeVariant: SizeVariant;
 }
 
+interface DD {
+  variant: SecondHeader['variant'];
+  slug?: string | null;
+}
+
+const getLinkAndText = ({ variant, slug }: DD) => {
+  let episodesText = 'Episodes ';
+  let link = '/archive/' + variant + '/' + slug;
+  if (variant === 'resident') {
+    episodesText = 'Episodes by ';
+    link = '/archive/residents/' + slug;
+  }
+  if (variant === 'shows') episodesText = 'Episodes from ';
+  if (variant === 'residents' || variant === 'genres')
+    episodesText = 'Episodes w/ ';
+
+  return { link, episodesText };
+};
+
 export const CardListHeader = ({
   secondHeader,
   text,
   sizeVariant,
 }: CardListHeaderProps) => {
   if (secondHeader) {
-    const { variant } = secondHeader;
+    const { variant, slug } = secondHeader;
 
-    let episodesText = 'Episodes ';
-    let link = '/archive/' + variant + '/' + secondHeader.slug;
-    if (variant === 'resident') {
-      episodesText = 'Episodes by ';
-      link = '/archive/residents/' + secondHeader.slug;
-    }
-    if (variant === 'shows') episodesText = 'Episodes from ';
-    if (variant === 'residents' || variant === 'genres')
-      episodesText = 'Episodes w/ ';
+    const { episodesText, link } = getLinkAndText({
+      variant,
+      slug,
+    });
 
     return (
       <CardListHeaderWrapper

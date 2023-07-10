@@ -1,9 +1,13 @@
 import { useUnit } from 'effector-react';
 import { useForm } from 'effector-react-form';
 import { clsxm } from '@/shared/lib/clsxm';
-import { $submitIsDisabled, checkoutForm } from '../../model/checkout.model';
-import { ContactDetailsForm } from './contact-details-form';
-import { RegionForm } from './region-form';
+import {
+  checkoutForm,
+  contactFormFields,
+  regionFormFields,
+} from '../../model/checkout.form';
+import { $submitIsDisabled } from '../../model/checkout.model';
+import { CheckoutFormBlock } from './checkout-form-block';
 
 export const CheckoutForm = () => {
   const { submitIsDisabled } = useUnit({
@@ -16,8 +20,8 @@ export const CheckoutForm = () => {
     <form onSubmit={handleSubmit}>
       <div className='flex  flex-col gap-5'>
         <div className='grid gap-3 lg:max-w-[900px] lg:gap-3.5 2xl:gap-5'>
-          <ContactDetailsForm />
-          <RegionForm />
+          <CheckoutFormBlock title='Contact details' data={contactFormFields} />
+          <CheckoutFormBlock title='Select region' data={regionFormFields} />
         </div>
         <button
           className={clsxm(

@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import { AboutPageProps } from 'pages/about';
+import { FC } from 'react';
 import { DescriptionGroup } from '@/shared/ui/description/description-group';
 import { SecondHeader } from '@/shared/ui/headings/second-header';
 import { TextWrapper } from '@/shared/ui/text-wrapper/text-wrapper';
 import { localRadioTeamLinks } from '../lib/local-radio-team-links';
 
-export const AboutPage = ({ description }: AboutPageProps) => {
+export const AboutPage: FC<AboutPageProps> = ({ description }) => {
   return (
     <main className='relative flex w-full flex-1 lg:pt-0'>
       <div className='flex flex-1 flex-col'>

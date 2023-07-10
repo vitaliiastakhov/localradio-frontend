@@ -4,7 +4,10 @@ import type { Maybe } from 'yup';
 import { Description } from '../types/description.interface';
 
 async function markdownGen(markdown: string) {
-  const result = await remark().use(html).process(markdown);
+  // TODO: Убрать any когда пофиксят
+  const result = await remark()
+    .use(html as any)
+    .process(markdown);
   return result.toString();
 }
 

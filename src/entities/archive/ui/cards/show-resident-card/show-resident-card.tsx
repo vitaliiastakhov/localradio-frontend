@@ -12,11 +12,12 @@ type Variant = 'resident' | 'residents' | 'show' | 'shows';
 
 export const ShowResidentCard: FC<ShowResidentProps> = (props) => {
   const { attributes, __typename, className } = props;
-  const lastEpisodeDate = attributes?.mixes?.data[0]?.attributes?.date;
-  const lastEpisodeSlug = attributes?.mixes?.data[0]?.attributes?.slug;
+  const latestMix = attributes?.mixes?.data[0]?.attributes;
+  const latestEpisodeDate = latestMix?.date;
+  const latestEpisodeSlug = latestMix?.slug;
   const imageUrl = attributes?.image?.data?.attributes?.url;
 
-  const getCardVariant = (isPlural: boolean): Variant => {
+  const getPluralCardVariant = (isPlural: boolean): Variant => {
     if (isPlural) {
       return __typename === 'GuestEntity' ? 'residents' : 'shows';
     }
@@ -25,11 +26,11 @@ export const ShowResidentCard: FC<ShowResidentProps> = (props) => {
 
   const imageAltTitle =
     'Local Radio ' +
-    getCardVariant(false) +
+    getPluralCardVariant(false) +
     ' ' +
     (__typename === 'GuestEntity' ? attributes?.name : `"${attributes?.name}"`);
 
-  const href = `/archive/${getCardVariant(true)}/${attributes?.slug}`;
+  const href = `/archive/${getPluralCardVariant(true)}/${attributes?.slug}`;
 
   return (
     <Card
@@ -37,9 +38,9 @@ export const ShowResidentCard: FC<ShowResidentProps> = (props) => {
       variant='show'
       cardDate={{
         text: 'Last Episode:',
-        link: lastEpisodeSlug ? '/archive/' + lastEpisodeSlug : null,
+        link: latestEpisodeSlug ? '/archive/' + latestEpisodeSlug : null,
       }}
-      date={lastEpisodeDate}
+      date={latestEpisodeDate}
       headingText={attributes?.name}
       href={href}
       className={className}

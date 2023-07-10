@@ -14,6 +14,8 @@ interface DescriptionGroupProps {
   className?: string;
 }
 
+type Language = 'ru' | 'en';
+
 export const DescriptionGroup = ({
   html,
   top,
@@ -21,7 +23,10 @@ export const DescriptionGroup = ({
   className,
   sizeVariant = 'small',
 }: DescriptionGroupProps) => {
-  const [descriptionLang, setDescriptionLang] = useState<'ru' | 'en'>('ru');
+  const [descriptionLang, setDescriptionLang] = useState<Language>('ru');
+  const handleChangeLang = (lang: Language) => {
+    setDescriptionLang(lang);
+  };
   return (
     <div
       className={clsxm(
@@ -53,7 +58,7 @@ export const DescriptionGroup = ({
           >
             <DescriptionButton
               title='Change Language to Russian'
-              setDescriptionLang={setDescriptionLang}
+              onClick={() => handleChangeLang('ru')}
               text='Ru'
               sizeVariant={sizeVariant}
               selectedLang={descriptionLang}
@@ -63,7 +68,7 @@ export const DescriptionGroup = ({
 
             <DescriptionButton
               title='Change Language to English'
-              setDescriptionLang={setDescriptionLang}
+              onClick={() => handleChangeLang('en')}
               text='En'
               selectedLang={descriptionLang}
               lang='en'

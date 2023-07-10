@@ -1,18 +1,11 @@
 import type { GetServerSidePropsResult, NextPage } from 'next';
 import { GetServerSideProps } from 'next/types';
 import { defaultMixes, defaultReleases } from '@/defaults/defaults';
-import { HomepageDocument } from '@/pages/home/api/home-page.graphql.interface';
-import { HomePageRandomMixDocument } from '@/pages/home/api/home-page-random-mix.graphql.interface';
+import { getHomePageData } from '@/pages/home/api/get-home-page-data';
 import { HomePage } from '@/pages/home/ui/home-page';
 import { HomePageProps } from '@/pages/home/ui/home-page.interface';
-import { client } from '@/shared/api/apollo/apollo-client';
+import { randomIntFromInterval } from '@/shared/lib/random-int-from-iterval';
 import { Seo } from '@/shared/ui/seo/seo';
-import { StreamIsLiveDocument } from '@/widgets/players/stream/api/stream-is-live.graphql.interface';
-import { fetchEventSchedulesFixed } from './api/schedule';
-
-function randomIntFromInterval(min: number, max: number) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
 
 const Page: NextPage<HomePageProps> = (props) => {
   return (
@@ -32,40 +25,10 @@ export const getServerSideProps: GetServerSideProps = async ({
   );
 
   try {
-    const {
-      data: { mixes, releases, shopItems, events, genres, moods },
-    } = await client.query({
-      query: HomepageDocument,
-    });
-
-    const {
-      data: { homePageRandomMix },
-    } = await client.query({
-      query: HomePageRandomMixDocument,
-      fetchPolicy: 'no-cache',
-    });
-
-    const eventSchedulesFixed = await fetchEventSchedulesFixed();
-
-    const {
-      data: { streamIsLive },
-    } = await client.query({
-      query: StreamIsLiveDocument,
-      fetchPolicy: 'no-cache',
-    });
+    const data = await getHomePageData();
 
     return {
-      props: {
-        streamIsLive,
-        mixes,
-        releases,
-        shopItems,
-        events,
-        moods,
-        genres,
-        schedules: eventSchedulesFixed,
-        homePageRandomMix,
-      },
+      props: data,
     };
   } catch (error) {
     const rndMixInt = randomIntFromInterval(0, defaultMixes.data.length - 1);

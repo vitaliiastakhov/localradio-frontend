@@ -4,7 +4,7 @@ import { Button } from '../button/button';
 
 interface DescriptionButtonProps {
   text: string;
-  setDescriptionLang: (lang: 'en' | 'ru') => void;
+  onClick: () => void;
   selectedLang: 'en' | 'ru';
   lang: 'en' | 'ru';
   disabled?: boolean;
@@ -14,7 +14,7 @@ interface DescriptionButtonProps {
 
 export const DescriptionButton = ({
   text,
-  setDescriptionLang,
+  onClick,
   lang,
   selectedLang,
   disabled,
@@ -26,7 +26,7 @@ export const DescriptionButton = ({
       type='button'
       colorVariant='secondary'
       disabled={disabled}
-      onClick={() => setDescriptionLang(lang)}
+      onClick={onClick}
       className={clsxm(
         '!w-fit px-2 text-[0.75rem] font-normal hover:!bg-black  lg:text-[0.8rem]  xl:text-[0.875rem] ',
         { 'bg-black !text-primary': selectedLang === lang },

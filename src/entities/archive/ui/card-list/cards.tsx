@@ -27,11 +27,11 @@ export const Cards = ({
   pageVariant,
 }: Omit<Cards, 'indexPageText'>) => {
   const hiddenClasses = (index: number) =>
-    data &&
-    clsxm({
-      '4xl:hidden':
-        data.length >= 10 && data.length < index + 3 && pageVariant === 'home',
-    });
+    pageVariant === 'home' && data
+      ? clsxm({
+          '4xl:hidden': data.length >= 10 && data.length < index + 3,
+        })
+      : '';
 
   if (data)
     return (
