@@ -65,6 +65,7 @@ export const MixPageLeft = ({
   description,
   mixesShowSlug,
 }: MixPageLeftProps) => {
+  console.log(description);
   return (
     <div className='px-1.5 lg:px-0'>
       {(!description?.mix?.descriptionEn || !description.mix.descriptionRu) &&
@@ -117,6 +118,18 @@ export const MixPageLeft = ({
             descriptionRu: description.mix.descriptionRu,
             descriptionEn: description.mix.descriptionEn,
           }}
+          top={
+            mixesShowName || mixesGuestName ? (
+              <MixDescriptionTop
+                variant='show'
+                socials={guestSocials}
+                title={mixesShowName ?? mixesGuestName}
+                href={`/archive/${
+                  mixesShowName ? 'shows' : 'residents'
+                }/${mixesGuestSlug}`}
+              />
+            ) : undefined
+          }
         />
       )}
     </div>
